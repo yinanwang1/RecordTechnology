@@ -1,0 +1,12 @@
+
+RecordTechnology/RecordTechnology.xcodeproj/xcuserdata/*
+RecordTechnology/RecordTechnology.xcodeproj/project.xcworkspace/xcuserdata/*
+
+*.DS_Store*
+bin
+obj
+packages
+*.suo
+*.user
+*.xcuserstate
+UserInterfaceState.xcuserstate
