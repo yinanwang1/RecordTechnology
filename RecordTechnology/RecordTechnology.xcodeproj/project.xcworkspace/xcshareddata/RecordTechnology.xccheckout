@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C9467832-15C6-49A0-AD12-DE9B701FE4CB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RecordTechnology</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>19AC0ABE4EFD56CCE5B1CB754E4BFBC1C1639248</key>
+		<string>https://github.com/yinanwang1/RecordTechnology.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RecordTechnology/RecordTechnology.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>19AC0ABE4EFD56CCE5B1CB754E4BFBC1C1639248</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yinanwang1/RecordTechnology.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>19AC0ABE4EFD56CCE5B1CB754E4BFBC1C1639248</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>19AC0ABE4EFD56CCE5B1CB754E4BFBC1C1639248</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RecordTechnology</string>
+		</dict>
+	</array>
+</dict>
+</plist>

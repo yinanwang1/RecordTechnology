@@ -1,0 +1,16 @@
+//
+//  RecordTechnology.pch
+//  RecordTechnology
+//
+//  Created by ArthurWang on 15/3/20.
+//  Copyright (c) 2015年 InSigma HengTian Softwar Ltd. All rights reserved.
+//
+
+#ifndef RecordTechnology_RecordTechnology_pch
+#define RecordTechnology_RecordTechnology_pch
+
+// side menu
+#import "MFSideMenu.h"
+
+
+#endif
