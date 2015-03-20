@@ -56,6 +56,8 @@
 		8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E61761E1ABC128B0091B68D /* EditingViewController.m */; };
 		8EDF0A491ABC1EFA004D736C /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF0A471ABC1EFA004D736C /* background.png */; };
 		8EDF0A4A1ABC1EFA004D736C /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF0A481ABC1EFA004D736C /* page.png */; };
+		C61771E11ABC6ABE0097991C /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C61771E01ABC6ABE0097991C /* bg.png */; };
+		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +141,9 @@
 		8EDF0A481ABC1EFA004D736C /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
 		8EDF0A4B1ABC22EC004D736C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8EDF0A4D1ABC22F6004D736C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C61771E01ABC6ABE0097991C /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
+		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
 		F6BD7DDAA2F489FB8228BB62 /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -217,7 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				8E6175B71ABBB9630091B68D /* 201503 */,
-				8E6175CA1ABBC03D0091B68D /* Utilities */,
+				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
 				8E41E23A1ABAB2DC0008984F /* AppDelegate.m */,
 				8E41E23C1ABAB2DC0008984F /* ViewController.h */,
@@ -316,16 +321,10 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		8E6175CA1ABBC03D0091B68D /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
 		8E6175CD1ABBC3B20091B68D /* InitYouFireStatus */ = {
 			isa = PBXGroup;
 			children = (
+				C61771E01ABC6ABE0097991C /* bg.png */,
 				8E6175CE1ABBC3E10091B68D /* YouFireApplication.h */,
 				8E6175CF1ABBC3E10091B68D /* YouFireApplication.m */,
 			);
@@ -438,6 +437,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		C61771E21ABC6BF30097991C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C61771E31ABC6BF30097991C /* WWSideslipViewController */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C61771E31ABC6BF30097991C /* WWSideslipViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C61771E41ABC6BF30097991C /* WWSideslipViewController.h */,
+				C61771E51ABC6BF30097991C /* WWSideslipViewController.m */,
+			);
+			path = WWSideslipViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -522,6 +538,7 @@
 			files = (
 				8E6176191ABC09280091B68D /* 9.png in Resources */,
 				8E6176151ABC09280091B68D /* 5.png in Resources */,
+				C61771E11ABC6ABE0097991C /* bg.png in Resources */,
 				8E6176071ABC09280091B68D /* 18.png in Resources */,
 				8E61760E1ABC09280091B68D /* 24.png in Resources */,
 				8E6176051ABC09280091B68D /* 16.png in Resources */,
@@ -611,6 +628,7 @@
 				8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */,
 				8E6175C91ABBBFAD0091B68D /* RightSideViewController.m in Sources */,
 				8E6175C61ABBBF9F0091B68D /* LeftSideViewController.m in Sources */,
+				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 				8E6175D41ABBF35C0091B68D /* ModuleListViewController.m in Sources */,
@@ -741,6 +759,7 @@
 			baseConfigurationReference = 815826EAF453A36B3E35A690 /* Pods-RecordTechnology.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
@@ -755,6 +774,7 @@
 			baseConfigurationReference = 274E0FE90313889705C4C678 /* Pods-RecordTechnology.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
