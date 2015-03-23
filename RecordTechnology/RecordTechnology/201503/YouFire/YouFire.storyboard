@@ -178,6 +178,24 @@
                                             <segue destination="2aD-IC-O0W" kind="show" identifier="" id="f5w-5m-PoS"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你火了" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVM-P8-zes">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.11372549019607843" green="0.39215686274509803" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="8" y="17" width="55" height="30"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFy-XQ-0FU">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.1137254902" green="0.3921568627" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="351" y="17" width="34" height="30"/>
+                                        </variation>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -189,6 +207,8 @@
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="dCq-E3-cGm"/>
+                                        <exclude reference="mVM-P8-zes"/>
+                                        <exclude reference="YFy-XQ-0FU"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="g9I-lY-iCy"/>
@@ -200,6 +220,8 @@
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="dCq-E3-cGm"/>
+                                        <include reference="mVM-P8-zes"/>
+                                        <include reference="YFy-XQ-0FU"/>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="g9I-lY-iCy"/>
