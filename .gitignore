@@ -1,6 +1,8 @@
 
 RecordTechnology/RecordTechnology.xcodeproj/xcuserdata/*
 RecordTechnology/RecordTechnology.xcodeproj/project.xcworkspace/xcuserdata/*
+RecordTechnology/RecordTechnology.xcworkspace/xcuserdata/*
+RecordTechnology/Pods/Pods.xcodeproj/xcuserdata/*
 
 *.DS_Store*
 bin
