@@ -104,7 +104,6 @@
         <!--你火了-->
         <scene sceneID="tNh-Nb-iCd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SPJ-lZ-pql" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="你火了" id="4jb-8u-0Vp" customClass="MFSideMenuContainerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EWc-3i-Bvn"/>
@@ -116,13 +115,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPJ-lZ-pql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="648" y="501"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GJL-qd-W4h">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="knU-61-sCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="navigation" id="cJc-Ga-cZp" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FyM-bX-ies">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -132,6 +131,7 @@
                         <segue destination="Zda-XS-WcO" kind="relationship" relationship="rootViewController" id="Fo2-ai-SL5"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knU-61-sCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1375.5" y="501"/>
         </scene>
@@ -478,7 +478,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zgj-y6-zbk" customClass="iCarousel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -497,13 +497,13 @@
                                 <exclude reference="Zgj-y6-zbk"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="kqp-yI-9WR"/>
-                                <exclude reference="qyK-B0-qse"/>
-                                <exclude reference="yJQ-Rl-qS3"/>
+                                <exclude reference="bXw-Ty-hVe"/>
                                 <exclude reference="Hin-w2-GkQ"/>
                                 <exclude reference="MX7-hw-Dfk"/>
                                 <exclude reference="MZR-9J-VV5"/>
-                                <exclude reference="bXw-Ty-hVe"/>
+                                <exclude reference="kqp-yI-9WR"/>
+                                <exclude reference="qyK-B0-qse"/>
+                                <exclude reference="yJQ-Rl-qS3"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -512,13 +512,13 @@
                                 <include reference="Zgj-y6-zbk"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="kqp-yI-9WR"/>
-                                <include reference="qyK-B0-qse"/>
-                                <include reference="yJQ-Rl-qS3"/>
+                                <include reference="bXw-Ty-hVe"/>
                                 <include reference="Hin-w2-GkQ"/>
                                 <include reference="MX7-hw-Dfk"/>
                                 <include reference="MZR-9J-VV5"/>
-                                <include reference="bXw-Ty-hVe"/>
+                                <include reference="kqp-yI-9WR"/>
+                                <include reference="qyK-B0-qse"/>
+                                <include reference="yJQ-Rl-qS3"/>
                             </mask>
                         </variation>
                     </view>

@@ -54,6 +54,8 @@
 		8E6176181ABC09280091B68D /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6175FC1ABC09280091B68D /* 8.png */; };
 		8E6176191ABC09280091B68D /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6175FD1ABC09280091B68D /* 9.png */; };
 		8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E61761E1ABC128B0091B68D /* EditingViewController.m */; };
+		8E75324B1ABFFA800052A28A /* Style1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7532491ABFFA800052A28A /* Style1ViewController.m */; };
+		8E75324C1ABFFA800052A28A /* Style1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E75324A1ABFFA800052A28A /* Style1ViewController.xib */; };
 		8EDF0A491ABC1EFA004D736C /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF0A471ABC1EFA004D736C /* background.png */; };
 		8EDF0A4A1ABC1EFA004D736C /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF0A481ABC1EFA004D736C /* page.png */; };
 		C61771E11ABC6ABE0097991C /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C61771E01ABC6ABE0097991C /* bg.png */; };
@@ -136,6 +138,9 @@
 		8E6175FD1ABC09280091B68D /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		8E61761D1ABC128B0091B68D /* EditingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditingViewController.h; sourceTree = "<group>"; };
 		8E61761E1ABC128B0091B68D /* EditingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditingViewController.m; sourceTree = "<group>"; };
+		8E7532481ABFFA800052A28A /* Style1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Style1ViewController.h; sourceTree = "<group>"; };
+		8E7532491ABFFA800052A28A /* Style1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Style1ViewController.m; sourceTree = "<group>"; };
+		8E75324A1ABFFA800052A28A /* Style1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Style1ViewController.xib; sourceTree = "<group>"; };
 		8EDF0A441ABC1EB8004D736C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8EDF0A471ABC1EFA004D736C /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		8EDF0A481ABC1EFA004D736C /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
@@ -273,6 +278,7 @@
 		8E6175B81ABBB9630091B68D /* YouFire */ = {
 			isa = PBXGroup;
 			children = (
+				8E7532371ABFBDCD0052A28A /* EffectGroup */,
 				8E6175CD1ABBC3B20091B68D /* InitYouFireStatus */,
 				8E6175BE1ABBBF8D0091B68D /* LeftSideVC */,
 				8E6175C11ABBBF8D0091B68D /* RightSideVC */,
@@ -437,6 +443,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8E7532371ABFBDCD0052A28A /* EffectGroup */ = {
+			isa = PBXGroup;
+			children = (
+				8E7532421ABFDE450052A28A /* Style1View */,
+			);
+			path = EffectGroup;
+			sourceTree = "<group>";
+		};
+		8E7532421ABFDE450052A28A /* Style1View */ = {
+			isa = PBXGroup;
+			children = (
+				8E7532481ABFFA800052A28A /* Style1ViewController.h */,
+				8E7532491ABFFA800052A28A /* Style1ViewController.m */,
+				8E75324A1ABFFA800052A28A /* Style1ViewController.xib */,
+			);
+			path = Style1View;
+			sourceTree = "<group>";
+		};
 		C61771E21ABC6BF30097991C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,6 +580,7 @@
 				8E6176131ABC09280091B68D /* 3.png in Resources */,
 				8E6176031ABC09280091B68D /* 14.png in Resources */,
 				8E6176181ABC09280091B68D /* 8.png in Resources */,
+				8E75324C1ABFFA800052A28A /* Style1ViewController.xib in Resources */,
 				8E6176121ABC09280091B68D /* 28.png in Resources */,
 				8EDF0A491ABC1EFA004D736C /* background.png in Resources */,
 				8E6176041ABC09280091B68D /* 15.png in Resources */,
@@ -623,6 +648,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E6175DB1ABC02270091B68D /* ModuleListModel.m in Sources */,
+				8E75324B1ABFFA800052A28A /* Style1ViewController.m in Sources */,
 				8E6175BD1ABBB9FD0091B68D /* YouFireViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */,

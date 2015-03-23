@@ -10,6 +10,8 @@
 
 #import "iCarousel.h"
 
+#import "Style1ViewController.h"
+
 #define NUMBER_OF_ITEMS 12
 
 #pragma GCC diagnostic ignored "-Wgnu"
@@ -18,8 +20,10 @@
 
 @property (weak, nonatomic) IBOutlet iCarousel *carousel;
 
+
 @property (nonatomic, retain) NSMutableArray *items;
 @property (nonatomic, assign) BOOL wrap;
+@property (nonatomic, strong) Style1ViewController *style1VC;
 
 @end
 
@@ -84,8 +88,6 @@
     
     self.carousel.delegate = self;
     self.carousel.dataSource = self;
-    
-    
 }
 
 
@@ -99,6 +101,30 @@
 - (UIView *)carousel:(__unused iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
     UILabel *label = nil;
+    
+    
+    if ( 0 == index )
+    {
+        _style1VC = [[Style1ViewController alloc] initWithNibName:@"Style1ViewController" bundle:[NSBundle mainBundle]];
+        
+        
+        if ( nil == view )
+        {
+            CGFloat width = carousel.frame.size.width * 0.8;
+            CGFloat height = carousel.frame.size.height * 0.8;
+            view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+            [view setBackgroundColor:[UIColor redColor]];
+            view.contentMode = UIViewContentModeCenter;
+        }
+        
+        [self.style1VC.view setFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)];
+        
+        [view addSubview:self.style1VC.view];
+        
+        return view;
+    }
+    
+    
     
     //create new view if no view is available for recycling
     if (view == nil)
@@ -140,6 +166,28 @@
 - (UIView *)carousel:(__unused iCarousel *)carousel placeholderViewAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
     UILabel *label = nil;
+    
+    
+    if ( 0 == index )
+    {
+        _style1VC = [[Style1ViewController alloc] initWithNibName:@"Style1ViewController" bundle:[NSBundle mainBundle]];
+        
+        
+        if ( nil == view )
+        {
+            CGFloat width = carousel.frame.size.width * 0.8;
+            CGFloat height = carousel.frame.size.height * 0.8;
+            view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+            [view setBackgroundColor:[UIColor redColor]];
+            view.contentMode = UIViewContentModeCenter;
+        }
+        
+        [self.style1VC.view setFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)];
+        
+        [view addSubview:self.style1VC.view];
+        
+        return view;
+    }
     
     //create new view if no view is available for recycling
     if (view == nil)

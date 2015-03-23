@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Style1ViewController">
+            <connections>
+                <outlet property="imageView" destination="a8v-vP-zgb" id="Q05-cG-zxD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="a8v-vP-zgb">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQB-O1-7ci">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="6Cp-GT-Si9"/>
+                        <constraint firstAttribute="height" constant="30" id="uav-bv-wxs"/>
+                    </constraints>
+                    <state key="normal" title="添加">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6Cp-GT-Si9"/>
+                            <exclude reference="uav-bv-wxs"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="6Cp-GT-Si9"/>
+                            <include reference="uav-bv-wxs"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="showMessage:" destination="-1" eventType="touchUpInside" id="Wt3-Kz-RH9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TQB-O1-7ci" secondAttribute="trailing" constant="21" id="I9H-6q-nbp"/>
+                <constraint firstItem="TQB-O1-7ci" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="21" id="XiD-ax-Lt6"/>
+                <constraint firstItem="a8v-vP-zgb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bfs-lr-wnI"/>
+                <constraint firstAttribute="bottom" secondItem="a8v-vP-zgb" secondAttribute="bottom" id="gJM-Vq-XcJ"/>
+                <constraint firstItem="a8v-vP-zgb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kzF-rk-6TU"/>
+                <constraint firstAttribute="trailing" secondItem="a8v-vP-zgb" secondAttribute="trailing" id="waQ-CT-NHI"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="a8v-vP-zgb"/>
+                    <exclude reference="TQB-O1-7ci"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="bfs-lr-wnI"/>
+                    <exclude reference="gJM-Vq-XcJ"/>
+                    <exclude reference="kzF-rk-6TU"/>
+                    <exclude reference="waQ-CT-NHI"/>
+                    <exclude reference="I9H-6q-nbp"/>
+                    <exclude reference="XiD-ax-Lt6"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="a8v-vP-zgb"/>
+                    <include reference="TQB-O1-7ci"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="bfs-lr-wnI"/>
+                    <include reference="gJM-Vq-XcJ"/>
+                    <include reference="kzF-rk-6TU"/>
+                    <include reference="waQ-CT-NHI"/>
+                    <include reference="I9H-6q-nbp"/>
+                    <include reference="XiD-ax-Lt6"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="1.png" width="640" height="1008"/>
+    </resources>
+</document>
