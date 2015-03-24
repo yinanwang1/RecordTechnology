@@ -69,7 +69,6 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="n5Q-8W-gnR" secondAttribute="bottom" constant="5" id="6lk-dF-IYf"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="fFl-lv-02T" secondAttribute="bottom" constant="-3" id="Ae0-2Z-x40"/>
                     <constraint firstItem="n5Q-8W-gnR" firstAttribute="leading" secondItem="lXe-eD-3lf" secondAttribute="trailing" constant="23" id="Bzh-T0-EwK"/>
                     <constraint firstAttribute="bottom" secondItem="lXe-eD-3lf" secondAttribute="bottom" constant="5" id="DXb-9Q-oCi"/>
                     <constraint firstItem="n5Q-8W-gnR" firstAttribute="top" secondItem="DfS-sQ-dQj" secondAttribute="bottom" constant="8" id="GlX-bC-dXS"/>
@@ -87,11 +86,6 @@
                     <constraint firstAttribute="trailing" secondItem="HPa-CK-Is5" secondAttribute="trailing" constant="16" id="y8O-e7-se6"/>
                     <constraint firstItem="fFl-lv-02T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="zOE-zA-22C"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="Ae0-2Z-x40"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <point key="canvasLocation" x="329" y="400"/>
         </tableViewCell>

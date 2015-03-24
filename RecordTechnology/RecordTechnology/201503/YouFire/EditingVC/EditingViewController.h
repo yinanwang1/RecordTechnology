@@ -10,4 +10,7 @@
 
 @interface EditingViewController : UIViewController
 
+
+@property (nonatomic, strong) NSString *firstStyleStr;
+
 @end

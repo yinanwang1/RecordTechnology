@@ -13,7 +13,6 @@
 
 
 NSString * const collectionViewCell = @"FunctionCollectionViewCell";
-NSString * const editingVCIdentifier = @"showEditingView";
 
 @interface ModuleListViewController () <UICollectionViewDelegate,
                                         UICollectionViewDataSource,
@@ -33,6 +32,9 @@ NSString * const editingVCIdentifier = @"showEditingView";
     [super viewDidLoad];
 
     [self initDataSource];
+    
+    [self initNavigationBarItem];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -47,6 +49,11 @@ NSString * const editingVCIdentifier = @"showEditingView";
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc
+{
+    self.moduleListDelegate = nil;
+}
+
 
 #pragma mark - Navigation
 
@@ -54,6 +61,23 @@ NSString * const editingVCIdentifier = @"showEditingView";
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+}
+
+#pragma mark -- Init navigation bar item
+
+- (void)initNavigationBarItem
+{
+    UIBarButtonItem *barBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissModuleList:)];
+    
+    self.navigationItem.rightBarButtonItem = barBtn;
+}
+
+- (void)dismissModuleList:(id)sender
+{
+    [self dismissViewControllerAnimated:YES
+                             completion:^{
+                                 NSLog(@"%s finish.", __func__);
+                             }];
 }
 
 #pragma mark -- Init Data source
@@ -152,7 +176,12 @@ NSString * const editingVCIdentifier = @"showEditingView";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:editingVCIdentifier sender:indexPath];
+    if ( [self.moduleListDelegate respondsToSelector:@selector(hasSelectedStyle:)] )
+    {
+        [self.moduleListDelegate hasSelectedStyle:[NSString stringWithFormat:@"%lu", indexPath.row]];
+    }
+
+    [self dismissModuleList:nil];
 }
 
 

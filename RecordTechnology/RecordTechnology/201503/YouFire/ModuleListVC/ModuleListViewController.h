@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol ModuleListViewControllerDelegate <NSObject>
+
+@optional
+- (void)hasSelectedStyle:(NSString *)styleNameStr;
+
+@end
+
 @interface ModuleListViewController : UIViewController
+
+@property (nonatomic, assign) id<ModuleListViewControllerDelegate> moduleListDelegate;
+
 
 @end

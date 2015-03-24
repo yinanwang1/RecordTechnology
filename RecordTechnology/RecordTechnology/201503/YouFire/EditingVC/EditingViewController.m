@@ -12,7 +12,6 @@
 
 #import "Style1ViewController.h"
 
-#define NUMBER_OF_ITEMS 12
 
 #pragma GCC diagnostic ignored "-Wgnu"
 
@@ -75,10 +74,8 @@
     //set up data
     self.wrap = YES;
     self.items = [[NSMutableArray alloc] initWithCapacity:5];
-    for (int i = 0; i < NUMBER_OF_ITEMS; i++)
-    {
-        [self.items addObject:@(i)];
-    }
+    
+    
 }
 
 - (void)initCarouselView
@@ -88,6 +85,11 @@
     
     self.carousel.delegate = self;
     self.carousel.dataSource = self;
+    
+    [self.items addObject:self.firstStyleStr];
+    
+    [self.carousel reloadData];
+
 }
 
 
@@ -100,8 +102,6 @@
 
 - (UIView *)carousel:(__unused iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
-    UILabel *label = nil;
-    
     
     if ( 0 == index )
     {
@@ -124,105 +124,9 @@
         return view;
     }
     
-    
-    
-    //create new view if no view is available for recycling
-    if (view == nil)
-    {
-        CGFloat width = carousel.frame.size.width * 0.8;
-        CGFloat height = carousel.frame.size.height * 0.8;
-        view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
-        [view setBackgroundColor:[UIColor redColor]];
-        view.contentMode = UIViewContentModeCenter;
-        label = [[UILabel alloc] initWithFrame:view.bounds];
-        label.backgroundColor = [UIColor clearColor];
-        label.textAlignment = NSTextAlignmentCenter;
-        label.font = [label.font fontWithSize:50];
-        label.tag = 1;
-        [view addSubview:label];
-    }
-    else
-    {
-        //get a reference to the label in the recycled view
-        label = (UILabel *)[view viewWithTag:1];
-    }
-    
-    //set item label
-    //remember to always set any properties of your carousel item
-    //views outside of the `if (view == nil) {...}` check otherwise
-    //you'll get weird issues with carousel item content appearing
-    //in the wrong place in the carousel
-    label.text = [self.items[(NSUInteger)index] stringValue];
-    
     return view;
 }
 
-- (NSInteger)numberOfPlaceholdersInCarousel:(__unused iCarousel *)carousel
-{
-    //note: placeholder views are only displayed on some carousels if wrapping is disabled
-    return 2;
-}
-
-- (UIView *)carousel:(__unused iCarousel *)carousel placeholderViewAtIndex:(NSInteger)index reusingView:(UIView *)view
-{
-    UILabel *label = nil;
-    
-    
-    if ( 0 == index )
-    {
-        _style1VC = [[Style1ViewController alloc] initWithNibName:@"Style1ViewController" bundle:[NSBundle mainBundle]];
-        
-        
-        if ( nil == view )
-        {
-            CGFloat width = carousel.frame.size.width * 0.8;
-            CGFloat height = carousel.frame.size.height * 0.8;
-            view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
-            [view setBackgroundColor:[UIColor redColor]];
-            view.contentMode = UIViewContentModeCenter;
-        }
-        
-        [self.style1VC.view setFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)];
-        
-        [view addSubview:self.style1VC.view];
-        
-        return view;
-    }
-    
-    //create new view if no view is available for recycling
-    if (view == nil)
-    {
-        //don't do anything specific to the index within
-        //this `if (view == nil) {...}` statement because the view will be
-        //recycled and used with other index values later
-        CGFloat width = carousel.frame.size.width * 0.8;
-        CGFloat height = carousel.frame.size.height * 0.8;
-        view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
-        [view setBackgroundColor:[UIColor redColor]];
-        view.contentMode = UIViewContentModeCenter;
-        
-        label = [[UILabel alloc] initWithFrame:view.bounds];
-        label.backgroundColor = [UIColor clearColor];
-        label.textAlignment = NSTextAlignmentCenter;
-        label.font = [label.font fontWithSize:50.0f];
-        label.tag = 1;
-        [view addSubview:label];
-    }
-    else
-    {
-        //get a reference to the label in the recycled view
-        label = (UILabel *)[view viewWithTag:1];
-    }
-    
-    //set item label
-    //remember to always set any properties of your carousel item
-    //views outside of the `if (view == nil) {...}` check otherwise
-    //you'll get weird issues with carousel item content appearing
-    //in the wrong place in the carousel
-    label.text = (index == 0)? @"[": @"]";
-    
-    return view;
-}
 
 - (CATransform3D)carousel:(__unused iCarousel *)carousel itemTransformForOffset:(CGFloat)offset baseTransform:(CATransform3D)transform
 {

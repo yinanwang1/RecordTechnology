@@ -2082,7 +2082,7 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
 
 - (void)didPan:(UIPanGestureRecognizer *)panGesture
 {
-    if (_scrollEnabled && _numberOfItems)
+    if (_scrollEnabled && (1 < _numberOfItems))
     {
         switch (panGesture.state)
         {

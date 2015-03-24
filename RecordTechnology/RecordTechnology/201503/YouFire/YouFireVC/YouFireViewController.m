@@ -9,11 +9,16 @@
 #import "YouFireViewController.h"
 
 #import "YouFireTableViewCell.h"
+#import "ModuleListViewController.h"
+#import "EditingViewController.h"
 
 static NSString * youFireTableViewCell = @"YouFireTableViewCell";
+static NSString * editingVCIdentifier = @"showEditingView";
 
-@interface YouFireViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface YouFireViewController () <UITableViewDataSource, UITableViewDelegate, ModuleListViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *youFireTableView;
+
+@property (nonatomic, strong) ModuleListViewController *moduleListVC;
 
 @end
 
@@ -38,8 +43,13 @@ static NSString * youFireTableViewCell = @"YouFireTableViewCell";
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    UIViewController *viewController = segue.destinationViewController;
+    if ( [viewController isKindOfClass:[EditingViewController class]] )
+    {
+        EditingViewController *vc = (EditingViewController *)viewController;
+        vc.firstStyleStr = (NSString *)sender;
+    }
 }
 
 
@@ -47,6 +57,20 @@ static NSString * youFireTableViewCell = @"YouFireTableViewCell";
 
 - (IBAction)createNewProduct:(id)sender {
     
+    if ( nil == _moduleListVC )
+    {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"YouFire" bundle:[NSBundle mainBundle]];
+        _moduleListVC = [storyboard instantiateViewControllerWithIdentifier:@"ModuleListViewController"];
+        _moduleListVC.moduleListDelegate = self;
+        _moduleListVC.title = @"选择一页";
+    }
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.moduleListVC];
+    
+    [self presentViewController:nav
+                       animated:YES completion:^{
+                           NSLog(@"finish.");
+                       }];
     
 }
 
@@ -72,6 +96,13 @@ static NSString * youFireTableViewCell = @"YouFireTableViewCell";
 
 
 
+
+#pragma mark -- ModuleListViewControllerDelegate
+
+- (void)hasSelectedStyle:(NSString *)styleNameStr
+{
+    [self performSegueWithIdentifier:editingVCIdentifier sender:styleNameStr];
+}
 
 
 @end

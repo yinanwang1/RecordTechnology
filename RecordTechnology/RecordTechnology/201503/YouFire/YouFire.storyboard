@@ -45,7 +45,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="s9Y-O0-dbl">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="s9Y-O0-dbl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -267,7 +267,6 @@
                                         </variation>
                                         <connections>
                                             <action selector="createNewProduct:" destination="Zda-XS-WcO" eventType="touchUpInside" id="k4l-rK-uni"/>
-                                            <segue destination="2aD-IC-O0W" kind="show" identifier="" id="f5w-5m-PoS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHw-JQ-if6">
@@ -414,16 +413,33 @@
                     <navigationItem key="navigationItem" id="9QO-LP-qTi"/>
                     <connections>
                         <outlet property="youFireTableView" destination="VOS-8n-Kj7" id="5mQ-5O-SQe"/>
+                        <segue destination="p6M-5p-hMC" kind="show" identifier="showEditingView" id="v7n-NY-M80"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPt-4a-1qy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2122.5" y="501"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c3c-QU-hnN">
+            <objects>
+                <navigationController id="AQP-CR-rfH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DzH-SZ-vi1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2aD-IC-O0W" kind="relationship" relationship="rootViewController" id="c6S-zg-AaS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GS4-CL-3P6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489.5" y="1163.25"/>
+        </scene>
         <!--选择一页-->
         <scene sceneID="xcp-dn-xy5">
             <objects>
-                <viewController title="选择一页" id="2aD-IC-O0W" customClass="ModuleListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ModuleListViewController" title="选择一页" id="2aD-IC-O0W" customClass="ModuleListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MaR-9a-Jaf"/>
                         <viewControllerLayoutGuide type="bottom" id="fua-vQ-Ezl"/>
@@ -518,15 +534,15 @@
                         </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="f0u-ZS-U5Y"/>
                     <connections>
                         <outlet property="functionItemCollectionView" destination="hsh-TY-9Kv" id="gCW-wu-ltP"/>
                         <outlet property="nameListScrollView" destination="Rlg-c1-kp9" id="cAn-om-3l2"/>
-                        <segue destination="p6M-5p-hMC" kind="show" identifier="showEditingView" id="pZI-Ie-Wg8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0P-Wg-iYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2875.5" y="501"/>
+            <point key="canvasLocation" x="2122.5" y="1163.25"/>
         </scene>
         <!--编辑初页-->
         <scene sceneID="joK-xq-aAJ">
@@ -706,7 +722,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAb-Cg-axT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3676.5" y="501"/>
+            <point key="canvasLocation" x="2805" y="501"/>
         </scene>
     </scenes>
     <resources>
