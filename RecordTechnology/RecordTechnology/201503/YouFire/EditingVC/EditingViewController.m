@@ -10,19 +10,23 @@
 
 #import "iCarousel.h"
 
-#import "Style1ViewController.h"
+#import "AllEffectInstance.h"
+#import "ModuleListViewController.h"
 
 
 #pragma GCC diagnostic ignored "-Wgnu"
 
-@interface EditingViewController () <iCarouselDataSource, iCarouselDelegate>
+
+@interface EditingViewController () <iCarouselDataSource, iCarouselDelegate, ModuleListViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet iCarousel *carousel;
 
 
 @property (nonatomic, retain) NSMutableArray *items;
 @property (nonatomic, assign) BOOL wrap;
-@property (nonatomic, strong) Style1ViewController *style1VC;
+@property (nonatomic, strong) AllEffectInstance *allEffectInstance;
+
+@property (nonatomic, strong) ModuleListViewController *moduleListVC;
 
 @end
 
@@ -72,8 +76,10 @@
 - (void)setUp
 {
     //set up data
-    self.wrap = YES;
+    self.wrap = NO;
     self.items = [[NSMutableArray alloc] initWithCapacity:5];
+    
+    _allEffectInstance = [[AllEffectInstance alloc] init];
     
     
 }
@@ -102,27 +108,23 @@
 
 - (UIView *)carousel:(__unused iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
+    UIView *effectView = [self.allEffectInstance createEffectVCInstanceWithName:[self.items objectAtIndex:index]];
     
-    if ( 0 == index )
+    if ( nil == view )
     {
-        _style1VC = [[Style1ViewController alloc] initWithNibName:@"Style1ViewController" bundle:[NSBundle mainBundle]];
-        
-        
-        if ( nil == view )
-        {
-            CGFloat width = carousel.frame.size.width * 0.8;
-            CGFloat height = carousel.frame.size.height * 0.8;
-            view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
-            [view setBackgroundColor:[UIColor redColor]];
-            view.contentMode = UIViewContentModeCenter;
-        }
-        
-        [self.style1VC.view setFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)];
-        
-        [view addSubview:self.style1VC.view];
-        
-        return view;
+        CGFloat width = carousel.frame.size.width * 0.8;
+        CGFloat height = carousel.frame.size.height * 0.8;
+        view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+        view.contentMode = UIViewContentModeCenter;
     }
+    
+    [effectView setFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)];
+    
+    for (UIView *subview in view.subviews) {
+        [subview removeFromSuperview];
+    }
+    
+    [view addSubview:effectView];
     
     return view;
 }
@@ -192,6 +194,40 @@
 - (void)carouselCurrentItemIndexDidChange:(__unused iCarousel *)carousel
 {
     NSLog(@"Index: %@", @(self.carousel.currentItemIndex));
+}
+
+
+#pragma mark -- target methods
+
+- (IBAction)addNewEffect:(id)sender {
+    if ( nil == _moduleListVC )
+    {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"YouFire" bundle:[NSBundle mainBundle]];
+        _moduleListVC = [storyboard instantiateViewControllerWithIdentifier:@"ModuleListViewController"];
+        _moduleListVC.moduleListDelegate = self;
+        _moduleListVC.title = @"选择一页";
+    }
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.moduleListVC];
+    
+    [self presentViewController:nav
+                       animated:YES completion:^{
+                           NSLog(@"finish.");
+                       }];
+    
+}
+
+#pragma mark -- ModuleListViewControllerDelegate
+
+- (void)hasSelectedStyle:(NSString *)styleNameStr
+{
+    NSLog(@"%s", __func__);
+    
+    [self.items addObject:styleNameStr];
+    
+    [self.carousel insertItemAtIndex:[self.items count] animated:YES];
+    
+    [self.carousel scrollByNumberOfItems:[self.items count] duration:1];
 }
 
 

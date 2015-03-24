@@ -62,6 +62,9 @@
 		8EDF0A4A1ABC1EFA004D736C /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF0A481ABC1EFA004D736C /* page.png */; };
 		C61771E11ABC6ABE0097991C /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C61771E01ABC6ABE0097991C /* bg.png */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
+		C6F29FB91AC1B17800EEE90C /* AllEffectInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F29FB81AC1B17800EEE90C /* AllEffectInstance.m */; };
+		C6F29FC41AC1B39800EEE90C /* Style2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F29FC21AC1B39800EEE90C /* Style2ViewController.m */; };
+		C6F29FC51AC1B39800EEE90C /* Style2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6F29FC31AC1B39800EEE90C /* Style2ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +157,11 @@
 		C61771E01ABC6ABE0097991C /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
+		C6F29FB71AC1B17800EEE90C /* AllEffectInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllEffectInstance.h; sourceTree = "<group>"; };
+		C6F29FB81AC1B17800EEE90C /* AllEffectInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllEffectInstance.m; sourceTree = "<group>"; };
+		C6F29FC11AC1B39800EEE90C /* Style2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Style2ViewController.h; sourceTree = "<group>"; };
+		C6F29FC21AC1B39800EEE90C /* Style2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Style2ViewController.m; sourceTree = "<group>"; };
+		C6F29FC31AC1B39800EEE90C /* Style2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Style2ViewController.xib; sourceTree = "<group>"; };
 		F6BD7DDAA2F489FB8228BB62 /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -426,17 +434,10 @@
 			children = (
 				8E61761D1ABC128B0091B68D /* EditingViewController.h */,
 				8E61761E1ABC128B0091B68D /* EditingViewController.m */,
-				8E61761B1ABC12740091B68D /* Model */,
+				C6F29FB61AC1B16C00EEE90C /* Model */,
 				8E61761C1ABC12740091B68D /* Views */,
 			);
 			path = EditingVC;
-			sourceTree = "<group>";
-		};
-		8E61761B1ABC12740091B68D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8E61761C1ABC12740091B68D /* Views */ = {
@@ -451,6 +452,7 @@
 			isa = PBXGroup;
 			children = (
 				8E7532421ABFDE450052A28A /* Style1View */,
+				C6F29FC01AC1B38600EEE90C /* Style2View */,
 			);
 			path = EffectGroup;
 			sourceTree = "<group>";
@@ -508,6 +510,25 @@
 				C61771E51ABC6BF30097991C /* WWSideslipViewController.m */,
 			);
 			path = WWSideslipViewController;
+			sourceTree = "<group>";
+		};
+		C6F29FB61AC1B16C00EEE90C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6F29FB71AC1B17800EEE90C /* AllEffectInstance.h */,
+				C6F29FB81AC1B17800EEE90C /* AllEffectInstance.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6F29FC01AC1B38600EEE90C /* Style2View */ = {
+			isa = PBXGroup;
+			children = (
+				C6F29FC11AC1B39800EEE90C /* Style2ViewController.h */,
+				C6F29FC21AC1B39800EEE90C /* Style2ViewController.m */,
+				C6F29FC31AC1B39800EEE90C /* Style2ViewController.xib */,
+			);
+			path = Style2View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -596,6 +617,7 @@
 				8E6176151ABC09280091B68D /* 5.png in Resources */,
 				C61771E11ABC6ABE0097991C /* bg.png in Resources */,
 				8E6176071ABC09280091B68D /* 18.png in Resources */,
+				C6F29FC51AC1B39800EEE90C /* Style2ViewController.xib in Resources */,
 				8E61760E1ABC09280091B68D /* 24.png in Resources */,
 				8E6176051ABC09280091B68D /* 16.png in Resources */,
 				8E6176091ABC09280091B68D /* 2.png in Resources */,
@@ -685,10 +707,12 @@
 				8E75324B1ABFFA800052A28A /* Style1ViewController.m in Sources */,
 				8ED3BDD11AC152CF00634BC6 /* YouFireViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
+				C6F29FC41AC1B39800EEE90C /* Style2ViewController.m in Sources */,
 				8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */,
 				8E6175C91ABBBFAD0091B68D /* RightSideViewController.m in Sources */,
 				8E6175C61ABBBF9F0091B68D /* LeftSideViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
+				C6F29FB91AC1B17800EEE90C /* AllEffectInstance.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 				8E6175D41ABBF35C0091B68D /* ModuleListViewController.m in Sources */,

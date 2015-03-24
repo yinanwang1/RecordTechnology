@@ -60,12 +60,12 @@
                     <exclude reference="TQB-O1-7ci"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="I9H-6q-nbp"/>
+                    <exclude reference="XiD-ax-Lt6"/>
                     <exclude reference="bfs-lr-wnI"/>
                     <exclude reference="gJM-Vq-XcJ"/>
                     <exclude reference="kzF-rk-6TU"/>
                     <exclude reference="waQ-CT-NHI"/>
-                    <exclude reference="I9H-6q-nbp"/>
-                    <exclude reference="XiD-ax-Lt6"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -74,12 +74,12 @@
                     <include reference="TQB-O1-7ci"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="I9H-6q-nbp"/>
+                    <include reference="XiD-ax-Lt6"/>
                     <include reference="bfs-lr-wnI"/>
                     <include reference="gJM-Vq-XcJ"/>
                     <include reference="kzF-rk-6TU"/>
                     <include reference="waQ-CT-NHI"/>
-                    <include reference="I9H-6q-nbp"/>
-                    <include reference="XiD-ax-Lt6"/>
                 </mask>
             </variation>
         </view>
