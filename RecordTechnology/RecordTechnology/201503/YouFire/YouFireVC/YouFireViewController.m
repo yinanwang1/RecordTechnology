@@ -8,7 +8,12 @@
 
 #import "YouFireViewController.h"
 
-@interface YouFireViewController ()
+#import "YouFireTableViewCell.h"
+
+static NSString * youFireTableViewCell = @"YouFireTableViewCell";
+
+@interface YouFireViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *youFireTableView;
 
 @end
 
@@ -19,6 +24,8 @@
     // Do any additional setup after loading the view.
     
     self.title = @"你火了";
+    
+    [self.youFireTableView registerNib:[UINib nibWithNibName:youFireTableViewCell bundle:[NSBundle mainBundle]] forCellReuseIdentifier:youFireTableViewCell];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,6 +48,26 @@
 - (IBAction)createNewProduct:(id)sender {
     
     
+}
+
+#pragma mark - UITableViewDataSource, UITableViewDelegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:youFireTableViewCell];
+    
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60.0f;
 }
 
 
