@@ -278,12 +278,12 @@
 		8E6175B81ABBB9630091B68D /* YouFire */ = {
 			isa = PBXGroup;
 			children = (
-				8E7532371ABFBDCD0052A28A /* EffectGroup */,
 				8E6175CD1ABBC3B20091B68D /* InitYouFireStatus */,
 				8E6175BE1ABBBF8D0091B68D /* LeftSideVC */,
 				8E6175C11ABBBF8D0091B68D /* RightSideVC */,
 				8E6175D11ABBF3400091B68D /* ModuleListVC */,
 				8E61761A1ABC12740091B68D /* EditingVC */,
+				8E7532371ABFBDCD0052A28A /* EffectGroup */,
 				8E6175B91ABBB9EC0091B68D /* YouFire.storyboard */,
 				8E6175BB1ABBB9FD0091B68D /* YouFireViewController.h */,
 				8E6175BC1ABBB9FD0091B68D /* YouFireViewController.m */,
