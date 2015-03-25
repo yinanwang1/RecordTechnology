@@ -56,10 +56,10 @@
 - (void)initDemoStatus
 {
     // Demo:  you fire
-//    [YouFireApplication shareYouFireApplication];
+    [YouFireApplication shareYouFireApplication];
     
     // Demo: test AFNetworking
-    [AFNetworkingNewest shareAFNetworkingNewestApplication];
+//    [AFNetworkingNewest shareAFNetworkingNewestApplication];
     
     
     

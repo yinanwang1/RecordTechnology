@@ -12,6 +12,8 @@
 #import "ModuleListViewController.h"
 #import "EditingViewController.h"
 
+#import "WebService.h"
+
 static NSString * youFireTableViewCell = @"YouFireTableViewCell";
 static NSString * editingVCIdentifier = @"showEditingView";
 
@@ -31,6 +33,32 @@ static NSString * editingVCIdentifier = @"showEditingView";
     self.title = @"你火了";
     
     [self.youFireTableView registerNib:[UINib nibWithNibName:youFireTableViewCell bundle:[NSBundle mainBundle]] forCellReuseIdentifier:youFireTableViewCell];
+    
+    // Test new AFNetworking 2.0
+    [self networkWithAFNEtworking2_0];
+}
+
+- (void)networkWithAFNEtworking2_0
+{
+    // location=北京&output=json&ak=5slgyqGDENN7Sy7pw29IUvrZ
+    [WebService sharedClient:@"http://api.map.baidu.com/telematics/v3"];
+    
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:
+                         @"北京", @"location",
+                         @"json", @"output",
+                         @"5slgyqGDENN7Sy7pw29IUvrZ", @"ak", nil];
+    
+    [WebService getRequest:@"weather" parameters:dic
+                  encToken:nil
+                   isLogin:YES
+                   success:^(id JSON) {
+                       NSLog(@"JSON is %@.", JSON);
+                   } failure:^(NSError *error, id JSON) {
+                       NSLog(@"error is %@.", error);
+                   }];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
