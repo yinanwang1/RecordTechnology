@@ -40,7 +40,7 @@
 
 #pragma mark -- Public methods
 
-- (UIView *)createEffectVCInstanceWithName:(NSString *)nameStr
+- (UIView *)createEffectVCInstanceWithName:(NSString *)nameStr  index:(NSInteger)index
 {
     UIView *view = nil;
     

@@ -17,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="kmL-A8-o51">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="kmL-A8-o51">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="400" id="B1D-rB-1nC"/>
@@ -36,7 +36,7 @@
                         </mask>
                     </variation>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.png" translatesAutoresizingMaskIntoConstraints="NO" id="rrh-B1-Lw6">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.png" translatesAutoresizingMaskIntoConstraints="NO" id="rrh-B1-Lw6">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="400" id="VS5-al-Trt"/>
@@ -112,7 +112,9 @@
                 <constraint firstItem="kmL-A8-o51" firstAttribute="leading" secondItem="rrh-B1-Lw6" secondAttribute="leading" id="I7c-pd-Uqp"/>
                 <constraint firstAttribute="centerY" secondItem="rrh-B1-Lw6" secondAttribute="centerY" constant="-200" id="TTe-72-rfC"/>
                 <constraint firstAttribute="trailing" secondItem="n0E-fi-GD8" secondAttribute="trailing" constant="24" id="aKP-hC-heK"/>
-                <constraint firstItem="Q0L-co-cGh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="hij-s8-6fm"/>
+                <constraint firstItem="Q0L-co-cGh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="hij-s8-6fm">
+                    <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                </constraint>
                 <constraint firstAttribute="centerY" secondItem="n0E-fi-GD8" secondAttribute="centerY" constant="23" id="nTU-ud-sLK">
                     <variation key="heightClass=regular-widthClass=compact" constant="-23"/>
                 </constraint>

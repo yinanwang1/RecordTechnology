@@ -10,6 +10,6 @@
 
 @interface AllEffectInstance : NSObject
 
-- (UIView *)createEffectVCInstanceWithName:(NSString *)nameStr;
+- (UIView *)createEffectVCInstanceWithName:(NSString *)nameStr index:(NSInteger)index;
 
 @end

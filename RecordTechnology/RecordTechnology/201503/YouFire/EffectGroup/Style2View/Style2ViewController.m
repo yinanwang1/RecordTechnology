@@ -10,10 +10,10 @@
 
 @interface Style2ViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+@property (nonatomic, strong) UIImageView *selectedImageView;
+
 @property (weak, nonatomic) IBOutlet UIImageView *belowImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *aboveImageView;
-
-@property (nonatomic, strong) UIImageView *selectedImageView;
 
 
 @end

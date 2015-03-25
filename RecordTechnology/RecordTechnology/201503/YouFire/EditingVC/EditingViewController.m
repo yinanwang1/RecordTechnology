@@ -108,23 +108,24 @@
 
 - (UIView *)carousel:(__unused iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
-    UIView *effectView = [self.allEffectInstance createEffectVCInstanceWithName:[self.items objectAtIndex:index]];
+    UIView *effectView = [self.allEffectInstance createEffectVCInstanceWithName:[self.items objectAtIndex:index] index:index];
     
-    if ( nil == view )
-    {
-        CGFloat width = carousel.frame.size.width * 0.8;
-        CGFloat height = carousel.frame.size.height * 0.8;
-        view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
-        view.contentMode = UIViewContentModeCenter;
-    }
+    CGFloat width = carousel.frame.size.width * 0.8;
+    CGFloat height = carousel.frame.size.height * 0.8;
+    view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+    view.contentMode = UIViewContentModeCenter;
     
     [effectView setFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)];
     
-    for (UIView *subview in view.subviews) {
-        [subview removeFromSuperview];
-    }
-    
     [view addSubview:effectView];
+    
+    // index of view
+    UILabel *indexLabel = [[UILabel alloc] initWithFrame:CGRectMake(width - 20, height - 20, 20, 20)];
+    [indexLabel setBackgroundColor:[UIColor redColor]];
+    indexLabel.text = [NSString stringWithFormat:@"%lu", (long)index+1];
+    [indexLabel setTextAlignment:NSTextAlignmentCenter];
+    
+    [view addSubview:indexLabel];
     
     return view;
 }
