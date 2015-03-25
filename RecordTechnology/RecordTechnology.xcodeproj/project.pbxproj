@@ -56,6 +56,9 @@
 		8E6B7ACC1AC25AB4003056A9 /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B7AC81AC25AB4003056A9 /* WebService.m */; };
 		8E6B7AD21AC2624D003056A9 /* HMACStringGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B7ACF1AC2624D003056A9 /* HMACStringGenerator.m */; };
 		8E6B7AD31AC2624D003056A9 /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B7AD11AC2624D003056A9 /* NSDictionary+Utils.m */; };
+		8E6B7AD61AC288F3003056A9 /* AFNetworkingNewest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6B7AD51AC288F3003056A9 /* AFNetworkingNewest.storyboard */; };
+		8E6B7AD91AC28911003056A9 /* AFNetworkingNewest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B7AD81AC28911003056A9 /* AFNetworkingNewest.m */; };
+		8E6B7ADC1AC289B5003056A9 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B7ADB1AC289B5003056A9 /* AFNetworkingViewController.m */; };
 		8E75324B1ABFFA800052A28A /* Style1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7532491ABFFA800052A28A /* Style1ViewController.m */; };
 		8E75324C1ABFFA800052A28A /* Style1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E75324A1ABFFA800052A28A /* Style1ViewController.xib */; };
 		8ED3BDD11AC152CF00634BC6 /* YouFireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD01AC152CF00634BC6 /* YouFireViewController.m */; };
@@ -150,6 +153,11 @@
 		8E6B7ACF1AC2624D003056A9 /* HMACStringGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMACStringGenerator.m; sourceTree = "<group>"; };
 		8E6B7AD01AC2624D003056A9 /* NSDictionary+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utils.h"; sourceTree = "<group>"; };
 		8E6B7AD11AC2624D003056A9 /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
+		8E6B7AD51AC288F3003056A9 /* AFNetworkingNewest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AFNetworkingNewest.storyboard; sourceTree = "<group>"; };
+		8E6B7AD71AC28911003056A9 /* AFNetworkingNewest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingNewest.h; sourceTree = "<group>"; };
+		8E6B7AD81AC28911003056A9 /* AFNetworkingNewest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingNewest.m; sourceTree = "<group>"; };
+		8E6B7ADA1AC289B5003056A9 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
+		8E6B7ADB1AC289B5003056A9 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
 		8E7532481ABFFA800052A28A /* Style1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Style1ViewController.h; sourceTree = "<group>"; };
 		8E7532491ABFFA800052A28A /* Style1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Style1ViewController.m; sourceTree = "<group>"; };
 		8E75324A1ABFFA800052A28A /* Style1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Style1ViewController.xib; sourceTree = "<group>"; };
@@ -293,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				8E6175B81ABBB9630091B68D /* YouFire */,
+				8E6B7AD41AC28897003056A9 /* AFNetworkingNewest */,
 			);
 			path = 201503;
 			sourceTree = "<group>";
@@ -477,6 +486,18 @@
 				8E6B7AD11AC2624D003056A9 /* NSDictionary+Utils.m */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8E6B7AD41AC28897003056A9 /* AFNetworkingNewest */ = {
+			isa = PBXGroup;
+			children = (
+				8E6B7AD51AC288F3003056A9 /* AFNetworkingNewest.storyboard */,
+				8E6B7AD71AC28911003056A9 /* AFNetworkingNewest.h */,
+				8E6B7AD81AC28911003056A9 /* AFNetworkingNewest.m */,
+				8E6B7ADA1AC289B5003056A9 /* AFNetworkingViewController.h */,
+				8E6B7ADB1AC289B5003056A9 /* AFNetworkingViewController.m */,
+			);
+			path = AFNetworkingNewest;
 			sourceTree = "<group>";
 		};
 		8E7532371ABFBDCD0052A28A /* EffectGroup */ = {
@@ -669,6 +690,7 @@
 				8E6176121ABC09280091B68D /* 28.png in Resources */,
 				8EDF0A491ABC1EFA004D736C /* background.png in Resources */,
 				8E6176041ABC09280091B68D /* 15.png in Resources */,
+				8E6B7AD61AC288F3003056A9 /* AFNetworkingNewest.storyboard in Resources */,
 				8E61760A1ABC09280091B68D /* 20.png in Resources */,
 				8E6175E01ABC070A0091B68D /* FunctionCollectionViewCell.xib in Resources */,
 				8E61760D1ABC09280091B68D /* 23.png in Resources */,
@@ -734,6 +756,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ED3BDD51AC152ED00634BC6 /* YouFireTableViewCell.m in Sources */,
+				8E6B7ADC1AC289B5003056A9 /* AFNetworkingViewController.m in Sources */,
 				8E6175DB1ABC02270091B68D /* ModuleListModel.m in Sources */,
 				8E75324B1ABFFA800052A28A /* Style1ViewController.m in Sources */,
 				8E6B7AD21AC2624D003056A9 /* HMACStringGenerator.m in Sources */,
@@ -744,6 +767,7 @@
 				8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */,
 				8E6175C91ABBBFAD0091B68D /* RightSideViewController.m in Sources */,
 				8E6175C61ABBBF9F0091B68D /* LeftSideViewController.m in Sources */,
+				8E6B7AD91AC28911003056A9 /* AFNetworkingNewest.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6F29FB91AC1B17800EEE90C /* AllEffectInstance.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,

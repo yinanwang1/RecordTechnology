@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "YouFireApplication.h"
+#import "AFNetworkingNewest.h"
 
 @interface AppDelegate ()
 
@@ -55,7 +56,10 @@
 - (void)initDemoStatus
 {
     // Demo:  you fire
-    [YouFireApplication shareYouFireApplication];
+//    [YouFireApplication shareYouFireApplication];
+    
+    // Demo: test AFNetworking
+    [AFNetworkingNewest shareAFNetworkingNewestApplication];
     
     
     
