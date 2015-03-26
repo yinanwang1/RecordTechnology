@@ -68,6 +68,9 @@
 		8EA956231AC3DEFE002B32DB /* DynamicAnimatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA956221AC3DEFE002B32DB /* DynamicAnimatorViewController.m */; };
 		8EA956251AC3DF09002B32DB /* DynamicAnimator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA956241AC3DF09002B32DB /* DynamicAnimator.storyboard */; };
 		8EA956281AC3DFF5002B32DB /* DynamicAnimatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA956271AC3DFF5002B32DB /* DynamicAnimatorView.m */; };
+		8EA9562C1AC3F906002B32DB /* UIPageViewControllerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9562B1AC3F906002B32DB /* UIPageViewControllerTestViewController.m */; };
+		8EA9562E1AC3F912002B32DB /* UIPageViewControllerTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9562D1AC3F912002B32DB /* UIPageViewControllerTest.storyboard */; };
+		8EA956311AC3FAB8002B32DB /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA956301AC3FAB8002B32DB /* MoreViewController.m */; };
 		8ED3BDD11AC152CF00634BC6 /* YouFireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD01AC152CF00634BC6 /* YouFireViewController.m */; };
 		8ED3BDD51AC152ED00634BC6 /* YouFireTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD31AC152ED00634BC6 /* YouFireTableViewCell.m */; };
 		8ED3BDD61AC152ED00634BC6 /* YouFireTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD41AC152ED00634BC6 /* YouFireTableViewCell.xib */; };
@@ -179,6 +182,11 @@
 		8EA956241AC3DF09002B32DB /* DynamicAnimator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicAnimator.storyboard; sourceTree = "<group>"; };
 		8EA956261AC3DFF5002B32DB /* DynamicAnimatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicAnimatorView.h; sourceTree = "<group>"; };
 		8EA956271AC3DFF5002B32DB /* DynamicAnimatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicAnimatorView.m; sourceTree = "<group>"; };
+		8EA9562A1AC3F906002B32DB /* UIPageViewControllerTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPageViewControllerTestViewController.h; sourceTree = "<group>"; };
+		8EA9562B1AC3F906002B32DB /* UIPageViewControllerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPageViewControllerTestViewController.m; sourceTree = "<group>"; };
+		8EA9562D1AC3F912002B32DB /* UIPageViewControllerTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIPageViewControllerTest.storyboard; sourceTree = "<group>"; };
+		8EA9562F1AC3FAB8002B32DB /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		8EA956301AC3FAB8002B32DB /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		8ED3BDCF1AC152CF00634BC6 /* YouFireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouFireViewController.h; sourceTree = "<group>"; };
 		8ED3BDD01AC152CF00634BC6 /* YouFireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouFireViewController.m; sourceTree = "<group>"; };
 		8ED3BDD21AC152ED00634BC6 /* YouFireTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouFireTableViewCell.h; sourceTree = "<group>"; };
@@ -318,6 +326,7 @@
 		8E6175B71ABBB9630091B68D /* 201503 */ = {
 			isa = PBXGroup;
 			children = (
+				8EA956291AC3F8DB002B32DB /* UIPageViewControllerTest */,
 				8EA956201AC3DEE5002B32DB /* DynamicAnimator */,
 				8EA9561A1AC3B2CA002B32DB /* UIDynamicTest */,
 				8EA956141AC39EA7002B32DB /* SystemInfo */,
@@ -572,6 +581,18 @@
 			path = DynamicAnimator;
 			sourceTree = "<group>";
 		};
+		8EA956291AC3F8DB002B32DB /* UIPageViewControllerTest */ = {
+			isa = PBXGroup;
+			children = (
+				8EA9562A1AC3F906002B32DB /* UIPageViewControllerTestViewController.h */,
+				8EA9562B1AC3F906002B32DB /* UIPageViewControllerTestViewController.m */,
+				8EA9562D1AC3F912002B32DB /* UIPageViewControllerTest.storyboard */,
+				8EA9562F1AC3FAB8002B32DB /* MoreViewController.h */,
+				8EA956301AC3FAB8002B32DB /* MoreViewController.m */,
+			);
+			path = UIPageViewControllerTest;
+			sourceTree = "<group>";
+		};
 		8ED3BDCC1AC152CF00634BC6 /* YouFireVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -718,6 +739,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA9562E1AC3F912002B32DB /* UIPageViewControllerTest.storyboard in Resources */,
 				8E6176191ABC09280091B68D /* 9.png in Resources */,
 				8E6176151ABC09280091B68D /* 5.png in Resources */,
 				C61771E11ABC6ABE0097991C /* bg.png in Resources */,
@@ -816,12 +838,14 @@
 				8EA9561F1AC3B2E4002B32DB /* UIDynamicTestViewController.m in Sources */,
 				8E6175DB1ABC02270091B68D /* ModuleListModel.m in Sources */,
 				8EA956231AC3DEFE002B32DB /* DynamicAnimatorViewController.m in Sources */,
+				8EA956311AC3FAB8002B32DB /* MoreViewController.m in Sources */,
 				8E75324B1ABFFA800052A28A /* Style1ViewController.m in Sources */,
 				8E6B7AD21AC2624D003056A9 /* HMACStringGenerator.m in Sources */,
 				8ED3BDD11AC152CF00634BC6 /* YouFireViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6F29FC41AC1B39800EEE90C /* Style2ViewController.m in Sources */,
 				8E6B7AD31AC2624D003056A9 /* NSDictionary+Utils.m in Sources */,
+				8EA9562C1AC3F906002B32DB /* UIPageViewControllerTestViewController.m in Sources */,
 				8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */,
 				8E6175C91ABBBFAD0091B68D /* RightSideViewController.m in Sources */,
 				8E6175C61ABBBF9F0091B68D /* LeftSideViewController.m in Sources */,
