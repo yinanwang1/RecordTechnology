@@ -1,0 +1,16 @@
+//
+//  DynamicAnimatorView.h
+//  RecordTechnology
+//
+//  Created by ArthurWang on 15/3/26.
+//  Copyright (c) 2015年 InSigma HengTian Softwar Ltd. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface DynamicAnimatorView : UIView
+
+- (void)startAnimationFrom:(CGFloat)from to:(CGFloat)to;
+- (void)completeAnimation;
+
+@end

@@ -63,6 +63,11 @@
 		8E75324C1ABFFA800052A28A /* Style1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E75324A1ABFFA800052A28A /* Style1ViewController.xib */; };
 		8EA956171AC39EBB002B32DB /* SystemInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA956161AC39EBB002B32DB /* SystemInfoViewController.m */; };
 		8EA956191AC39EC8002B32DB /* SystemInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA956181AC39EC8002B32DB /* SystemInfo.storyboard */; };
+		8EA9561C1AC3B2D7002B32DB /* UIDynamicTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9561B1AC3B2D7002B32DB /* UIDynamicTest.storyboard */; };
+		8EA9561F1AC3B2E4002B32DB /* UIDynamicTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9561E1AC3B2E4002B32DB /* UIDynamicTestViewController.m */; };
+		8EA956231AC3DEFE002B32DB /* DynamicAnimatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA956221AC3DEFE002B32DB /* DynamicAnimatorViewController.m */; };
+		8EA956251AC3DF09002B32DB /* DynamicAnimator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA956241AC3DF09002B32DB /* DynamicAnimator.storyboard */; };
+		8EA956281AC3DFF5002B32DB /* DynamicAnimatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA956271AC3DFF5002B32DB /* DynamicAnimatorView.m */; };
 		8ED3BDD11AC152CF00634BC6 /* YouFireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD01AC152CF00634BC6 /* YouFireViewController.m */; };
 		8ED3BDD51AC152ED00634BC6 /* YouFireTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD31AC152ED00634BC6 /* YouFireTableViewCell.m */; };
 		8ED3BDD61AC152ED00634BC6 /* YouFireTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD41AC152ED00634BC6 /* YouFireTableViewCell.xib */; };
@@ -166,6 +171,14 @@
 		8EA956151AC39EBB002B32DB /* SystemInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemInfoViewController.h; sourceTree = "<group>"; };
 		8EA956161AC39EBB002B32DB /* SystemInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemInfoViewController.m; sourceTree = "<group>"; };
 		8EA956181AC39EC8002B32DB /* SystemInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SystemInfo.storyboard; sourceTree = "<group>"; };
+		8EA9561B1AC3B2D7002B32DB /* UIDynamicTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIDynamicTest.storyboard; sourceTree = "<group>"; };
+		8EA9561D1AC3B2E4002B32DB /* UIDynamicTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDynamicTestViewController.h; sourceTree = "<group>"; };
+		8EA9561E1AC3B2E4002B32DB /* UIDynamicTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDynamicTestViewController.m; sourceTree = "<group>"; };
+		8EA956211AC3DEFE002B32DB /* DynamicAnimatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicAnimatorViewController.h; sourceTree = "<group>"; };
+		8EA956221AC3DEFE002B32DB /* DynamicAnimatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicAnimatorViewController.m; sourceTree = "<group>"; };
+		8EA956241AC3DF09002B32DB /* DynamicAnimator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicAnimator.storyboard; sourceTree = "<group>"; };
+		8EA956261AC3DFF5002B32DB /* DynamicAnimatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicAnimatorView.h; sourceTree = "<group>"; };
+		8EA956271AC3DFF5002B32DB /* DynamicAnimatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicAnimatorView.m; sourceTree = "<group>"; };
 		8ED3BDCF1AC152CF00634BC6 /* YouFireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouFireViewController.h; sourceTree = "<group>"; };
 		8ED3BDD01AC152CF00634BC6 /* YouFireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouFireViewController.m; sourceTree = "<group>"; };
 		8ED3BDD21AC152ED00634BC6 /* YouFireTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouFireTableViewCell.h; sourceTree = "<group>"; };
@@ -305,6 +318,8 @@
 		8E6175B71ABBB9630091B68D /* 201503 */ = {
 			isa = PBXGroup;
 			children = (
+				8EA956201AC3DEE5002B32DB /* DynamicAnimator */,
+				8EA9561A1AC3B2CA002B32DB /* UIDynamicTest */,
 				8EA956141AC39EA7002B32DB /* SystemInfo */,
 				8E6175B81ABBB9630091B68D /* YouFire */,
 				8E6B7AD41AC28897003056A9 /* AFNetworkingNewest */,
@@ -535,6 +550,28 @@
 			path = SystemInfo;
 			sourceTree = "<group>";
 		};
+		8EA9561A1AC3B2CA002B32DB /* UIDynamicTest */ = {
+			isa = PBXGroup;
+			children = (
+				8EA9561B1AC3B2D7002B32DB /* UIDynamicTest.storyboard */,
+				8EA9561D1AC3B2E4002B32DB /* UIDynamicTestViewController.h */,
+				8EA9561E1AC3B2E4002B32DB /* UIDynamicTestViewController.m */,
+			);
+			path = UIDynamicTest;
+			sourceTree = "<group>";
+		};
+		8EA956201AC3DEE5002B32DB /* DynamicAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				8EA956211AC3DEFE002B32DB /* DynamicAnimatorViewController.h */,
+				8EA956221AC3DEFE002B32DB /* DynamicAnimatorViewController.m */,
+				8EA956241AC3DF09002B32DB /* DynamicAnimator.storyboard */,
+				8EA956261AC3DFF5002B32DB /* DynamicAnimatorView.h */,
+				8EA956271AC3DFF5002B32DB /* DynamicAnimatorView.m */,
+			);
+			path = DynamicAnimator;
+			sourceTree = "<group>";
+		};
 		8ED3BDCC1AC152CF00634BC6 /* YouFireVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -689,6 +726,7 @@
 				8E61760E1ABC09280091B68D /* 24.png in Resources */,
 				8E6176051ABC09280091B68D /* 16.png in Resources */,
 				8E6176091ABC09280091B68D /* 2.png in Resources */,
+				8EA9561C1AC3B2D7002B32DB /* UIDynamicTest.storyboard in Resources */,
 				8E61760F1ABC09280091B68D /* 25.png in Resources */,
 				8E6176061ABC09280091B68D /* 17.png in Resources */,
 				8E6176081ABC09280091B68D /* 19.png in Resources */,
@@ -713,6 +751,7 @@
 				8E61760D1ABC09280091B68D /* 23.png in Resources */,
 				8E6176011ABC09280091B68D /* 12.png in Resources */,
 				8E6176171ABC09280091B68D /* 7.png in Resources */,
+				8EA956251AC3DF09002B32DB /* DynamicAnimator.storyboard in Resources */,
 				8E6176001ABC09280091B68D /* 11.png in Resources */,
 				8E61760B1ABC09280091B68D /* 21.png in Resources */,
 				8E6176161ABC09280091B68D /* 6.png in Resources */,
@@ -774,7 +813,9 @@
 			files = (
 				8ED3BDD51AC152ED00634BC6 /* YouFireTableViewCell.m in Sources */,
 				8E6B7ADC1AC289B5003056A9 /* AFNetworkingViewController.m in Sources */,
+				8EA9561F1AC3B2E4002B32DB /* UIDynamicTestViewController.m in Sources */,
 				8E6175DB1ABC02270091B68D /* ModuleListModel.m in Sources */,
+				8EA956231AC3DEFE002B32DB /* DynamicAnimatorViewController.m in Sources */,
 				8E75324B1ABFFA800052A28A /* Style1ViewController.m in Sources */,
 				8E6B7AD21AC2624D003056A9 /* HMACStringGenerator.m in Sources */,
 				8ED3BDD11AC152CF00634BC6 /* YouFireViewController.m in Sources */,
@@ -791,6 +832,7 @@
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 				8E6B7ACC1AC25AB4003056A9 /* WebService.m in Sources */,
 				8E6175D41ABBF35C0091B68D /* ModuleListViewController.m in Sources */,
+				8EA956281AC3DFF5002B32DB /* DynamicAnimatorView.m in Sources */,
 				8E1D18B61ABC1B35009ED4FB /* iCarousel.m in Sources */,
 				8EA956171AC39EBB002B32DB /* SystemInfoViewController.m in Sources */,
 				8E6175DF1ABC070A0091B68D /* FunctionCollectionViewCell.m in Sources */,

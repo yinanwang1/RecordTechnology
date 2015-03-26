@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="apz-rj-Owz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dynamic Animator View Controller-->
+        <scene sceneID="qkJ-Uq-z9X">
+            <objects>
+                <viewController id="apz-rj-Owz" customClass="DynamicAnimatorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TCk-Jf-QJa"/>
+                        <viewControllerLayoutGuide type="bottom" id="PXm-hD-rdm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gmE-b5-u0E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfJ-bR-Dmb" customClass="DynamicAnimatorView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="N6d-nU-9fs">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="101"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="50" id="VBH-4b-O2a">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="122"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="N6d-nU-9fs"/>
+                                        <exclude reference="VBH-4b-O2a"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="N6d-nU-9fs"/>
+                                        <include reference="VBH-4b-O2a"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxh-Z0-xq9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Jx-VR-aF3"/>
+                                    <constraint firstAttribute="width" constant="33" id="cZz-2F-Ovd"/>
+                                </constraints>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4Jx-VR-aF3"/>
+                                        <exclude reference="cZz-2F-Ovd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4Jx-VR-aF3"/>
+                                        <include reference="cZz-2F-Ovd"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="start:" destination="apz-rj-Owz" eventType="touchUpInside" id="Lu6-vQ-MMy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xfJ-bR-Dmb" firstAttribute="leading" secondItem="Xxh-Z0-xq9" secondAttribute="trailing" constant="97" id="ZMZ-w1-hIU"/>
+                            <constraint firstItem="PXm-hD-rdm" firstAttribute="top" secondItem="xfJ-bR-Dmb" secondAttribute="bottom" id="b16-fW-Fso"/>
+                            <constraint firstItem="Xxh-Z0-xq9" firstAttribute="leading" secondItem="gmE-b5-u0E" secondAttribute="leadingMargin" constant="40" id="icT-hW-d4e"/>
+                            <constraint firstItem="PXm-hD-rdm" firstAttribute="top" secondItem="Xxh-Z0-xq9" secondAttribute="bottom" constant="20" id="my9-n8-ooL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xfJ-bR-Dmb"/>
+                                <exclude reference="Xxh-Z0-xq9"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="icT-hW-d4e"/>
+                                <exclude reference="ZMZ-w1-hIU"/>
+                                <exclude reference="b16-fW-Fso"/>
+                                <exclude reference="my9-n8-ooL"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="xfJ-bR-Dmb"/>
+                                <include reference="Xxh-Z0-xq9"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="icT-hW-d4e"/>
+                                <include reference="ZMZ-w1-hIU"/>
+                                <include reference="b16-fW-Fso"/>
+                                <include reference="my9-n8-ooL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="blockView" destination="xfJ-bR-Dmb" id="gl4-h2-s9c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqE-H7-Ghu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453" y="645.75"/>
+        </scene>
+    </scenes>
+</document>
