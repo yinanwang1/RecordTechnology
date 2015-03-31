@@ -54,8 +54,8 @@ typedef NSString *(^BlockToSelector)(NSString *name);
 //               withObject:nil
 //               afterDelay:1.0];
     
-    
-    [self performSelector:@selector(testBlock:)
+    NSLog(@"blocktest is %@.", _blockTest);
+    [self performSelector:@selector(blockTest)
                withObject:@"hello"
                afterDelay:1];
     

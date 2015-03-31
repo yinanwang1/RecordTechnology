@@ -55,6 +55,9 @@
 		8E6176181ABC09280091B68D /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6175FC1ABC09280091B68D /* 8.png */; };
 		8E6176191ABC09280091B68D /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6175FD1ABC09280091B68D /* 9.png */; };
 		8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E61761E1ABC128B0091B68D /* EditingViewController.m */; };
+		8E68F05A1ACA8B2000202F98 /* DrawLine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E68F0591ACA8B2000202F98 /* DrawLine.storyboard */; };
+		8E68F05D1ACA8B3000202F98 /* DrawLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E68F05C1ACA8B3000202F98 /* DrawLineViewController.m */; };
+		8E68F0601ACA8B5800202F98 /* DrawLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E68F05F1ACA8B5800202F98 /* DrawLineView.m */; };
 		8E6B7ACC1AC25AB4003056A9 /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B7AC81AC25AB4003056A9 /* WebService.m */; };
 		8E6B7AD21AC2624D003056A9 /* HMACStringGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B7ACF1AC2624D003056A9 /* HMACStringGenerator.m */; };
 		8E6B7AD31AC2624D003056A9 /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B7AD11AC2624D003056A9 /* NSDictionary+Utils.m */; };
@@ -162,6 +165,11 @@
 		8E6175FD1ABC09280091B68D /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		8E61761D1ABC128B0091B68D /* EditingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditingViewController.h; sourceTree = "<group>"; };
 		8E61761E1ABC128B0091B68D /* EditingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditingViewController.m; sourceTree = "<group>"; };
+		8E68F0591ACA8B2000202F98 /* DrawLine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DrawLine.storyboard; sourceTree = "<group>"; };
+		8E68F05B1ACA8B3000202F98 /* DrawLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineViewController.h; sourceTree = "<group>"; };
+		8E68F05C1ACA8B3000202F98 /* DrawLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineViewController.m; sourceTree = "<group>"; };
+		8E68F05E1ACA8B5800202F98 /* DrawLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineView.h; sourceTree = "<group>"; };
+		8E68F05F1ACA8B5800202F98 /* DrawLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineView.m; sourceTree = "<group>"; };
 		8E6B7AC71AC25AB4003056A9 /* WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
 		8E6B7AC81AC25AB4003056A9 /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebService.m; sourceTree = "<group>"; };
 		8E6B7ACE1AC2624D003056A9 /* HMACStringGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMACStringGenerator.h; sourceTree = "<group>"; };
@@ -341,6 +349,7 @@
 		8E6175B71ABBB9630091B68D /* 201503 */ = {
 			isa = PBXGroup;
 			children = (
+				8E68F0581ACA8B1000202F98 /* DrawLine */,
 				8E4B63991AC8F537000A5710 /* BlockToSelector */,
 				8EA956291AC3F8DB002B32DB /* UIPageViewControllerTest */,
 				8EA956201AC3DEE5002B32DB /* DynamicAnimator */,
@@ -512,6 +521,18 @@
 				8E1D18B31ABC1B35009ED4FB /* iCarousel */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8E68F0581ACA8B1000202F98 /* DrawLine */ = {
+			isa = PBXGroup;
+			children = (
+				8E68F0591ACA8B2000202F98 /* DrawLine.storyboard */,
+				8E68F05B1ACA8B3000202F98 /* DrawLineViewController.h */,
+				8E68F05C1ACA8B3000202F98 /* DrawLineViewController.m */,
+				8E68F05E1ACA8B5800202F98 /* DrawLineView.h */,
+				8E68F05F1ACA8B5800202F98 /* DrawLineView.m */,
+			);
+			path = DrawLine;
 			sourceTree = "<group>";
 		};
 		8E6B7AC01AC25AB4003056A9 /* Services */ = {
@@ -755,6 +776,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E68F05A1ACA8B2000202F98 /* DrawLine.storyboard in Resources */,
 				8EA9562E1AC3F912002B32DB /* UIPageViewControllerTest.storyboard in Resources */,
 				8E6176191ABC09280091B68D /* 9.png in Resources */,
 				8E6176151ABC09280091B68D /* 5.png in Resources */,
@@ -864,6 +886,7 @@
 				8E6B7AD31AC2624D003056A9 /* NSDictionary+Utils.m in Sources */,
 				8EA9562C1AC3F906002B32DB /* UIPageViewControllerTestViewController.m in Sources */,
 				8E4B639C1AC8F541000A5710 /* BlockToSelectorViewController.m in Sources */,
+				8E68F05D1ACA8B3000202F98 /* DrawLineViewController.m in Sources */,
 				8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */,
 				8E6175C91ABBBFAD0091B68D /* RightSideViewController.m in Sources */,
 				8E6175C61ABBBF9F0091B68D /* LeftSideViewController.m in Sources */,
@@ -872,6 +895,7 @@
 				C6F29FB91AC1B17800EEE90C /* AllEffectInstance.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
+				8E68F0601ACA8B5800202F98 /* DrawLineView.m in Sources */,
 				8E6B7ACC1AC25AB4003056A9 /* WebService.m in Sources */,
 				8E6175D41ABBF35C0091B68D /* ModuleListViewController.m in Sources */,
 				8EA956281AC3DFF5002B32DB /* DynamicAnimatorView.m in Sources */,
