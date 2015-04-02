@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Guess" id="GpR-TD-TCe">
+                            <connections>
+                                <action selector="startGuess" destination="AgC-eL-Hgc" id="u5s-5a-mpN"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="bottom" text="Press Guess to play" minimumScaleFactor="0.5" id="9tG-jJ-Va9"/>
+                        <label width="115" height="29" alignment="center" verticalAlignment="center" text="Your guess is 3" id="g3z-WL-tsQ"/>
+                        <slider width="1" alignment="left" value="0.59999999999999998" steps="5" id="Vng-Xb-c5s">
+                            <connections>
+                                <action selector="updateGuess:" destination="AgC-eL-Hgc" id="9m3-wW-s8t"/>
+                            </connections>
+                        </slider>
+                    </items>
+                    <connections>
+                        <outlet property="guessLabel" destination="g3z-WL-tsQ" id="p3Y-3r-xqW"/>
+                        <outlet property="guessSlider" destination="Vng-Xb-c5s" id="TaJ-Cn-qFw"/>
+                        <outlet property="resultLabel" destination="9tG-jJ-Va9" id="sJ0-oN-Xrt"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Hello1" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,120 @@
+{
+  "points": [
+    {
+      "name": "iOS Room",
+      "beaconID": 1234,
+      "details":"Main conference room",
+      "phone":"816-517-1717",
+      "events": [
+        "9:00am - Apple Watch project status",
+        "11:45am - Lunch meeting",
+        "4:00pm - iBeacon Technology discussion"
+      ],
+      "destinations": [
+        {
+          "name": "Refrigerator",
+          "distance": 20,
+          "units": "feet",
+          "directions": [
+            "Turn right",
+            "Go 15 feet",
+            "Turn right",
+            "Go 5 feet",
+            "Turn left"
+          ]
+        },
+        {
+          "name": "Android Room",
+          "distance": 25,
+          "units": "feet",
+          "directions": [
+            "Turn left",
+            "Go 15 feet",
+            "Turn left",
+            "Go 10 feet"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Android Room",
+      "beaconID": 1235,
+      "details":"Secondary conference room",
+      "phone":"913-515-5383",
+      "events": [
+         "2:00pm - Conference Call",
+         "3:30pm - Near Field Communication meeting"
+       ],
+      "destinations": [
+        {
+          "name": "Refrigerator",
+          "distance": 45,
+          "units": "feet",
+          "directions": [
+            "Turn right at corner",
+            "Go 40 feet",
+            "Turn right",
+            "Go 5 feet",
+            "Turn left"
+          ]
+        },
+        {
+          "name": "iOS Room",
+          "distance": 25,
+          "units": "feet",
+          "directions": [
+            "Go 10 feet",
+            "Turn right",
+            "Go 15 feet",
+            "Turn right"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Refrigerator",
+      "beaconID": 1236,
+      "details":"Kitchen area",
+      "phone":"855-364-2430",
+      "events": [
+         "12:00pm - Lunch",
+         "5:00pm - Cleaning"
+       ],
+      "destinations": [
+        {
+          "name": "Android Room",
+          "distance": 45,
+          "units": "feet",
+          "directions": [
+            "Turn right",
+            "Go 5 feet",
+            "Turn left",
+            "Go 40 feet",
+            "Turn left at corner"
+          ]
+        },
+        {
+          "name": "iOS Room",
+          "distance": 20,
+          "units": "feet",
+          "directions": [
+            "Turn right",
+            "Go 5 feet",
+            "Turn left",
+            "Go 15 feet",
+            "Turn left"
+          ]
+        }
+      ]
+    }
+  ],
+  "currentBeaconID": 1234,
+  "address": "112 E. Missouri Ave.",
+  "address2": "Suite 200",
+  "city": "Kansas City",
+  "region": "Missouri",
+  "zip": "64106",
+  "description": "Welcome to Engage!",
+  "name": "Engage Mobile HQ",
+  "eventLabel": "Today's meetings"
+}

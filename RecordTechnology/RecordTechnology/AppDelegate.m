@@ -48,6 +48,17 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *))reply
+{
+    NSLog(@"userInfo is %@.", userInfo);
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"EMHQ" ofType:@"json"];
+    NSString *myJSON = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
+    NSError *error =  nil;
+    NSDictionary *replyDictionary = [NSJSONSerialization JSONObjectWithData:[myJSON dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
+    reply(replyDictionary);
+    
+}
 
 
 
