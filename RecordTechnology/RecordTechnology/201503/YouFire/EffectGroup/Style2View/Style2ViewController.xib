@@ -129,14 +129,14 @@
                     <exclude reference="n0E-fi-GD8"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="3lj-Gb-ZV0"/>
+                    <exclude reference="hij-s8-6fm"/>
+                    <exclude reference="aKP-hC-heK"/>
+                    <exclude reference="nTU-ud-sLK"/>
                     <exclude reference="I7c-pd-Uqp"/>
                     <exclude reference="t2V-eB-eIO"/>
                     <exclude reference="vf9-1d-j67"/>
-                    <exclude reference="3lj-Gb-ZV0"/>
-                    <exclude reference="hij-s8-6fm"/>
                     <exclude reference="TTe-72-rfC"/>
-                    <exclude reference="aKP-hC-heK"/>
-                    <exclude reference="nTU-ud-sLK"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -147,14 +147,14 @@
                     <include reference="n0E-fi-GD8"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="3lj-Gb-ZV0"/>
+                    <include reference="hij-s8-6fm"/>
+                    <include reference="aKP-hC-heK"/>
+                    <include reference="nTU-ud-sLK"/>
                     <include reference="I7c-pd-Uqp"/>
                     <include reference="t2V-eB-eIO"/>
                     <include reference="vf9-1d-j67"/>
-                    <include reference="3lj-Gb-ZV0"/>
-                    <include reference="hij-s8-6fm"/>
                     <include reference="TTe-72-rfC"/>
-                    <include reference="aKP-hC-heK"/>
-                    <include reference="nTU-ud-sLK"/>
                 </mask>
             </variation>
         </view>

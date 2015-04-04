@@ -93,6 +93,12 @@
 		8EDF0A4A1ABC1EFA004D736C /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF0A481ABC1EFA004D736C /* page.png */; };
 		C61771E11ABC6ABE0097991C /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C61771E01ABC6ABE0097991C /* bg.png */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
+		C6B2FC0F1AD02044007B7EF5 /* DocumentVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B2FC0E1AD02044007B7EF5 /* DocumentVideoViewController.m */; };
+		C6B2FC111AD02051007B7EF5 /* DocumentVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B2FC101AD02051007B7EF5 /* DocumentVideo.storyboard */; };
+		C6B2FC141AD021F9007B7EF5 /* DocumentVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B2FC131AD021F9007B7EF5 /* DocumentVideoModel.m */; };
+		C6B2FC161AD0227B007B7EF5 /* DocumentVideo.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6B2FC151AD0227B007B7EF5 /* DocumentVideo.plist */; };
+		C6B2FC181AD025DF007B7EF5 /* 商品房验收标准和注意事项.docx in Resources */ = {isa = PBXBuildFile; fileRef = C6B2FC171AD025DF007B7EF5 /* 商品房验收标准和注意事项.docx */; };
+		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6F29FB91AC1B17800EEE90C /* AllEffectInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F29FB81AC1B17800EEE90C /* AllEffectInstance.m */; };
 		C6F29FC41AC1B39800EEE90C /* Style2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F29FC21AC1B39800EEE90C /* Style2ViewController.m */; };
 		C6F29FC51AC1B39800EEE90C /* Style2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6F29FC31AC1B39800EEE90C /* Style2ViewController.xib */; };
@@ -268,6 +274,15 @@
 		C61771E01ABC6ABE0097991C /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
+		C6B2FC0D1AD02044007B7EF5 /* DocumentVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentVideoViewController.h; sourceTree = "<group>"; };
+		C6B2FC0E1AD02044007B7EF5 /* DocumentVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentVideoViewController.m; sourceTree = "<group>"; };
+		C6B2FC101AD02051007B7EF5 /* DocumentVideo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DocumentVideo.storyboard; sourceTree = "<group>"; };
+		C6B2FC121AD021F9007B7EF5 /* DocumentVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentVideoModel.h; sourceTree = "<group>"; };
+		C6B2FC131AD021F9007B7EF5 /* DocumentVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentVideoModel.m; sourceTree = "<group>"; };
+		C6B2FC151AD0227B007B7EF5 /* DocumentVideo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DocumentVideo.plist; sourceTree = "<group>"; };
+		C6B2FC171AD025DF007B7EF5 /* 商品房验收标准和注意事项.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "商品房验收标准和注意事项.docx"; sourceTree = "<group>"; };
+		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6F29FB71AC1B17800EEE90C /* AllEffectInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllEffectInstance.h; sourceTree = "<group>"; };
 		C6F29FB81AC1B17800EEE90C /* AllEffectInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllEffectInstance.m; sourceTree = "<group>"; };
 		C6F29FC11AC1B39800EEE90C /* Style2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Style2ViewController.h; sourceTree = "<group>"; };
@@ -288,6 +303,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */,
 				0102173E8AB99535742F11E5 /* libPods-RecordTechnology.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +321,8 @@
 		383D529F0224A99151B3C236 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */,
+				C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */,
 				8EDF0A4D1ABC22F6004D736C /* Foundation.framework */,
 				8EDF0A4B1ABC22EC004D736C /* UIKit.framework */,
 				8EDF0A441ABC1EB8004D736C /* CoreGraphics.framework */,
@@ -326,6 +344,7 @@
 		8E0E6B4B1ACB983B00759F64 /* 201504 */ = {
 			isa = PBXGroup;
 			children = (
+				C6B2FC0C1AD0202A007B7EF5 /* DocumentVideo */,
 				8E0E6B4C1ACB983B00759F64 /* AppleWatch */,
 			);
 			path = 201504;
@@ -420,7 +439,6 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
-				8E8069C61ACC13E400CBDECC /* RecordTechnology.entitlements */,
 				8E0E6B4B1ACB983B00759F64 /* 201504 */,
 				8E6175B71ABBB9630091B68D /* 201503 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
@@ -439,6 +457,7 @@
 		8E41E2351ABAB2DC0008984F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E8069C61ACC13E400CBDECC /* RecordTechnology.entitlements */,
 				8E6175CC1ABBC18E0091B68D /* RecordTechnology-Prefix.pch */,
 				8E41E2361ABAB2DC0008984F /* Info.plist */,
 				8E41E2371ABAB2DC0008984F /* main.m */,
@@ -802,6 +821,20 @@
 			path = WWSideslipViewController;
 			sourceTree = "<group>";
 		};
+		C6B2FC0C1AD0202A007B7EF5 /* DocumentVideo */ = {
+			isa = PBXGroup;
+			children = (
+				C6B2FC171AD025DF007B7EF5 /* 商品房验收标准和注意事项.docx */,
+				C6B2FC0D1AD02044007B7EF5 /* DocumentVideoViewController.h */,
+				C6B2FC0E1AD02044007B7EF5 /* DocumentVideoViewController.m */,
+				C6B2FC101AD02051007B7EF5 /* DocumentVideo.storyboard */,
+				C6B2FC121AD021F9007B7EF5 /* DocumentVideoModel.h */,
+				C6B2FC131AD021F9007B7EF5 /* DocumentVideoModel.m */,
+				C6B2FC151AD0227B007B7EF5 /* DocumentVideo.plist */,
+			);
+			path = DocumentVideo;
+			sourceTree = "<group>";
+		};
 		C6F29FB61AC1B16C00EEE90C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -985,6 +1018,7 @@
 				8EA9561C1AC3B2D7002B32DB /* UIDynamicTest.storyboard in Resources */,
 				8E61760F1ABC09280091B68D /* 25.png in Resources */,
 				8E6176061ABC09280091B68D /* 17.png in Resources */,
+				C6B2FC161AD0227B007B7EF5 /* DocumentVideo.plist in Resources */,
 				8E6176081ABC09280091B68D /* 19.png in Resources */,
 				8E61760C1ABC09280091B68D /* 22.png in Resources */,
 				8E4B639E1AC8F54A000A5710 /* BlockToSelector.storyboard in Resources */,
@@ -1006,8 +1040,10 @@
 				8E6B7AD61AC288F3003056A9 /* AFNetworkingNewest.storyboard in Resources */,
 				8E61760A1ABC09280091B68D /* 20.png in Resources */,
 				8E6175E01ABC070A0091B68D /* FunctionCollectionViewCell.xib in Resources */,
+				C6B2FC181AD025DF007B7EF5 /* 商品房验收标准和注意事项.docx in Resources */,
 				8EA956191AC39EC8002B32DB /* SystemInfo.storyboard in Resources */,
 				8E61760D1ABC09280091B68D /* 23.png in Resources */,
+				C6B2FC111AD02051007B7EF5 /* DocumentVideo.storyboard in Resources */,
 				8E6176011ABC09280091B68D /* 12.png in Resources */,
 				8E6176171ABC09280091B68D /* 7.png in Resources */,
 				8EA956251AC3DF09002B32DB /* DynamicAnimator.storyboard in Resources */,
@@ -1104,12 +1140,14 @@
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 				8E68F0601ACA8B5800202F98 /* DrawLineView.m in Sources */,
 				8E6B7ACC1AC25AB4003056A9 /* WebService.m in Sources */,
+				C6B2FC0F1AD02044007B7EF5 /* DocumentVideoViewController.m in Sources */,
 				8E6175D41ABBF35C0091B68D /* ModuleListViewController.m in Sources */,
 				8EA956281AC3DFF5002B32DB /* DynamicAnimatorView.m in Sources */,
 				8E1D18B61ABC1B35009ED4FB /* iCarousel.m in Sources */,
 				8EA956171AC39EBB002B32DB /* SystemInfoViewController.m in Sources */,
 				8E0E6B4F1ACBBD9900759F64 /* AppleWatchViewController.m in Sources */,
 				8E6175DF1ABC070A0091B68D /* FunctionCollectionViewCell.m in Sources */,
+				C6B2FC141AD021F9007B7EF5 /* DocumentVideoModel.m in Sources */,
 				8E6175D01ABBC3E10091B68D /* YouFireApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
