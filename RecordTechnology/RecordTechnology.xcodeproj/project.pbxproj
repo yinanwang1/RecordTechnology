@@ -86,6 +86,9 @@
 		8EA9562C1AC3F906002B32DB /* UIPageViewControllerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9562B1AC3F906002B32DB /* UIPageViewControllerTestViewController.m */; };
 		8EA9562E1AC3F912002B32DB /* UIPageViewControllerTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9562D1AC3F912002B32DB /* UIPageViewControllerTest.storyboard */; };
 		8EA956311AC3FAB8002B32DB /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA956301AC3FAB8002B32DB /* MoreViewController.m */; };
+		8EB109841AD3F43D00533F15 /* SearchDocumentContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB109831AD3F43D00533F15 /* SearchDocumentContent.storyboard */; };
+		8EB109871AD3F44E00533F15 /* SearchDocumentContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB109861AD3F44E00533F15 /* SearchDocumentContentViewController.m */; };
+		8EB109891AD3F52E00533F15 /* UIView.docx in Resources */ = {isa = PBXBuildFile; fileRef = 8EB109881AD3F52E00533F15 /* UIView.docx */; };
 		8ED3BDD11AC152CF00634BC6 /* YouFireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD01AC152CF00634BC6 /* YouFireViewController.m */; };
 		8ED3BDD51AC152ED00634BC6 /* YouFireTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD31AC152ED00634BC6 /* YouFireTableViewCell.m */; };
 		8ED3BDD61AC152ED00634BC6 /* YouFireTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD41AC152ED00634BC6 /* YouFireTableViewCell.xib */; };
@@ -261,6 +264,10 @@
 		8EA9562D1AC3F912002B32DB /* UIPageViewControllerTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIPageViewControllerTest.storyboard; sourceTree = "<group>"; };
 		8EA9562F1AC3FAB8002B32DB /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
 		8EA956301AC3FAB8002B32DB /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		8EB109831AD3F43D00533F15 /* SearchDocumentContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchDocumentContent.storyboard; sourceTree = "<group>"; };
+		8EB109851AD3F44E00533F15 /* SearchDocumentContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDocumentContentViewController.h; sourceTree = "<group>"; };
+		8EB109861AD3F44E00533F15 /* SearchDocumentContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDocumentContentViewController.m; sourceTree = "<group>"; };
+		8EB109881AD3F52E00533F15 /* UIView.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = UIView.docx; sourceTree = "<group>"; };
 		8ED3BDCF1AC152CF00634BC6 /* YouFireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouFireViewController.h; sourceTree = "<group>"; };
 		8ED3BDD01AC152CF00634BC6 /* YouFireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouFireViewController.m; sourceTree = "<group>"; };
 		8ED3BDD21AC152ED00634BC6 /* YouFireTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouFireTableViewCell.h; sourceTree = "<group>"; };
@@ -345,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				C6B2FC0C1AD0202A007B7EF5 /* DocumentVideo */,
+				8EB109821AD3F43300533F15 /* SearchDocumentContent */,
 				8E0E6B4C1ACB983B00759F64 /* AppleWatch */,
 			);
 			path = 201504;
@@ -776,6 +784,17 @@
 			path = UIPageViewControllerTest;
 			sourceTree = "<group>";
 		};
+		8EB109821AD3F43300533F15 /* SearchDocumentContent */ = {
+			isa = PBXGroup;
+			children = (
+				8EB109881AD3F52E00533F15 /* UIView.docx */,
+				8EB109831AD3F43D00533F15 /* SearchDocumentContent.storyboard */,
+				8EB109851AD3F44E00533F15 /* SearchDocumentContentViewController.h */,
+				8EB109861AD3F44E00533F15 /* SearchDocumentContentViewController.m */,
+			);
+			path = SearchDocumentContent;
+			sourceTree = "<group>";
+		};
 		8ED3BDCC1AC152CF00634BC6 /* YouFireVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1015,6 +1034,7 @@
 				8E61760E1ABC09280091B68D /* 24.png in Resources */,
 				8E6176051ABC09280091B68D /* 16.png in Resources */,
 				8E6176091ABC09280091B68D /* 2.png in Resources */,
+				8EB109841AD3F43D00533F15 /* SearchDocumentContent.storyboard in Resources */,
 				8EA9561C1AC3B2D7002B32DB /* UIDynamicTest.storyboard in Resources */,
 				8E61760F1ABC09280091B68D /* 25.png in Resources */,
 				8E6176061ABC09280091B68D /* 17.png in Resources */,
@@ -1023,6 +1043,7 @@
 				8E61760C1ABC09280091B68D /* 22.png in Resources */,
 				8E4B639E1AC8F54A000A5710 /* BlockToSelector.storyboard in Resources */,
 				8E6176141ABC09280091B68D /* 4.png in Resources */,
+				8EB109891AD3F52E00533F15 /* UIView.docx in Resources */,
 				8EDF0A4A1ABC1EFA004D736C /* page.png in Resources */,
 				8E6175BA1ABBB9EC0091B68D /* YouFire.storyboard in Resources */,
 				8E6176101ABC09280091B68D /* 26.png in Resources */,
@@ -1141,6 +1162,7 @@
 				8E68F0601ACA8B5800202F98 /* DrawLineView.m in Sources */,
 				8E6B7ACC1AC25AB4003056A9 /* WebService.m in Sources */,
 				C6B2FC0F1AD02044007B7EF5 /* DocumentVideoViewController.m in Sources */,
+				8EB109871AD3F44E00533F15 /* SearchDocumentContentViewController.m in Sources */,
 				8E6175D41ABBF35C0091B68D /* ModuleListViewController.m in Sources */,
 				8EA956281AC3DFF5002B32DB /* DynamicAnimatorView.m in Sources */,
 				8E1D18B61ABC1B35009ED4FB /* iCarousel.m in Sources */,
