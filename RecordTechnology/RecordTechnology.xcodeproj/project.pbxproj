@@ -18,6 +18,8 @@
 		8E0E6B701ACBBDDD00759F64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6B6F1ACBBDDD00759F64 /* Images.xcassets */; };
 		8E0E6B731ACBBDDD00759F64 /* RecordTechnology WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8E0E6B561ACBBDDD00759F64 /* RecordTechnology WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8E1D18B61ABC1B35009ED4FB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D18B51ABC1B35009ED4FB /* iCarousel.m */; };
+		8E1E28091ADE104300949F4C /* CopyTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1E28081ADE104300949F4C /* CopyTest.storyboard */; };
+		8E1E280C1ADE105100949F4C /* CopyTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E280B1ADE105100949F4C /* CopyTestViewController.m */; };
 		8E41E2381ABAB2DC0008984F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2371ABAB2DC0008984F /* main.m */; };
 		8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E23A1ABAB2DC0008984F /* AppDelegate.m */; };
 		8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E23D1ABAB2DC0008984F /* ViewController.m */; };
@@ -168,6 +170,9 @@
 		8E1D18B41ABC1B35009ED4FB /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		8E1D18B51ABC1B35009ED4FB /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8E1E28081ADE104300949F4C /* CopyTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CopyTest.storyboard; sourceTree = "<group>"; };
+		8E1E280A1ADE105100949F4C /* CopyTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyTestViewController.h; sourceTree = "<group>"; };
+		8E1E280B1ADE105100949F4C /* CopyTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyTestViewController.m; sourceTree = "<group>"; };
 		8E41E2321ABAB2DC0008984F /* RecordTechnology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordTechnology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E41E2361ABAB2DC0008984F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E41E2371ABAB2DC0008984F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -356,6 +361,7 @@
 		8E0E6B4B1ACB983B00759F64 /* 201504 */ = {
 			isa = PBXGroup;
 			children = (
+				8E1E28071ADE103900949F4C /* CopyTest */,
 				8EF2389B1AD7DB5C0026DE0A /* ActivityViewController */,
 				C6B2FC0C1AD0202A007B7EF5 /* DocumentVideo */,
 				8EB109821AD3F43300533F15 /* SearchDocumentContent */,
@@ -424,6 +430,16 @@
 				8E1D18B51ABC1B35009ED4FB /* iCarousel.m */,
 			);
 			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		8E1E28071ADE103900949F4C /* CopyTest */ = {
+			isa = PBXGroup;
+			children = (
+				8E1E28081ADE104300949F4C /* CopyTest.storyboard */,
+				8E1E280A1ADE105100949F4C /* CopyTestViewController.h */,
+				8E1E280B1ADE105100949F4C /* CopyTestViewController.m */,
+			);
+			path = CopyTest;
 			sourceTree = "<group>";
 		};
 		8E41E2291ABAB2DC0008984F = {
@@ -1087,6 +1103,7 @@
 				8EA956251AC3DF09002B32DB /* DynamicAnimator.storyboard in Resources */,
 				8E6176001ABC09280091B68D /* 11.png in Resources */,
 				8E61760B1ABC09280091B68D /* 21.png in Resources */,
+				8E1E28091ADE104300949F4C /* CopyTest.storyboard in Resources */,
 				8E6176161ABC09280091B68D /* 6.png in Resources */,
 				8E6176021ABC09280091B68D /* 13.png in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
@@ -1169,6 +1186,7 @@
 				8EA9562C1AC3F906002B32DB /* UIPageViewControllerTestViewController.m in Sources */,
 				8E4B639C1AC8F541000A5710 /* BlockToSelectorViewController.m in Sources */,
 				8E68F05D1ACA8B3000202F98 /* DrawLineViewController.m in Sources */,
+				8E1E280C1ADE105100949F4C /* CopyTestViewController.m in Sources */,
 				8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */,
 				8E6175C91ABBBFAD0091B68D /* RightSideViewController.m in Sources */,
 				8E6175C61ABBBF9F0091B68D /* LeftSideViewController.m in Sources */,
