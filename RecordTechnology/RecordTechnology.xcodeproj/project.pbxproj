@@ -78,6 +78,9 @@
 		8E75324B1ABFFA800052A28A /* Style1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7532491ABFFA800052A28A /* Style1ViewController.m */; };
 		8E75324C1ABFFA800052A28A /* Style1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E75324A1ABFFA800052A28A /* Style1ViewController.xib */; };
 		8E8069C51ACC040B00CBDECC /* EMHQ.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E8069C41ACC040B00CBDECC /* EMHQ.json */; };
+		8E9F77F01AE8CD0E003F4F41 /* NewFontDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F77EF1AE8CD0E003F4F41 /* NewFontDisplayViewController.m */; };
+		8E9F77F21AE8CD28003F4F41 /* NewFontDisplay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F77F11AE8CD28003F4F41 /* NewFontDisplay.storyboard */; };
+		8E9F77F41AE8D73A003F4F41 /* GothamSSm-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F77F31AE8D73A003F4F41 /* GothamSSm-Black.ttf */; };
 		8EA956171AC39EBB002B32DB /* SystemInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA956161AC39EBB002B32DB /* SystemInfoViewController.m */; };
 		8EA956191AC39EC8002B32DB /* SystemInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA956181AC39EC8002B32DB /* SystemInfo.storyboard */; };
 		8EA9561C1AC3B2D7002B32DB /* UIDynamicTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9561B1AC3B2D7002B32DB /* UIDynamicTest.storyboard */; };
@@ -91,6 +94,13 @@
 		8EB109841AD3F43D00533F15 /* SearchDocumentContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB109831AD3F43D00533F15 /* SearchDocumentContent.storyboard */; };
 		8EB109871AD3F44E00533F15 /* SearchDocumentContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB109861AD3F44E00533F15 /* SearchDocumentContentViewController.m */; };
 		8EB109891AD3F52E00533F15 /* UIView.docx in Resources */ = {isa = PBXBuildFile; fileRef = 8EB109881AD3F52E00533F15 /* UIView.docx */; };
+		8EB387CD1AE6221900F5E03F /* PrintPercentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387CC1AE6221900F5E03F /* PrintPercentViewController.m */; };
+		8EB387CF1AE6222300F5E03F /* PrintPercent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB387CE1AE6222300F5E03F /* PrintPercent.storyboard */; };
+		8EB387D21AE6269600F5E03F /* SDWebImageDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB387D11AE6269600F5E03F /* SDWebImageDemo.storyboard */; };
+		8EB387D51AE626A000F5E03F /* SDWebImageDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387D41AE626A000F5E03F /* SDWebImageDemoViewController.m */; };
+		8ECE8C2E1AE787D6009AE13A /* OjectPropertyDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE8C2D1AE787D6009AE13A /* OjectPropertyDemoViewController.m */; };
+		8ECE8C301AE787DF009AE13A /* OjectPropertyDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECE8C2F1AE787DF009AE13A /* OjectPropertyDemo.storyboard */; };
+		8ECE8C331AE7889B009AE13A /* OjectPropertyModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE8C321AE7889B009AE13A /* OjectPropertyModule.m */; };
 		8ED3BDD11AC152CF00634BC6 /* YouFireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD01AC152CF00634BC6 /* YouFireViewController.m */; };
 		8ED3BDD51AC152ED00634BC6 /* YouFireTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD31AC152ED00634BC6 /* YouFireTableViewCell.m */; };
 		8ED3BDD61AC152ED00634BC6 /* YouFireTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED3BDD41AC152ED00634BC6 /* YouFireTableViewCell.xib */; };
@@ -255,6 +265,10 @@
 		8E75324A1ABFFA800052A28A /* Style1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Style1ViewController.xib; sourceTree = "<group>"; };
 		8E8069C41ACC040B00CBDECC /* EMHQ.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EMHQ.json; sourceTree = "<group>"; };
 		8E8069C61ACC13E400CBDECC /* RecordTechnology.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RecordTechnology.entitlements; sourceTree = "<group>"; };
+		8E9F77EE1AE8CD0E003F4F41 /* NewFontDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFontDisplayViewController.h; sourceTree = "<group>"; };
+		8E9F77EF1AE8CD0E003F4F41 /* NewFontDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFontDisplayViewController.m; sourceTree = "<group>"; };
+		8E9F77F11AE8CD28003F4F41 /* NewFontDisplay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewFontDisplay.storyboard; sourceTree = "<group>"; };
+		8E9F77F31AE8D73A003F4F41 /* GothamSSm-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamSSm-Black.ttf"; sourceTree = "<group>"; };
 		8EA956151AC39EBB002B32DB /* SystemInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemInfoViewController.h; sourceTree = "<group>"; };
 		8EA956161AC39EBB002B32DB /* SystemInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemInfoViewController.m; sourceTree = "<group>"; };
 		8EA956181AC39EC8002B32DB /* SystemInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SystemInfo.storyboard; sourceTree = "<group>"; };
@@ -275,6 +289,17 @@
 		8EB109851AD3F44E00533F15 /* SearchDocumentContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDocumentContentViewController.h; sourceTree = "<group>"; };
 		8EB109861AD3F44E00533F15 /* SearchDocumentContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDocumentContentViewController.m; sourceTree = "<group>"; };
 		8EB109881AD3F52E00533F15 /* UIView.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = UIView.docx; sourceTree = "<group>"; };
+		8EB387CB1AE6221900F5E03F /* PrintPercentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintPercentViewController.h; sourceTree = "<group>"; };
+		8EB387CC1AE6221900F5E03F /* PrintPercentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintPercentViewController.m; sourceTree = "<group>"; };
+		8EB387CE1AE6222300F5E03F /* PrintPercent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PrintPercent.storyboard; sourceTree = "<group>"; };
+		8EB387D11AE6269600F5E03F /* SDWebImageDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SDWebImageDemo.storyboard; sourceTree = "<group>"; };
+		8EB387D31AE626A000F5E03F /* SDWebImageDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDemoViewController.h; sourceTree = "<group>"; };
+		8EB387D41AE626A000F5E03F /* SDWebImageDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDemoViewController.m; sourceTree = "<group>"; };
+		8ECE8C2C1AE787D6009AE13A /* OjectPropertyDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OjectPropertyDemoViewController.h; sourceTree = "<group>"; };
+		8ECE8C2D1AE787D6009AE13A /* OjectPropertyDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OjectPropertyDemoViewController.m; sourceTree = "<group>"; };
+		8ECE8C2F1AE787DF009AE13A /* OjectPropertyDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OjectPropertyDemo.storyboard; sourceTree = "<group>"; };
+		8ECE8C311AE7889B009AE13A /* OjectPropertyModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OjectPropertyModule.h; sourceTree = "<group>"; };
+		8ECE8C321AE7889B009AE13A /* OjectPropertyModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OjectPropertyModule.m; sourceTree = "<group>"; };
 		8ED3BDCF1AC152CF00634BC6 /* YouFireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouFireViewController.h; sourceTree = "<group>"; };
 		8ED3BDD01AC152CF00634BC6 /* YouFireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouFireViewController.m; sourceTree = "<group>"; };
 		8ED3BDD21AC152ED00634BC6 /* YouFireTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouFireTableViewCell.h; sourceTree = "<group>"; };
@@ -361,6 +386,10 @@
 		8E0E6B4B1ACB983B00759F64 /* 201504 */ = {
 			isa = PBXGroup;
 			children = (
+				8E9F77ED1AE8CCFB003F4F41 /* NewFontDisplay */,
+				8ECE8C2B1AE787CB009AE13A /* OjectPropertyDemo */,
+				8EB387D01AE6268900F5E03F /* SDWebImageDemo */,
+				8EB387CA1AE621FC00F5E03F /* PrintPercent */,
 				8E1E28071ADE103900949F4C /* CopyTest */,
 				8EF2389B1AD7DB5C0026DE0A /* ActivityViewController */,
 				C6B2FC0C1AD0202A007B7EF5 /* DocumentVideo */,
@@ -762,6 +791,17 @@
 			path = Style1View;
 			sourceTree = "<group>";
 		};
+		8E9F77ED1AE8CCFB003F4F41 /* NewFontDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				8E9F77F31AE8D73A003F4F41 /* GothamSSm-Black.ttf */,
+				8E9F77EE1AE8CD0E003F4F41 /* NewFontDisplayViewController.h */,
+				8E9F77EF1AE8CD0E003F4F41 /* NewFontDisplayViewController.m */,
+				8E9F77F11AE8CD28003F4F41 /* NewFontDisplay.storyboard */,
+			);
+			path = NewFontDisplay;
+			sourceTree = "<group>";
+		};
 		8EA956141AC39EA7002B32DB /* SystemInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -815,6 +855,38 @@
 				8EB109861AD3F44E00533F15 /* SearchDocumentContentViewController.m */,
 			);
 			path = SearchDocumentContent;
+			sourceTree = "<group>";
+		};
+		8EB387CA1AE621FC00F5E03F /* PrintPercent */ = {
+			isa = PBXGroup;
+			children = (
+				8EB387CB1AE6221900F5E03F /* PrintPercentViewController.h */,
+				8EB387CC1AE6221900F5E03F /* PrintPercentViewController.m */,
+				8EB387CE1AE6222300F5E03F /* PrintPercent.storyboard */,
+			);
+			path = PrintPercent;
+			sourceTree = "<group>";
+		};
+		8EB387D01AE6268900F5E03F /* SDWebImageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8EB387D11AE6269600F5E03F /* SDWebImageDemo.storyboard */,
+				8EB387D31AE626A000F5E03F /* SDWebImageDemoViewController.h */,
+				8EB387D41AE626A000F5E03F /* SDWebImageDemoViewController.m */,
+			);
+			path = SDWebImageDemo;
+			sourceTree = "<group>";
+		};
+		8ECE8C2B1AE787CB009AE13A /* OjectPropertyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE8C2C1AE787D6009AE13A /* OjectPropertyDemoViewController.h */,
+				8ECE8C2D1AE787D6009AE13A /* OjectPropertyDemoViewController.m */,
+				8ECE8C2F1AE787DF009AE13A /* OjectPropertyDemo.storyboard */,
+				8ECE8C311AE7889B009AE13A /* OjectPropertyModule.h */,
+				8ECE8C321AE7889B009AE13A /* OjectPropertyModule.m */,
+			);
+			path = OjectPropertyDemo;
 			sourceTree = "<group>";
 		};
 		8ED3BDCC1AC152CF00634BC6 /* YouFireVC */ = {
@@ -1064,6 +1136,7 @@
 				8E6176071ABC09280091B68D /* 18.png in Resources */,
 				C6F29FC51AC1B39800EEE90C /* Style2ViewController.xib in Resources */,
 				8E61760E1ABC09280091B68D /* 24.png in Resources */,
+				8E9F77F21AE8CD28003F4F41 /* NewFontDisplay.storyboard in Resources */,
 				8E6176051ABC09280091B68D /* 16.png in Resources */,
 				8E6176091ABC09280091B68D /* 2.png in Resources */,
 				8EB109841AD3F43D00533F15 /* SearchDocumentContent.storyboard in Resources */,
@@ -1084,6 +1157,8 @@
 				8E6176131ABC09280091B68D /* 3.png in Resources */,
 				8E6176031ABC09280091B68D /* 14.png in Resources */,
 				8E6176181ABC09280091B68D /* 8.png in Resources */,
+				8EB387CF1AE6222300F5E03F /* PrintPercent.storyboard in Resources */,
+				8EB387D21AE6269600F5E03F /* SDWebImageDemo.storyboard in Resources */,
 				8E0E6B511ACBBDAA00759F64 /* AppleWatch.storyboard in Resources */,
 				8E75324C1ABFFA800052A28A /* Style1ViewController.xib in Resources */,
 				8E6176121ABC09280091B68D /* 28.png in Resources */,
@@ -1093,6 +1168,7 @@
 				8E6B7AD61AC288F3003056A9 /* AFNetworkingNewest.storyboard in Resources */,
 				8E61760A1ABC09280091B68D /* 20.png in Resources */,
 				8E6175E01ABC070A0091B68D /* FunctionCollectionViewCell.xib in Resources */,
+				8E9F77F41AE8D73A003F4F41 /* GothamSSm-Black.ttf in Resources */,
 				C6B2FC181AD025DF007B7EF5 /* 商品房验收标准和注意事项.docx in Resources */,
 				8EA956191AC39EC8002B32DB /* SystemInfo.storyboard in Resources */,
 				8E61760D1ABC09280091B68D /* 23.png in Resources */,
@@ -1102,6 +1178,7 @@
 				8E6176171ABC09280091B68D /* 7.png in Resources */,
 				8EA956251AC3DF09002B32DB /* DynamicAnimator.storyboard in Resources */,
 				8E6176001ABC09280091B68D /* 11.png in Resources */,
+				8ECE8C301AE787DF009AE13A /* OjectPropertyDemo.storyboard in Resources */,
 				8E61760B1ABC09280091B68D /* 21.png in Resources */,
 				8E1E28091ADE104300949F4C /* CopyTest.storyboard in Resources */,
 				8E6176161ABC09280091B68D /* 6.png in Resources */,
@@ -1176,25 +1253,30 @@
 				8E6175DB1ABC02270091B68D /* ModuleListModel.m in Sources */,
 				8EA956231AC3DEFE002B32DB /* DynamicAnimatorViewController.m in Sources */,
 				8EA956311AC3FAB8002B32DB /* MoreViewController.m in Sources */,
+				8ECE8C2E1AE787D6009AE13A /* OjectPropertyDemoViewController.m in Sources */,
 				8E75324B1ABFFA800052A28A /* Style1ViewController.m in Sources */,
 				8E6B7AD21AC2624D003056A9 /* HMACStringGenerator.m in Sources */,
 				8EF2389E1AD7DB6F0026DE0A /* ActivityViewControllerViewController.m in Sources */,
 				8ED3BDD11AC152CF00634BC6 /* YouFireViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6F29FC41AC1B39800EEE90C /* Style2ViewController.m in Sources */,
+				8ECE8C331AE7889B009AE13A /* OjectPropertyModule.m in Sources */,
 				8E6B7AD31AC2624D003056A9 /* NSDictionary+Utils.m in Sources */,
 				8EA9562C1AC3F906002B32DB /* UIPageViewControllerTestViewController.m in Sources */,
 				8E4B639C1AC8F541000A5710 /* BlockToSelectorViewController.m in Sources */,
 				8E68F05D1ACA8B3000202F98 /* DrawLineViewController.m in Sources */,
+				8EB387CD1AE6221900F5E03F /* PrintPercentViewController.m in Sources */,
 				8E1E280C1ADE105100949F4C /* CopyTestViewController.m in Sources */,
 				8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */,
 				8E6175C91ABBBFAD0091B68D /* RightSideViewController.m in Sources */,
 				8E6175C61ABBBF9F0091B68D /* LeftSideViewController.m in Sources */,
 				8E6B7AD91AC28911003056A9 /* AFNetworkingNewest.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
+				8EB387D51AE626A000F5E03F /* SDWebImageDemoViewController.m in Sources */,
 				C6F29FB91AC1B17800EEE90C /* AllEffectInstance.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
+				8E9F77F01AE8CD0E003F4F41 /* NewFontDisplayViewController.m in Sources */,
 				8E68F0601ACA8B5800202F98 /* DrawLineView.m in Sources */,
 				8E6B7ACC1AC25AB4003056A9 /* WebService.m in Sources */,
 				C6B2FC0F1AD02044007B7EF5 /* DocumentVideoViewController.m in Sources */,

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="clp-zZ-UUY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Print Percent View Controller-->
+        <scene sceneID="X63-kt-l1Z">
+            <objects>
+                <viewController id="clp-zZ-UUY" customClass="PrintPercentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H6J-Gw-0h1"/>
+                        <viewControllerLayoutGuide type="bottom" id="uQZ-A6-F7v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="49s-ur-Gcs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3X-se-TjX">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="HIs-Gx-h5W"/>
+                                    <constraint firstAttribute="height" constant="300" id="v4j-jM-5oe"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HIs-Gx-h5W"/>
+                                        <exclude reference="v4j-jM-5oe"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="HIs-Gx-h5W"/>
+                                        <include reference="v4j-jM-5oe"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="s3X-se-TjX" secondAttribute="trailing" constant="-16" id="S6Y-MB-ecn"/>
+                            <constraint firstItem="uQZ-A6-F7v" firstAttribute="top" secondItem="s3X-se-TjX" secondAttribute="bottom" id="SBW-Sa-HEn"/>
+                            <constraint firstItem="s3X-se-TjX" firstAttribute="leading" secondItem="49s-ur-Gcs" secondAttribute="leadingMargin" constant="-16" id="nok-2g-NC7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="s3X-se-TjX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="S6Y-MB-ecn"/>
+                                <exclude reference="nok-2g-NC7"/>
+                                <exclude reference="SBW-Sa-HEn"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="s3X-se-TjX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="S6Y-MB-ecn"/>
+                                <include reference="nok-2g-NC7"/>
+                                <include reference="SBW-Sa-HEn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="printPercentTextView" destination="s3X-se-TjX" id="gi3-IF-mlo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jhX-gY-E3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432" y="552"/>
+        </scene>
+    </scenes>
+</document>

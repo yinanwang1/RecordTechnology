@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IVi-p3-8kl">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Web Image Demo View Controller-->
+        <scene sceneID="Ih1-aw-4n7">
+            <objects>
+                <viewController id="IVi-p3-8kl" customClass="SDWebImageDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gG1-vV-oig"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tou-BM-Wfu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M2e-vp-fZP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3nJ-Mz-5br">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="8" y="68" width="100" height="100"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kdo-ew-aRk">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="8" y="176" width="100" height="100"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dfd-br-9lE">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="8" y="289" width="100" height="100"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="21N-hm-m3L">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="131" y="68" width="100" height="100"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0hj-4R-uh1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="131" y="183" width="100" height="100"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i9m-f2-MIY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="131" y="291" width="100" height="100"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eIk-xS-det">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="261" y="68" width="100" height="100"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pj8-cZ-8Rw">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="261" y="306" width="100" height="100"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DoD-5B-g3E">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="8" y="416" width="100" height="100"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LB3-Yd-CPI">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="131" y="423" width="100" height="100"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XxW-wd-WKE">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="261" y="423" width="100" height="100"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sYg-5M-8eN">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="261" y="189" width="100" height="100"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3nJ-Mz-5br"/>
+                                <exclude reference="kdo-ew-aRk"/>
+                                <exclude reference="dfd-br-9lE"/>
+                                <exclude reference="21N-hm-m3L"/>
+                                <exclude reference="0hj-4R-uh1"/>
+                                <exclude reference="i9m-f2-MIY"/>
+                                <exclude reference="eIk-xS-det"/>
+                                <exclude reference="Pj8-cZ-8Rw"/>
+                                <exclude reference="DoD-5B-g3E"/>
+                                <exclude reference="LB3-Yd-CPI"/>
+                                <exclude reference="XxW-wd-WKE"/>
+                                <exclude reference="sYg-5M-8eN"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3nJ-Mz-5br"/>
+                                <include reference="kdo-ew-aRk"/>
+                                <include reference="dfd-br-9lE"/>
+                                <include reference="21N-hm-m3L"/>
+                                <include reference="0hj-4R-uh1"/>
+                                <include reference="i9m-f2-MIY"/>
+                                <include reference="eIk-xS-det"/>
+                                <include reference="Pj8-cZ-8Rw"/>
+                                <include reference="DoD-5B-g3E"/>
+                                <include reference="LB3-Yd-CPI"/>
+                                <include reference="XxW-wd-WKE"/>
+                                <include reference="sYg-5M-8eN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView1" destination="3nJ-Mz-5br" id="Rlz-0T-8tw"/>
+                        <outlet property="imageView10" destination="sYg-5M-8eN" id="RC4-dJ-HF4"/>
+                        <outlet property="imageView11" destination="Pj8-cZ-8Rw" id="Mp1-dd-nqs"/>
+                        <outlet property="imageView12" destination="XxW-wd-WKE" id="U4o-eB-AGG"/>
+                        <outlet property="imageView2" destination="kdo-ew-aRk" id="OZx-Os-xsz"/>
+                        <outlet property="imageView3" destination="dfd-br-9lE" id="K2k-yJ-RKb"/>
+                        <outlet property="imageView4" destination="DoD-5B-g3E" id="V9l-DN-uEV"/>
+                        <outlet property="imageView5" destination="21N-hm-m3L" id="zOH-Zs-QOg"/>
+                        <outlet property="imageView6" destination="0hj-4R-uh1" id="iOj-0x-wkT"/>
+                        <outlet property="imageView7" destination="i9m-f2-MIY" id="I3f-tr-AK9"/>
+                        <outlet property="imageView8" destination="LB3-Yd-CPI" id="MP4-9X-LBH"/>
+                        <outlet property="imageView9" destination="eIk-xS-det" id="xxh-cJ-3pA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzL-NG-86V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="481"/>
+        </scene>
+    </scenes>
+</document>

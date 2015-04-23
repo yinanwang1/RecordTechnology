@@ -10,6 +10,7 @@ pod 'OpenUDID', '~>1.0.0'
 pod 'MagicalRecord', '~> 2.2'
 pod 'Reachability', '~>3.2'
 pod 'MFSideMenu', '~> 0.5.5'
+pod 'SDWebImage', '~> 3.7.2'
 
 end
 
