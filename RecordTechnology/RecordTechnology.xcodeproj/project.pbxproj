@@ -110,6 +110,12 @@
 		8EF238A01AD7DB7A0026DE0A /* ActivityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF2389F1AD7DB7A0026DE0A /* ActivityViewController.storyboard */; };
 		C61771E11ABC6ABE0097991C /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C61771E01ABC6ABE0097991C /* bg.png */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
+		C63EC2311AE91CDA001D513C /* NavigationLikeWechatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC2301AE91CDA001D513C /* NavigationLikeWechatViewController.m */; };
+		C63EC2331AE91CE4001D513C /* NavigationLikeWechat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63EC2321AE91CE4001D513C /* NavigationLikeWechat.storyboard */; };
+		C63EC2361AE91F0C001D513C /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC2351AE91F0C001D513C /* ChatViewController.m */; };
+		C63EC2391AE921F7001D513C /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC2381AE921F7001D513C /* MainTabBarViewController.m */; };
+		C63EC23C1AE9254F001D513C /* ChatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC23B1AE9254F001D513C /* ChatDetailViewController.m */; };
+		C63EC23F1AE925F2001D513C /* MainChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC23E1AE925F2001D513C /* MainChatViewController.m */; };
 		C6B2FC0F1AD02044007B7EF5 /* DocumentVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B2FC0E1AD02044007B7EF5 /* DocumentVideoViewController.m */; };
 		C6B2FC111AD02051007B7EF5 /* DocumentVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B2FC101AD02051007B7EF5 /* DocumentVideo.storyboard */; };
 		C6B2FC141AD021F9007B7EF5 /* DocumentVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B2FC131AD021F9007B7EF5 /* DocumentVideoModel.m */; };
@@ -316,6 +322,17 @@
 		C61771E01ABC6ABE0097991C /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
+		C63EC22F1AE91CDA001D513C /* NavigationLikeWechatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationLikeWechatViewController.h; sourceTree = "<group>"; };
+		C63EC2301AE91CDA001D513C /* NavigationLikeWechatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationLikeWechatViewController.m; sourceTree = "<group>"; };
+		C63EC2321AE91CE4001D513C /* NavigationLikeWechat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NavigationLikeWechat.storyboard; sourceTree = "<group>"; };
+		C63EC2341AE91F0C001D513C /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		C63EC2351AE91F0C001D513C /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		C63EC2371AE921F7001D513C /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
+		C63EC2381AE921F7001D513C /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		C63EC23A1AE9254F001D513C /* ChatDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatDetailViewController.h; sourceTree = "<group>"; };
+		C63EC23B1AE9254F001D513C /* ChatDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatDetailViewController.m; sourceTree = "<group>"; };
+		C63EC23D1AE925F2001D513C /* MainChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainChatViewController.h; sourceTree = "<group>"; };
+		C63EC23E1AE925F2001D513C /* MainChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainChatViewController.m; sourceTree = "<group>"; };
 		C6B2FC0D1AD02044007B7EF5 /* DocumentVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentVideoViewController.h; sourceTree = "<group>"; };
 		C6B2FC0E1AD02044007B7EF5 /* DocumentVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentVideoViewController.m; sourceTree = "<group>"; };
 		C6B2FC101AD02051007B7EF5 /* DocumentVideo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DocumentVideo.storyboard; sourceTree = "<group>"; };
@@ -386,6 +403,7 @@
 		8E0E6B4B1ACB983B00759F64 /* 201504 */ = {
 			isa = PBXGroup;
 			children = (
+				C63EC22E1AE91CBE001D513C /* NavigationLikeWechat */,
 				8E9F77ED1AE8CCFB003F4F41 /* NewFontDisplay */,
 				8ECE8C2B1AE787CB009AE13A /* OjectPropertyDemo */,
 				8EB387D01AE6268900F5E03F /* SDWebImageDemo */,
@@ -944,6 +962,24 @@
 			path = WWSideslipViewController;
 			sourceTree = "<group>";
 		};
+		C63EC22E1AE91CBE001D513C /* NavigationLikeWechat */ = {
+			isa = PBXGroup;
+			children = (
+				C63EC22F1AE91CDA001D513C /* NavigationLikeWechatViewController.h */,
+				C63EC2301AE91CDA001D513C /* NavigationLikeWechatViewController.m */,
+				C63EC2321AE91CE4001D513C /* NavigationLikeWechat.storyboard */,
+				C63EC2341AE91F0C001D513C /* ChatViewController.h */,
+				C63EC2351AE91F0C001D513C /* ChatViewController.m */,
+				C63EC2371AE921F7001D513C /* MainTabBarViewController.h */,
+				C63EC2381AE921F7001D513C /* MainTabBarViewController.m */,
+				C63EC23A1AE9254F001D513C /* ChatDetailViewController.h */,
+				C63EC23B1AE9254F001D513C /* ChatDetailViewController.m */,
+				C63EC23D1AE925F2001D513C /* MainChatViewController.h */,
+				C63EC23E1AE925F2001D513C /* MainChatViewController.m */,
+			);
+			path = NavigationLikeWechat;
+			sourceTree = "<group>";
+		};
 		C6B2FC0C1AD0202A007B7EF5 /* DocumentVideo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1162,6 +1198,7 @@
 				8E0E6B511ACBBDAA00759F64 /* AppleWatch.storyboard in Resources */,
 				8E75324C1ABFFA800052A28A /* Style1ViewController.xib in Resources */,
 				8E6176121ABC09280091B68D /* 28.png in Resources */,
+				C63EC2331AE91CE4001D513C /* NavigationLikeWechat.storyboard in Resources */,
 				8E8069C51ACC040B00CBDECC /* EMHQ.json in Resources */,
 				8EDF0A491ABC1EFA004D736C /* background.png in Resources */,
 				8E6176041ABC09280091B68D /* 15.png in Resources */,
@@ -1248,6 +1285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ED3BDD51AC152ED00634BC6 /* YouFireTableViewCell.m in Sources */,
+				C63EC23C1AE9254F001D513C /* ChatDetailViewController.m in Sources */,
 				8E6B7ADC1AC289B5003056A9 /* AFNetworkingViewController.m in Sources */,
 				8EA9561F1AC3B2E4002B32DB /* UIDynamicTestViewController.m in Sources */,
 				8E6175DB1ABC02270091B68D /* ModuleListModel.m in Sources */,
@@ -1272,12 +1310,15 @@
 				8E6175C61ABBBF9F0091B68D /* LeftSideViewController.m in Sources */,
 				8E6B7AD91AC28911003056A9 /* AFNetworkingNewest.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
+				C63EC2311AE91CDA001D513C /* NavigationLikeWechatViewController.m in Sources */,
+				C63EC2361AE91F0C001D513C /* ChatViewController.m in Sources */,
 				8EB387D51AE626A000F5E03F /* SDWebImageDemoViewController.m in Sources */,
 				C6F29FB91AC1B17800EEE90C /* AllEffectInstance.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 				8E9F77F01AE8CD0E003F4F41 /* NewFontDisplayViewController.m in Sources */,
 				8E68F0601ACA8B5800202F98 /* DrawLineView.m in Sources */,
+				C63EC23F1AE925F2001D513C /* MainChatViewController.m in Sources */,
 				8E6B7ACC1AC25AB4003056A9 /* WebService.m in Sources */,
 				C6B2FC0F1AD02044007B7EF5 /* DocumentVideoViewController.m in Sources */,
 				8EB109871AD3F44E00533F15 /* SearchDocumentContentViewController.m in Sources */,
@@ -1287,6 +1328,7 @@
 				8EA956171AC39EBB002B32DB /* SystemInfoViewController.m in Sources */,
 				8E0E6B4F1ACBBD9900759F64 /* AppleWatchViewController.m in Sources */,
 				8E6175DF1ABC070A0091B68D /* FunctionCollectionViewCell.m in Sources */,
+				C63EC2391AE921F7001D513C /* MainTabBarViewController.m in Sources */,
 				C6B2FC141AD021F9007B7EF5 /* DocumentVideoModel.m in Sources */,
 				8E6175D01ABBC3E10091B68D /* YouFireApplication.m in Sources */,
 			);
