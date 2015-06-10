@@ -30,6 +30,7 @@
                         <viewControllerLayoutGuide type="bottom" id="zvh-Vh-g3l"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BFB-w5-H0e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sha Sha Sha" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mI-Li-V5H">
@@ -86,6 +87,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Mwh-eN-acJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0Px-aA-uHa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

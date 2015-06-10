@@ -81,6 +81,11 @@
 		8E7E04F01B258F8D002E8A88 /* ThreadViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7E04EF1B258F8D002E8A88 /* ThreadViewController.storyboard */; };
 		8E7E04F31B2590DF002E8A88 /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E04F21B2590DF002E8A88 /* ShowViewController.m */; };
 		8E8069C51ACC040B00CBDECC /* EMHQ.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E8069C41ACC040B00CBDECC /* EMHQ.json */; };
+		8E8FA6D71B2828C400323519 /* ObjcRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FA6D61B2828C400323519 /* ObjcRunTimeViewController.m */; };
+		8E8FA6D91B2828D900323519 /* ObjcRunTimeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8FA6D81B2828D900323519 /* ObjcRunTimeStoryboard.storyboard */; };
+		8E8FA6DC1B2829D100323519 /* CustomClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FA6DB1B2829D100323519 /* CustomClass.m */; };
+		8E8FA6DF1B282A1400323519 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FA6DE1B282A1400323519 /* TestClass.m */; };
+		8E8FA6E21B282D6000323519 /* CustomClassOther.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FA6E11B282D6000323519 /* CustomClassOther.m */; };
 		8E9F77F01AE8CD0E003F4F41 /* NewFontDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F77EF1AE8CD0E003F4F41 /* NewFontDisplayViewController.m */; };
 		8E9F77F21AE8CD28003F4F41 /* NewFontDisplay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F77F11AE8CD28003F4F41 /* NewFontDisplay.storyboard */; };
 		8E9F77F41AE8D73A003F4F41 /* GothamSSm-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F77F31AE8D73A003F4F41 /* GothamSSm-Black.ttf */; };
@@ -279,6 +284,15 @@
 		8E7E04F21B2590DF002E8A88 /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
 		8E8069C41ACC040B00CBDECC /* EMHQ.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EMHQ.json; sourceTree = "<group>"; };
 		8E8069C61ACC13E400CBDECC /* RecordTechnology.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RecordTechnology.entitlements; sourceTree = "<group>"; };
+		8E8FA6D51B2828C400323519 /* ObjcRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcRunTimeViewController.h; sourceTree = "<group>"; };
+		8E8FA6D61B2828C400323519 /* ObjcRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcRunTimeViewController.m; sourceTree = "<group>"; };
+		8E8FA6D81B2828D900323519 /* ObjcRunTimeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ObjcRunTimeStoryboard.storyboard; sourceTree = "<group>"; };
+		8E8FA6DA1B2829D100323519 /* CustomClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomClass.h; sourceTree = "<group>"; };
+		8E8FA6DB1B2829D100323519 /* CustomClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomClass.m; sourceTree = "<group>"; };
+		8E8FA6DD1B282A1400323519 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		8E8FA6DE1B282A1400323519 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		8E8FA6E01B282D6000323519 /* CustomClassOther.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomClassOther.h; sourceTree = "<group>"; };
+		8E8FA6E11B282D6000323519 /* CustomClassOther.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomClassOther.m; sourceTree = "<group>"; };
 		8E9F77EE1AE8CD0E003F4F41 /* NewFontDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFontDisplayViewController.h; sourceTree = "<group>"; };
 		8E9F77EF1AE8CD0E003F4F41 /* NewFontDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFontDisplayViewController.m; sourceTree = "<group>"; };
 		8E9F77F11AE8CD28003F4F41 /* NewFontDisplay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewFontDisplay.storyboard; sourceTree = "<group>"; };
@@ -821,6 +835,7 @@
 		8E7E04EA1B258D66002E8A88 /* 201506 */ = {
 			isa = PBXGroup;
 			children = (
+				8E8FA6D41B2828B400323519 /* ObjcRunTime */,
 				8E7E04EB1B258D66002E8A88 /* Thread */,
 			);
 			path = 201506;
@@ -836,6 +851,22 @@
 				8E7E04F21B2590DF002E8A88 /* ShowViewController.m */,
 			);
 			path = Thread;
+			sourceTree = "<group>";
+		};
+		8E8FA6D41B2828B400323519 /* ObjcRunTime */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FA6D51B2828C400323519 /* ObjcRunTimeViewController.h */,
+				8E8FA6D61B2828C400323519 /* ObjcRunTimeViewController.m */,
+				8E8FA6D81B2828D900323519 /* ObjcRunTimeStoryboard.storyboard */,
+				8E8FA6DA1B2829D100323519 /* CustomClass.h */,
+				8E8FA6DB1B2829D100323519 /* CustomClass.m */,
+				8E8FA6DD1B282A1400323519 /* TestClass.h */,
+				8E8FA6DE1B282A1400323519 /* TestClass.m */,
+				8E8FA6E01B282D6000323519 /* CustomClassOther.h */,
+				8E8FA6E11B282D6000323519 /* CustomClassOther.m */,
+			);
+			path = ObjcRunTime;
 			sourceTree = "<group>";
 		};
 		8E9F77ED1AE8CCFB003F4F41 /* NewFontDisplay */ = {
@@ -1236,6 +1267,7 @@
 				8E61760A1ABC09280091B68D /* 20.png in Resources */,
 				8E6175E01ABC070A0091B68D /* FunctionCollectionViewCell.xib in Resources */,
 				8E9F77F41AE8D73A003F4F41 /* GothamSSm-Black.ttf in Resources */,
+				8E8FA6D91B2828D900323519 /* ObjcRunTimeStoryboard.storyboard in Resources */,
 				C6B2FC181AD025DF007B7EF5 /* 商品房验收标准和注意事项.docx in Resources */,
 				8EA956191AC39EC8002B32DB /* SystemInfo.storyboard in Resources */,
 				8E61760D1ABC09280091B68D /* 23.png in Resources */,
@@ -1323,6 +1355,7 @@
 				8EA956311AC3FAB8002B32DB /* MoreViewController.m in Sources */,
 				8ECE8C2E1AE787D6009AE13A /* OjectPropertyDemoViewController.m in Sources */,
 				8E75324B1ABFFA800052A28A /* Style1ViewController.m in Sources */,
+				8E8FA6D71B2828C400323519 /* ObjcRunTimeViewController.m in Sources */,
 				8E6B7AD21AC2624D003056A9 /* HMACStringGenerator.m in Sources */,
 				8EF2389E1AD7DB6F0026DE0A /* ActivityViewControllerViewController.m in Sources */,
 				8ED3BDD11AC152CF00634BC6 /* YouFireViewController.m in Sources */,
@@ -1330,7 +1363,9 @@
 				C6F29FC41AC1B39800EEE90C /* Style2ViewController.m in Sources */,
 				8ECE8C331AE7889B009AE13A /* OjectPropertyModule.m in Sources */,
 				8E6B7AD31AC2624D003056A9 /* NSDictionary+Utils.m in Sources */,
+				8E8FA6DC1B2829D100323519 /* CustomClass.m in Sources */,
 				8EA9562C1AC3F906002B32DB /* UIPageViewControllerTestViewController.m in Sources */,
+				8E8FA6E21B282D6000323519 /* CustomClassOther.m in Sources */,
 				8E4B639C1AC8F541000A5710 /* BlockToSelectorViewController.m in Sources */,
 				8E68F05D1ACA8B3000202F98 /* DrawLineViewController.m in Sources */,
 				8EB387CD1AE6221900F5E03F /* PrintPercentViewController.m in Sources */,
@@ -1352,6 +1387,7 @@
 				8E68F0601ACA8B5800202F98 /* DrawLineView.m in Sources */,
 				C63EC23F1AE925F2001D513C /* MainChatViewController.m in Sources */,
 				8E6B7ACC1AC25AB4003056A9 /* WebService.m in Sources */,
+				8E8FA6DF1B282A1400323519 /* TestClass.m in Sources */,
 				C6B2FC0F1AD02044007B7EF5 /* DocumentVideoViewController.m in Sources */,
 				8EB109871AD3F44E00533F15 /* SearchDocumentContentViewController.m in Sources */,
 				8E6175D41ABBF35C0091B68D /* ModuleListViewController.m in Sources */,
