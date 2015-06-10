@@ -24,7 +24,76 @@
 {
     [super viewDidLoad];
     
+    [self test3];
     
+    
+}
+
+- (void)test3
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        while (YES) {
+            NSLog(@"后台执行");
+            sleep(1);// 线程睡眠1秒
+        }
+        
+    });
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"主线程执行");
+    });
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"延迟2秒");
+    });
+    
+    dispatch_queue_t urls_queue = dispatch_queue_create("blog.devtagng.com", NULL);
+    dispatch_async(urls_queue, ^{
+        NSLog(@"新创建queue");
+    });
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"Test1");
+    });
+    dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"Test2");
+    });
+    dispatch_group_notify(group, dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"Test3");
+    });
+    
+    
+    
+    
+    
+    
+}
+
+- (void)test2
+{
+    NSInvocationOperation *operation = [[NSInvocationOperation alloc] initWithTarget:self
+                                                                            selector:@selector(downloadImage:)
+                                                                              object:nil];
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    [queue addOperation:operation];
+}
+
+- (void)downloadImage:(id)sender
+{
+    while (YES)
+    {
+        NSLog(@"Download image is down...");
+        
+        [NSThread sleepForTimeInterval:2.0f];
+    }
+}
+
+
+- (void)test1
+{
     self.lock = [[NSLock alloc] init];
     self.condition = [[NSCondition alloc] init];
     
@@ -42,8 +111,6 @@
     
     
     [NSThread detachNewThreadSelector:@selector(run5) toTarget:self withObject:nil];
-    
-    
 }
 
 - (void)run1
@@ -143,6 +210,8 @@
     
     [self.valueMStr deleteCharactersInRange:NSMakeRange([string length], [self.valueMStr length] - [string length])];
     [self.valueMStr appendString:[NSString stringWithFormat:@"%d", value]];
+    
+    NSLog(@"self.valueMStr is %@.", self.valueMStr);
     
 }
 

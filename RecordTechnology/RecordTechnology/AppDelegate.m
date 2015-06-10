@@ -13,6 +13,8 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic, assign) UIBackgroundTaskIdentifier backgroundUpdateTask;
+
 @end
 
 @implementation AppDelegate
@@ -72,11 +74,20 @@
     // Demo: test AFNetworking
 //    [AFNetworkingNewest shareAFNetworkingNewestApplication];
     
+}
+
+- (void)beginBackgroundUpdateTask
+{
+    self.backgroundUpdateTask = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+        [self endBackgroundUpdateTask];
+    }];
+}
+
+- (void)endBackgroundUpdateTask
+{
+    [[UIApplication sharedApplication] endBackgroundTask:self.backgroundUpdateTask];
     
-    
-    
-    
-    
+    self.backgroundUpdateTask = UIBackgroundTaskInvalid;
 }
 
 
