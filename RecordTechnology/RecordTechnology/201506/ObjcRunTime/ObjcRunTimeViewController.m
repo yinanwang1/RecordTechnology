@@ -15,6 +15,9 @@
 
 @interface ObjcRunTimeViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *button;
+
+
 @end
 
 @implementation ObjcRunTimeViewController
@@ -23,13 +26,73 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self testButtonHighlight];
+    
 //    [self setClassTest];
     
 //    [self getClassName];
     
-    [self oneParam];
+//    [self oneParam];
     
     
+
+    
+    
+}
+
+- (void)testButtonHighlight
+{
+    //    [self.button setTitle:@"UIControlStateNormal" forState:UIControlStateNormal];
+    //    [self.button setTitle:@"UIControlStateDisabled" forState:UIControlStateDisabled];
+    //    [self.button setTitle:@"UIControlStateHighlighted" forState:UIControlStateHighlighted];
+    //    [self.button setTitle:@"UIControlStateReserved" forState:UIControlStateReserved];
+    //    [self.button setTitle:@"UIControlStateSelected" forState:UIControlStateSelected];
+    
+    //    [self.button setTitle:nil forState:UIControlStateNormal];
+    //    [self.button setTitle:nil forState:UIControlStateDisabled];
+    //    [self.button setTitle:nil forState:UIControlStateHighlighted];
+    //    [self.button setTitle:nil forState:UIControlStateReserved];
+    //    [self.button setTitle:nil forState:UIControlStateSelected];
+    
+    //    [self.button setBackgroundImage:[self createImage:[UIColor redColor]] forState:UIControlStateNormal];
+    //    [self.button setBackgroundImage:[self createImage:[UIColor yellowColor]] forState:UIControlStateDisabled];
+    //    [self.button setBackgroundImage:[self createImage:[UIColor blueColor]] forState:UIControlStateHighlighted];
+    //    [self.button setBackgroundImage:[self createImage:[UIColor cyanColor]] forState:UIControlStateReserved];
+    //    [self.button setBackgroundImage:[self createImage:[UIColor whiteColor]] forState:UIControlStateSelected];
+    
+    [self.button setImage:[UIImage imageNamed:@"haizeiwang"] forState:UIControlStateNormal];
+    [self.button setImage:[self createImage:[UIColor yellowColor]] forState:UIControlStateDisabled];
+    [self.button setImage:[self createImage:[UIColor blueColor]] forState:UIControlStateHighlighted];
+    [self.button setImage:[self createImage:[UIColor cyanColor]] forState:UIControlStateReserved];
+    [self.button setImage:[self createImage:[UIColor whiteColor]] forState:UIControlStateSelected];
+    
+    
+    [self.button addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+
+- (void)clickButton:(UIButton *)button
+{
+    self.button.selected = !self.button.selected;
+}
+
+- (UIImage *)createImage:(UIColor *)color
+{
+    CGRect rect = CGRectMake(0.0f, 0.0f, 200.0f, 200.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    
+//     return  [image stretchableImageWithLeftCapWidth:1 topCapHeight:1];
+    
+    NSLog(@"image is %@>", image);
+    
+    return image;
+ 
 }
 
 - (void)didReceiveMemoryWarning {
@@ -99,22 +162,22 @@ int cfunction(id self, SEL _cmd, NSString *str)
 
 - (void)oneParam
 {
-    TestClass *instance = [[TestClass alloc] init];
-    
-    class_addMethod([TestClass class], @selector(ocMethod:), (IMP)cfunction, "i@:@");
-    
-    if ( [instance respondsToSelector:@selector(ocMethod:)] )
-    {
-        NSLog(@"Yes, instance respondsToSelector:@selector(ocMethod:)");
-    }
-    else
-    {
-        NSLog(@"Sorry");
-    }
-    
-    int a = (int)[instance ocMethod:@"我是OC的method，C语言实现的。"];
-    
-    NSLog(@"a is %d.", a);
+//    TestClass *instance = [[TestClass alloc] init];
+//    
+//    class_addMethod([TestClass class], @selector(ocMethod:), (IMP)cfunction, "i@:@");
+//    
+//    if ( [instance respondsToSelector:@selector(ocMethod:)] )
+//    {
+//        NSLog(@"Yes, instance respondsToSelector:@selector(ocMethod:)");
+//    }
+//    else
+//    {
+//        NSLog(@"Sorry");
+//    }
+//    
+//    int a = (int)[instance ocMethod:@"我是OC的method，C语言实现的。"];
+//    
+//    NSLog(@"a is %d.", a);
     
     
 }
