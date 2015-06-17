@@ -116,6 +116,10 @@
 		8EDF0A4A1ABC1EFA004D736C /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF0A481ABC1EFA004D736C /* page.png */; };
 		8EF2389E1AD7DB6F0026DE0A /* ActivityViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF2389D1AD7DB6F0026DE0A /* ActivityViewControllerViewController.m */; };
 		8EF238A01AD7DB7A0026DE0A /* ActivityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF2389F1AD7DB7A0026DE0A /* ActivityViewController.storyboard */; };
+		8EF6A0861B31530800694EDE /* BackgroundTransparencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6A0851B31530800694EDE /* BackgroundTransparencyViewController.m */; };
+		8EF6A0881B31540D00694EDE /* BackgroundTransparencyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF6A0871B31540D00694EDE /* BackgroundTransparencyStoryboard.storyboard */; };
+		8EF6A08C1B3155D700694EDE /* FansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6A08A1B3155D700694EDE /* FansViewController.m */; };
+		8EF6A08D1B3155D700694EDE /* FansViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EF6A08B1B3155D700694EDE /* FansViewController.xib */; };
 		C61771E11ABC6ABE0097991C /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C61771E01ABC6ABE0097991C /* bg.png */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C63EC2311AE91CDA001D513C /* NavigationLikeWechatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC2301AE91CDA001D513C /* NavigationLikeWechatViewController.m */; };
@@ -341,6 +345,13 @@
 		8EF2389C1AD7DB6F0026DE0A /* ActivityViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewControllerViewController.h; sourceTree = "<group>"; };
 		8EF2389D1AD7DB6F0026DE0A /* ActivityViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewControllerViewController.m; sourceTree = "<group>"; };
 		8EF2389F1AD7DB7A0026DE0A /* ActivityViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActivityViewController.storyboard; sourceTree = "<group>"; };
+		8EF6A0841B31530800694EDE /* BackgroundTransparencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundTransparencyViewController.h; sourceTree = "<group>"; };
+		8EF6A0851B31530800694EDE /* BackgroundTransparencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTransparencyViewController.m; sourceTree = "<group>"; };
+		8EF6A0871B31540D00694EDE /* BackgroundTransparencyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BackgroundTransparencyStoryboard.storyboard; sourceTree = "<group>"; };
+		8EF6A0891B3155D700694EDE /* FansViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansViewController.h; sourceTree = "<group>"; };
+		8EF6A08A1B3155D700694EDE /* FansViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FansViewController.m; sourceTree = "<group>"; };
+		8EF6A08B1B3155D700694EDE /* FansViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FansViewController.xib; sourceTree = "<group>"; };
+		8EF6A08F1B315C7600694EDE /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		C61771E01ABC6ABE0097991C /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
@@ -835,6 +846,7 @@
 		8E7E04EA1B258D66002E8A88 /* 201506 */ = {
 			isa = PBXGroup;
 			children = (
+				8EF6A0831B3152EF00694EDE /* BackgroundTransparency */,
 				8E8FA6D41B2828B400323519 /* ObjcRunTime */,
 				8E7E04EB1B258D66002E8A88 /* Thread */,
 			);
@@ -1005,9 +1017,31 @@
 			path = ActivityViewController;
 			sourceTree = "<group>";
 		};
+		8EF6A0831B3152EF00694EDE /* BackgroundTransparency */ = {
+			isa = PBXGroup;
+			children = (
+				8EF6A0841B31530800694EDE /* BackgroundTransparencyViewController.h */,
+				8EF6A0851B31530800694EDE /* BackgroundTransparencyViewController.m */,
+				8EF6A0871B31540D00694EDE /* BackgroundTransparencyStoryboard.storyboard */,
+				8EF6A0891B3155D700694EDE /* FansViewController.h */,
+				8EF6A08A1B3155D700694EDE /* FansViewController.m */,
+				8EF6A08B1B3155D700694EDE /* FansViewController.xib */,
+			);
+			path = BackgroundTransparency;
+			sourceTree = "<group>";
+		};
+		8EF6A08E1B315C6A00694EDE /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				8EF6A08F1B315C7600694EDE /* UtilsMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
 		C61771E21ABC6BF30097991C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8EF6A08E1B315C6A00694EDE /* Macro */,
 				C61771E31ABC6BF30097991C /* WWSideslipViewController */,
 			);
 			path = Utilities;
@@ -1229,6 +1263,7 @@
 				8E6176191ABC09280091B68D /* 9.png in Resources */,
 				8E6176151ABC09280091B68D /* 5.png in Resources */,
 				C61771E11ABC6ABE0097991C /* bg.png in Resources */,
+				8EF6A0881B31540D00694EDE /* BackgroundTransparencyStoryboard.storyboard in Resources */,
 				8E6176071ABC09280091B68D /* 18.png in Resources */,
 				C6F29FC51AC1B39800EEE90C /* Style2ViewController.xib in Resources */,
 				8E61760E1ABC09280091B68D /* 24.png in Resources */,
@@ -1275,6 +1310,7 @@
 				C6B2FC111AD02051007B7EF5 /* DocumentVideo.storyboard in Resources */,
 				8E6176011ABC09280091B68D /* 12.png in Resources */,
 				8E6176171ABC09280091B68D /* 7.png in Resources */,
+				8EF6A08D1B3155D700694EDE /* FansViewController.xib in Resources */,
 				8EA956251AC3DF09002B32DB /* DynamicAnimator.storyboard in Resources */,
 				8E6176001ABC09280091B68D /* 11.png in Resources */,
 				8ECE8C301AE787DF009AE13A /* OjectPropertyDemo.storyboard in Resources */,
@@ -1354,6 +1390,7 @@
 				8EA956231AC3DEFE002B32DB /* DynamicAnimatorViewController.m in Sources */,
 				8EA956311AC3FAB8002B32DB /* MoreViewController.m in Sources */,
 				8ECE8C2E1AE787D6009AE13A /* OjectPropertyDemoViewController.m in Sources */,
+				8EF6A08C1B3155D700694EDE /* FansViewController.m in Sources */,
 				8E75324B1ABFFA800052A28A /* Style1ViewController.m in Sources */,
 				8E8FA6D71B2828C400323519 /* ObjcRunTimeViewController.m in Sources */,
 				8E6B7AD21AC2624D003056A9 /* HMACStringGenerator.m in Sources */,
@@ -1376,6 +1413,7 @@
 				8E7E04F31B2590DF002E8A88 /* ShowViewController.m in Sources */,
 				8E7E04EE1B258F7B002E8A88 /* ThreadViewController.m in Sources */,
 				8E6B7AD91AC28911003056A9 /* AFNetworkingNewest.m in Sources */,
+				8EF6A0861B31530800694EDE /* BackgroundTransparencyViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C63EC2311AE91CDA001D513C /* NavigationLikeWechatViewController.m in Sources */,
 				C63EC2361AE91F0C001D513C /* ChatViewController.m in Sources */,
