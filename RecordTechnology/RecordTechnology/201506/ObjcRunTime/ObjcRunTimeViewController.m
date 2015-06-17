@@ -11,7 +11,18 @@
 #import "CustomClass.h"
 #import "CustomClassOther.h"
 #import "TestClass.h"
-#include <objc/runtime.h>
+#import <objc/runtime.h>
+#import <Objc/message.h>
+#import <Foundation/Foundation.h>
+
+@interface EmptyClass : NSObject
+
+@end
+
+@implementation EmptyClass
+
+@end
+
 
 @interface ObjcRunTimeViewController ()
 
@@ -26,13 +37,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self testButtonHighlight];
+//    [self testButtonHighlight];
     
 //    [self setClassTest];
     
 //    [self getClassName];
     
-//    [self oneParam];
+    [self oneParam];
     
     
 
@@ -63,8 +74,8 @@
     [self.button setImage:[UIImage imageNamed:@"haizeiwang"] forState:UIControlStateNormal];
     [self.button setImage:[self createImage:[UIColor yellowColor]] forState:UIControlStateDisabled];
     [self.button setImage:[self createImage:[UIColor blueColor]] forState:UIControlStateHighlighted];
-    [self.button setImage:[self createImage:[UIColor cyanColor]] forState:UIControlStateReserved];
-    [self.button setImage:[self createImage:[UIColor whiteColor]] forState:UIControlStateSelected];
+    [self.button setImage:[self createImage:[UIColor whiteColor]] forState:UIControlStateReserved];
+    [self.button setImage:[self createImage:[UIColor cyanColor]] forState:UIControlStateSelected];
     
     
     [self.button addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -160,11 +171,16 @@ int cfunction(id self, SEL _cmd, NSString *str)
     return 10;
 }
 
+void sayHello(id self, SEL _cmd)
+{
+    NSLog(@"Hello");
+}
+
 - (void)oneParam
 {
-//    TestClass *instance = [[TestClass alloc] init];
-//    
 //    class_addMethod([TestClass class], @selector(ocMethod:), (IMP)cfunction, "i@:@");
+//    
+//    TestClass *instance = [[TestClass alloc] init];
 //    
 //    if ( [instance respondsToSelector:@selector(ocMethod:)] )
 //    {
@@ -175,9 +191,17 @@ int cfunction(id self, SEL _cmd, NSString *str)
 //        NSLog(@"Sorry");
 //    }
 //    
+//    
 //    int a = (int)[instance ocMethod:@"我是OC的method，C语言实现的。"];
 //    
 //    NSLog(@"a is %d.", a);
+    
+    class_addMethod([EmptyClass class], @selector(sayHello2), (IMP)sayHello, "v@:");
+    
+    
+    EmptyClass *instance = [[EmptyClass alloc] init];
+    
+    [instance sayHello2];
     
     
 }
