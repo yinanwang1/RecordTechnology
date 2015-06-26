@@ -17,6 +17,7 @@
 		8E0E6B6E1ACBBDDD00759F64 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6B6C1ACBBDDD00759F64 /* Interface.storyboard */; };
 		8E0E6B701ACBBDDD00759F64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6B6F1ACBBDDD00759F64 /* Images.xcassets */; };
 		8E0E6B731ACBBDDD00759F64 /* RecordTechnology WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8E0E6B561ACBBDDD00759F64 /* RecordTechnology WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8E1BE4321B3BED4800CAF4BA /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1BE4311B3BED4800CAF4BA /* libobjc.A.dylib */; };
 		8E1D18B61ABC1B35009ED4FB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D18B51ABC1B35009ED4FB /* iCarousel.m */; };
 		8E1E28091ADE104300949F4C /* CopyTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1E28081ADE104300949F4C /* CopyTest.storyboard */; };
 		8E1E280C1ADE105100949F4C /* CopyTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E280B1ADE105100949F4C /* CopyTestViewController.m */; };
@@ -27,6 +28,8 @@
 		8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2421ABAB2DC0008984F /* Images.xcassets */; };
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
+		8E4372AB1B3CF37A00F1878B /* EmptyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4372AA1B3CF37A00F1878B /* EmptyClass.m */; };
+		8E4372AE1B3CF3A200F1878B /* EmptyClass+Objec_time.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4372AD1B3CF3A200F1878B /* EmptyClass+Objec_time.m */; };
 		8E4B639C1AC8F541000A5710 /* BlockToSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B639B1AC8F541000A5710 /* BlockToSelectorViewController.m */; };
 		8E4B639E1AC8F54A000A5710 /* BlockToSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4B639D1AC8F54A000A5710 /* BlockToSelector.storyboard */; };
 		8E6175BA1ABBB9EC0091B68D /* YouFire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6175B91ABBB9EC0091B68D /* YouFire.storyboard */; };
@@ -195,6 +198,7 @@
 		8E0E6B6B1ACBBDDD00759F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E0E6B6D1ACBBDDD00759F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8E0E6B6F1ACBBDDD00759F64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8E1BE4311B3BED4800CAF4BA /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
 		8E1D18B41ABC1B35009ED4FB /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		8E1D18B51ABC1B35009ED4FB /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -214,6 +218,10 @@
 		8E41E24B1ABAB2DC0008984F /* RecordTechnologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordTechnologyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E41E2501ABAB2DC0008984F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordTechnologyTests.m; sourceTree = "<group>"; };
+		8E4372A91B3CF37A00F1878B /* EmptyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyClass.h; sourceTree = "<group>"; };
+		8E4372AA1B3CF37A00F1878B /* EmptyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyClass.m; sourceTree = "<group>"; };
+		8E4372AC1B3CF3A200F1878B /* EmptyClass+Objec_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmptyClass+Objec_time.h"; sourceTree = "<group>"; };
+		8E4372AD1B3CF3A200F1878B /* EmptyClass+Objec_time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EmptyClass+Objec_time.m"; sourceTree = "<group>"; };
 		8E4B639A1AC8F541000A5710 /* BlockToSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockToSelectorViewController.h; sourceTree = "<group>"; };
 		8E4B639B1AC8F541000A5710 /* BlockToSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockToSelectorViewController.m; sourceTree = "<group>"; };
 		8E4B639D1AC8F54A000A5710 /* BlockToSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BlockToSelector.storyboard; sourceTree = "<group>"; };
@@ -395,6 +403,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1BE4321B3BED4800CAF4BA /* libobjc.A.dylib in Frameworks */,
 				C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */,
 				0102173E8AB99535742F11E5 /* libPods-RecordTechnology.a in Frameworks */,
 			);
@@ -413,6 +422,7 @@
 		383D529F0224A99151B3C236 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8E1BE4311B3BED4800CAF4BA /* libobjc.A.dylib */,
 				C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */,
 				C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */,
 				8EDF0A4D1ABC22F6004D736C /* Foundation.framework */,
@@ -877,6 +887,10 @@
 				8E8FA6DE1B282A1400323519 /* TestClass.m */,
 				8E8FA6E01B282D6000323519 /* CustomClassOther.h */,
 				8E8FA6E11B282D6000323519 /* CustomClassOther.m */,
+				8E4372A91B3CF37A00F1878B /* EmptyClass.h */,
+				8E4372AA1B3CF37A00F1878B /* EmptyClass.m */,
+				8E4372AC1B3CF3A200F1878B /* EmptyClass+Objec_time.h */,
+				8E4372AD1B3CF3A200F1878B /* EmptyClass+Objec_time.m */,
 			);
 			path = ObjcRunTime;
 			sourceTree = "<group>";
@@ -1420,6 +1434,7 @@
 				8EB387D51AE626A000F5E03F /* SDWebImageDemoViewController.m in Sources */,
 				C6F29FB91AC1B17800EEE90C /* AllEffectInstance.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
+				8E4372AE1B3CF3A200F1878B /* EmptyClass+Objec_time.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 				8E9F77F01AE8CD0E003F4F41 /* NewFontDisplayViewController.m in Sources */,
 				8E68F0601ACA8B5800202F98 /* DrawLineView.m in Sources */,
@@ -1434,6 +1449,7 @@
 				8EA956171AC39EBB002B32DB /* SystemInfoViewController.m in Sources */,
 				8E0E6B4F1ACBBD9900759F64 /* AppleWatchViewController.m in Sources */,
 				8E6175DF1ABC070A0091B68D /* FunctionCollectionViewCell.m in Sources */,
+				8E4372AB1B3CF37A00F1878B /* EmptyClass.m in Sources */,
 				C63EC2391AE921F7001D513C /* MainTabBarViewController.m in Sources */,
 				C6B2FC141AD021F9007B7EF5 /* DocumentVideoModel.m in Sources */,
 				8E6175D01ABBC3E10091B68D /* YouFireApplication.m in Sources */,

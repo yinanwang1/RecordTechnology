@@ -7,26 +7,20 @@
 //
 
 #import "ObjcRunTimeViewController.h"
-
+#import <Foundation/Foundation.h>
 #import "CustomClass.h"
 #import "CustomClassOther.h"
 #import "TestClass.h"
-#import <objc/runtime.h>
+#import <objc/objc-runtime.h>
 #import <Objc/message.h>
-#import <Foundation/Foundation.h>
+#import "EmptyClass.h"
+#import "EmptyClass+Objec_time.h"
 
-@interface EmptyClass : NSObject
-
-@end
-
-@implementation EmptyClass
-
-@end
 
 
 @interface ObjcRunTimeViewController ()
 
-@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (retain, nonatomic) IBOutlet UIButton *button;
 
 
 @end
@@ -43,7 +37,9 @@
     
 //    [self getClassName];
     
-    [self oneParam];
+//    [self oneParam];
+    
+    [self twoParam];
     
     
 
@@ -173,7 +169,7 @@ int cfunction(id self, SEL _cmd, NSString *str)
 
 void sayHello(id self, SEL _cmd)
 {
-    NSLog(@"Hello");
+    NSLog(@"Hello  just override!!!");
 }
 
 - (void)oneParam
@@ -195,15 +191,25 @@ void sayHello(id self, SEL _cmd)
 //    int a = (int)[instance ocMethod:@"我是OC的method，C语言实现的。"];
 //    
 //    NSLog(@"a is %d.", a);
+//    
+//    class_addMethod([EmptyClass class], @selector(sayHello2), (IMP)sayHello, "v@:");
+//    
+//    
+//    EmptyClass *instance = [[EmptyClass alloc] init];
+//    
+//    [instance sayHello2];
+//    
+//    [instance release]; // 在使用MRC中，除了有警告外，可以直接使用
     
+}
+
+- (void)twoParam
+{
     class_addMethod([EmptyClass class], @selector(sayHello2), (IMP)sayHello, "v@:");
-    
     
     EmptyClass *instance = [[EmptyClass alloc] init];
     
     [instance sayHello2];
-    
-    
 }
 
 
