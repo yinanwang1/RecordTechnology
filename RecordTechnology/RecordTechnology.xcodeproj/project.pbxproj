@@ -86,6 +86,8 @@
 		8E8069C51ACC040B00CBDECC /* EMHQ.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E8069C41ACC040B00CBDECC /* EMHQ.json */; };
 		8E89468D1B43B6AD0096ADE8 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E89468C1B43B6AD0096ADE8 /* MasonryViewController.m */; };
 		8E89468F1B43B6CF0096ADE8 /* MasonryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E89468E1B43B6CF0096ADE8 /* MasonryStoryboard.storyboard */; };
+		8E8946931B43BD3F0096ADE8 /* MJRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8946921B43BD3F0096ADE8 /* MJRefreshViewController.m */; };
+		8E8946951B43BD520096ADE8 /* MJRefreshStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8946941B43BD520096ADE8 /* MJRefreshStoryboard.storyboard */; };
 		8E8FA6D71B2828C400323519 /* ObjcRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FA6D61B2828C400323519 /* ObjcRunTimeViewController.m */; };
 		8E8FA6D91B2828D900323519 /* ObjcRunTimeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8FA6D81B2828D900323519 /* ObjcRunTimeStoryboard.storyboard */; };
 		8E8FA6DC1B2829D100323519 /* CustomClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FA6DB1B2829D100323519 /* CustomClass.m */; };
@@ -301,6 +303,9 @@
 		8E89468B1B43B6AD0096ADE8 /* MasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
 		8E89468C1B43B6AD0096ADE8 /* MasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
 		8E89468E1B43B6CF0096ADE8 /* MasonryStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MasonryStoryboard.storyboard; sourceTree = "<group>"; };
+		8E8946911B43BD3F0096ADE8 /* MJRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshViewController.h; sourceTree = "<group>"; };
+		8E8946921B43BD3F0096ADE8 /* MJRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshViewController.m; sourceTree = "<group>"; };
+		8E8946941B43BD520096ADE8 /* MJRefreshStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MJRefreshStoryboard.storyboard; sourceTree = "<group>"; };
 		8E8FA6D51B2828C400323519 /* ObjcRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcRunTimeViewController.h; sourceTree = "<group>"; };
 		8E8FA6D61B2828C400323519 /* ObjcRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcRunTimeViewController.m; sourceTree = "<group>"; };
 		8E8FA6D81B2828D900323519 /* ObjcRunTimeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ObjcRunTimeStoryboard.storyboard; sourceTree = "<group>"; };
@@ -884,6 +889,7 @@
 		8E8946891B43B66C0096ADE8 /* 201507 */ = {
 			isa = PBXGroup;
 			children = (
+				8E8946901B43BD1F0096ADE8 /* MJRefresh */,
 				8E89468A1B43B66C0096ADE8 /* Masonry */,
 			);
 			path = 201507;
@@ -897,6 +903,16 @@
 				8E89468E1B43B6CF0096ADE8 /* MasonryStoryboard.storyboard */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		8E8946901B43BD1F0096ADE8 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				8E8946911B43BD3F0096ADE8 /* MJRefreshViewController.h */,
+				8E8946921B43BD3F0096ADE8 /* MJRefreshViewController.m */,
+				8E8946941B43BD520096ADE8 /* MJRefreshStoryboard.storyboard */,
+			);
+			path = MJRefresh;
 			sourceTree = "<group>";
 		};
 		8E8FA6D41B2828B400323519 /* ObjcRunTime */ = {
@@ -1343,6 +1359,7 @@
 				8E8FA6D91B2828D900323519 /* ObjcRunTimeStoryboard.storyboard in Resources */,
 				C6B2FC181AD025DF007B7EF5 /* 商品房验收标准和注意事项.docx in Resources */,
 				8EA956191AC39EC8002B32DB /* SystemInfo.storyboard in Resources */,
+				8E8946951B43BD520096ADE8 /* MJRefreshStoryboard.storyboard in Resources */,
 				8E61760D1ABC09280091B68D /* 23.png in Resources */,
 				8EF238A01AD7DB7A0026DE0A /* ActivityViewController.storyboard in Resources */,
 				C6B2FC111AD02051007B7EF5 /* DocumentVideo.storyboard in Resources */,
@@ -1451,6 +1468,7 @@
 				8E6175C91ABBBFAD0091B68D /* RightSideViewController.m in Sources */,
 				8E6175C61ABBBF9F0091B68D /* LeftSideViewController.m in Sources */,
 				8E7E04F31B2590DF002E8A88 /* ShowViewController.m in Sources */,
+				8E8946931B43BD3F0096ADE8 /* MJRefreshViewController.m in Sources */,
 				8E7E04EE1B258F7B002E8A88 /* ThreadViewController.m in Sources */,
 				8E6B7AD91AC28911003056A9 /* AFNetworkingNewest.m in Sources */,
 				8EF6A0861B31530800694EDE /* BackgroundTransparencyViewController.m in Sources */,
