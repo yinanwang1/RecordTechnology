@@ -129,6 +129,8 @@
 		8EF6A08D1B3155D700694EDE /* FansViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EF6A08B1B3155D700694EDE /* FansViewController.xib */; };
 		C61771E11ABC6ABE0097991C /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C61771E01ABC6ABE0097991C /* bg.png */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
+		C63266B41B55F47D00BD5E35 /* LumberjackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63266B31B55F47D00BD5E35 /* LumberjackViewController.m */; };
+		C63266B61B55F48F00BD5E35 /* Lumberjack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63266B51B55F48F00BD5E35 /* Lumberjack.storyboard */; };
 		C63EC2311AE91CDA001D513C /* NavigationLikeWechatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC2301AE91CDA001D513C /* NavigationLikeWechatViewController.m */; };
 		C63EC2331AE91CE4001D513C /* NavigationLikeWechat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63EC2321AE91CE4001D513C /* NavigationLikeWechat.storyboard */; };
 		C63EC2361AE91F0C001D513C /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC2351AE91F0C001D513C /* ChatViewController.m */; };
@@ -373,6 +375,9 @@
 		C61771E01ABC6ABE0097991C /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
+		C63266B21B55F47D00BD5E35 /* LumberjackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LumberjackViewController.h; sourceTree = "<group>"; };
+		C63266B31B55F47D00BD5E35 /* LumberjackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumberjackViewController.m; sourceTree = "<group>"; };
+		C63266B51B55F48F00BD5E35 /* Lumberjack.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lumberjack.storyboard; sourceTree = "<group>"; };
 		C63EC22F1AE91CDA001D513C /* NavigationLikeWechatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationLikeWechatViewController.h; sourceTree = "<group>"; };
 		C63EC2301AE91CDA001D513C /* NavigationLikeWechatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationLikeWechatViewController.m; sourceTree = "<group>"; };
 		C63EC2321AE91CE4001D513C /* NavigationLikeWechat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NavigationLikeWechat.storyboard; sourceTree = "<group>"; };
@@ -889,6 +894,7 @@
 		8E8946891B43B66C0096ADE8 /* 201507 */ = {
 			isa = PBXGroup;
 			children = (
+				C63266B11B55F41F00BD5E35 /* Lumberjack */,
 				8E8946901B43BD1F0096ADE8 /* MJRefresh */,
 				8E89468A1B43B66C0096ADE8 /* Masonry */,
 			);
@@ -1108,6 +1114,16 @@
 				C61771E51ABC6BF30097991C /* WWSideslipViewController.m */,
 			);
 			path = WWSideslipViewController;
+			sourceTree = "<group>";
+		};
+		C63266B11B55F41F00BD5E35 /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				C63266B21B55F47D00BD5E35 /* LumberjackViewController.h */,
+				C63266B31B55F47D00BD5E35 /* LumberjackViewController.m */,
+				C63266B51B55F48F00BD5E35 /* Lumberjack.storyboard */,
+			);
+			path = Lumberjack;
 			sourceTree = "<group>";
 		};
 		C63EC22E1AE91CBE001D513C /* NavigationLikeWechat */ = {
@@ -1360,6 +1376,7 @@
 				C6B2FC181AD025DF007B7EF5 /* 商品房验收标准和注意事项.docx in Resources */,
 				8EA956191AC39EC8002B32DB /* SystemInfo.storyboard in Resources */,
 				8E8946951B43BD520096ADE8 /* MJRefreshStoryboard.storyboard in Resources */,
+				C63266B61B55F48F00BD5E35 /* Lumberjack.storyboard in Resources */,
 				8E61760D1ABC09280091B68D /* 23.png in Resources */,
 				8EF238A01AD7DB7A0026DE0A /* ActivityViewController.storyboard in Resources */,
 				C6B2FC111AD02051007B7EF5 /* DocumentVideo.storyboard in Resources */,
@@ -1494,6 +1511,7 @@
 				8E0E6B4F1ACBBD9900759F64 /* AppleWatchViewController.m in Sources */,
 				8E6175DF1ABC070A0091B68D /* FunctionCollectionViewCell.m in Sources */,
 				8E4372AB1B3CF37A00F1878B /* EmptyClass.m in Sources */,
+				C63266B41B55F47D00BD5E35 /* LumberjackViewController.m in Sources */,
 				C63EC2391AE921F7001D513C /* MainTabBarViewController.m in Sources */,
 				C6B2FC141AD021F9007B7EF5 /* DocumentVideoModel.m in Sources */,
 				8E6175D01ABBC3E10091B68D /* YouFireApplication.m in Sources */,
