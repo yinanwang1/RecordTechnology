@@ -140,6 +140,12 @@
 		C6749B801B59DEA00069DF0D /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6749B7F1B59DEA00069DF0D /* Contacts.storyboard */; };
 		C6749B831B59DEB00069DF0D /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6749B821B59DEB00069DF0D /* ContactsViewController.m */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
+		C6749BA31B59F0B40069DF0D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6749BA21B59F0B40069DF0D /* RootViewController.m */; };
+		C6749BA51B59F0CB0069DF0D /* RootNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6749BA41B59F0CB0069DF0D /* RootNavigation.storyboard */; };
+		C6749BA81B59F1590069DF0D /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6749BA71B59F1590069DF0D /* BaseNavigationViewController.m */; };
+		C6749BAB1B59FC580069DF0D /* RootRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6749BAA1B59FC580069DF0D /* RootRootViewController.m */; };
+		C6749BAE1B59FC6E0069DF0D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6749BAD1B59FC6E0069DF0D /* FirstViewController.m */; };
+		C6749BB11B59FC780069DF0D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6749BB01B59FC780069DF0D /* SecondViewController.m */; };
 		C6B2FC0F1AD02044007B7EF5 /* DocumentVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B2FC0E1AD02044007B7EF5 /* DocumentVideoViewController.m */; };
 		C6B2FC111AD02051007B7EF5 /* DocumentVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B2FC101AD02051007B7EF5 /* DocumentVideo.storyboard */; };
 		C6B2FC141AD021F9007B7EF5 /* DocumentVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B2FC131AD021F9007B7EF5 /* DocumentVideoModel.m */; };
@@ -396,6 +402,17 @@
 		C6749B811B59DEB00069DF0D /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		C6749B821B59DEB00069DF0D /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C6749BA11B59F0B40069DF0D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		C6749BA21B59F0B40069DF0D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		C6749BA41B59F0CB0069DF0D /* RootNavigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootNavigation.storyboard; sourceTree = "<group>"; };
+		C6749BA61B59F1590069DF0D /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		C6749BA71B59F1590069DF0D /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		C6749BA91B59FC580069DF0D /* RootRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootRootViewController.h; sourceTree = "<group>"; };
+		C6749BAA1B59FC580069DF0D /* RootRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootRootViewController.m; sourceTree = "<group>"; };
+		C6749BAC1B59FC6E0069DF0D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		C6749BAD1B59FC6E0069DF0D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		C6749BAF1B59FC780069DF0D /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C6749BB01B59FC780069DF0D /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		C6B2FC0D1AD02044007B7EF5 /* DocumentVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentVideoViewController.h; sourceTree = "<group>"; };
 		C6B2FC0E1AD02044007B7EF5 /* DocumentVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentVideoViewController.m; sourceTree = "<group>"; };
 		C6B2FC101AD02051007B7EF5 /* DocumentVideo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DocumentVideo.storyboard; sourceTree = "<group>"; };
@@ -903,6 +920,7 @@
 		8E8946891B43B66C0096ADE8 /* 201507 */ = {
 			isa = PBXGroup;
 			children = (
+				C6749BA01B59F0750069DF0D /* RootNavigation */,
 				C6749B7E1B59DE860069DF0D /* Contacts */,
 				C63266B11B55F41F00BD5E35 /* Lumberjack */,
 				8E8946901B43BD1F0096ADE8 /* MJRefresh */,
@@ -1164,6 +1182,24 @@
 			path = Contacts;
 			sourceTree = "<group>";
 		};
+		C6749BA01B59F0750069DF0D /* RootNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				C6749BA11B59F0B40069DF0D /* RootViewController.h */,
+				C6749BA21B59F0B40069DF0D /* RootViewController.m */,
+				C6749BA41B59F0CB0069DF0D /* RootNavigation.storyboard */,
+				C6749BA61B59F1590069DF0D /* BaseNavigationViewController.h */,
+				C6749BA71B59F1590069DF0D /* BaseNavigationViewController.m */,
+				C6749BA91B59FC580069DF0D /* RootRootViewController.h */,
+				C6749BAA1B59FC580069DF0D /* RootRootViewController.m */,
+				C6749BAC1B59FC6E0069DF0D /* FirstViewController.h */,
+				C6749BAD1B59FC6E0069DF0D /* FirstViewController.m */,
+				C6749BAF1B59FC780069DF0D /* SecondViewController.h */,
+				C6749BB01B59FC780069DF0D /* SecondViewController.m */,
+			);
+			path = RootNavigation;
+			sourceTree = "<group>";
+		};
 		C6B2FC0C1AD0202A007B7EF5 /* DocumentVideo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1414,6 +1450,7 @@
 				8E6176021ABC09280091B68D /* 13.png in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				8E6175FE1ABC09280091B68D /* 1.png in Resources */,
+				C6749BA51B59F0CB0069DF0D /* RootNavigation.storyboard in Resources */,
 				8ED3BDD61AC152ED00634BC6 /* YouFireTableViewCell.xib in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
@@ -1483,7 +1520,9 @@
 				8E6175DB1ABC02270091B68D /* ModuleListModel.m in Sources */,
 				8EA956231AC3DEFE002B32DB /* DynamicAnimatorViewController.m in Sources */,
 				8EA956311AC3FAB8002B32DB /* MoreViewController.m in Sources */,
+				C6749BAE1B59FC6E0069DF0D /* FirstViewController.m in Sources */,
 				8ECE8C2E1AE787D6009AE13A /* OjectPropertyDemoViewController.m in Sources */,
+				C6749BA31B59F0B40069DF0D /* RootViewController.m in Sources */,
 				8EF6A08C1B3155D700694EDE /* FansViewController.m in Sources */,
 				8E75324B1ABFFA800052A28A /* Style1ViewController.m in Sources */,
 				8E8FA6D71B2828C400323519 /* ObjcRunTimeViewController.m in Sources */,
@@ -1491,6 +1530,7 @@
 				8EF2389E1AD7DB6F0026DE0A /* ActivityViewControllerViewController.m in Sources */,
 				8ED3BDD11AC152CF00634BC6 /* YouFireViewController.m in Sources */,
 				8E89468D1B43B6AD0096ADE8 /* MasonryViewController.m in Sources */,
+				C6749BA81B59F1590069DF0D /* BaseNavigationViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6F29FC41AC1B39800EEE90C /* Style2ViewController.m in Sources */,
 				8ECE8C331AE7889B009AE13A /* OjectPropertyModule.m in Sources */,
@@ -1503,6 +1543,7 @@
 				8EB387CD1AE6221900F5E03F /* PrintPercentViewController.m in Sources */,
 				8E1E280C1ADE105100949F4C /* CopyTestViewController.m in Sources */,
 				8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */,
+				C6749BB11B59FC780069DF0D /* SecondViewController.m in Sources */,
 				8E6175C91ABBBFAD0091B68D /* RightSideViewController.m in Sources */,
 				8E6175C61ABBBF9F0091B68D /* LeftSideViewController.m in Sources */,
 				C6749B831B59DEB00069DF0D /* ContactsViewController.m in Sources */,
@@ -1532,6 +1573,7 @@
 				8EA956171AC39EBB002B32DB /* SystemInfoViewController.m in Sources */,
 				8E0E6B4F1ACBBD9900759F64 /* AppleWatchViewController.m in Sources */,
 				8E6175DF1ABC070A0091B68D /* FunctionCollectionViewCell.m in Sources */,
+				C6749BAB1B59FC580069DF0D /* RootRootViewController.m in Sources */,
 				8E4372AB1B3CF37A00F1878B /* EmptyClass.m in Sources */,
 				C63266B41B55F47D00BD5E35 /* LumberjackViewController.m in Sources */,
 				C63EC2391AE921F7001D513C /* MainTabBarViewController.m in Sources */,
