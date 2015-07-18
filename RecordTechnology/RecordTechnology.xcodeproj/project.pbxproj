@@ -137,6 +137,9 @@
 		C63EC2391AE921F7001D513C /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC2381AE921F7001D513C /* MainTabBarViewController.m */; };
 		C63EC23C1AE9254F001D513C /* ChatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC23B1AE9254F001D513C /* ChatDetailViewController.m */; };
 		C63EC23F1AE925F2001D513C /* MainChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC23E1AE925F2001D513C /* MainChatViewController.m */; };
+		C6749B801B59DEA00069DF0D /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6749B7F1B59DEA00069DF0D /* Contacts.storyboard */; };
+		C6749B831B59DEB00069DF0D /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6749B821B59DEB00069DF0D /* ContactsViewController.m */; };
+		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
 		C6B2FC0F1AD02044007B7EF5 /* DocumentVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B2FC0E1AD02044007B7EF5 /* DocumentVideoViewController.m */; };
 		C6B2FC111AD02051007B7EF5 /* DocumentVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B2FC101AD02051007B7EF5 /* DocumentVideo.storyboard */; };
 		C6B2FC141AD021F9007B7EF5 /* DocumentVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B2FC131AD021F9007B7EF5 /* DocumentVideoModel.m */; };
@@ -389,6 +392,10 @@
 		C63EC23B1AE9254F001D513C /* ChatDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatDetailViewController.m; sourceTree = "<group>"; };
 		C63EC23D1AE925F2001D513C /* MainChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainChatViewController.h; sourceTree = "<group>"; };
 		C63EC23E1AE925F2001D513C /* MainChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainChatViewController.m; sourceTree = "<group>"; };
+		C6749B7F1B59DEA00069DF0D /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
+		C6749B811B59DEB00069DF0D /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		C6749B821B59DEB00069DF0D /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C6B2FC0D1AD02044007B7EF5 /* DocumentVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentVideoViewController.h; sourceTree = "<group>"; };
 		C6B2FC0E1AD02044007B7EF5 /* DocumentVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentVideoViewController.m; sourceTree = "<group>"; };
 		C6B2FC101AD02051007B7EF5 /* DocumentVideo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DocumentVideo.storyboard; sourceTree = "<group>"; };
@@ -418,6 +425,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */,
 				8E1BE4321B3BED4800CAF4BA /* libobjc.A.dylib in Frameworks */,
 				C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */,
 				0102173E8AB99535742F11E5 /* libPods-RecordTechnology.a in Frameworks */,
@@ -437,6 +445,7 @@
 		383D529F0224A99151B3C236 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6749B841B59DF100069DF0D /* AddressBook.framework */,
 				8E1BE4311B3BED4800CAF4BA /* libobjc.A.dylib */,
 				C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */,
 				C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */,
@@ -894,6 +903,7 @@
 		8E8946891B43B66C0096ADE8 /* 201507 */ = {
 			isa = PBXGroup;
 			children = (
+				C6749B7E1B59DE860069DF0D /* Contacts */,
 				C63266B11B55F41F00BD5E35 /* Lumberjack */,
 				8E8946901B43BD1F0096ADE8 /* MJRefresh */,
 				8E89468A1B43B66C0096ADE8 /* Masonry */,
@@ -1144,6 +1154,16 @@
 			path = NavigationLikeWechat;
 			sourceTree = "<group>";
 		};
+		C6749B7E1B59DE860069DF0D /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				C6749B7F1B59DEA00069DF0D /* Contacts.storyboard */,
+				C6749B811B59DEB00069DF0D /* ContactsViewController.h */,
+				C6749B821B59DEB00069DF0D /* ContactsViewController.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
 		C6B2FC0C1AD0202A007B7EF5 /* DocumentVideo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1358,6 +1378,7 @@
 				8E6175FF1ABC09280091B68D /* 10.png in Resources */,
 				8E6176131ABC09280091B68D /* 3.png in Resources */,
 				8E6176031ABC09280091B68D /* 14.png in Resources */,
+				C6749B801B59DEA00069DF0D /* Contacts.storyboard in Resources */,
 				8E6176181ABC09280091B68D /* 8.png in Resources */,
 				8EB387CF1AE6222300F5E03F /* PrintPercent.storyboard in Resources */,
 				8EB387D21AE6269600F5E03F /* SDWebImageDemo.storyboard in Resources */,
@@ -1484,6 +1505,7 @@
 				8E61761F1ABC128B0091B68D /* EditingViewController.m in Sources */,
 				8E6175C91ABBBFAD0091B68D /* RightSideViewController.m in Sources */,
 				8E6175C61ABBBF9F0091B68D /* LeftSideViewController.m in Sources */,
+				C6749B831B59DEB00069DF0D /* ContactsViewController.m in Sources */,
 				8E7E04F31B2590DF002E8A88 /* ShowViewController.m in Sources */,
 				8E8946931B43BD3F0096ADE8 /* MJRefreshViewController.m in Sources */,
 				8E7E04EE1B258F7B002E8A88 /* ThreadViewController.m in Sources */,
