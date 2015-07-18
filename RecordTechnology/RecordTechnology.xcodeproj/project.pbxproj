@@ -129,6 +129,7 @@
 		8EF6A08D1B3155D700694EDE /* FansViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EF6A08B1B3155D700694EDE /* FansViewController.xib */; };
 		C61771E11ABC6ABE0097991C /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C61771E01ABC6ABE0097991C /* bg.png */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
+		C618FAD01B5A9696003B7920 /* ShowKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C618FACF1B5A9696003B7920 /* ShowKeyboardViewController.m */; };
 		C63266B41B55F47D00BD5E35 /* LumberjackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63266B31B55F47D00BD5E35 /* LumberjackViewController.m */; };
 		C63266B61B55F48F00BD5E35 /* Lumberjack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63266B51B55F48F00BD5E35 /* Lumberjack.storyboard */; };
 		C63EC2311AE91CDA001D513C /* NavigationLikeWechatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC2301AE91CDA001D513C /* NavigationLikeWechatViewController.m */; };
@@ -137,6 +138,8 @@
 		C63EC2391AE921F7001D513C /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC2381AE921F7001D513C /* MainTabBarViewController.m */; };
 		C63EC23C1AE9254F001D513C /* ChatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC23B1AE9254F001D513C /* ChatDetailViewController.m */; };
 		C63EC23F1AE925F2001D513C /* MainChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EC23E1AE925F2001D513C /* MainChatViewController.m */; };
+		C6554A4D1B5A92C600195445 /* AlertViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6554A4C1B5A92C600195445 /* AlertViewViewController.m */; };
+		C6554A4F1B5A92D700195445 /* AlertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6554A4E1B5A92D700195445 /* AlertView.storyboard */; };
 		C6749B801B59DEA00069DF0D /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6749B7F1B59DEA00069DF0D /* Contacts.storyboard */; };
 		C6749B831B59DEB00069DF0D /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6749B821B59DEB00069DF0D /* ContactsViewController.m */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
@@ -384,6 +387,8 @@
 		C61771E01ABC6ABE0097991C /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
+		C618FACE1B5A9696003B7920 /* ShowKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowKeyboardViewController.h; sourceTree = "<group>"; };
+		C618FACF1B5A9696003B7920 /* ShowKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowKeyboardViewController.m; sourceTree = "<group>"; };
 		C63266B21B55F47D00BD5E35 /* LumberjackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LumberjackViewController.h; sourceTree = "<group>"; };
 		C63266B31B55F47D00BD5E35 /* LumberjackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumberjackViewController.m; sourceTree = "<group>"; };
 		C63266B51B55F48F00BD5E35 /* Lumberjack.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lumberjack.storyboard; sourceTree = "<group>"; };
@@ -398,6 +403,9 @@
 		C63EC23B1AE9254F001D513C /* ChatDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatDetailViewController.m; sourceTree = "<group>"; };
 		C63EC23D1AE925F2001D513C /* MainChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainChatViewController.h; sourceTree = "<group>"; };
 		C63EC23E1AE925F2001D513C /* MainChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainChatViewController.m; sourceTree = "<group>"; };
+		C6554A4B1B5A92C600195445 /* AlertViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewViewController.h; sourceTree = "<group>"; };
+		C6554A4C1B5A92C600195445 /* AlertViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewViewController.m; sourceTree = "<group>"; };
+		C6554A4E1B5A92D700195445 /* AlertView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlertView.storyboard; sourceTree = "<group>"; };
 		C6749B7F1B59DEA00069DF0D /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
 		C6749B811B59DEB00069DF0D /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		C6749B821B59DEB00069DF0D /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
@@ -920,6 +928,7 @@
 		8E8946891B43B66C0096ADE8 /* 201507 */ = {
 			isa = PBXGroup;
 			children = (
+				C6554A481B5A929C00195445 /* UIAlertView8.4 */,
 				C6749BA01B59F0750069DF0D /* RootNavigation */,
 				C6749B7E1B59DE860069DF0D /* Contacts */,
 				C63266B11B55F41F00BD5E35 /* Lumberjack */,
@@ -1172,6 +1181,34 @@
 			path = NavigationLikeWechat;
 			sourceTree = "<group>";
 		};
+		C6554A481B5A929C00195445 /* UIAlertView8.4 */ = {
+			isa = PBXGroup;
+			children = (
+				C6554A4B1B5A92C600195445 /* AlertViewViewController.h */,
+				C6554A4C1B5A92C600195445 /* AlertViewViewController.m */,
+				C618FACE1B5A9696003B7920 /* ShowKeyboardViewController.h */,
+				C618FACF1B5A9696003B7920 /* ShowKeyboardViewController.m */,
+				C6554A4E1B5A92D700195445 /* AlertView.storyboard */,
+				C6554A491B5A929C00195445 /* Model */,
+				C6554A4A1B5A929C00195445 /* Views */,
+			);
+			path = UIAlertView8.4;
+			sourceTree = "<group>";
+		};
+		C6554A491B5A929C00195445 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6554A4A1B5A929C00195445 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C6749B7E1B59DE860069DF0D /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
@@ -1416,6 +1453,7 @@
 				8E6176031ABC09280091B68D /* 14.png in Resources */,
 				C6749B801B59DEA00069DF0D /* Contacts.storyboard in Resources */,
 				8E6176181ABC09280091B68D /* 8.png in Resources */,
+				C6554A4F1B5A92D700195445 /* AlertView.storyboard in Resources */,
 				8EB387CF1AE6222300F5E03F /* PrintPercent.storyboard in Resources */,
 				8EB387D21AE6269600F5E03F /* SDWebImageDemo.storyboard in Resources */,
 				8E0E6B511ACBBDAA00759F64 /* AppleWatch.storyboard in Resources */,
@@ -1513,6 +1551,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C618FAD01B5A9696003B7920 /* ShowKeyboardViewController.m in Sources */,
 				8ED3BDD51AC152ED00634BC6 /* YouFireTableViewCell.m in Sources */,
 				C63EC23C1AE9254F001D513C /* ChatDetailViewController.m in Sources */,
 				8E6B7ADC1AC289B5003056A9 /* AFNetworkingViewController.m in Sources */,
@@ -1561,6 +1600,7 @@
 				8E4372AE1B3CF3A200F1878B /* EmptyClass+Objec_time.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 				8E9F77F01AE8CD0E003F4F41 /* NewFontDisplayViewController.m in Sources */,
+				C6554A4D1B5A92C600195445 /* AlertViewViewController.m in Sources */,
 				8E68F0601ACA8B5800202F98 /* DrawLineView.m in Sources */,
 				C63EC23F1AE925F2001D513C /* MainChatViewController.m in Sources */,
 				8E6B7ACC1AC25AB4003056A9 /* WebService.m in Sources */,
