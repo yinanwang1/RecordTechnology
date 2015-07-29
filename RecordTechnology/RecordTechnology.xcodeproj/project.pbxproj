@@ -155,6 +155,8 @@
 		C6B2FC161AD0227B007B7EF5 /* DocumentVideo.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6B2FC151AD0227B007B7EF5 /* DocumentVideo.plist */; };
 		C6B2FC181AD025DF007B7EF5 /* 商品房验收标准和注意事项.docx in Resources */ = {isa = PBXBuildFile; fileRef = C6B2FC171AD025DF007B7EF5 /* 商品房验收标准和注意事项.docx */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
+		C6D038BA1B68E75E00120964 /* PageFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D038B81B68E75E00120964 /* PageFirstViewController.m */; };
+		C6D038BB1B68E75E00120964 /* PageFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6D038B91B68E75E00120964 /* PageFirstViewController.xib */; };
 		C6F29FB91AC1B17800EEE90C /* AllEffectInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F29FB81AC1B17800EEE90C /* AllEffectInstance.m */; };
 		C6F29FC41AC1B39800EEE90C /* Style2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F29FC21AC1B39800EEE90C /* Style2ViewController.m */; };
 		C6F29FC51AC1B39800EEE90C /* Style2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6F29FC31AC1B39800EEE90C /* Style2ViewController.xib */; };
@@ -430,6 +432,9 @@
 		C6B2FC171AD025DF007B7EF5 /* 商品房验收标准和注意事项.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "商品房验收标准和注意事项.docx"; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C6D038B71B68E75E00120964 /* PageFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageFirstViewController.h; sourceTree = "<group>"; };
+		C6D038B81B68E75E00120964 /* PageFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageFirstViewController.m; sourceTree = "<group>"; };
+		C6D038B91B68E75E00120964 /* PageFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageFirstViewController.xib; sourceTree = "<group>"; };
 		C6F29FB71AC1B17800EEE90C /* AllEffectInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllEffectInstance.h; sourceTree = "<group>"; };
 		C6F29FB81AC1B17800EEE90C /* AllEffectInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllEffectInstance.m; sourceTree = "<group>"; };
 		C6F29FC11AC1B39800EEE90C /* Style2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Style2ViewController.h; sourceTree = "<group>"; };
@@ -1029,6 +1034,9 @@
 				8EA9562D1AC3F912002B32DB /* UIPageViewControllerTest.storyboard */,
 				8EA9562F1AC3FAB8002B32DB /* MoreViewController.h */,
 				8EA956301AC3FAB8002B32DB /* MoreViewController.m */,
+				C6D038B71B68E75E00120964 /* PageFirstViewController.h */,
+				C6D038B81B68E75E00120964 /* PageFirstViewController.m */,
+				C6D038B91B68E75E00120964 /* PageFirstViewController.xib */,
 			);
 			path = UIPageViewControllerTest;
 			sourceTree = "<group>";
@@ -1476,6 +1484,7 @@
 				8EF238A01AD7DB7A0026DE0A /* ActivityViewController.storyboard in Resources */,
 				C6B2FC111AD02051007B7EF5 /* DocumentVideo.storyboard in Resources */,
 				8E6176011ABC09280091B68D /* 12.png in Resources */,
+				C6D038BB1B68E75E00120964 /* PageFirstViewController.xib in Resources */,
 				8E89468F1B43B6CF0096ADE8 /* MasonryStoryboard.storyboard in Resources */,
 				8E6176171ABC09280091B68D /* 7.png in Resources */,
 				8EF6A08D1B3155D700694EDE /* FansViewController.xib in Resources */,
@@ -1570,6 +1579,7 @@
 				8ED3BDD11AC152CF00634BC6 /* YouFireViewController.m in Sources */,
 				8E89468D1B43B6AD0096ADE8 /* MasonryViewController.m in Sources */,
 				C6749BA81B59F1590069DF0D /* BaseNavigationViewController.m in Sources */,
+				C6D038BA1B68E75E00120964 /* PageFirstViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6F29FC41AC1B39800EEE90C /* Style2ViewController.m in Sources */,
 				8ECE8C331AE7889B009AE13A /* OjectPropertyModule.m in Sources */,

@@ -9,6 +9,7 @@
 #import "UIPageViewControllerTestViewController.h"
 
 #import "MoreViewController.h"
+#import "PageFirstViewController.h"
 
 @interface UIPageViewControllerTestViewController () <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
@@ -113,7 +114,7 @@
     self.pageContent = [[NSArray alloc] initWithArray:pageStrings];
 }
 
-- (MoreViewController *)viewControllerAtIndex:(NSInteger)index
+- (UIViewController *)viewControllerAtIndex:(NSInteger)index
 {
     if ( (0 == [self.pageContent count])
         || (index >= [self.pageContent count]) )
@@ -122,16 +123,32 @@
     }
     
     
-    MoreViewController *moreVC = [[MoreViewController alloc] init];
-    moreVC.dataObject = [self.pageContent objectAtIndex:index];
+    UIViewController *vc = nil;
     
+    if (index == 1
+        || index == 2) {
+        PageFirstViewController *firstVC = [[PageFirstViewController alloc] initWithNibName:@"PageFirstViewController" bundle:nil];
+        firstVC.dataObject = [self.pageContent objectAtIndex:index];
+        
+        vc = firstVC;
+    } else {
+        MoreViewController *moreVC = [[MoreViewController alloc] init];
+        moreVC.dataObject = [self.pageContent objectAtIndex:index];
+        
+        vc = moreVC;
+    }
     
-    return moreVC;
+    return vc;
 }
 
 - (NSUInteger)indexOfViewController:(MoreViewController *)viewController
 {
     return [self.pageContent indexOfObject:viewController.dataObject];
+}
+
+- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
+{
+    return 10;
 }
 
 
