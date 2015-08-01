@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 
-#import "YouFireApplication.h"
-#import "AFNetworkingNewest.h"
+//#import "YouFireApplication.h"
+//#import "AFNetworkingNewest.h"
 
 @interface AppDelegate ()
 
