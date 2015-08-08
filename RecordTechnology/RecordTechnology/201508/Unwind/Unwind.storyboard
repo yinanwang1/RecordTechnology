@@ -131,6 +131,7 @@
                         <viewControllerLayoutGuide type="bottom" id="PPb-db-xAS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xVt-xp-6rf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaT-EM-bB0">
@@ -201,6 +202,7 @@
                         <viewControllerLayoutGuide type="bottom" id="WsW-0f-EbT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g4d-Ik-gNV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANI-fN-f9i">
