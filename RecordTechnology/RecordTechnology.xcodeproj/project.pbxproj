@@ -37,6 +37,9 @@
 		C69986491B75B4EE009DB3A3 /* AutomaticDimensionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C69986481B75B4EE009DB3A3 /* AutomaticDimensionTableViewCell.m */; };
 		C699864B1B75D014009DB3A3 /* AutomaticDimensionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C699864A1B75D014009DB3A3 /* AutomaticDimensionTableViewCell.xib */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
+		C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BB44401B970E23003011F6 /* Swift2Test.storyboard */; };
+		C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */; };
+		C6BB44491B971150003011F6 /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44481B971150003011F6 /* StudentClass.swift */; };
 		C6FA8B471B6F30240042A8F9 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA8B461B6F30240042A8F9 /* AnimationViewController.m */; };
 		C6FA8B491B6F302F0042A8F9 /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FA8B481B6F302F0042A8F9 /* Animation.storyboard */; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
@@ -139,6 +142,10 @@
 		C699864A1B75D014009DB3A3 /* AutomaticDimensionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutomaticDimensionTableViewCell.xib; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C6BB44401B970E23003011F6 /* Swift2Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Swift2Test.storyboard; sourceTree = "<group>"; };
+		C6BB44451B970F1A003011F6 /* RecordTechnology-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecordTechnology-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift2TestViewController.swift; sourceTree = "<group>"; };
+		C6BB44481B971150003011F6 /* StudentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
 		C6FA8B451B6F30240042A8F9 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		C6FA8B461B6F30240042A8F9 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		C6FA8B481B6F302F0042A8F9 /* Animation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
@@ -267,6 +274,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				C6BB443E1B970E08003011F6 /* 201509 */,
 				C6FA8B431B6F300D0042A8F9 /* 201508 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
@@ -374,6 +382,25 @@
 			path = AtuomaticDimension;
 			sourceTree = "<group>";
 		};
+		C6BB443E1B970E08003011F6 /* 201509 */ = {
+			isa = PBXGroup;
+			children = (
+				C6BB443F1B970E08003011F6 /* Swift2.0 */,
+			);
+			path = 201509;
+			sourceTree = "<group>";
+		};
+		C6BB443F1B970E08003011F6 /* Swift2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				C6BB44401B970E23003011F6 /* Swift2Test.storyboard */,
+				C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */,
+				C6BB44481B971150003011F6 /* StudentClass.swift */,
+				C6BB44451B970F1A003011F6 /* RecordTechnology-Bridging-Header.h */,
+			);
+			path = Swift2.0;
+			sourceTree = "<group>";
+		};
 		C6FA8B431B6F300D0042A8F9 /* 201508 */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +503,7 @@
 		8E41E22A1ABAB2DC0008984F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "InSigma HengTian Softwar Ltd.";
 				TargetAttributes = {
@@ -553,6 +581,7 @@
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
 				C699864B1B75D014009DB3A3 /* AutomaticDimensionTableViewCell.xib in Resources */,
 				C6FA8B491B6F302F0042A8F9 /* Animation.storyboard in Resources */,
+				C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,9 +645,11 @@
 				C689F76B1B847C890043EEB7 /* StackViewController.m in Sources */,
 				C69986371B759704009DB3A3 /* UnwindYellowViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
+				C6BB44491B971150003011F6 /* StudentClass.swift in Sources */,
 				C69986321B75944F009DB3A3 /* UnwindRedViewController.m in Sources */,
 				C699863A1B759718009DB3A3 /* UnwindGreenViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
+				C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */,
 				C699863D1B759732009DB3A3 /* UnwindBlueViewController.m in Sources */,
 				C69986461B75B439009DB3A3 /* AutomaticDimensionTableViewController.m in Sources */,
 				C6FA8B471B6F30240042A8F9 /* AnimationViewController.m in Sources */,
@@ -825,6 +856,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RecordTechnology/RecordTechnology.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -835,6 +867,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/201509/Swift2.0/RecordTechnology-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -845,6 +879,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RecordTechnology/RecordTechnology.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -855,6 +890,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/201509/Swift2.0/RecordTechnology-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
