@@ -32,7 +32,6 @@ static const int ddLogLevel = LOG_LEVEL_ERROR;  // 控制打印的日志级别�
     
     DDLogVerbose(@"What?");
     
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,5 +48,12 @@ static const int ddLogLevel = LOG_LEVEL_ERROR;  // 控制打印的日志级别�
     // Pass the selected object to the new view controller.
 }
 */
+
+
+- (IBAction)showLog:(id)sender
+{
+    DDLogError(@"wyn Error");
+}
+
 
 @end

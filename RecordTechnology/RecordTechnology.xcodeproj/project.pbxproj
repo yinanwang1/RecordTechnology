@@ -25,23 +25,10 @@
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
-		C689F76B1B847C890043EEB7 /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C689F76A1B847C890043EEB7 /* StackViewController.m */; };
-		C689F76D1B847C920043EEB7 /* StackViewDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C689F76C1B847C920043EEB7 /* StackViewDemo.storyboard */; };
-		C69986321B75944F009DB3A3 /* UnwindRedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C69986311B75944F009DB3A3 /* UnwindRedViewController.m */; };
-		C69986341B759458009DB3A3 /* Unwind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69986331B759458009DB3A3 /* Unwind.storyboard */; };
-		C69986371B759704009DB3A3 /* UnwindYellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C69986361B759704009DB3A3 /* UnwindYellowViewController.m */; };
-		C699863A1B759718009DB3A3 /* UnwindGreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C69986391B759718009DB3A3 /* UnwindGreenViewController.m */; };
-		C699863D1B759732009DB3A3 /* UnwindBlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C699863C1B759732009DB3A3 /* UnwindBlueViewController.m */; };
-		C69986431B75B370009DB3A3 /* AutomaticDimension.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69986421B75B370009DB3A3 /* AutomaticDimension.storyboard */; };
-		C69986461B75B439009DB3A3 /* AutomaticDimensionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C69986451B75B439009DB3A3 /* AutomaticDimensionTableViewController.m */; };
-		C69986491B75B4EE009DB3A3 /* AutomaticDimensionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C69986481B75B4EE009DB3A3 /* AutomaticDimensionTableViewCell.m */; };
-		C699864B1B75D014009DB3A3 /* AutomaticDimensionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C699864A1B75D014009DB3A3 /* AutomaticDimensionTableViewCell.xib */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BB44401B970E23003011F6 /* Swift2Test.storyboard */; };
 		C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */; };
 		C6BB44491B971150003011F6 /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44481B971150003011F6 /* StudentClass.swift */; };
-		C6FA8B471B6F30240042A8F9 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA8B461B6F30240042A8F9 /* AnimationViewController.m */; };
-		C6FA8B491B6F302F0042A8F9 /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FA8B481B6F302F0042A8F9 /* Animation.storyboard */; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,33 +109,12 @@
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
-		C689F7691B847C890043EEB7 /* StackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewController.h; sourceTree = "<group>"; };
-		C689F76A1B847C890043EEB7 /* StackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewController.m; sourceTree = "<group>"; };
-		C689F76C1B847C920043EEB7 /* StackViewDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StackViewDemo.storyboard; sourceTree = "<group>"; };
-		C69986301B75944F009DB3A3 /* UnwindRedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnwindRedViewController.h; sourceTree = "<group>"; };
-		C69986311B75944F009DB3A3 /* UnwindRedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnwindRedViewController.m; sourceTree = "<group>"; };
-		C69986331B759458009DB3A3 /* Unwind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Unwind.storyboard; sourceTree = "<group>"; };
-		C69986351B759704009DB3A3 /* UnwindYellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnwindYellowViewController.h; sourceTree = "<group>"; };
-		C69986361B759704009DB3A3 /* UnwindYellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnwindYellowViewController.m; sourceTree = "<group>"; };
-		C69986381B759718009DB3A3 /* UnwindGreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnwindGreenViewController.h; sourceTree = "<group>"; };
-		C69986391B759718009DB3A3 /* UnwindGreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnwindGreenViewController.m; sourceTree = "<group>"; };
-		C699863B1B759732009DB3A3 /* UnwindBlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnwindBlueViewController.h; sourceTree = "<group>"; };
-		C699863C1B759732009DB3A3 /* UnwindBlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnwindBlueViewController.m; sourceTree = "<group>"; };
-		C69986421B75B370009DB3A3 /* AutomaticDimension.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AutomaticDimension.storyboard; sourceTree = "<group>"; };
-		C69986441B75B439009DB3A3 /* AutomaticDimensionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutomaticDimensionTableViewController.h; sourceTree = "<group>"; };
-		C69986451B75B439009DB3A3 /* AutomaticDimensionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutomaticDimensionTableViewController.m; sourceTree = "<group>"; };
-		C69986471B75B4EE009DB3A3 /* AutomaticDimensionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutomaticDimensionTableViewCell.h; sourceTree = "<group>"; };
-		C69986481B75B4EE009DB3A3 /* AutomaticDimensionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutomaticDimensionTableViewCell.m; sourceTree = "<group>"; };
-		C699864A1B75D014009DB3A3 /* AutomaticDimensionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutomaticDimensionTableViewCell.xib; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6BB44401B970E23003011F6 /* Swift2Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Swift2Test.storyboard; sourceTree = "<group>"; };
 		C6BB44451B970F1A003011F6 /* RecordTechnology-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecordTechnology-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift2TestViewController.swift; sourceTree = "<group>"; };
 		C6BB44481B971150003011F6 /* StudentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
-		C6FA8B451B6F30240042A8F9 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
-		C6FA8B461B6F30240042A8F9 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
-		C6FA8B481B6F302F0042A8F9 /* Animation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
 		F6BD7DDAA2F489FB8228BB62 /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -275,7 +241,6 @@
 			isa = PBXGroup;
 			children = (
 				C6BB443E1B970E08003011F6 /* 201509 */,
-				C6FA8B431B6F300D0042A8F9 /* 201508 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
 				8E41E23A1ABAB2DC0008984F /* AppDelegate.m */,
@@ -343,45 +308,6 @@
 			path = WWSideslipViewController;
 			sourceTree = "<group>";
 		};
-		C689F7681B847C730043EEB7 /* StackView */ = {
-			isa = PBXGroup;
-			children = (
-				C689F7691B847C890043EEB7 /* StackViewController.h */,
-				C689F76A1B847C890043EEB7 /* StackViewController.m */,
-				C689F76C1B847C920043EEB7 /* StackViewDemo.storyboard */,
-			);
-			path = StackView;
-			sourceTree = "<group>";
-		};
-		C699862F1B75943D009DB3A3 /* Unwind */ = {
-			isa = PBXGroup;
-			children = (
-				C69986331B759458009DB3A3 /* Unwind.storyboard */,
-				C69986301B75944F009DB3A3 /* UnwindRedViewController.h */,
-				C69986311B75944F009DB3A3 /* UnwindRedViewController.m */,
-				C69986351B759704009DB3A3 /* UnwindYellowViewController.h */,
-				C69986361B759704009DB3A3 /* UnwindYellowViewController.m */,
-				C699863B1B759732009DB3A3 /* UnwindBlueViewController.h */,
-				C699863C1B759732009DB3A3 /* UnwindBlueViewController.m */,
-				C69986381B759718009DB3A3 /* UnwindGreenViewController.h */,
-				C69986391B759718009DB3A3 /* UnwindGreenViewController.m */,
-			);
-			path = Unwind;
-			sourceTree = "<group>";
-		};
-		C699863E1B75B350009DB3A3 /* AtuomaticDimension */ = {
-			isa = PBXGroup;
-			children = (
-				C69986421B75B370009DB3A3 /* AutomaticDimension.storyboard */,
-				C69986441B75B439009DB3A3 /* AutomaticDimensionTableViewController.h */,
-				C69986451B75B439009DB3A3 /* AutomaticDimensionTableViewController.m */,
-				C69986471B75B4EE009DB3A3 /* AutomaticDimensionTableViewCell.h */,
-				C69986481B75B4EE009DB3A3 /* AutomaticDimensionTableViewCell.m */,
-				C699864A1B75D014009DB3A3 /* AutomaticDimensionTableViewCell.xib */,
-			);
-			path = AtuomaticDimension;
-			sourceTree = "<group>";
-		};
 		C6BB443E1B970E08003011F6 /* 201509 */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,27 +325,6 @@
 				C6BB44451B970F1A003011F6 /* RecordTechnology-Bridging-Header.h */,
 			);
 			path = Swift2.0;
-			sourceTree = "<group>";
-		};
-		C6FA8B431B6F300D0042A8F9 /* 201508 */ = {
-			isa = PBXGroup;
-			children = (
-				C689F7681B847C730043EEB7 /* StackView */,
-				C699863E1B75B350009DB3A3 /* AtuomaticDimension */,
-				C699862F1B75943D009DB3A3 /* Unwind */,
-				C6FA8B441B6F300D0042A8F9 /* Animation */,
-			);
-			path = 201508;
-			sourceTree = "<group>";
-		};
-		C6FA8B441B6F300D0042A8F9 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-				C6FA8B451B6F30240042A8F9 /* AnimationViewController.h */,
-				C6FA8B461B6F30240042A8F9 /* AnimationViewController.m */,
-				C6FA8B481B6F302F0042A8F9 /* Animation.storyboard */,
-			);
-			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -574,13 +479,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
-				C69986431B75B370009DB3A3 /* AutomaticDimension.storyboard in Resources */,
-				C69986341B759458009DB3A3 /* Unwind.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
-				C689F76D1B847C920043EEB7 /* StackViewDemo.storyboard in Resources */,
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
-				C699864B1B75D014009DB3A3 /* AutomaticDimensionTableViewCell.xib in Resources */,
-				C6FA8B491B6F302F0042A8F9 /* Animation.storyboard in Resources */,
 				C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,18 +541,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C69986491B75B4EE009DB3A3 /* AutomaticDimensionTableViewCell.m in Sources */,
-				C689F76B1B847C890043EEB7 /* StackViewController.m in Sources */,
-				C69986371B759704009DB3A3 /* UnwindYellowViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6BB44491B971150003011F6 /* StudentClass.swift in Sources */,
-				C69986321B75944F009DB3A3 /* UnwindRedViewController.m in Sources */,
-				C699863A1B759718009DB3A3 /* UnwindGreenViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */,
-				C699863D1B759732009DB3A3 /* UnwindBlueViewController.m in Sources */,
-				C69986461B75B439009DB3A3 /* AutomaticDimensionTableViewController.m in Sources */,
-				C6FA8B471B6F30240042A8F9 /* AnimationViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 			);
