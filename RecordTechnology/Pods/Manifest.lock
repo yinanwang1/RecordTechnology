@@ -37,6 +37,7 @@ PODS:
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
+  - XTSafeCollection (1.0.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.0)
@@ -48,6 +49,7 @@ DEPENDENCIES:
   - OpenUDID (~> 1.0.0)
   - Reachability (~> 3.2)
   - SDWebImage (~> 3.7.2)
+  - XTSafeCollection (~> 1.0.3)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
@@ -59,5 +61,6 @@ SPEC CHECKSUMS:
   OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  XTSafeCollection: 2f774fcbd56bc0d341bed9d4b6c3f22c753caa81
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

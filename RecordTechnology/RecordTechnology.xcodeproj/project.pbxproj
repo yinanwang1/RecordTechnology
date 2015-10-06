@@ -25,12 +25,14 @@
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
+		C6B01B591BC3809700DE78A7 /* BehaviorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B01B561BC3809700DE78A7 /* BehaviorStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		C6B01B5A1BC3809700DE78A7 /* BehaviorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B01B581BC3809700DE78A7 /* BehaviorViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C6B01B601BC380E700DE78A7 /* XTSafeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B01B5F1BC380E700DE78A7 /* XTSafeCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C6B01B621BC3810300DE78A7 /* XTSafeCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B01B611BC3810300DE78A7 /* XTSafeCollection.storyboard */; settings = {ASSET_TAGS = (); }; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BB44401B970E23003011F6 /* Swift2Test.storyboard */; };
 		C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */; };
 		C6BB44491B971150003011F6 /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44481B971150003011F6 /* StudentClass.swift */; };
-		C6E6D08B1BC27573003D44C1 /* BehaviorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E6D08A1BC27573003D44C1 /* BehaviorViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C6E6D08D1BC27584003D44C1 /* BehaviorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E6D08C1BC27584003D44C1 /* BehaviorStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,15 +113,18 @@
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C6B01B561BC3809700DE78A7 /* BehaviorStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BehaviorStoryboard.storyboard; sourceTree = "<group>"; };
+		C6B01B571BC3809700DE78A7 /* BehaviorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BehaviorViewController.h; sourceTree = "<group>"; };
+		C6B01B581BC3809700DE78A7 /* BehaviorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BehaviorViewController.m; sourceTree = "<group>"; };
+		C6B01B5E1BC380E700DE78A7 /* XTSafeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSafeCollectionViewController.h; sourceTree = "<group>"; };
+		C6B01B5F1BC380E700DE78A7 /* XTSafeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSafeCollectionViewController.m; sourceTree = "<group>"; };
+		C6B01B611BC3810300DE78A7 /* XTSafeCollection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XTSafeCollection.storyboard; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6BB44401B970E23003011F6 /* Swift2Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Swift2Test.storyboard; sourceTree = "<group>"; };
 		C6BB44451B970F1A003011F6 /* RecordTechnology-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecordTechnology-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift2TestViewController.swift; sourceTree = "<group>"; };
 		C6BB44481B971150003011F6 /* StudentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
-		C6E6D0891BC27573003D44C1 /* BehaviorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BehaviorViewController.h; sourceTree = "<group>"; };
-		C6E6D08A1BC27573003D44C1 /* BehaviorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BehaviorViewController.m; sourceTree = "<group>"; };
-		C6E6D08C1BC27584003D44C1 /* BehaviorStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BehaviorStoryboard.storyboard; sourceTree = "<group>"; };
 		F6BD7DDAA2F489FB8228BB62 /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -314,6 +319,26 @@
 			path = WWSideslipViewController;
 			sourceTree = "<group>";
 		};
+		C6B01B551BC3809700DE78A7 /* Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				C6B01B561BC3809700DE78A7 /* BehaviorStoryboard.storyboard */,
+				C6B01B571BC3809700DE78A7 /* BehaviorViewController.h */,
+				C6B01B581BC3809700DE78A7 /* BehaviorViewController.m */,
+			);
+			path = Behavior;
+			sourceTree = "<group>";
+		};
+		C6B01B5B1BC380CB00DE78A7 /* XTSafeCollection */ = {
+			isa = PBXGroup;
+			children = (
+				C6B01B5E1BC380E700DE78A7 /* XTSafeCollectionViewController.h */,
+				C6B01B5F1BC380E700DE78A7 /* XTSafeCollectionViewController.m */,
+				C6B01B611BC3810300DE78A7 /* XTSafeCollection.storyboard */,
+			);
+			path = XTSafeCollection;
+			sourceTree = "<group>";
+		};
 		C6BB443E1B970E08003011F6 /* 201509 */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,9 +361,8 @@
 		C6E6D0881BC26B79003D44C1 /* 201510 */ = {
 			isa = PBXGroup;
 			children = (
-				C6E6D0891BC27573003D44C1 /* BehaviorViewController.h */,
-				C6E6D08A1BC27573003D44C1 /* BehaviorViewController.m */,
-				C6E6D08C1BC27584003D44C1 /* BehaviorStoryboard.storyboard */,
+				C6B01B5B1BC380CB00DE78A7 /* XTSafeCollection */,
+				C6B01B551BC3809700DE78A7 /* Behavior */,
 			);
 			path = 201510;
 			sourceTree = "<group>";
@@ -494,9 +518,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E6D08D1BC27584003D44C1 /* BehaviorStoryboard.storyboard in Resources */,
+				C6B01B591BC3809700DE78A7 /* BehaviorStoryboard.storyboard in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
+				C6B01B621BC3810300DE78A7 /* XTSafeCollection.storyboard in Resources */,
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
 				C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */,
 			);
@@ -558,8 +583,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E6D08B1BC27573003D44C1 /* BehaviorViewController.m in Sources */,
+				C6B01B5A1BC3809700DE78A7 /* BehaviorViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
+				C6B01B601BC380E700DE78A7 /* XTSafeCollectionViewController.m in Sources */,
 				C6BB44491B971150003011F6 /* StudentClass.swift in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */,
