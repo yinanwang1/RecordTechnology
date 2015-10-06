@@ -29,6 +29,8 @@
 		C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BB44401B970E23003011F6 /* Swift2Test.storyboard */; };
 		C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */; };
 		C6BB44491B971150003011F6 /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44481B971150003011F6 /* StudentClass.swift */; };
+		C6E6D08B1BC27573003D44C1 /* BehaviorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E6D08A1BC27573003D44C1 /* BehaviorViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C6E6D08D1BC27584003D44C1 /* BehaviorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E6D08C1BC27584003D44C1 /* BehaviorStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +117,9 @@
 		C6BB44451B970F1A003011F6 /* RecordTechnology-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecordTechnology-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift2TestViewController.swift; sourceTree = "<group>"; };
 		C6BB44481B971150003011F6 /* StudentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
+		C6E6D0891BC27573003D44C1 /* BehaviorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BehaviorViewController.h; sourceTree = "<group>"; };
+		C6E6D08A1BC27573003D44C1 /* BehaviorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BehaviorViewController.m; sourceTree = "<group>"; };
+		C6E6D08C1BC27584003D44C1 /* BehaviorStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BehaviorStoryboard.storyboard; sourceTree = "<group>"; };
 		F6BD7DDAA2F489FB8228BB62 /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -240,6 +245,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				C6E6D0881BC26B79003D44C1 /* 201510 */,
 				C6BB443E1B970E08003011F6 /* 201509 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
@@ -325,6 +331,16 @@
 				C6BB44451B970F1A003011F6 /* RecordTechnology-Bridging-Header.h */,
 			);
 			path = Swift2.0;
+			sourceTree = "<group>";
+		};
+		C6E6D0881BC26B79003D44C1 /* 201510 */ = {
+			isa = PBXGroup;
+			children = (
+				C6E6D0891BC27573003D44C1 /* BehaviorViewController.h */,
+				C6E6D08A1BC27573003D44C1 /* BehaviorViewController.m */,
+				C6E6D08C1BC27584003D44C1 /* BehaviorStoryboard.storyboard */,
+			);
+			path = 201510;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,6 +494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E6D08D1BC27584003D44C1 /* BehaviorStoryboard.storyboard in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
@@ -541,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E6D08B1BC27573003D44C1 /* BehaviorViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6BB44491B971150003011F6 /* StudentClass.swift in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
