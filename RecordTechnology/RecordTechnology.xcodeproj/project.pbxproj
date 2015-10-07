@@ -33,6 +33,8 @@
 		C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BB44401B970E23003011F6 /* Swift2Test.storyboard */; };
 		C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */; };
 		C6BB44491B971150003011F6 /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44481B971150003011F6 /* StudentClass.swift */; };
+		C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC011BC5139700924F56 /* PopViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C6EEFC041BC513A200924F56 /* Pop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC031BC513A200924F56 /* Pop.storyboard */; settings = {ASSET_TAGS = (); }; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +127,9 @@
 		C6BB44451B970F1A003011F6 /* RecordTechnology-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecordTechnology-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift2TestViewController.swift; sourceTree = "<group>"; };
 		C6BB44481B971150003011F6 /* StudentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
+		C6EEFC001BC5139700924F56 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		C6EEFC011BC5139700924F56 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		C6EEFC031BC513A200924F56 /* Pop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pop.storyboard; sourceTree = "<group>"; };
 		F6BD7DDAA2F489FB8228BB62 /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -361,10 +366,21 @@
 		C6E6D0881BC26B79003D44C1 /* 201510 */ = {
 			isa = PBXGroup;
 			children = (
+				C6EEFBFF1BC5135A00924F56 /* Pop */,
 				C6B01B5B1BC380CB00DE78A7 /* XTSafeCollection */,
 				C6B01B551BC3809700DE78A7 /* Behavior */,
 			);
 			path = 201510;
+			sourceTree = "<group>";
+		};
+		C6EEFBFF1BC5135A00924F56 /* Pop */ = {
+			isa = PBXGroup;
+			children = (
+				C6EEFC001BC5139700924F56 /* PopViewController.h */,
+				C6EEFC011BC5139700924F56 /* PopViewController.m */,
+				C6EEFC031BC513A200924F56 /* Pop.storyboard */,
+			);
+			path = Pop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6B01B591BC3809700DE78A7 /* BehaviorStoryboard.storyboard in Resources */,
+				C6EEFC041BC513A200924F56 /* Pop.storyboard in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C6B01B621BC3810300DE78A7 /* XTSafeCollection.storyboard in Resources */,
@@ -586,6 +603,7 @@
 				C6B01B5A1BC3809700DE78A7 /* BehaviorViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6B01B601BC380E700DE78A7 /* XTSafeCollectionViewController.m in Sources */,
+				C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */,
 				C6BB44491B971150003011F6 /* StudentClass.swift in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */,

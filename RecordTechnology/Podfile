@@ -15,6 +15,7 @@ pod 'Masonry', '~> 0.6.1'
 pod 'MJRefresh', '~> 2.0.4'
 pod 'CocoaLumberjack', '~>2.0.1'
 pod 'XTSafeCollection', '~> 1.0.3'
+pod 'pop', '~> 1.0.8'
 
 end
 

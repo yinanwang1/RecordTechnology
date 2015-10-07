@@ -33,6 +33,7 @@ PODS:
   - MFSideMenu (0.5.5)
   - MJRefresh (2.0.4)
   - OpenUDID (1.0.0)
+  - pop (1.0.8)
   - Reachability (3.2)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
@@ -47,6 +48,7 @@ DEPENDENCIES:
   - MFSideMenu (~> 0.5.5)
   - MJRefresh (~> 2.0.4)
   - OpenUDID (~> 1.0.0)
+  - pop (~> 1.0.8)
   - Reachability (~> 3.2)
   - SDWebImage (~> 3.7.2)
   - XTSafeCollection (~> 1.0.3)
@@ -59,6 +61,7 @@ SPEC CHECKSUMS:
   MFSideMenu: 268122e6894f2747fc3a2b48578100b232506c60
   MJRefresh: ea153717001d3c02444bd22b75c111d2937d2104
   OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   XTSafeCollection: 2f774fcbd56bc0d341bed9d4b6c3f22c753caa81

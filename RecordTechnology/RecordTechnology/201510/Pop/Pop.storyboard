@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VJb-Ac-XF4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop View Controller-->
+        <scene sceneID="nd4-Vd-rBU">
+            <objects>
+                <viewController id="VJb-Ac-XF4" customClass="PopViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gtR-l5-jWw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sj2-x8-xfI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n8U-gx-F0X">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAz-JT-DHg">
+                                <rect key="frame" x="21" y="28" width="41" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMh-iZ-UPT">
+                                <rect key="frame" x="53" y="103" width="98" height="71"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.42745098040000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="2rj-Tj-Olq"/>
+                                    <constraint firstAttribute="width" constant="98" id="FBy-D8-Bg2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="你好"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPU-I9-Jho">
+                                <rect key="frame" x="53" y="542" width="30" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="a05-HE-mpU"/>
+                                    <constraint firstAttribute="width" constant="30" id="ueC-1G-VYT"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="onClickPlayBtn:" destination="VJb-Ac-XF4" eventType="touchUpInside" id="ZGM-9K-PWp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sj2-x8-xfI" firstAttribute="top" secondItem="lPU-I9-Jho" secondAttribute="bottom" constant="28" id="3Tj-B7-e9A"/>
+                            <constraint firstItem="dMh-iZ-UPT" firstAttribute="leading" secondItem="n8U-gx-F0X" secondAttribute="leadingMargin" constant="33" id="6Ar-iI-ug6"/>
+                            <constraint firstItem="dMh-iZ-UPT" firstAttribute="top" secondItem="gtR-l5-jWw" secondAttribute="bottom" constant="83" id="8CQ-D1-9RY"/>
+                            <constraint firstItem="lPU-I9-Jho" firstAttribute="leading" secondItem="n8U-gx-F0X" secondAttribute="leadingMargin" constant="33" id="ADW-yp-WGS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="dMh-iZ-UPT" id="Zrk-fd-KAX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBS-rX-06M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="732" y="551"/>
+        </scene>
+    </scenes>
+</document>

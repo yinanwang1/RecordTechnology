@@ -55,10 +55,28 @@ class Swift2TestViewController: UIViewController {
         /*****************************/
         
         
-        let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
+//        let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
+//        
+//        print("boilingPointOfWater is \(boilingPointOfWater.temperatureInCelsius)")
         
-        print("boilingPointOfWater is \(boilingPointOfWater.temperatureInCelsius)")
+//        let john = Person()
+//        john.residence = Residence()
+//        if let roomCount = john.residence?.numberOfRooms {
+//            print("John's residence hase \(roomCount) room(s).")
+//        } else {
+//            print("Unable to retrieve the number of rooms")
+//        }
         
+        let library = [
+            Movie(name: "Casablanca", director: "Michael Curtiz"),
+            Song(name: "Blue Suede Shoes", artist: "Elvis Presley"),
+            Movie(name: "Citizen Kane", director: "Orson Welles"),
+            Song(name: "The one And Only", artist: "Chesney Hawkes"),
+            Song(name: "Never Gonna Give You UP", artist: "Rick Astley")
+        ]
+        
+        var movieCount = 0
+        var songCount = 0
         
     }
 
