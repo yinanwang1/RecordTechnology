@@ -35,6 +35,8 @@
 		C6BB44491B971150003011F6 /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44481B971150003011F6 /* StudentClass.swift */; };
 		C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC011BC5139700924F56 /* PopViewController.m */; settings = {ASSET_TAGS = (); }; };
 		C6EEFC041BC513A200924F56 /* Pop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC031BC513A200924F56 /* Pop.storyboard */; settings = {ASSET_TAGS = (); }; };
+		C6EEFC071BC61CCB00924F56 /* Objective.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC061BC61CCB00924F56 /* Objective.m */; settings = {ASSET_TAGS = (); }; };
+		C6EEFC091BC65AF400924F56 /* snakeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC081BC65AF400924F56 /* snakeGame.swift */; settings = {ASSET_TAGS = (); }; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +132,9 @@
 		C6EEFC001BC5139700924F56 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
 		C6EEFC011BC5139700924F56 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		C6EEFC031BC513A200924F56 /* Pop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pop.storyboard; sourceTree = "<group>"; };
+		C6EEFC051BC61CCB00924F56 /* Objective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objective.h; sourceTree = "<group>"; };
+		C6EEFC061BC61CCB00924F56 /* Objective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objective.m; sourceTree = "<group>"; };
+		C6EEFC081BC65AF400924F56 /* snakeGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = snakeGame.swift; sourceTree = "<group>"; };
 		F6BD7DDAA2F489FB8228BB62 /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -359,6 +364,9 @@
 				C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */,
 				C6BB44481B971150003011F6 /* StudentClass.swift */,
 				C6BB44451B970F1A003011F6 /* RecordTechnology-Bridging-Header.h */,
+				C6EEFC051BC61CCB00924F56 /* Objective.h */,
+				C6EEFC061BC61CCB00924F56 /* Objective.m */,
+				C6EEFC081BC65AF400924F56 /* snakeGame.swift */,
 			);
 			path = Swift2.0;
 			sourceTree = "<group>";
@@ -607,6 +615,8 @@
 				C6BB44491B971150003011F6 /* StudentClass.swift in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */,
+				C6EEFC071BC61CCB00924F56 /* Objective.m in Sources */,
+				C6EEFC091BC65AF400924F56 /* snakeGame.swift in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 			);

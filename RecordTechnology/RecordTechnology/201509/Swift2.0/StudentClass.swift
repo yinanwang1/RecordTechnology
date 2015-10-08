@@ -10,6 +10,9 @@ import UIKit
 
 class StudentClass: NSObject {
 
+    func sayHello() -> Void {
+        print("Hello, I am swift")
+    }
 }
 
 
@@ -99,6 +102,57 @@ class Song: MediaItem {
     }
     
 }
+
+struct BlackjackCard {
+    enum Suit: Character {
+        case Spades = "🌱", Hearts = "🌲", Diamonds = "🌳", Clubs = "🌷"
+    }
+    
+    enum Rank: Int {
+        case Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten
+        case Jack, Queen, King, Ace
+        struct Values {
+            let first: Int, second: Int?
+        }
+        
+        var values: Values {
+            switch self {
+            case .Ace:
+                return Values(first: 1, second: 11)
+                
+            case .Jack, .Queen, .King:
+                return Values(first: 10, second: nil)
+                
+            default:
+                return Values(first: self.rawValue, second: nil)
+            }
+        }
+    }
+}
+
+protocol A {
+    var a: String { get }
+    var b: String { get set }
+    mutating func method1();
+}
+
+class Test: A{
+    var a:String = "hello victor"
+    var b:String = "okok"
+    func method1() {
+        print("Nothing to do")
+    }
+}
+
+struct Test1: A{
+    var a:String = "hello victor"
+    var b:String = "okok"
+    func method1() {
+        print("Struct is Test1")
+    }
+}
+
+
 
 
 

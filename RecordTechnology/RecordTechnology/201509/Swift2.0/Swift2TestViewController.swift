@@ -16,6 +16,18 @@ class Student {
     }
 }
 
+//extension Int {
+//    subscript(index: Int) -> Int {
+//        var decimalBase = 1
+//        for _ in 1...index {
+//            decimalBase *= 10
+//        }
+//        
+//        return (self / decimalBase) % 10
+//    }
+//    
+//}
+
 class Swift2TestViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -67,16 +79,59 @@ class Swift2TestViewController: UIViewController {
 //            print("Unable to retrieve the number of rooms")
 //        }
         
-        let library = [
-            Movie(name: "Casablanca", director: "Michael Curtiz"),
-            Song(name: "Blue Suede Shoes", artist: "Elvis Presley"),
-            Movie(name: "Citizen Kane", director: "Orson Welles"),
-            Song(name: "The one And Only", artist: "Chesney Hawkes"),
-            Song(name: "Never Gonna Give You UP", artist: "Rick Astley")
-        ]
+//        let library = [
+//            Movie(name: "Casablanca", director: "Michael Curtiz"),
+//            Song(name: "Blue Suede Shoes", artist: "Elvis Presley"),
+//            Movie(name: "Citizen Kane", director: "Orson Welles"),
+//            Song(name: "The one And Only", artist: "Chesney Hawkes"),
+//            Song(name: "Never Gonna Give You UP", artist: "Rick Astley")
+//        ]
+//        
+//        var movieCount = 0
+//        var songCount = 0
+//        
+//        for item in library {
+//            if item is Movie {
+//                ++movieCount
+//            } else if item is Song {
+//                ++songCount
+//            }
+//        }
+//        
+//        print("Media library contains \(movieCount) movies and \(songCount) songs")
+//        
+//        
+//        for item in library {
+//            if let movie = item as? Movie {
+//                print("Movie:'\(movie.name)', dir.\(movie.director)")
+//            } else if let song = item as? Song {
+//                print("Song: '\(song.name)', by \(song.artist)")
+//            }
+//        }
         
-        var movieCount = 0
-        var songCount = 0
+//        let obj: Objective = Objective()
+//        
+//        obj.sayHello()
+        
+//        print(711923719237[0])
+        
+//        let m = Test()
+//        m.a = "aaaaa"
+//        m.b = "ccccc"
+//        
+//        print(m.a + m.b)
+        
+        
+//        let d6 = Dice(sides: 10000, generator: LinearCongruentialGenerator())
+//        
+//        for _ in 1...5 {
+//            print("Random dice roll is \(d6.roll())")
+//        }
+        
+        let tracker = DiceGameTracker()
+        let game = SnakeAndLadders()
+        game.delegate = tracker
+        game.play()
         
     }
 
