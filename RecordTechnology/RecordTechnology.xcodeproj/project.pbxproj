@@ -37,6 +37,12 @@
 		C6EEFC041BC513A200924F56 /* Pop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC031BC513A200924F56 /* Pop.storyboard */; settings = {ASSET_TAGS = (); }; };
 		C6EEFC071BC61CCB00924F56 /* Objective.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC061BC61CCB00924F56 /* Objective.m */; settings = {ASSET_TAGS = (); }; };
 		C6EEFC091BC65AF400924F56 /* snakeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC081BC65AF400924F56 /* snakeGame.swift */; settings = {ASSET_TAGS = (); }; };
+		C6EEFC121BC7935300924F56 /* ShrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC111BC7935300924F56 /* ShrinkViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C6EEFC141BC7937000924F56 /* Shrink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC131BC7937000924F56 /* Shrink.storyboard */; settings = {ASSET_TAGS = (); }; };
+		C6EEFC161BC7955900924F56 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC151BC7955900924F56 /* RootViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C6EEFC181BC7956400924F56 /* NormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC171BC7956400924F56 /* NormalViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C6EEFC1A1BC79B3C00924F56 /* ShrinkHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC191BC79B3C00924F56 /* ShrinkHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
+		C6EEFC1C1BC79B5400924F56 /* ShrinkHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC1B1BC79B5400924F56 /* ShrinkHeaderView.swift */; settings = {ASSET_TAGS = (); }; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +141,12 @@
 		C6EEFC051BC61CCB00924F56 /* Objective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objective.h; sourceTree = "<group>"; };
 		C6EEFC061BC61CCB00924F56 /* Objective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objective.m; sourceTree = "<group>"; };
 		C6EEFC081BC65AF400924F56 /* snakeGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = snakeGame.swift; sourceTree = "<group>"; };
+		C6EEFC111BC7935300924F56 /* ShrinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrinkViewController.swift; sourceTree = "<group>"; };
+		C6EEFC131BC7937000924F56 /* Shrink.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shrink.storyboard; sourceTree = "<group>"; };
+		C6EEFC151BC7955900924F56 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		C6EEFC171BC7956400924F56 /* NormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalViewController.swift; sourceTree = "<group>"; };
+		C6EEFC191BC79B3C00924F56 /* ShrinkHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShrinkHeaderView.xib; sourceTree = "<group>"; };
+		C6EEFC1B1BC79B5400924F56 /* ShrinkHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrinkHeaderView.swift; sourceTree = "<group>"; };
 		F6BD7DDAA2F489FB8228BB62 /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -374,6 +386,7 @@
 		C6E6D0881BC26B79003D44C1 /* 201510 */ = {
 			isa = PBXGroup;
 			children = (
+				C6EEFC101BC7928200924F56 /* NavigationBar */,
 				C6EEFBFF1BC5135A00924F56 /* Pop */,
 				C6B01B5B1BC380CB00DE78A7 /* XTSafeCollection */,
 				C6B01B551BC3809700DE78A7 /* Behavior */,
@@ -389,6 +402,19 @@
 				C6EEFC031BC513A200924F56 /* Pop.storyboard */,
 			);
 			path = Pop;
+			sourceTree = "<group>";
+		};
+		C6EEFC101BC7928200924F56 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				C6EEFC151BC7955900924F56 /* RootViewController.swift */,
+				C6EEFC111BC7935300924F56 /* ShrinkViewController.swift */,
+				C6EEFC171BC7956400924F56 /* NormalViewController.swift */,
+				C6EEFC1B1BC79B5400924F56 /* ShrinkHeaderView.swift */,
+				C6EEFC191BC79B3C00924F56 /* ShrinkHeaderView.xib */,
+				C6EEFC131BC7937000924F56 /* Shrink.storyboard */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -549,6 +575,8 @@
 				C6B01B621BC3810300DE78A7 /* XTSafeCollection.storyboard in Resources */,
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
 				C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */,
+				C6EEFC141BC7937000924F56 /* Shrink.storyboard in Resources */,
+				C6EEFC1A1BC79B3C00924F56 /* ShrinkHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,9 +636,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6EEFC1C1BC79B5400924F56 /* ShrinkHeaderView.swift in Sources */,
 				C6B01B5A1BC3809700DE78A7 /* BehaviorViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6B01B601BC380E700DE78A7 /* XTSafeCollectionViewController.m in Sources */,
+				C6EEFC121BC7935300924F56 /* ShrinkViewController.swift in Sources */,
+				C6EEFC161BC7955900924F56 /* RootViewController.swift in Sources */,
+				C6EEFC181BC7956400924F56 /* NormalViewController.swift in Sources */,
 				C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */,
 				C6BB44491B971150003011F6 /* StudentClass.swift in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
