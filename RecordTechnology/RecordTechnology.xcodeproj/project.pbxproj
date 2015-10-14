@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0102173E8AB99535742F11E5 /* libPods-RecordTechnology.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BD7DDAA2F489FB8228BB62 /* libPods-RecordTechnology.a */; };
+		1BDEFD384C59BC6C5B72179D /* libPods-RecordTechnology.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 701B6C626967A76F448FAF53 /* libPods-RecordTechnology.a */; };
 		8E0E6B5D1ACBBDDD00759F64 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E6B5C1ACBBDDD00759F64 /* InterfaceController.m */; };
 		8E0E6B601ACBBDDD00759F64 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E6B5F1ACBBDDD00759F64 /* NotificationController.m */; };
 		8E0E6B621ACBBDDD00759F64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6B611ACBBDDD00759F64 /* Images.xcassets */; };
@@ -43,6 +43,8 @@
 		C6EEFC181BC7956400924F56 /* NormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC171BC7956400924F56 /* NormalViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C6EEFC1A1BC79B3C00924F56 /* ShrinkHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC191BC79B3C00924F56 /* ShrinkHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
 		C6EEFC1C1BC79B5400924F56 /* ShrinkHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC1B1BC79B5400924F56 /* ShrinkHeaderView.swift */; settings = {ASSET_TAGS = (); }; };
+		C6F4AAF31BCDEB7200EBE834 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F4AAF21BCDEB7200EBE834 /* FMDBViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C6F4AAF51BCDEB7D00EBE834 /* FMDB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F4AAF41BCDEB7D00EBE834 /* FMDB.storyboard */; settings = {ASSET_TAGS = (); }; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +88,7 @@
 
 /* Begin PBXFileReference section */
 		274E0FE90313889705C4C678 /* Pods-RecordTechnology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnology.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnology/Pods-RecordTechnology.release.xcconfig"; sourceTree = "<group>"; };
+		701B6C626967A76F448FAF53 /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		815826EAF453A36B3E35A690 /* Pods-RecordTechnology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnology/Pods-RecordTechnology.debug.xcconfig"; sourceTree = "<group>"; };
 		8E0E6B561ACBBDDD00759F64 /* RecordTechnology WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RecordTechnology WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0E6B591ACBBDDD00759F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -147,7 +150,9 @@
 		C6EEFC171BC7956400924F56 /* NormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalViewController.swift; sourceTree = "<group>"; };
 		C6EEFC191BC79B3C00924F56 /* ShrinkHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShrinkHeaderView.xib; sourceTree = "<group>"; };
 		C6EEFC1B1BC79B5400924F56 /* ShrinkHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrinkHeaderView.swift; sourceTree = "<group>"; };
-		F6BD7DDAA2F489FB8228BB62 /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F4AAF11BCDEB7200EBE834 /* FMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBViewController.h; sourceTree = "<group>"; };
+		C6F4AAF21BCDEB7200EBE834 /* FMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBViewController.m; sourceTree = "<group>"; };
+		C6F4AAF41BCDEB7D00EBE834 /* FMDB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FMDB.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +171,7 @@
 				C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */,
 				8E1BE4321B3BED4800CAF4BA /* libobjc.A.dylib in Frameworks */,
 				C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */,
-				0102173E8AB99535742F11E5 /* libPods-RecordTechnology.a in Frameworks */,
+				1BDEFD384C59BC6C5B72179D /* libPods-RecordTechnology.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +196,7 @@
 				8EDF0A4B1ABC22EC004D736C /* UIKit.framework */,
 				8EDF0A441ABC1EB8004D736C /* CoreGraphics.framework */,
 				8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */,
-				F6BD7DDAA2F489FB8228BB62 /* libPods-RecordTechnology.a */,
+				701B6C626967A76F448FAF53 /* libPods-RecordTechnology.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 		C6E6D0881BC26B79003D44C1 /* 201510 */ = {
 			isa = PBXGroup;
 			children = (
+				C6F4AAEE1BCDEB2F00EBE834 /* FMDB */,
 				C6EEFC101BC7928200924F56 /* NavigationBar */,
 				C6EEFBFF1BC5135A00924F56 /* Pop */,
 				C6B01B5B1BC380CB00DE78A7 /* XTSafeCollection */,
@@ -415,6 +421,16 @@
 				C6EEFC131BC7937000924F56 /* Shrink.storyboard */,
 			);
 			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		C6F4AAEE1BCDEB2F00EBE834 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				C6F4AAF11BCDEB7200EBE834 /* FMDBViewController.h */,
+				C6F4AAF21BCDEB7200EBE834 /* FMDBViewController.m */,
+				C6F4AAF41BCDEB7D00EBE834 /* FMDB.storyboard */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,6 +591,7 @@
 				C6B01B621BC3810300DE78A7 /* XTSafeCollection.storyboard in Resources */,
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
 				C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */,
+				C6F4AAF51BCDEB7D00EBE834 /* FMDB.storyboard in Resources */,
 				C6EEFC141BC7937000924F56 /* Shrink.storyboard in Resources */,
 				C6EEFC1A1BC79B3C00924F56 /* ShrinkHeaderView.xib in Resources */,
 			);
@@ -643,6 +660,7 @@
 				C6EEFC121BC7935300924F56 /* ShrinkViewController.swift in Sources */,
 				C6EEFC161BC7955900924F56 /* RootViewController.swift in Sources */,
 				C6EEFC181BC7956400924F56 /* NormalViewController.swift in Sources */,
+				C6F4AAF31BCDEB7200EBE834 /* FMDBViewController.m in Sources */,
 				C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */,
 				C6BB44491B971150003011F6 /* StudentClass.swift in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
