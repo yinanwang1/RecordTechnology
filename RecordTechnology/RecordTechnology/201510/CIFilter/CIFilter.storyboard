@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ES4-2t-JOT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Filter View Controller-->
+        <scene sceneID="hlq-Et-kTi">
+            <objects>
+                <viewController id="ES4-2t-JOT" customClass="CIFilterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SQa-R7-gKW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mhu-S4-Zig"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AdO-B2-vPH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="an4-bL-Uek">
+                                <rect key="frame" x="12" y="20" width="576" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="n2O-vB-BEc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjn-z2-qQ3">
+                                <rect key="frame" x="285" y="63" width="30" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="CJq-bj-LTr"/>
+                                    <constraint firstAttribute="height" constant="30" id="p97-KJ-2j5"/>
+                                </constraints>
+                                <state key="normal" title="转"/>
+                                <connections>
+                                    <action selector="onClickFliterBtn:" destination="ES4-2t-JOT" eventType="touchUpInside" id="62B-C1-aaR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ab4-LX-7qV">
+                                <rect key="frame" x="16" y="107" width="568" height="473"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="an4-bL-Uek" secondAttribute="trailing" constant="-8" id="8x8-R0-hbs"/>
+                            <constraint firstItem="ab4-LX-7qV" firstAttribute="top" secondItem="cjn-z2-qQ3" secondAttribute="bottom" constant="14" id="Ea0-bn-BMZ"/>
+                            <constraint firstItem="an4-bL-Uek" firstAttribute="centerX" secondItem="AdO-B2-vPH" secondAttribute="centerX" id="Evu-HA-jVS"/>
+                            <constraint firstItem="an4-bL-Uek" firstAttribute="leading" secondItem="AdO-B2-vPH" secondAttribute="leadingMargin" constant="-8" id="He8-J6-Vl0"/>
+                            <constraint firstItem="ab4-LX-7qV" firstAttribute="centerX" secondItem="AdO-B2-vPH" secondAttribute="centerX" id="JzR-tC-CAt"/>
+                            <constraint firstItem="an4-bL-Uek" firstAttribute="top" secondItem="SQa-R7-gKW" secondAttribute="bottom" id="Ygf-cv-LNQ"/>
+                            <constraint firstItem="cjn-z2-qQ3" firstAttribute="top" secondItem="an4-bL-Uek" secondAttribute="bottom" constant="13" id="g24-kq-BeU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ab4-LX-7qV" secondAttribute="trailing" constant="-4" id="gn6-6D-8iP"/>
+                            <constraint firstItem="Mhu-S4-Zig" firstAttribute="top" secondItem="ab4-LX-7qV" secondAttribute="bottom" constant="20" id="kiC-Ww-6c0"/>
+                            <constraint firstItem="cjn-z2-qQ3" firstAttribute="centerX" secondItem="AdO-B2-vPH" secondAttribute="centerX" id="yxc-mi-aMH"/>
+                            <constraint firstItem="ab4-LX-7qV" firstAttribute="leading" secondItem="AdO-B2-vPH" secondAttribute="leadingMargin" constant="-4" id="zcw-7N-VAl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="filterButton" destination="cjn-z2-qQ3" id="vDS-UE-p1J"/>
+                        <outlet property="filterImageView" destination="ab4-LX-7qV" id="wTg-OU-d5a"/>
+                        <outlet property="filterTextField" destination="an4-bL-Uek" id="0yL-US-8ZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bpa-9b-WfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="566"/>
+        </scene>
+    </scenes>
+</document>

@@ -24,6 +24,8 @@
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
+		C66DBEC31BD1FF260071CB44 /* CIFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C66DBEC51BD1FF3A0071CB44 /* CIFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */; settings = {ASSET_TAGS = (); }; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
 		C6B01B591BC3809700DE78A7 /* BehaviorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B01B561BC3809700DE78A7 /* BehaviorStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
 		C6B01B5A1BC3809700DE78A7 /* BehaviorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B01B581BC3809700DE78A7 /* BehaviorViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -125,6 +127,9 @@
 		8EF6A08F1B315C7600694EDE /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
+		C66DBEC11BD1FF260071CB44 /* CIFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIFilterViewController.h; sourceTree = "<group>"; };
+		C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIFilterViewController.m; sourceTree = "<group>"; };
+		C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CIFilter.storyboard; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C6B01B561BC3809700DE78A7 /* BehaviorStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BehaviorStoryboard.storyboard; sourceTree = "<group>"; };
 		C6B01B571BC3809700DE78A7 /* BehaviorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BehaviorViewController.h; sourceTree = "<group>"; };
@@ -346,6 +351,16 @@
 			path = WWSideslipViewController;
 			sourceTree = "<group>";
 		};
+		C66DBEC01BD1FF180071CB44 /* CIFilter */ = {
+			isa = PBXGroup;
+			children = (
+				C66DBEC11BD1FF260071CB44 /* CIFilterViewController.h */,
+				C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */,
+				C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */,
+			);
+			path = CIFilter;
+			sourceTree = "<group>";
+		};
 		C6B01B551BC3809700DE78A7 /* Behavior */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +406,7 @@
 		C6E6D0881BC26B79003D44C1 /* 201510 */ = {
 			isa = PBXGroup;
 			children = (
+				C66DBEC01BD1FF180071CB44 /* CIFilter */,
 				C6F4AAEE1BCDEB2F00EBE834 /* FMDB */,
 				C6EEFC101BC7928200924F56 /* NavigationBar */,
 				C6EEFBFF1BC5135A00924F56 /* Pop */,
@@ -590,6 +606,7 @@
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C6B01B621BC3810300DE78A7 /* XTSafeCollection.storyboard in Resources */,
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
+				C66DBEC51BD1FF3A0071CB44 /* CIFilter.storyboard in Resources */,
 				C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */,
 				C6F4AAF51BCDEB7D00EBE834 /* FMDB.storyboard in Resources */,
 				C6EEFC141BC7937000924F56 /* Shrink.storyboard in Resources */,
@@ -656,6 +673,7 @@
 				C6EEFC1C1BC79B5400924F56 /* ShrinkHeaderView.swift in Sources */,
 				C6B01B5A1BC3809700DE78A7 /* BehaviorViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
+				C66DBEC31BD1FF260071CB44 /* CIFilterViewController.m in Sources */,
 				C6B01B601BC380E700DE78A7 /* XTSafeCollectionViewController.m in Sources */,
 				C6EEFC121BC7935300924F56 /* ShrinkViewController.swift in Sources */,
 				C6EEFC161BC7955900924F56 /* RootViewController.swift in Sources */,
