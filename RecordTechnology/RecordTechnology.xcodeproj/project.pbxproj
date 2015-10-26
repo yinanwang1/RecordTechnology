@@ -24,29 +24,33 @@
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
-		C66DBEC31BD1FF260071CB44 /* CIFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C66DBEC51BD1FF3A0071CB44 /* CIFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */; settings = {ASSET_TAGS = (); }; };
+		C66DBEC31BD1FF260071CB44 /* CIFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */; };
+		C66DBEC51BD1FF3A0071CB44 /* CIFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
-		C6B01B591BC3809700DE78A7 /* BehaviorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B01B561BC3809700DE78A7 /* BehaviorStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
-		C6B01B5A1BC3809700DE78A7 /* BehaviorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B01B581BC3809700DE78A7 /* BehaviorViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C6B01B601BC380E700DE78A7 /* XTSafeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B01B5F1BC380E700DE78A7 /* XTSafeCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C6B01B621BC3810300DE78A7 /* XTSafeCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B01B611BC3810300DE78A7 /* XTSafeCollection.storyboard */; settings = {ASSET_TAGS = (); }; };
+		C6B01B591BC3809700DE78A7 /* BehaviorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B01B561BC3809700DE78A7 /* BehaviorStoryboard.storyboard */; };
+		C6B01B5A1BC3809700DE78A7 /* BehaviorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B01B581BC3809700DE78A7 /* BehaviorViewController.m */; };
+		C6B01B601BC380E700DE78A7 /* XTSafeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B01B5F1BC380E700DE78A7 /* XTSafeCollectionViewController.m */; };
+		C6B01B621BC3810300DE78A7 /* XTSafeCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B01B611BC3810300DE78A7 /* XTSafeCollection.storyboard */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BB44401B970E23003011F6 /* Swift2Test.storyboard */; };
 		C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */; };
 		C6BB44491B971150003011F6 /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44481B971150003011F6 /* StudentClass.swift */; };
-		C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC011BC5139700924F56 /* PopViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C6EEFC041BC513A200924F56 /* Pop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC031BC513A200924F56 /* Pop.storyboard */; settings = {ASSET_TAGS = (); }; };
-		C6EEFC071BC61CCB00924F56 /* Objective.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC061BC61CCB00924F56 /* Objective.m */; settings = {ASSET_TAGS = (); }; };
-		C6EEFC091BC65AF400924F56 /* snakeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC081BC65AF400924F56 /* snakeGame.swift */; settings = {ASSET_TAGS = (); }; };
-		C6EEFC121BC7935300924F56 /* ShrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC111BC7935300924F56 /* ShrinkViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C6EEFC141BC7937000924F56 /* Shrink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC131BC7937000924F56 /* Shrink.storyboard */; settings = {ASSET_TAGS = (); }; };
-		C6EEFC161BC7955900924F56 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC151BC7955900924F56 /* RootViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C6EEFC181BC7956400924F56 /* NormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC171BC7956400924F56 /* NormalViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C6EEFC1A1BC79B3C00924F56 /* ShrinkHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC191BC79B3C00924F56 /* ShrinkHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
-		C6EEFC1C1BC79B5400924F56 /* ShrinkHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC1B1BC79B5400924F56 /* ShrinkHeaderView.swift */; settings = {ASSET_TAGS = (); }; };
-		C6F4AAF31BCDEB7200EBE834 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F4AAF21BCDEB7200EBE834 /* FMDBViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C6F4AAF51BCDEB7D00EBE834 /* FMDB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F4AAF41BCDEB7D00EBE834 /* FMDB.storyboard */; settings = {ASSET_TAGS = (); }; };
+		C6E5A9831BDE03C3004CD998 /* HXSQRCodes.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9821BDE03C3004CD998 /* HXSQRCodes.m */; };
+		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
+		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
+		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
+		C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC011BC5139700924F56 /* PopViewController.m */; };
+		C6EEFC041BC513A200924F56 /* Pop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC031BC513A200924F56 /* Pop.storyboard */; };
+		C6EEFC071BC61CCB00924F56 /* Objective.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC061BC61CCB00924F56 /* Objective.m */; };
+		C6EEFC091BC65AF400924F56 /* snakeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC081BC65AF400924F56 /* snakeGame.swift */; };
+		C6EEFC121BC7935300924F56 /* ShrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC111BC7935300924F56 /* ShrinkViewController.swift */; };
+		C6EEFC141BC7937000924F56 /* Shrink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC131BC7937000924F56 /* Shrink.storyboard */; };
+		C6EEFC161BC7955900924F56 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC151BC7955900924F56 /* RootViewController.swift */; };
+		C6EEFC181BC7956400924F56 /* NormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC171BC7956400924F56 /* NormalViewController.swift */; };
+		C6EEFC1A1BC79B3C00924F56 /* ShrinkHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC191BC79B3C00924F56 /* ShrinkHeaderView.xib */; };
+		C6EEFC1C1BC79B5400924F56 /* ShrinkHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC1B1BC79B5400924F56 /* ShrinkHeaderView.swift */; };
+		C6F4AAF31BCDEB7200EBE834 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F4AAF21BCDEB7200EBE834 /* FMDBViewController.m */; };
+		C6F4AAF51BCDEB7D00EBE834 /* FMDB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F4AAF41BCDEB7D00EBE834 /* FMDB.storyboard */; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +147,14 @@
 		C6BB44451B970F1A003011F6 /* RecordTechnology-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecordTechnology-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift2TestViewController.swift; sourceTree = "<group>"; };
 		C6BB44481B971150003011F6 /* StudentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
+		C6E5A9811BDE03C3004CD998 /* HXSQRCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXSQRCodes.h; sourceTree = "<group>"; };
+		C6E5A9821BDE03C3004CD998 /* HXSQRCodes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXSQRCodes.m; sourceTree = "<group>"; };
+		C6E5A9851BDE0650004CD998 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		C6E5A9871BDE0650004CD998 /* UIColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorExtensions.h; sourceTree = "<group>"; };
+		C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorExtensions.m; sourceTree = "<group>"; };
+		C6E5A9891BDE0650004CD998 /* UIViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExtensions.h; sourceTree = "<group>"; };
+		C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExtensions.m; sourceTree = "<group>"; };
 		C6EEFC001BC5139700924F56 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
 		C6EEFC011BC5139700924F56 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		C6EEFC031BC513A200924F56 /* Pop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pop.storyboard; sourceTree = "<group>"; };
@@ -336,6 +348,7 @@
 		C61771E21ABC6BF30097991C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C6E5A9841BDE0650004CD998 /* Extension */,
 				8EF6A08E1B315C6A00694EDE /* Macro */,
 				C61771E31ABC6BF30097991C /* WWSideslipViewController */,
 			);
@@ -356,6 +369,7 @@
 			children = (
 				C66DBEC11BD1FF260071CB44 /* CIFilterViewController.h */,
 				C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */,
+				C6E5A9801BDE03C3004CD998 /* QRCode */,
 				C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */,
 			);
 			path = CIFilter;
@@ -401,6 +415,28 @@
 				C6EEFC081BC65AF400924F56 /* snakeGame.swift */,
 			);
 			path = Swift2.0;
+			sourceTree = "<group>";
+		};
+		C6E5A9801BDE03C3004CD998 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				C6E5A9811BDE03C3004CD998 /* HXSQRCodes.h */,
+				C6E5A9821BDE03C3004CD998 /* HXSQRCodes.m */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		C6E5A9841BDE0650004CD998 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C6E5A9851BDE0650004CD998 /* NSDate+Extension.h */,
+				C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */,
+				C6E5A9871BDE0650004CD998 /* UIColorExtensions.h */,
+				C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */,
+				C6E5A9891BDE0650004CD998 /* UIViewExtensions.h */,
+				C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		C6E6D0881BC26B79003D44C1 /* 201510 */ = {
@@ -678,11 +714,15 @@
 				C6EEFC121BC7935300924F56 /* ShrinkViewController.swift in Sources */,
 				C6EEFC161BC7955900924F56 /* RootViewController.swift in Sources */,
 				C6EEFC181BC7956400924F56 /* NormalViewController.swift in Sources */,
+				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6F4AAF31BCDEB7200EBE834 /* FMDBViewController.m in Sources */,
 				C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */,
+				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C6BB44491B971150003011F6 /* StudentClass.swift in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */,
+				C6E5A9831BDE03C3004CD998 /* HXSQRCodes.m in Sources */,
+				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
 				C6EEFC071BC61CCB00924F56 /* Objective.m in Sources */,
 				C6EEFC091BC65AF400924F56 /* snakeGame.swift in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,

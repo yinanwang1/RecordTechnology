@@ -26,6 +26,11 @@
 // POP
 #import <POP/POP.h>
 
+// Extension
+#import "UIColorExtensions.h"
+#import "NSDate+Extension.h"
+#import "UIViewExtensions.h"
+
 #ifdef DEBUG
 #define DLog(fmt,...) NSLog(fmt, ##__VA_ARGS__);
 #else
