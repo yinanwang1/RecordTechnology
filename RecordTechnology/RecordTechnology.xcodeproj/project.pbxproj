@@ -39,6 +39,8 @@
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
+		C6E5A9A31BDF964F004CD998 /* XcPluginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9A21BDF964F004CD998 /* XcPluginViewController.m */; };
+		C6E5A9A51BDF965E004CD998 /* Xcplugin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E5A9A41BDF965E004CD998 /* Xcplugin.storyboard */; };
 		C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC011BC5139700924F56 /* PopViewController.m */; };
 		C6EEFC041BC513A200924F56 /* Pop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC031BC513A200924F56 /* Pop.storyboard */; };
 		C6EEFC071BC61CCB00924F56 /* Objective.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC061BC61CCB00924F56 /* Objective.m */; };
@@ -155,6 +157,9 @@
 		C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorExtensions.m; sourceTree = "<group>"; };
 		C6E5A9891BDE0650004CD998 /* UIViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExtensions.h; sourceTree = "<group>"; };
 		C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExtensions.m; sourceTree = "<group>"; };
+		C6E5A9A11BDF964F004CD998 /* XcPluginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcPluginViewController.h; sourceTree = "<group>"; };
+		C6E5A9A21BDF964F004CD998 /* XcPluginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcPluginViewController.m; sourceTree = "<group>"; };
+		C6E5A9A41BDF965E004CD998 /* Xcplugin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Xcplugin.storyboard; sourceTree = "<group>"; };
 		C6EEFC001BC5139700924F56 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
 		C6EEFC011BC5139700924F56 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		C6EEFC031BC513A200924F56 /* Pop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pop.storyboard; sourceTree = "<group>"; };
@@ -439,9 +444,20 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		C6E5A9A01BDF9634004CD998 /* Xcplugin */ = {
+			isa = PBXGroup;
+			children = (
+				C6E5A9A11BDF964F004CD998 /* XcPluginViewController.h */,
+				C6E5A9A21BDF964F004CD998 /* XcPluginViewController.m */,
+				C6E5A9A41BDF965E004CD998 /* Xcplugin.storyboard */,
+			);
+			path = Xcplugin;
+			sourceTree = "<group>";
+		};
 		C6E6D0881BC26B79003D44C1 /* 201510 */ = {
 			isa = PBXGroup;
 			children = (
+				C6E5A9A01BDF9634004CD998 /* Xcplugin */,
 				C66DBEC01BD1FF180071CB44 /* CIFilter */,
 				C6F4AAEE1BCDEB2F00EBE834 /* FMDB */,
 				C6EEFC101BC7928200924F56 /* NavigationBar */,
@@ -644,6 +660,7 @@
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
 				C66DBEC51BD1FF3A0071CB44 /* CIFilter.storyboard in Resources */,
 				C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */,
+				C6E5A9A51BDF965E004CD998 /* Xcplugin.storyboard in Resources */,
 				C6F4AAF51BCDEB7D00EBE834 /* FMDB.storyboard in Resources */,
 				C6EEFC141BC7937000924F56 /* Shrink.storyboard in Resources */,
 				C6EEFC1A1BC79B3C00924F56 /* ShrinkHeaderView.xib in Resources */,
@@ -714,6 +731,7 @@
 				C6EEFC121BC7935300924F56 /* ShrinkViewController.swift in Sources */,
 				C6EEFC161BC7955900924F56 /* RootViewController.swift in Sources */,
 				C6EEFC181BC7956400924F56 /* NormalViewController.swift in Sources */,
+				C6E5A9A31BDF964F004CD998 /* XcPluginViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6F4AAF31BCDEB7200EBE834 /* FMDBViewController.m in Sources */,
 				C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */,

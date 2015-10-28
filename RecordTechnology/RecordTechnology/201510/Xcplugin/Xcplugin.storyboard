@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xph-nU-ypk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Xc Plugin View Controller-->
+        <scene sceneID="BpB-yD-q5N">
+            <objects>
+                <viewController id="woM-ek-Wl8" customClass="XcPluginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i73-gc-Kex"/>
+                        <viewControllerLayoutGuide type="bottom" id="7jp-9s-vju"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8RI-b7-YTf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ni MeiMei" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fm2-WI-1Ii">
+                                <rect key="frame" x="262" y="33" width="76" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2GS-i7-Kau"/>
+                                    <constraint firstAttribute="width" constant="76" id="q9N-1o-ZSR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkW-Tz-6FE">
+                                <rect key="frame" x="266" y="119" width="68" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="T2m-bZ-yT3"/>
+                                    <constraint firstAttribute="width" constant="68" id="Wdu-aK-kNd"/>
+                                </constraints>
+                                <state key="normal" title="我变 变 变"/>
+                                <connections>
+                                    <action selector="onClickChangeBtn:" destination="woM-ek-Wl8" eventType="touchUpInside" id="2kl-mU-z0W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fm2-WI-1Ii" firstAttribute="centerX" secondItem="8RI-b7-YTf" secondAttribute="centerX" id="V9M-uz-NXp"/>
+                            <constraint firstItem="SkW-Tz-6FE" firstAttribute="top" secondItem="fm2-WI-1Ii" secondAttribute="bottom" constant="65" id="apK-Ge-x7y"/>
+                            <constraint firstItem="fm2-WI-1Ii" firstAttribute="top" secondItem="i73-gc-Kex" secondAttribute="bottom" constant="13" id="nI5-Zk-wgk"/>
+                            <constraint firstItem="SkW-Tz-6FE" firstAttribute="centerX" secondItem="8RI-b7-YTf" secondAttribute="centerX" id="nwC-XP-g3A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kCb-gA-V9v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2V-jD-B6F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="578"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KU8-51-wa4">
+            <objects>
+                <navigationController id="xph-nU-ypk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rjz-I4-kmY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="woM-ek-Wl8" kind="relationship" relationship="rootViewController" id="WYa-P8-9WB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ll-Zx-mbS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="443" y="578"/>
+        </scene>
+    </scenes>
+</document>
