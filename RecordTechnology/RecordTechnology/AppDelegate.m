@@ -62,6 +62,15 @@
     
 }
 
+- (BOOL)application:(UIApplication *)application shouldAllowExtensionPointIdentifier:(NSString *)extensionPointIdentifier
+{
+    if ([extensionPointIdentifier isEqualToString:@"com.apple.keyboard-service"]) {
+        return NO;
+    }
+    
+    return YES;
+}
+
 
 
 #pragma mark - init Demo status

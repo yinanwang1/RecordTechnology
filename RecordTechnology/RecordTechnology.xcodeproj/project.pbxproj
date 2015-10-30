@@ -8,13 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1BDEFD384C59BC6C5B72179D /* libPods-RecordTechnology.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 701B6C626967A76F448FAF53 /* libPods-RecordTechnology.a */; };
-		8E0E6B5D1ACBBDDD00759F64 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E6B5C1ACBBDDD00759F64 /* InterfaceController.m */; };
-		8E0E6B601ACBBDDD00759F64 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E6B5F1ACBBDDD00759F64 /* NotificationController.m */; };
-		8E0E6B621ACBBDDD00759F64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6B611ACBBDDD00759F64 /* Images.xcassets */; };
-		8E0E6B661ACBBDDD00759F64 /* RecordTechnology WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6B651ACBBDDD00759F64 /* RecordTechnology WatchKit App.app */; };
-		8E0E6B6E1ACBBDDD00759F64 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6B6C1ACBBDDD00759F64 /* Interface.storyboard */; };
-		8E0E6B701ACBBDDD00759F64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6B6F1ACBBDDD00759F64 /* Images.xcassets */; };
-		8E0E6B731ACBBDDD00759F64 /* RecordTechnology WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8E0E6B561ACBBDDD00759F64 /* RecordTechnology WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8E1BE4321B3BED4800CAF4BA /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1BE4311B3BED4800CAF4BA /* libobjc.A.dylib */; };
 		8E41E2381ABAB2DC0008984F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2371ABAB2DC0008984F /* main.m */; };
 		8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E23A1ABAB2DC0008984F /* AppDelegate.m */; };
@@ -24,6 +17,8 @@
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
+		C635A8941BE3652400C6220E /* ExtensionKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C635A8931BE3652400C6220E /* ExtensionKeyboardViewController.m */; };
+		C635A8961BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C635A8951BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard */; };
 		C66DBEC31BD1FF260071CB44 /* CIFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */; };
 		C66DBEC51BD1FF3A0071CB44 /* CIFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
@@ -57,20 +52,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8E0E6B671ACBBDDD00759F64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8E41E22A1ABAB2DC0008984F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8E0E6B641ACBBDDD00759F64;
-			remoteInfo = "RecordTechnology WatchKit App";
-		};
-		8E0E6B711ACBBDDD00759F64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8E41E22A1ABAB2DC0008984F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8E0E6B551ACBBDDD00759F64;
-			remoteInfo = "RecordTechnology WatchKit Extension";
-		};
 		8E41E24C1ABAB2DC0008984F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8E41E22A1ABAB2DC0008984F /* Project object */;
@@ -87,7 +68,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				8E0E6B731ACBBDDD00759F64 /* RecordTechnology WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,7 +78,6 @@
 		274E0FE90313889705C4C678 /* Pods-RecordTechnology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnology.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnology/Pods-RecordTechnology.release.xcconfig"; sourceTree = "<group>"; };
 		701B6C626967A76F448FAF53 /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		815826EAF453A36B3E35A690 /* Pods-RecordTechnology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnology/Pods-RecordTechnology.debug.xcconfig"; sourceTree = "<group>"; };
-		8E0E6B561ACBBDDD00759F64 /* RecordTechnology WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RecordTechnology WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0E6B591ACBBDDD00759F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E0E6B5A1ACBBDDD00759F64 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		8E0E6B5B1ACBBDDD00759F64 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
@@ -106,7 +85,6 @@
 		8E0E6B5E1ACBBDDD00759F64 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
 		8E0E6B5F1ACBBDDD00759F64 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		8E0E6B611ACBBDDD00759F64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8E0E6B651ACBBDDD00759F64 /* RecordTechnology WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RecordTechnology WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0E6B6B1ACBBDDD00759F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E0E6B6D1ACBBDDD00759F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8E0E6B6F1ACBBDDD00759F64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -133,6 +111,9 @@
 		8EF6A08F1B315C7600694EDE /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
+		C635A8921BE3652400C6220E /* ExtensionKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionKeyboardViewController.h; sourceTree = "<group>"; };
+		C635A8931BE3652400C6220E /* ExtensionKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionKeyboardViewController.m; sourceTree = "<group>"; };
+		C635A8951BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExtensionKeyboardStoryboard.storyboard; sourceTree = "<group>"; };
 		C66DBEC11BD1FF260071CB44 /* CIFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIFilterViewController.h; sourceTree = "<group>"; };
 		C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIFilterViewController.m; sourceTree = "<group>"; };
 		C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CIFilter.storyboard; sourceTree = "<group>"; };
@@ -178,13 +159,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8E0E6B531ACBBDDD00759F64 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8E41E22F1ABAB2DC0008984F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,8 +264,6 @@
 			children = (
 				8E41E2321ABAB2DC0008984F /* RecordTechnology.app */,
 				8E41E24B1ABAB2DC0008984F /* RecordTechnologyTests.xctest */,
-				8E0E6B561ACBBDDD00759F64 /* RecordTechnology WatchKit Extension.appex */,
-				8E0E6B651ACBBDDD00759F64 /* RecordTechnology WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -367,6 +339,16 @@
 				C61771E51ABC6BF30097991C /* WWSideslipViewController.m */,
 			);
 			path = WWSideslipViewController;
+			sourceTree = "<group>";
+		};
+		C635A8911BE364F200C6220E /* ExtensionKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C635A8921BE3652400C6220E /* ExtensionKeyboardViewController.h */,
+				C635A8931BE3652400C6220E /* ExtensionKeyboardViewController.m */,
+				C635A8951BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard */,
+			);
+			path = ExtensionKeyboard;
 			sourceTree = "<group>";
 		};
 		C66DBEC01BD1FF180071CB44 /* CIFilter */ = {
@@ -457,6 +439,7 @@
 		C6E6D0881BC26B79003D44C1 /* 201510 */ = {
 			isa = PBXGroup;
 			children = (
+				C635A8911BE364F200C6220E /* ExtensionKeyboard */,
 				C6E5A9A01BDF9634004CD998 /* Xcplugin */,
 				C66DBEC01BD1FF180071CB44 /* CIFilter */,
 				C6F4AAEE1BCDEB2F00EBE834 /* FMDB */,
@@ -504,39 +487,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8E0E6B551ACBBDDD00759F64 /* RecordTechnology WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8E0E6B771ACBBDDD00759F64 /* Build configuration list for PBXNativeTarget "RecordTechnology WatchKit Extension" */;
-			buildPhases = (
-				8E0E6B521ACBBDDD00759F64 /* Sources */,
-				8E0E6B531ACBBDDD00759F64 /* Frameworks */,
-				8E0E6B541ACBBDDD00759F64 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8E0E6B681ACBBDDD00759F64 /* PBXTargetDependency */,
-			);
-			name = "RecordTechnology WatchKit Extension";
-			productName = "RecordTechnology WatchKit Extension";
-			productReference = 8E0E6B561ACBBDDD00759F64 /* RecordTechnology WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
-		};
-		8E0E6B641ACBBDDD00759F64 /* RecordTechnology WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8E0E6B741ACBBDDD00759F64 /* Build configuration list for PBXNativeTarget "RecordTechnology WatchKit App" */;
-			buildPhases = (
-				8E0E6B631ACBBDDD00759F64 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "RecordTechnology WatchKit App";
-			productName = "RecordTechnology WatchKit App";
-			productReference = 8E0E6B651ACBBDDD00759F64 /* RecordTechnology WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
-		};
 		8E41E2311ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E41E2551ABAB2DC0008984F /* Build configuration list for PBXNativeTarget "RecordTechnology" */;
@@ -551,7 +501,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				8E0E6B721ACBBDDD00759F64 /* PBXTargetDependency */,
 			);
 			name = RecordTechnology;
 			productName = RecordTechnology;
@@ -586,16 +535,9 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "InSigma HengTian Softwar Ltd.";
 				TargetAttributes = {
-					8E0E6B551ACBBDDD00759F64 = {
-						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 2U4X7NE3S9;
-					};
-					8E0E6B641ACBBDDD00759F64 = {
-						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 2U4X7NE3S9;
-					};
 					8E41E2311ABAB2DC0008984F = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 6H74769RTB;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -623,31 +565,11 @@
 			targets = (
 				8E41E2311ABAB2DC0008984F /* RecordTechnology */,
 				8E41E24A1ABAB2DC0008984F /* RecordTechnologyTests */,
-				8E0E6B551ACBBDDD00759F64 /* RecordTechnology WatchKit Extension */,
-				8E0E6B641ACBBDDD00759F64 /* RecordTechnology WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8E0E6B541ACBBDDD00759F64 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E0E6B621ACBBDDD00759F64 /* Images.xcassets in Resources */,
-				8E0E6B661ACBBDDD00759F64 /* RecordTechnology WatchKit App.app in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E0E6B631ACBBDDD00759F64 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E0E6B6E1ACBBDDD00759F64 /* Interface.storyboard in Resources */,
-				8E0E6B701ACBBDDD00759F64 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8E41E2301ABAB2DC0008984F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -659,6 +581,7 @@
 				C6B01B621BC3810300DE78A7 /* XTSafeCollection.storyboard in Resources */,
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
 				C66DBEC51BD1FF3A0071CB44 /* CIFilter.storyboard in Resources */,
+				C635A8961BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard in Resources */,
 				C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */,
 				C6E5A9A51BDF965E004CD998 /* Xcplugin.storyboard in Resources */,
 				C6F4AAF51BCDEB7D00EBE834 /* FMDB.storyboard in Resources */,
@@ -710,15 +633,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8E0E6B521ACBBDDD00759F64 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E0E6B601ACBBDDD00759F64 /* NotificationController.m in Sources */,
-				8E0E6B5D1ACBBDDD00759F64 /* InterfaceController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8E41E22E1ABAB2DC0008984F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -737,6 +651,7 @@
 				C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C6BB44491B971150003011F6 /* StudentClass.swift in Sources */,
+				C635A8941BE3652400C6220E /* ExtensionKeyboardViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */,
 				C6E5A9831BDE03C3004CD998 /* HXSQRCodes.m in Sources */,
@@ -759,16 +674,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8E0E6B681ACBBDDD00759F64 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8E0E6B641ACBBDDD00759F64 /* RecordTechnology WatchKit App */;
-			targetProxy = 8E0E6B671ACBBDDD00759F64 /* PBXContainerItemProxy */;
-		};
-		8E0E6B721ACBBDDD00759F64 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8E0E6B551ACBBDDD00759F64 /* RecordTechnology WatchKit Extension */;
-			targetProxy = 8E0E6B711ACBBDDD00759F64 /* PBXContainerItemProxy */;
-		};
 		8E41E24D1ABAB2DC0008984F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8E41E2311ABAB2DC0008984F /* RecordTechnology */;
@@ -804,64 +709,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8E0E6B751ACBBDDD00759F64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				IBSC_MODULE = RecordTechnology_WatchKit_Extension;
-				INFOPLIST_FILE = "RecordTechnology WatchKit App/Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Debug;
-		};
-		8E0E6B761ACBBDDD00759F64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IBSC_MODULE = RecordTechnology_WatchKit_Extension;
-				INFOPLIST_FILE = "RecordTechnology WatchKit App/Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Release;
-		};
-		8E0E6B781ACBBDDD00759F64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "RecordTechnology WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		8E0E6B791ACBBDDD00759F64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "RecordTechnology WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		8E41E2531ABAB2DC0008984F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -899,6 +746,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "4a289661-0710-4c17-b00f-410f695d81d6";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -934,6 +782,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "4a289661-0710-4c17-b00f-410f695d81d6";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -947,16 +796,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = RecordTechnology/RecordTechnology.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Feng Feng Ning (N774LYEQGB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Feng Feng Ning (N774LYEQGB)";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arthurWang.TestCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "4a289661-0710-4c17-b00f-410f695d81d6";
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/201509/Swift2.0/RecordTechnology-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -970,7 +820,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = RecordTechnology/RecordTechnology.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
@@ -978,8 +828,9 @@
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arthurWang.TestCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "4a289661-0710-4c17-b00f-410f695d81d6";
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/201509/Swift2.0/RecordTechnology-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1022,24 +873,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8E0E6B741ACBBDDD00759F64 /* Build configuration list for PBXNativeTarget "RecordTechnology WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8E0E6B751ACBBDDD00759F64 /* Debug */,
-				8E0E6B761ACBBDDD00759F64 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8E0E6B771ACBBDDD00759F64 /* Build configuration list for PBXNativeTarget "RecordTechnology WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8E0E6B781ACBBDDD00759F64 /* Debug */,
-				8E0E6B791ACBBDDD00759F64 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8E41E22D1ABAB2DC0008984F /* Build configuration list for PBXProject "RecordTechnology" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
