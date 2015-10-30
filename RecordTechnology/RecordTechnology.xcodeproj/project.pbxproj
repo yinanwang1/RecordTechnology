@@ -19,6 +19,8 @@
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C635A8941BE3652400C6220E /* ExtensionKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C635A8931BE3652400C6220E /* ExtensionKeyboardViewController.m */; };
 		C635A8961BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C635A8951BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard */; };
+		C635A8991BE36DCB00C6220E /* MotionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C635A8981BE36DCB00C6220E /* MotionStoryboard.storyboard */; };
+		C635A89C1BE36DDB00C6220E /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C635A89B1BE36DDB00C6220E /* MotionViewController.m */; };
 		C66DBEC31BD1FF260071CB44 /* CIFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */; };
 		C66DBEC51BD1FF3A0071CB44 /* CIFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
@@ -114,6 +116,9 @@
 		C635A8921BE3652400C6220E /* ExtensionKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionKeyboardViewController.h; sourceTree = "<group>"; };
 		C635A8931BE3652400C6220E /* ExtensionKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionKeyboardViewController.m; sourceTree = "<group>"; };
 		C635A8951BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExtensionKeyboardStoryboard.storyboard; sourceTree = "<group>"; };
+		C635A8981BE36DCB00C6220E /* MotionStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MotionStoryboard.storyboard; sourceTree = "<group>"; };
+		C635A89A1BE36DDB00C6220E /* MotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
+		C635A89B1BE36DDB00C6220E /* MotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
 		C66DBEC11BD1FF260071CB44 /* CIFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIFilterViewController.h; sourceTree = "<group>"; };
 		C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIFilterViewController.m; sourceTree = "<group>"; };
 		C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CIFilter.storyboard; sourceTree = "<group>"; };
@@ -351,6 +356,16 @@
 			path = ExtensionKeyboard;
 			sourceTree = "<group>";
 		};
+		C635A8971BE36DAF00C6220E /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				C635A89A1BE36DDB00C6220E /* MotionViewController.h */,
+				C635A89B1BE36DDB00C6220E /* MotionViewController.m */,
+				C635A8981BE36DCB00C6220E /* MotionStoryboard.storyboard */,
+			);
+			path = Motion;
+			sourceTree = "<group>";
+		};
 		C66DBEC01BD1FF180071CB44 /* CIFilter */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +454,7 @@
 		C6E6D0881BC26B79003D44C1 /* 201510 */ = {
 			isa = PBXGroup;
 			children = (
+				C635A8971BE36DAF00C6220E /* Motion */,
 				C635A8911BE364F200C6220E /* ExtensionKeyboard */,
 				C6E5A9A01BDF9634004CD998 /* Xcplugin */,
 				C66DBEC01BD1FF180071CB44 /* CIFilter */,
@@ -575,6 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6B01B591BC3809700DE78A7 /* BehaviorStoryboard.storyboard in Resources */,
+				C635A8991BE36DCB00C6220E /* MotionStoryboard.storyboard in Resources */,
 				C6EEFC041BC513A200924F56 /* Pop.storyboard in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
@@ -651,6 +668,7 @@
 				C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C6BB44491B971150003011F6 /* StudentClass.swift in Sources */,
+				C635A89C1BE36DDB00C6220E /* MotionViewController.m in Sources */,
 				C635A8941BE3652400C6220E /* ExtensionKeyboardViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */,
