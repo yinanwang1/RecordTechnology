@@ -17,39 +17,13 @@
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
-		C635A8941BE3652400C6220E /* ExtensionKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C635A8931BE3652400C6220E /* ExtensionKeyboardViewController.m */; };
-		C635A8961BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C635A8951BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard */; };
-		C635A8991BE36DCB00C6220E /* MotionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C635A8981BE36DCB00C6220E /* MotionStoryboard.storyboard */; };
-		C635A89C1BE36DDB00C6220E /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C635A89B1BE36DDB00C6220E /* MotionViewController.m */; };
-		C66DBEC31BD1FF260071CB44 /* CIFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */; };
-		C66DBEC51BD1FF3A0071CB44 /* CIFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
-		C6B01B591BC3809700DE78A7 /* BehaviorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B01B561BC3809700DE78A7 /* BehaviorStoryboard.storyboard */; };
-		C6B01B5A1BC3809700DE78A7 /* BehaviorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B01B581BC3809700DE78A7 /* BehaviorViewController.m */; };
-		C6B01B601BC380E700DE78A7 /* XTSafeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B01B5F1BC380E700DE78A7 /* XTSafeCollectionViewController.m */; };
-		C6B01B621BC3810300DE78A7 /* XTSafeCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B01B611BC3810300DE78A7 /* XTSafeCollection.storyboard */; };
+		C694BA4D1BFC6558008FEA5F /* AlertStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C694BA4C1BFC6558008FEA5F /* AlertStoryboard.storyboard */; };
+		C694BA501BFC656B008FEA5F /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C694BA4F1BFC656B008FEA5F /* AlertViewController.m */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
-		C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BB44401B970E23003011F6 /* Swift2Test.storyboard */; };
-		C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */; };
-		C6BB44491B971150003011F6 /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB44481B971150003011F6 /* StudentClass.swift */; };
-		C6E5A9831BDE03C3004CD998 /* HXSQRCodes.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9821BDE03C3004CD998 /* HXSQRCodes.m */; };
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
-		C6E5A9A31BDF964F004CD998 /* XcPluginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9A21BDF964F004CD998 /* XcPluginViewController.m */; };
-		C6E5A9A51BDF965E004CD998 /* Xcplugin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E5A9A41BDF965E004CD998 /* Xcplugin.storyboard */; };
-		C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC011BC5139700924F56 /* PopViewController.m */; };
-		C6EEFC041BC513A200924F56 /* Pop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC031BC513A200924F56 /* Pop.storyboard */; };
-		C6EEFC071BC61CCB00924F56 /* Objective.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC061BC61CCB00924F56 /* Objective.m */; };
-		C6EEFC091BC65AF400924F56 /* snakeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC081BC65AF400924F56 /* snakeGame.swift */; };
-		C6EEFC121BC7935300924F56 /* ShrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC111BC7935300924F56 /* ShrinkViewController.swift */; };
-		C6EEFC141BC7937000924F56 /* Shrink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC131BC7937000924F56 /* Shrink.storyboard */; };
-		C6EEFC161BC7955900924F56 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC151BC7955900924F56 /* RootViewController.swift */; };
-		C6EEFC181BC7956400924F56 /* NormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC171BC7956400924F56 /* NormalViewController.swift */; };
-		C6EEFC1A1BC79B3C00924F56 /* ShrinkHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EEFC191BC79B3C00924F56 /* ShrinkHeaderView.xib */; };
-		C6EEFC1C1BC79B5400924F56 /* ShrinkHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEFC1B1BC79B5400924F56 /* ShrinkHeaderView.swift */; };
-		C6F4AAF31BCDEB7200EBE834 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F4AAF21BCDEB7200EBE834 /* FMDBViewController.m */; };
-		C6F4AAF51BCDEB7D00EBE834 /* FMDB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F4AAF41BCDEB7D00EBE834 /* FMDB.storyboard */; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,54 +87,18 @@
 		8EF6A08F1B315C7600694EDE /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
-		C635A8921BE3652400C6220E /* ExtensionKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionKeyboardViewController.h; sourceTree = "<group>"; };
-		C635A8931BE3652400C6220E /* ExtensionKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionKeyboardViewController.m; sourceTree = "<group>"; };
-		C635A8951BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExtensionKeyboardStoryboard.storyboard; sourceTree = "<group>"; };
-		C635A8981BE36DCB00C6220E /* MotionStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MotionStoryboard.storyboard; sourceTree = "<group>"; };
-		C635A89A1BE36DDB00C6220E /* MotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
-		C635A89B1BE36DDB00C6220E /* MotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
-		C66DBEC11BD1FF260071CB44 /* CIFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIFilterViewController.h; sourceTree = "<group>"; };
-		C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIFilterViewController.m; sourceTree = "<group>"; };
-		C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CIFilter.storyboard; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
-		C6B01B561BC3809700DE78A7 /* BehaviorStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BehaviorStoryboard.storyboard; sourceTree = "<group>"; };
-		C6B01B571BC3809700DE78A7 /* BehaviorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BehaviorViewController.h; sourceTree = "<group>"; };
-		C6B01B581BC3809700DE78A7 /* BehaviorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BehaviorViewController.m; sourceTree = "<group>"; };
-		C6B01B5E1BC380E700DE78A7 /* XTSafeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSafeCollectionViewController.h; sourceTree = "<group>"; };
-		C6B01B5F1BC380E700DE78A7 /* XTSafeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSafeCollectionViewController.m; sourceTree = "<group>"; };
-		C6B01B611BC3810300DE78A7 /* XTSafeCollection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XTSafeCollection.storyboard; sourceTree = "<group>"; };
+		C694BA4C1BFC6558008FEA5F /* AlertStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlertStoryboard.storyboard; sourceTree = "<group>"; };
+		C694BA4E1BFC656B008FEA5F /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		C694BA4F1BFC656B008FEA5F /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		C6BB44401B970E23003011F6 /* Swift2Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Swift2Test.storyboard; sourceTree = "<group>"; };
-		C6BB44451B970F1A003011F6 /* RecordTechnology-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecordTechnology-Bridging-Header.h"; sourceTree = "<group>"; };
-		C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift2TestViewController.swift; sourceTree = "<group>"; };
-		C6BB44481B971150003011F6 /* StudentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
-		C6E5A9811BDE03C3004CD998 /* HXSQRCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXSQRCodes.h; sourceTree = "<group>"; };
-		C6E5A9821BDE03C3004CD998 /* HXSQRCodes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXSQRCodes.m; sourceTree = "<group>"; };
 		C6E5A9851BDE0650004CD998 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		C6E5A9871BDE0650004CD998 /* UIColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorExtensions.h; sourceTree = "<group>"; };
 		C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorExtensions.m; sourceTree = "<group>"; };
 		C6E5A9891BDE0650004CD998 /* UIViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExtensions.h; sourceTree = "<group>"; };
 		C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExtensions.m; sourceTree = "<group>"; };
-		C6E5A9A11BDF964F004CD998 /* XcPluginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcPluginViewController.h; sourceTree = "<group>"; };
-		C6E5A9A21BDF964F004CD998 /* XcPluginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcPluginViewController.m; sourceTree = "<group>"; };
-		C6E5A9A41BDF965E004CD998 /* Xcplugin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Xcplugin.storyboard; sourceTree = "<group>"; };
-		C6EEFC001BC5139700924F56 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
-		C6EEFC011BC5139700924F56 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
-		C6EEFC031BC513A200924F56 /* Pop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pop.storyboard; sourceTree = "<group>"; };
-		C6EEFC051BC61CCB00924F56 /* Objective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objective.h; sourceTree = "<group>"; };
-		C6EEFC061BC61CCB00924F56 /* Objective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objective.m; sourceTree = "<group>"; };
-		C6EEFC081BC65AF400924F56 /* snakeGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = snakeGame.swift; sourceTree = "<group>"; };
-		C6EEFC111BC7935300924F56 /* ShrinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrinkViewController.swift; sourceTree = "<group>"; };
-		C6EEFC131BC7937000924F56 /* Shrink.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shrink.storyboard; sourceTree = "<group>"; };
-		C6EEFC151BC7955900924F56 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		C6EEFC171BC7956400924F56 /* NormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalViewController.swift; sourceTree = "<group>"; };
-		C6EEFC191BC79B3C00924F56 /* ShrinkHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShrinkHeaderView.xib; sourceTree = "<group>"; };
-		C6EEFC1B1BC79B5400924F56 /* ShrinkHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrinkHeaderView.swift; sourceTree = "<group>"; };
-		C6F4AAF11BCDEB7200EBE834 /* FMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBViewController.h; sourceTree = "<group>"; };
-		C6F4AAF21BCDEB7200EBE834 /* FMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBViewController.m; sourceTree = "<group>"; };
-		C6F4AAF41BCDEB7D00EBE834 /* FMDB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FMDB.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,8 +214,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
-				C6E6D0881BC26B79003D44C1 /* 201510 */,
-				C6BB443E1B970E08003011F6 /* 201509 */,
+				C694BA4A1BFC6543008FEA5F /* 201511 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
 				8E41E23A1ABAB2DC0008984F /* AppDelegate.m */,
@@ -346,86 +283,22 @@
 			path = WWSideslipViewController;
 			sourceTree = "<group>";
 		};
-		C635A8911BE364F200C6220E /* ExtensionKeyboard */ = {
+		C694BA4A1BFC6543008FEA5F /* 201511 */ = {
 			isa = PBXGroup;
 			children = (
-				C635A8921BE3652400C6220E /* ExtensionKeyboardViewController.h */,
-				C635A8931BE3652400C6220E /* ExtensionKeyboardViewController.m */,
-				C635A8951BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard */,
+				C694BA4B1BFC6543008FEA5F /* Alert */,
 			);
-			path = ExtensionKeyboard;
+			path = 201511;
 			sourceTree = "<group>";
 		};
-		C635A8971BE36DAF00C6220E /* Motion */ = {
+		C694BA4B1BFC6543008FEA5F /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				C635A89A1BE36DDB00C6220E /* MotionViewController.h */,
-				C635A89B1BE36DDB00C6220E /* MotionViewController.m */,
-				C635A8981BE36DCB00C6220E /* MotionStoryboard.storyboard */,
+				C694BA4C1BFC6558008FEA5F /* AlertStoryboard.storyboard */,
+				C694BA4E1BFC656B008FEA5F /* AlertViewController.h */,
+				C694BA4F1BFC656B008FEA5F /* AlertViewController.m */,
 			);
-			path = Motion;
-			sourceTree = "<group>";
-		};
-		C66DBEC01BD1FF180071CB44 /* CIFilter */ = {
-			isa = PBXGroup;
-			children = (
-				C66DBEC11BD1FF260071CB44 /* CIFilterViewController.h */,
-				C66DBEC21BD1FF260071CB44 /* CIFilterViewController.m */,
-				C6E5A9801BDE03C3004CD998 /* QRCode */,
-				C66DBEC41BD1FF3A0071CB44 /* CIFilter.storyboard */,
-			);
-			path = CIFilter;
-			sourceTree = "<group>";
-		};
-		C6B01B551BC3809700DE78A7 /* Behavior */ = {
-			isa = PBXGroup;
-			children = (
-				C6B01B561BC3809700DE78A7 /* BehaviorStoryboard.storyboard */,
-				C6B01B571BC3809700DE78A7 /* BehaviorViewController.h */,
-				C6B01B581BC3809700DE78A7 /* BehaviorViewController.m */,
-			);
-			path = Behavior;
-			sourceTree = "<group>";
-		};
-		C6B01B5B1BC380CB00DE78A7 /* XTSafeCollection */ = {
-			isa = PBXGroup;
-			children = (
-				C6B01B5E1BC380E700DE78A7 /* XTSafeCollectionViewController.h */,
-				C6B01B5F1BC380E700DE78A7 /* XTSafeCollectionViewController.m */,
-				C6B01B611BC3810300DE78A7 /* XTSafeCollection.storyboard */,
-			);
-			path = XTSafeCollection;
-			sourceTree = "<group>";
-		};
-		C6BB443E1B970E08003011F6 /* 201509 */ = {
-			isa = PBXGroup;
-			children = (
-				C6BB443F1B970E08003011F6 /* Swift2.0 */,
-			);
-			path = 201509;
-			sourceTree = "<group>";
-		};
-		C6BB443F1B970E08003011F6 /* Swift2.0 */ = {
-			isa = PBXGroup;
-			children = (
-				C6BB44401B970E23003011F6 /* Swift2Test.storyboard */,
-				C6BB44461B970F1A003011F6 /* Swift2TestViewController.swift */,
-				C6BB44481B971150003011F6 /* StudentClass.swift */,
-				C6BB44451B970F1A003011F6 /* RecordTechnology-Bridging-Header.h */,
-				C6EEFC051BC61CCB00924F56 /* Objective.h */,
-				C6EEFC061BC61CCB00924F56 /* Objective.m */,
-				C6EEFC081BC65AF400924F56 /* snakeGame.swift */,
-			);
-			path = Swift2.0;
-			sourceTree = "<group>";
-		};
-		C6E5A9801BDE03C3004CD998 /* QRCode */ = {
-			isa = PBXGroup;
-			children = (
-				C6E5A9811BDE03C3004CD998 /* HXSQRCodes.h */,
-				C6E5A9821BDE03C3004CD998 /* HXSQRCodes.m */,
-			);
-			path = QRCode;
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -439,65 +312,6 @@
 				C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		C6E5A9A01BDF9634004CD998 /* Xcplugin */ = {
-			isa = PBXGroup;
-			children = (
-				C6E5A9A11BDF964F004CD998 /* XcPluginViewController.h */,
-				C6E5A9A21BDF964F004CD998 /* XcPluginViewController.m */,
-				C6E5A9A41BDF965E004CD998 /* Xcplugin.storyboard */,
-			);
-			path = Xcplugin;
-			sourceTree = "<group>";
-		};
-		C6E6D0881BC26B79003D44C1 /* 201510 */ = {
-			isa = PBXGroup;
-			children = (
-				C635A8971BE36DAF00C6220E /* Motion */,
-				C635A8911BE364F200C6220E /* ExtensionKeyboard */,
-				C6E5A9A01BDF9634004CD998 /* Xcplugin */,
-				C66DBEC01BD1FF180071CB44 /* CIFilter */,
-				C6F4AAEE1BCDEB2F00EBE834 /* FMDB */,
-				C6EEFC101BC7928200924F56 /* NavigationBar */,
-				C6EEFBFF1BC5135A00924F56 /* Pop */,
-				C6B01B5B1BC380CB00DE78A7 /* XTSafeCollection */,
-				C6B01B551BC3809700DE78A7 /* Behavior */,
-			);
-			path = 201510;
-			sourceTree = "<group>";
-		};
-		C6EEFBFF1BC5135A00924F56 /* Pop */ = {
-			isa = PBXGroup;
-			children = (
-				C6EEFC001BC5139700924F56 /* PopViewController.h */,
-				C6EEFC011BC5139700924F56 /* PopViewController.m */,
-				C6EEFC031BC513A200924F56 /* Pop.storyboard */,
-			);
-			path = Pop;
-			sourceTree = "<group>";
-		};
-		C6EEFC101BC7928200924F56 /* NavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-				C6EEFC151BC7955900924F56 /* RootViewController.swift */,
-				C6EEFC111BC7935300924F56 /* ShrinkViewController.swift */,
-				C6EEFC171BC7956400924F56 /* NormalViewController.swift */,
-				C6EEFC1B1BC79B5400924F56 /* ShrinkHeaderView.swift */,
-				C6EEFC191BC79B3C00924F56 /* ShrinkHeaderView.xib */,
-				C6EEFC131BC7937000924F56 /* Shrink.storyboard */,
-			);
-			path = NavigationBar;
-			sourceTree = "<group>";
-		};
-		C6F4AAEE1BCDEB2F00EBE834 /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				C6F4AAF11BCDEB7200EBE834 /* FMDBViewController.h */,
-				C6F4AAF21BCDEB7200EBE834 /* FMDBViewController.m */,
-				C6F4AAF41BCDEB7D00EBE834 /* FMDB.storyboard */,
-			);
-			path = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -590,20 +404,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6B01B591BC3809700DE78A7 /* BehaviorStoryboard.storyboard in Resources */,
-				C635A8991BE36DCB00C6220E /* MotionStoryboard.storyboard in Resources */,
-				C6EEFC041BC513A200924F56 /* Pop.storyboard in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
-				C6B01B621BC3810300DE78A7 /* XTSafeCollection.storyboard in Resources */,
+				C694BA4D1BFC6558008FEA5F /* AlertStoryboard.storyboard in Resources */,
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
-				C66DBEC51BD1FF3A0071CB44 /* CIFilter.storyboard in Resources */,
-				C635A8961BE3653300C6220E /* ExtensionKeyboardStoryboard.storyboard in Resources */,
-				C6BB44411B970E23003011F6 /* Swift2Test.storyboard in Resources */,
-				C6E5A9A51BDF965E004CD998 /* Xcplugin.storyboard in Resources */,
-				C6F4AAF51BCDEB7D00EBE834 /* FMDB.storyboard in Resources */,
-				C6EEFC141BC7937000924F56 /* Shrink.storyboard in Resources */,
-				C6EEFC1A1BC79B3C00924F56 /* ShrinkHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,30 +458,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6EEFC1C1BC79B5400924F56 /* ShrinkHeaderView.swift in Sources */,
-				C6B01B5A1BC3809700DE78A7 /* BehaviorViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
-				C66DBEC31BD1FF260071CB44 /* CIFilterViewController.m in Sources */,
-				C6B01B601BC380E700DE78A7 /* XTSafeCollectionViewController.m in Sources */,
-				C6EEFC121BC7935300924F56 /* ShrinkViewController.swift in Sources */,
-				C6EEFC161BC7955900924F56 /* RootViewController.swift in Sources */,
-				C6EEFC181BC7956400924F56 /* NormalViewController.swift in Sources */,
-				C6E5A9A31BDF964F004CD998 /* XcPluginViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
-				C6F4AAF31BCDEB7200EBE834 /* FMDBViewController.m in Sources */,
-				C6EEFC021BC5139700924F56 /* PopViewController.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
-				C6BB44491B971150003011F6 /* StudentClass.swift in Sources */,
-				C635A89C1BE36DDB00C6220E /* MotionViewController.m in Sources */,
-				C635A8941BE3652400C6220E /* ExtensionKeyboardViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
-				C6BB44471B970F1A003011F6 /* Swift2TestViewController.swift in Sources */,
-				C6E5A9831BDE03C3004CD998 /* HXSQRCodes.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
-				C6EEFC071BC61CCB00924F56 /* Objective.m in Sources */,
-				C6EEFC091BC65AF400924F56 /* snakeGame.swift in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
+				C694BA501BFC656B008FEA5F /* AlertViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
