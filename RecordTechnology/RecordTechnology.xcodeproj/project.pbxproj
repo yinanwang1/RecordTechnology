@@ -18,9 +18,11 @@
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
-		C694BA4D1BFC6558008FEA5F /* AlertStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C694BA4C1BFC6558008FEA5F /* AlertStoryboard.storyboard */; };
-		C694BA501BFC656B008FEA5F /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C694BA4F1BFC656B008FEA5F /* AlertViewController.m */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
+		C6BB911C1C1AB40F00B795C0 /* HTML5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB911B1C1AB40F00B795C0 /* HTML5ViewController.m */; };
+		C6BB911E1C1AB41E00B795C0 /* HTML5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BB911D1C1AB41E00B795C0 /* HTML5.storyboard */; };
+		C6BB91201C1AB53400B795C0 /* native.js in Resources */ = {isa = PBXBuildFile; fileRef = C6BB911F1C1AB53400B795C0 /* native.js */; };
+		C6BB91221C1AC0EB00B795C0 /* Test1.js in Resources */ = {isa = PBXBuildFile; fileRef = C6BB91211C1AC0EB00B795C0 /* Test1.js */; };
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
@@ -88,11 +90,13 @@
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
-		C694BA4C1BFC6558008FEA5F /* AlertStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlertStoryboard.storyboard; sourceTree = "<group>"; };
-		C694BA4E1BFC656B008FEA5F /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
-		C694BA4F1BFC656B008FEA5F /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C6BB911A1C1AB40F00B795C0 /* HTML5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTML5ViewController.h; sourceTree = "<group>"; };
+		C6BB911B1C1AB40F00B795C0 /* HTML5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTML5ViewController.m; sourceTree = "<group>"; };
+		C6BB911D1C1AB41E00B795C0 /* HTML5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HTML5.storyboard; sourceTree = "<group>"; };
+		C6BB911F1C1AB53400B795C0 /* native.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = native.js; sourceTree = "<group>"; };
+		C6BB91211C1AC0EB00B795C0 /* Test1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test1.js; sourceTree = "<group>"; };
 		C6E5A9851BDE0650004CD998 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		C6E5A9871BDE0650004CD998 /* UIColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorExtensions.h; sourceTree = "<group>"; };
@@ -214,7 +218,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
-				C694BA4A1BFC6543008FEA5F /* 201511 */,
+				C6BB91181C1AB3DD00B795C0 /* 201512 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
 				8E41E23A1ABAB2DC0008984F /* AppDelegate.m */,
@@ -283,22 +287,24 @@
 			path = WWSideslipViewController;
 			sourceTree = "<group>";
 		};
-		C694BA4A1BFC6543008FEA5F /* 201511 */ = {
+		C6BB91181C1AB3DD00B795C0 /* 201512 */ = {
 			isa = PBXGroup;
 			children = (
-				C694BA4B1BFC6543008FEA5F /* Alert */,
+				C6BB91191C1AB3DD00B795C0 /* HTML5 */,
 			);
-			path = 201511;
+			path = 201512;
 			sourceTree = "<group>";
 		};
-		C694BA4B1BFC6543008FEA5F /* Alert */ = {
+		C6BB91191C1AB3DD00B795C0 /* HTML5 */ = {
 			isa = PBXGroup;
 			children = (
-				C694BA4C1BFC6558008FEA5F /* AlertStoryboard.storyboard */,
-				C694BA4E1BFC656B008FEA5F /* AlertViewController.h */,
-				C694BA4F1BFC656B008FEA5F /* AlertViewController.m */,
+				C6BB911A1C1AB40F00B795C0 /* HTML5ViewController.h */,
+				C6BB911B1C1AB40F00B795C0 /* HTML5ViewController.m */,
+				C6BB911D1C1AB41E00B795C0 /* HTML5.storyboard */,
+				C6BB911F1C1AB53400B795C0 /* native.js */,
+				C6BB91211C1AC0EB00B795C0 /* Test1.js */,
 			);
-			path = Alert;
+			path = HTML5;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -405,9 +411,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
+				C6BB911E1C1AB41E00B795C0 /* HTML5.storyboard in Resources */,
+				C6BB91221C1AC0EB00B795C0 /* Test1.js in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
-				C694BA4D1BFC6558008FEA5F /* AlertStoryboard.storyboard in Resources */,
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
+				C6BB91201C1AB53400B795C0 /* native.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,13 +467,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
+				C6BB911C1C1AB40F00B795C0 /* HTML5ViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
-				C694BA501BFC656B008FEA5F /* AlertViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
