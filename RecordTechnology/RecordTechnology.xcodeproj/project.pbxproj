@@ -18,6 +18,12 @@
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
+		C68CF43B1C2100F000DDF6A4 /* Test2.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF43A1C2100F000DDF6A4 /* Test2.js */; };
+		C68CF43D1C210BD400DDF6A4 /* Test3.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF43C1C210BD400DDF6A4 /* Test3.js */; };
+		C68CF43F1C2115CF00DDF6A4 /* Test4.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF43E1C2115CF00DDF6A4 /* Test4.js */; };
+		C68CF4411C2131A900DDF6A4 /* Test5.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF4401C2131A900DDF6A4 /* Test5.js */; };
+		C68CF4431C21348300DDF6A4 /* Test6.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF4421C21348300DDF6A4 /* Test6.js */; };
+		C68CF4451C213B4B00DDF6A4 /* Test7.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF4441C213B4B00DDF6A4 /* Test7.js */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BB911C1C1AB40F00B795C0 /* HTML5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB911B1C1AB40F00B795C0 /* HTML5ViewController.m */; };
 		C6BB911E1C1AB41E00B795C0 /* HTML5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BB911D1C1AB41E00B795C0 /* HTML5.storyboard */; };
@@ -90,6 +96,12 @@
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C68CF43A1C2100F000DDF6A4 /* Test2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test2.js; sourceTree = "<group>"; };
+		C68CF43C1C210BD400DDF6A4 /* Test3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test3.js; sourceTree = "<group>"; };
+		C68CF43E1C2115CF00DDF6A4 /* Test4.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test4.js; sourceTree = "<group>"; };
+		C68CF4401C2131A900DDF6A4 /* Test5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test5.js; sourceTree = "<group>"; };
+		C68CF4421C21348300DDF6A4 /* Test6.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test6.js; sourceTree = "<group>"; };
+		C68CF4441C213B4B00DDF6A4 /* Test7.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test7.js; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6BB911A1C1AB40F00B795C0 /* HTML5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTML5ViewController.h; sourceTree = "<group>"; };
@@ -303,6 +315,12 @@
 				C6BB911D1C1AB41E00B795C0 /* HTML5.storyboard */,
 				C6BB911F1C1AB53400B795C0 /* native.js */,
 				C6BB91211C1AC0EB00B795C0 /* Test1.js */,
+				C68CF43A1C2100F000DDF6A4 /* Test2.js */,
+				C68CF43C1C210BD400DDF6A4 /* Test3.js */,
+				C68CF43E1C2115CF00DDF6A4 /* Test4.js */,
+				C68CF4401C2131A900DDF6A4 /* Test5.js */,
+				C68CF4421C21348300DDF6A4 /* Test6.js */,
+				C68CF4441C213B4B00DDF6A4 /* Test7.js */,
 			);
 			path = HTML5;
 			sourceTree = "<group>";
@@ -410,11 +428,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68CF43D1C210BD400DDF6A4 /* Test3.js in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
+				C68CF4451C213B4B00DDF6A4 /* Test7.js in Resources */,
 				C6BB911E1C1AB41E00B795C0 /* HTML5.storyboard in Resources */,
 				C6BB91221C1AC0EB00B795C0 /* Test1.js in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
+				C68CF4411C2131A900DDF6A4 /* Test5.js in Resources */,
+				C68CF43F1C2115CF00DDF6A4 /* Test4.js in Resources */,
+				C68CF43B1C2100F000DDF6A4 /* Test2.js in Resources */,
+				C68CF4431C21348300DDF6A4 /* Test6.js in Resources */,
 				C6BB91201C1AB53400B795C0 /* native.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

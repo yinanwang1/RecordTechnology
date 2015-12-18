@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSString *pathStr = [[NSBundle mainBundle] pathForResource:@"Test1" ofType:@"js"];
+    NSString *pathStr = [[NSBundle mainBundle] pathForResource:@"Test7" ofType:@"js"];
     
     NSString *jsStr = [NSString stringWithContentsOfFile:pathStr encoding:NSUTF8StringEncoding error:nil];
     
