@@ -17,6 +17,8 @@
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
+		C62228FC1C239F77000DC00B /* Test8.js in Resources */ = {isa = PBXBuildFile; fileRef = C62228FB1C239F77000DC00B /* Test8.js */; };
+		C62229001C23A70D000DC00B /* smart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C62228FF1C23A70D000DC00B /* smart.jpg */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
 		C68CF43B1C2100F000DDF6A4 /* Test2.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF43A1C2100F000DDF6A4 /* Test2.js */; };
 		C68CF43D1C210BD400DDF6A4 /* Test3.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF43C1C210BD400DDF6A4 /* Test3.js */; };
@@ -95,6 +97,8 @@
 		8EF6A08F1B315C7600694EDE /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
+		C62228FB1C239F77000DC00B /* Test8.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test8.js; sourceTree = "<group>"; };
+		C62228FF1C23A70D000DC00B /* smart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smart.jpg; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C68CF43A1C2100F000DDF6A4 /* Test2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test2.js; sourceTree = "<group>"; };
 		C68CF43C1C210BD400DDF6A4 /* Test3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test3.js; sourceTree = "<group>"; };
@@ -299,6 +303,14 @@
 			path = WWSideslipViewController;
 			sourceTree = "<group>";
 		};
+		C62228FE1C23A016000DC00B /* html */ = {
+			isa = PBXGroup;
+			children = (
+				C62228FF1C23A70D000DC00B /* smart.jpg */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
 		C6BB91181C1AB3DD00B795C0 /* 201512 */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +322,7 @@
 		C6BB91191C1AB3DD00B795C0 /* HTML5 */ = {
 			isa = PBXGroup;
 			children = (
+				C62228FE1C23A016000DC00B /* html */,
 				C6BB911A1C1AB40F00B795C0 /* HTML5ViewController.h */,
 				C6BB911B1C1AB40F00B795C0 /* HTML5ViewController.m */,
 				C6BB911D1C1AB41E00B795C0 /* HTML5.storyboard */,
@@ -321,6 +334,7 @@
 				C68CF4401C2131A900DDF6A4 /* Test5.js */,
 				C68CF4421C21348300DDF6A4 /* Test6.js */,
 				C68CF4441C213B4B00DDF6A4 /* Test7.js */,
+				C62228FB1C239F77000DC00B /* Test8.js */,
 			);
 			path = HTML5;
 			sourceTree = "<group>";
@@ -439,7 +453,9 @@
 				C68CF43F1C2115CF00DDF6A4 /* Test4.js in Resources */,
 				C68CF43B1C2100F000DDF6A4 /* Test2.js in Resources */,
 				C68CF4431C21348300DDF6A4 /* Test6.js in Resources */,
+				C62228FC1C239F77000DC00B /* Test8.js in Resources */,
 				C6BB91201C1AB53400B795C0 /* native.js in Resources */,
+				C62229001C23A70D000DC00B /* smart.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

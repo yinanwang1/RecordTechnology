@@ -8,7 +8,7 @@
 
 #import "HTML5ViewController.h"
 
-@interface HTML5ViewController ()
+@interface HTML5ViewController () <UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webview;
 
@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSString *pathStr = [[NSBundle mainBundle] pathForResource:@"Test7" ofType:@"js"];
+    NSString *pathStr = [[NSBundle mainBundle] pathForResource:@"Test8" ofType:@"js"];
     
     NSString *jsStr = [NSString stringWithContentsOfFile:pathStr encoding:NSUTF8StringEncoding error:nil];
     
@@ -35,14 +35,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+
+#pragma mark - UIWebViewDelegate
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    return YES;
 }
-*/
+
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    NSString *pathStr = [[NSBundle mainBundle] pathForResource:@"smart" ofType:@"jpg"];
+    
+    NSString *jsString = [NSString stringWithFormat:@"setImagePath('file://%@')", pathStr];
+    
+    [webView stringByEvaluatingJavaScriptFromString:jsString];
+}
+
+
 
 @end
