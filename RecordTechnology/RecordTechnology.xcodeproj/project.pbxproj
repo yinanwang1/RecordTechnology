@@ -34,6 +34,9 @@
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
+		C6EB92481C33B1D1008767C3 /* DefineTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EB92471C33B1D1008767C3 /* DefineTabBarViewController.m */; };
+		C6EB924A1C33B1DE008767C3 /* DefineTabBarVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EB92491C33B1DE008767C3 /* DefineTabBarVC.storyboard */; };
+		C6EB924D1C33D58D008767C3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EB924C1C33D58D008767C3 /* FirstViewController.m */; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +122,11 @@
 		C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorExtensions.m; sourceTree = "<group>"; };
 		C6E5A9891BDE0650004CD998 /* UIViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExtensions.h; sourceTree = "<group>"; };
 		C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExtensions.m; sourceTree = "<group>"; };
+		C6EB92461C33B1D1008767C3 /* DefineTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineTabBarViewController.h; sourceTree = "<group>"; };
+		C6EB92471C33B1D1008767C3 /* DefineTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineTabBarViewController.m; sourceTree = "<group>"; };
+		C6EB92491C33B1DE008767C3 /* DefineTabBarVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DefineTabBarVC.storyboard; sourceTree = "<group>"; };
+		C6EB924B1C33D58D008767C3 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		C6EB924C1C33D58D008767C3 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +322,7 @@
 		C6BB91181C1AB3DD00B795C0 /* 201512 */ = {
 			isa = PBXGroup;
 			children = (
+				C6EB92451C33B1AA008767C3 /* DefineTabBarVC */,
 				C6BB91191C1AB3DD00B795C0 /* HTML5 */,
 			);
 			path = 201512;
@@ -350,6 +359,18 @@
 				C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C6EB92451C33B1AA008767C3 /* DefineTabBarVC */ = {
+			isa = PBXGroup;
+			children = (
+				C6EB92461C33B1D1008767C3 /* DefineTabBarViewController.h */,
+				C6EB92471C33B1D1008767C3 /* DefineTabBarViewController.m */,
+				C6EB92491C33B1DE008767C3 /* DefineTabBarVC.storyboard */,
+				C6EB924B1C33D58D008767C3 /* FirstViewController.h */,
+				C6EB924C1C33D58D008767C3 /* FirstViewController.m */,
+			);
+			path = DefineTabBarVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +469,7 @@
 				C6BB911E1C1AB41E00B795C0 /* HTML5.storyboard in Resources */,
 				C6BB91221C1AC0EB00B795C0 /* Test1.js in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
+				C6EB924A1C33B1DE008767C3 /* DefineTabBarVC.storyboard in Resources */,
 				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
 				C68CF4411C2131A900DDF6A4 /* Test5.js in Resources */,
 				C68CF43F1C2115CF00DDF6A4 /* Test4.js in Resources */,
@@ -512,6 +534,8 @@
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
+				C6EB92481C33B1D1008767C3 /* DefineTabBarViewController.m in Sources */,
+				C6EB924D1C33D58D008767C3 /* FirstViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 			);
