@@ -64,6 +64,10 @@
         CGFloat width = self.bounds.size.width / count;
         CGFloat height = self.bounds.size.height;
         btn.frame = CGRectMake(x, y, width, height);
+        
+        if (2 == i) {
+            btn.frame = CGRectMake(x, y - 10, width, height + 10);
+        }
     }
 }
 
