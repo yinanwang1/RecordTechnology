@@ -8,15 +8,35 @@
 
 #import "DefineTabBarViewController.h"
 
-@interface DefineTabBarViewController ()
+#import "DefineTabBar.h"
+#import "DefineButton.h"
+
+@interface DefineTabBarViewController () <DefineBarDelegate>
 
 @end
 
 @implementation DefineTabBarViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    CGRect rect = self.tabBar.bounds;
+    
+    DefineTabBar *defineTabBar = [[DefineTabBar alloc] init];
+    defineTabBar.tabBarDelegate = self;
+    defineTabBar.frame = rect;
+    [self.tabBar addSubview:defineTabBar];
+    
+    for (int i = 0; i < [self.viewControllers count]; i++) {
+        NSString *normalImageStr = [NSString stringWithFormat:@"tabbar%d_normal", i + 1];
+        NSString *selectedImageStr = [NSString stringWithFormat:@"tabbar%d_selected", i + 1];
+        
+        UIImage *normalImage = [UIImage imageNamed:normalImageStr];
+        UIImage *selectedImage = [UIImage imageNamed:selectedImageStr];
+        
+        [defineTabBar addButtonWithNormalImage:normalImage selectedImage:selectedImage];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +44,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - DefineBarDelegate
+
+- (void)tabBar:(DefineTabBar *)tabBar selectedForm:(NSInteger)from to:(NSInteger)to
+{
+    self.selectedIndex = to;
 }
-*/
 
 @end

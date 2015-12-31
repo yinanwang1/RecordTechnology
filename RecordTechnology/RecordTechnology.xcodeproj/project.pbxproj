@@ -13,7 +13,6 @@
 		8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E23A1ABAB2DC0008984F /* AppDelegate.m */; };
 		8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E23D1ABAB2DC0008984F /* ViewController.m */; };
 		8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E23F1ABAB2DC0008984F /* Main.storyboard */; };
-		8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2421ABAB2DC0008984F /* Images.xcassets */; };
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
@@ -31,6 +30,9 @@
 		C6BB911E1C1AB41E00B795C0 /* HTML5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BB911D1C1AB41E00B795C0 /* HTML5.storyboard */; };
 		C6BB91201C1AB53400B795C0 /* native.js in Resources */ = {isa = PBXBuildFile; fileRef = C6BB911F1C1AB53400B795C0 /* native.js */; };
 		C6BB91221C1AC0EB00B795C0 /* Test1.js in Resources */ = {isa = PBXBuildFile; fileRef = C6BB91211C1AC0EB00B795C0 /* Test1.js */; };
+		C6C1DD201C34C200006F273C /* DefineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1DD1F1C34C200006F273C /* DefineButton.m */; };
+		C6C1DD231C34C26B006F273C /* DefineTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1DD221C34C26B006F273C /* DefineTabBar.m */; };
+		C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C1DD241C34C5FB006F273C /* Images.xcassets */; };
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
@@ -87,7 +89,6 @@
 		8E41E23C1ABAB2DC0008984F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8E41E23D1ABAB2DC0008984F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8E41E2401ABAB2DC0008984F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8E41E2421ABAB2DC0008984F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8E41E2451ABAB2DC0008984F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8E41E24B1ABAB2DC0008984F /* RecordTechnologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordTechnologyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E41E2501ABAB2DC0008984F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,6 +117,11 @@
 		C6BB911D1C1AB41E00B795C0 /* HTML5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HTML5.storyboard; sourceTree = "<group>"; };
 		C6BB911F1C1AB53400B795C0 /* native.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = native.js; sourceTree = "<group>"; };
 		C6BB91211C1AC0EB00B795C0 /* Test1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test1.js; sourceTree = "<group>"; };
+		C6C1DD1E1C34C200006F273C /* DefineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineButton.h; sourceTree = "<group>"; };
+		C6C1DD1F1C34C200006F273C /* DefineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineButton.m; sourceTree = "<group>"; };
+		C6C1DD211C34C26B006F273C /* DefineTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineTabBar.h; sourceTree = "<group>"; };
+		C6C1DD221C34C26B006F273C /* DefineTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineTabBar.m; sourceTree = "<group>"; };
+		C6C1DD241C34C5FB006F273C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C6E5A9851BDE0650004CD998 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		C6E5A9871BDE0650004CD998 /* UIColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorExtensions.h; sourceTree = "<group>"; };
@@ -249,8 +255,8 @@
 				8E41E23C1ABAB2DC0008984F /* ViewController.h */,
 				8E41E23D1ABAB2DC0008984F /* ViewController.m */,
 				8E41E23F1ABAB2DC0008984F /* Main.storyboard */,
-				8E41E2421ABAB2DC0008984F /* Images.xcassets */,
 				8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */,
+				C6C1DD241C34C5FB006F273C /* Images.xcassets */,
 				8E41E2351ABAB2DC0008984F /* Supporting Files */,
 			);
 			path = RecordTechnology;
@@ -348,6 +354,17 @@
 			path = HTML5;
 			sourceTree = "<group>";
 		};
+		C6C1DD1D1C34C1EF006F273C /* DefineTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C6C1DD1E1C34C200006F273C /* DefineButton.h */,
+				C6C1DD1F1C34C200006F273C /* DefineButton.m */,
+				C6C1DD211C34C26B006F273C /* DefineTabBar.h */,
+				C6C1DD221C34C26B006F273C /* DefineTabBar.m */,
+			);
+			path = DefineTabBar;
+			sourceTree = "<group>";
+		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +381,7 @@
 		C6EB92451C33B1AA008767C3 /* DefineTabBarVC */ = {
 			isa = PBXGroup;
 			children = (
+				C6C1DD1D1C34C1EF006F273C /* DefineTabBar */,
 				C6EB92461C33B1D1008767C3 /* DefineTabBarViewController.h */,
 				C6EB92471C33B1D1008767C3 /* DefineTabBarViewController.m */,
 				C6EB92491C33B1DE008767C3 /* DefineTabBarVC.storyboard */,
@@ -469,8 +487,8 @@
 				C6BB911E1C1AB41E00B795C0 /* HTML5.storyboard in Resources */,
 				C6BB91221C1AC0EB00B795C0 /* Test1.js in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
+				C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */,
 				C6EB924A1C33B1DE008767C3 /* DefineTabBarVC.storyboard in Resources */,
-				8E41E2431ABAB2DC0008984F /* Images.xcassets in Resources */,
 				C68CF4411C2131A900DDF6A4 /* Test5.js in Resources */,
 				C68CF43F1C2115CF00DDF6A4 /* Test4.js in Resources */,
 				C68CF43B1C2100F000DDF6A4 /* Test2.js in Resources */,
@@ -528,6 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C1DD231C34C26B006F273C /* DefineTabBar.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6BB911C1C1AB40F00B795C0 /* HTML5ViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
@@ -538,6 +557,7 @@
 				C6EB924D1C33D58D008767C3 /* FirstViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
+				C6C1DD201C34C200006F273C /* DefineButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
