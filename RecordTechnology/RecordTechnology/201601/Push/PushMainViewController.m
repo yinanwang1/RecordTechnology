@@ -11,7 +11,13 @@
 #import "PushFirstViewController.h"
 #import "PushSecondViewController.h"
 
+#import "Masonry.h"
+
 @interface PushMainViewController () <UINavigationControllerDelegate, UIViewControllerAnimatedTransitioning, UIViewControllerInteractiveTransitioning>
+
+@property (nonatomic, strong) PushFirstViewController *firstVC;
+
+@property (nonatomic, weak) id <UIViewControllerContextTransitioning> transitionContext;
 
 @end
 
@@ -20,7 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
     self.navigationController.delegate = self;
 }
 
@@ -44,9 +55,9 @@
 
 - (IBAction)onClickFirstBtn:(id)sender
 {
-    PushFirstViewController *firstVC = [[PushFirstViewController alloc] initWithNibName:@"PushFirstViewController" bundle:[NSBundle mainBundle]];
+     self.firstVC = [[PushFirstViewController alloc] initWithNibName:@"PushFirstViewController" bundle:[NSBundle mainBundle]];
     
-    [self.navigationController pushViewController:firstVC animated:YES];
+    [self.navigationController pushViewController:self.firstVC animated:YES];
 }
 
 - (IBAction)onClickSecondBtn:(id)sender
@@ -74,28 +85,42 @@
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    return 1.0f;
+    return 3.0f;
 }
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    [[transitionContext containerView] addSubview:toVC.view];
+    self.transitionContext = transitionContext;
+    UIView *containerView = [transitionContext containerView];
+    
+    [containerView addSubview:toVC.view];
+    
+    [toVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(containerView);
+    }];
     
     toVC.view.alpha = 0.0f;
     
-    [UIView animateWithDuration:1.0f
+    __weak typeof(self) weakSelf = self;
+    
+    [UIView animateWithDuration:3.0f
                           delay:0.0f
          usingSpringWithDamping:1
           initialSpringVelocity:0.0f
-                        options:UIViewAnimationOptionLayoutSubviews
+                        options:UIViewAnimationOptionTransitionFlipFromLeft
                      animations:^{
                          fromVC.view.alpha = 0.0f;
                          toVC.view.alpha = 1.0f;
                      } completion:^(BOOL finished) {
-                         
+                         [weakSelf.transitionContext completeTransition:YES];
                      }];
+}
+
+- (void)animationEnded:(BOOL)transitionCompleted
+{
+    [self.transitionContext completeTransition:YES];
 }
 
 #pragma mark - UIViewControllerInteractiveTransitioning

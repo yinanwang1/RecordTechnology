@@ -24,7 +24,8 @@
                     <rect key="frame" x="285" y="162" width="30" height="30"/>
                     <state key="normal" title="POP"/>
                     <connections>
-                        <action selector="onClickPOPBtn:" destination="-1" eventType="touchUpOutside" id="nbO-VI-JHk"/>
+                        <action selector="onClickOutSide:" destination="-1" eventType="touchUpOutside" id="XFH-sv-Eka"/>
+                        <action selector="onClickPOPBtn:" destination="-1" eventType="touchUpInside" id="Vye-lH-v1W"/>
                     </connections>
                 </button>
             </subviews>

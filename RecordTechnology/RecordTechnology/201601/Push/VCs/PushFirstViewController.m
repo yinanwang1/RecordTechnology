@@ -10,13 +10,22 @@
 
 @interface PushFirstViewController () <UINavigationControllerDelegate, UIViewControllerAnimatedTransitioning, UIViewControllerInteractiveTransitioning>
 
+@property (nonatomic, weak) id <UIViewControllerContextTransitioning> transitionContext;
+
 @end
 
 @implementation PushFirstViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    self.navigationController.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,6 +39,11 @@
 - (IBAction)onClickPOPBtn:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)onClickOutSide:(id)sender
+{
+    NSLog(@"Outside Outside!!!");
 }
 
 
@@ -51,28 +65,37 @@
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    return 1.0f;
+    return 3.0f;
 }
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    [[transitionContext containerView] addSubview:toVC.view];
+    self.transitionContext = transitionContext;
+    
+    [[self.transitionContext containerView] addSubview:toVC.view];
     
     toVC.view.alpha = 0.0f;
     
-    [UIView animateWithDuration:1.0f
+    __weak typeof(self) weakSelf = self;
+    
+    [UIView animateWithDuration:3.0f
                           delay:0.0f
          usingSpringWithDamping:1
           initialSpringVelocity:0.0f
-                        options:UIViewAnimationOptionLayoutSubviews
+                        options:UIViewAnimationOptionTransitionFlipFromLeft
                      animations:^{
                          fromVC.view.alpha = 0.0f;
                          toVC.view.alpha = 1.0f;
                      } completion:^(BOOL finished) {
-                         
+                         [weakSelf.transitionContext completeTransition:YES];
                      }];
+}
+
+- (void)animationEnded:(BOOL)transitionCompleted
+{
+    [self.transitionContext completeTransition:YES];
 }
 
 #pragma mark - UIViewControllerInteractiveTransitioning
