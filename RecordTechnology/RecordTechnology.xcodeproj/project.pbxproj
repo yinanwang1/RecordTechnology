@@ -25,6 +25,10 @@
 		C617940F1C5B3BA70010504A /* PushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C617940E1C5B3BA70010504A /* PushAnimator.m */; };
 		C61794121C5B409A0010504A /* PushDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C61794111C5B409A0010504A /* PushDismissAnimator.m */; };
 		C61794161C5B4AC70010504A /* PushThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61794141C5B4AC70010504A /* PushThirdViewController.m */; };
+		C617941D1C5B84630010504A /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C617941C1C5B84630010504A /* CameraViewController.m */; };
+		C617941F1C5B846E0010504A /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C617941E1C5B846E0010504A /* Camera.storyboard */; };
+		C61794231C5B85010010504A /* CameraDefinedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61794211C5B85010010504A /* CameraDefinedViewController.m */; };
+		C61794241C5B85010010504A /* CameraDefinedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C61794221C5B85010010504A /* CameraDefinedViewController.xib */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C1DD241C34C5FB006F273C /* Images.xcassets */; };
@@ -108,6 +112,12 @@
 		C61794111C5B409A0010504A /* PushDismissAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushDismissAnimator.m; sourceTree = "<group>"; };
 		C61794131C5B4AC70010504A /* PushThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushThirdViewController.h; sourceTree = "<group>"; };
 		C61794141C5B4AC70010504A /* PushThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushThirdViewController.m; sourceTree = "<group>"; };
+		C617941B1C5B84630010504A /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		C617941C1C5B84630010504A /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		C617941E1C5B846E0010504A /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		C61794201C5B85010010504A /* CameraDefinedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraDefinedViewController.h; sourceTree = "<group>"; };
+		C61794211C5B85010010504A /* CameraDefinedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraDefinedViewController.m; sourceTree = "<group>"; };
+		C61794221C5B85010010504A /* CameraDefinedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraDefinedViewController.xib; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -305,6 +315,7 @@
 		C61793EB1C5AF97B0010504A /* 201601 */ = {
 			isa = PBXGroup;
 			children = (
+				C61794181C5B7B6A0010504A /* Cameron */,
 				C61793EC1C5AF97B0010504A /* Push */,
 			);
 			path = 201601;
@@ -347,6 +358,19 @@
 			);
 			name = Animate;
 			path = ../Animate;
+			sourceTree = "<group>";
+		};
+		C61794181C5B7B6A0010504A /* Cameron */ = {
+			isa = PBXGroup;
+			children = (
+				C617941B1C5B84630010504A /* CameraViewController.h */,
+				C617941C1C5B84630010504A /* CameraViewController.m */,
+				C61794201C5B85010010504A /* CameraDefinedViewController.h */,
+				C61794211C5B85010010504A /* CameraDefinedViewController.m */,
+				C61794221C5B85010010504A /* CameraDefinedViewController.xib */,
+				C617941E1C5B846E0010504A /* Camera.storyboard */,
+			);
+			path = Cameron;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -452,11 +476,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61794241C5B85010010504A /* CameraDefinedViewController.xib in Resources */,
 				C61793FC1C5AFA510010504A /* PushSecondViewController.xib in Resources */,
 				C61793F71C5AFA270010504A /* PushFirstViewController.xib in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C61793F11C5AF9A80010504A /* Push.storyboard in Resources */,
+				C617941F1C5B846E0010504A /* Camera.storyboard in Resources */,
 				C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,11 +534,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C617941D1C5B84630010504A /* CameraViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C61793EF1C5AF9990010504A /* PushMainViewController.m in Sources */,
 				C617940F1C5B3BA70010504A /* PushAnimator.m in Sources */,
+				C61794231C5B85010010504A /* CameraDefinedViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
 				C61793FB1C5AFA510010504A /* PushSecondViewController.m in Sources */,
@@ -607,7 +635,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "4a289661-0710-4c17-b00f-410f695d81d6";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -643,7 +671,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "4a289661-0710-4c17-b00f-410f695d81d6";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -658,16 +686,16 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Feng Feng Ning (N774LYEQGB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Feng Feng Ning (N774LYEQGB)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arthurWang.TestCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4a289661-0710-4c17-b00f-410f695d81d6";
+				PROVISIONING_PROFILE = "17a50c80-1f82-4751-8c13-01ff3fc7fc03";
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/201509/Swift2.0/RecordTechnology-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -687,11 +715,11 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arthurWang.TestCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4a289661-0710-4c17-b00f-410f695d81d6";
+				PROVISIONING_PROFILE = "17a50c80-1f82-4751-8c13-01ff3fc7fc03";
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/201509/Swift2.0/RecordTechnology-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
