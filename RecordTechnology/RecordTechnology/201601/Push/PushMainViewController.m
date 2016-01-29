@@ -72,7 +72,7 @@
 
 //- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
 //{
-//    return self;
+//    return [[UIPercentDrivenInteractiveTransition alloc] init];
 //}
 
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
@@ -129,6 +129,7 @@
 {
     NSLog(@"What to do!");
 }
+
 
 
 @end

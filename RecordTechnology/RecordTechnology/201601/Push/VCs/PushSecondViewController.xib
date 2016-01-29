@@ -20,11 +20,20 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvO-Dk-dzM">
+                    <rect key="frame" x="274" y="138" width="53" height="30"/>
+                    <state key="normal" title="Present"/>
+                    <connections>
+                        <action selector="onClickPresentBtn:" destination="-1" eventType="touchUpInside" id="dPj-Ze-Epw"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="uZl-6i-tPr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5sy-yU-0uO"/>
                 <constraint firstItem="uZl-6i-tPr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="KIB-BY-kCc"/>
+                <constraint firstItem="kvO-Dk-dzM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ppF-NQ-pqB"/>
+                <constraint firstItem="kvO-Dk-dzM" firstAttribute="top" secondItem="uZl-6i-tPr" secondAttribute="bottom" constant="32" id="vGl-Jn-g9F"/>
             </constraints>
         </view>
     </objects>

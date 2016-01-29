@@ -22,6 +22,9 @@
 		C61793F71C5AFA270010504A /* PushFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C61793F51C5AFA270010504A /* PushFirstViewController.xib */; };
 		C61793FB1C5AFA510010504A /* PushSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61793F91C5AFA510010504A /* PushSecondViewController.m */; };
 		C61793FC1C5AFA510010504A /* PushSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C61793FA1C5AFA510010504A /* PushSecondViewController.xib */; };
+		C617940F1C5B3BA70010504A /* PushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C617940E1C5B3BA70010504A /* PushAnimator.m */; };
+		C61794121C5B409A0010504A /* PushDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C61794111C5B409A0010504A /* PushDismissAnimator.m */; };
+		C61794161C5B4AC70010504A /* PushThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61794141C5B4AC70010504A /* PushThirdViewController.m */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C1DD241C34C5FB006F273C /* Images.xcassets */; };
@@ -99,6 +102,12 @@
 		C61793F81C5AFA510010504A /* PushSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushSecondViewController.h; sourceTree = "<group>"; };
 		C61793F91C5AFA510010504A /* PushSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushSecondViewController.m; sourceTree = "<group>"; };
 		C61793FA1C5AFA510010504A /* PushSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushSecondViewController.xib; sourceTree = "<group>"; };
+		C617940D1C5B3BA70010504A /* PushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAnimator.h; sourceTree = "<group>"; };
+		C617940E1C5B3BA70010504A /* PushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAnimator.m; sourceTree = "<group>"; };
+		C61794101C5B409A0010504A /* PushDismissAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushDismissAnimator.h; sourceTree = "<group>"; };
+		C61794111C5B409A0010504A /* PushDismissAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushDismissAnimator.m; sourceTree = "<group>"; };
+		C61794131C5B4AC70010504A /* PushThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushThirdViewController.h; sourceTree = "<group>"; };
+		C61794141C5B4AC70010504A /* PushThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushThirdViewController.m; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -321,8 +330,23 @@
 				C61793F81C5AFA510010504A /* PushSecondViewController.h */,
 				C61793F91C5AFA510010504A /* PushSecondViewController.m */,
 				C61793FA1C5AFA510010504A /* PushSecondViewController.xib */,
+				C61794131C5B4AC70010504A /* PushThirdViewController.h */,
+				C61794141C5B4AC70010504A /* PushThirdViewController.m */,
+				C617940C1C5B3B510010504A /* Animate */,
 			);
 			path = VCs;
+			sourceTree = "<group>";
+		};
+		C617940C1C5B3B510010504A /* Animate */ = {
+			isa = PBXGroup;
+			children = (
+				C617940D1C5B3BA70010504A /* PushAnimator.h */,
+				C617940E1C5B3BA70010504A /* PushAnimator.m */,
+				C61794101C5B409A0010504A /* PushDismissAnimator.h */,
+				C61794111C5B409A0010504A /* PushDismissAnimator.m */,
+			);
+			name = Animate;
+			path = ../Animate;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -488,12 +512,15 @@
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C61793EF1C5AF9990010504A /* PushMainViewController.m in Sources */,
+				C617940F1C5B3BA70010504A /* PushAnimator.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
 				C61793FB1C5AFA510010504A /* PushSecondViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
+				C61794161C5B4AC70010504A /* PushThirdViewController.m in Sources */,
 				C61793F61C5AFA270010504A /* PushFirstViewController.m in Sources */,
+				C61794121C5B409A0010504A /* PushDismissAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
