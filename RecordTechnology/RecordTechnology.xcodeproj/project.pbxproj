@@ -16,29 +16,18 @@
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
-		C62228FC1C239F77000DC00B /* Test8.js in Resources */ = {isa = PBXBuildFile; fileRef = C62228FB1C239F77000DC00B /* Test8.js */; };
-		C62229001C23A70D000DC00B /* smart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C62228FF1C23A70D000DC00B /* smart.jpg */; };
+		C61793EF1C5AF9990010504A /* PushMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61793EE1C5AF9990010504A /* PushMainViewController.m */; };
+		C61793F11C5AF9A80010504A /* Push.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61793F01C5AF9A80010504A /* Push.storyboard */; };
+		C61793F61C5AFA270010504A /* PushFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61793F41C5AFA270010504A /* PushFirstViewController.m */; };
+		C61793F71C5AFA270010504A /* PushFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C61793F51C5AFA270010504A /* PushFirstViewController.xib */; };
+		C61793FB1C5AFA510010504A /* PushSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61793F91C5AFA510010504A /* PushSecondViewController.m */; };
+		C61793FC1C5AFA510010504A /* PushSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C61793FA1C5AFA510010504A /* PushSecondViewController.xib */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
-		C68CF43B1C2100F000DDF6A4 /* Test2.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF43A1C2100F000DDF6A4 /* Test2.js */; };
-		C68CF43D1C210BD400DDF6A4 /* Test3.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF43C1C210BD400DDF6A4 /* Test3.js */; };
-		C68CF43F1C2115CF00DDF6A4 /* Test4.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF43E1C2115CF00DDF6A4 /* Test4.js */; };
-		C68CF4411C2131A900DDF6A4 /* Test5.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF4401C2131A900DDF6A4 /* Test5.js */; };
-		C68CF4431C21348300DDF6A4 /* Test6.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF4421C21348300DDF6A4 /* Test6.js */; };
-		C68CF4451C213B4B00DDF6A4 /* Test7.js in Resources */ = {isa = PBXBuildFile; fileRef = C68CF4441C213B4B00DDF6A4 /* Test7.js */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
-		C6BB911C1C1AB40F00B795C0 /* HTML5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB911B1C1AB40F00B795C0 /* HTML5ViewController.m */; };
-		C6BB911E1C1AB41E00B795C0 /* HTML5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BB911D1C1AB41E00B795C0 /* HTML5.storyboard */; };
-		C6BB91201C1AB53400B795C0 /* native.js in Resources */ = {isa = PBXBuildFile; fileRef = C6BB911F1C1AB53400B795C0 /* native.js */; };
-		C6BB91221C1AC0EB00B795C0 /* Test1.js in Resources */ = {isa = PBXBuildFile; fileRef = C6BB91211C1AC0EB00B795C0 /* Test1.js */; };
-		C6C1DD201C34C200006F273C /* DefineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1DD1F1C34C200006F273C /* DefineButton.m */; };
-		C6C1DD231C34C26B006F273C /* DefineTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1DD221C34C26B006F273C /* DefineTabBar.m */; };
 		C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C1DD241C34C5FB006F273C /* Images.xcassets */; };
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
-		C6EB92481C33B1D1008767C3 /* DefineTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EB92471C33B1D1008767C3 /* DefineTabBarViewController.m */; };
-		C6EB924A1C33B1DE008767C3 /* DefineTabBarVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EB92491C33B1DE008767C3 /* DefineTabBarVC.storyboard */; };
-		C6EB924D1C33D58D008767C3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EB924C1C33D58D008767C3 /* FirstViewController.m */; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,26 +90,18 @@
 		8EF6A08F1B315C7600694EDE /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
-		C62228FB1C239F77000DC00B /* Test8.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test8.js; sourceTree = "<group>"; };
-		C62228FF1C23A70D000DC00B /* smart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smart.jpg; sourceTree = "<group>"; };
+		C61793ED1C5AF9990010504A /* PushMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushMainViewController.h; sourceTree = "<group>"; };
+		C61793EE1C5AF9990010504A /* PushMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushMainViewController.m; sourceTree = "<group>"; };
+		C61793F01C5AF9A80010504A /* Push.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Push.storyboard; sourceTree = "<group>"; };
+		C61793F31C5AFA270010504A /* PushFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushFirstViewController.h; sourceTree = "<group>"; };
+		C61793F41C5AFA270010504A /* PushFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushFirstViewController.m; sourceTree = "<group>"; };
+		C61793F51C5AFA270010504A /* PushFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushFirstViewController.xib; sourceTree = "<group>"; };
+		C61793F81C5AFA510010504A /* PushSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushSecondViewController.h; sourceTree = "<group>"; };
+		C61793F91C5AFA510010504A /* PushSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushSecondViewController.m; sourceTree = "<group>"; };
+		C61793FA1C5AFA510010504A /* PushSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushSecondViewController.xib; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
-		C68CF43A1C2100F000DDF6A4 /* Test2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test2.js; sourceTree = "<group>"; };
-		C68CF43C1C210BD400DDF6A4 /* Test3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test3.js; sourceTree = "<group>"; };
-		C68CF43E1C2115CF00DDF6A4 /* Test4.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test4.js; sourceTree = "<group>"; };
-		C68CF4401C2131A900DDF6A4 /* Test5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test5.js; sourceTree = "<group>"; };
-		C68CF4421C21348300DDF6A4 /* Test6.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test6.js; sourceTree = "<group>"; };
-		C68CF4441C213B4B00DDF6A4 /* Test7.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test7.js; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		C6BB911A1C1AB40F00B795C0 /* HTML5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTML5ViewController.h; sourceTree = "<group>"; };
-		C6BB911B1C1AB40F00B795C0 /* HTML5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTML5ViewController.m; sourceTree = "<group>"; };
-		C6BB911D1C1AB41E00B795C0 /* HTML5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HTML5.storyboard; sourceTree = "<group>"; };
-		C6BB911F1C1AB53400B795C0 /* native.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = native.js; sourceTree = "<group>"; };
-		C6BB91211C1AC0EB00B795C0 /* Test1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test1.js; sourceTree = "<group>"; };
-		C6C1DD1E1C34C200006F273C /* DefineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineButton.h; sourceTree = "<group>"; };
-		C6C1DD1F1C34C200006F273C /* DefineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineButton.m; sourceTree = "<group>"; };
-		C6C1DD211C34C26B006F273C /* DefineTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineTabBar.h; sourceTree = "<group>"; };
-		C6C1DD221C34C26B006F273C /* DefineTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineTabBar.m; sourceTree = "<group>"; };
 		C6C1DD241C34C5FB006F273C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C6E5A9851BDE0650004CD998 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
@@ -128,11 +109,6 @@
 		C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorExtensions.m; sourceTree = "<group>"; };
 		C6E5A9891BDE0650004CD998 /* UIViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExtensions.h; sourceTree = "<group>"; };
 		C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExtensions.m; sourceTree = "<group>"; };
-		C6EB92461C33B1D1008767C3 /* DefineTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineTabBarViewController.h; sourceTree = "<group>"; };
-		C6EB92471C33B1D1008767C3 /* DefineTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineTabBarViewController.m; sourceTree = "<group>"; };
-		C6EB92491C33B1DE008767C3 /* DefineTabBarVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DefineTabBarVC.storyboard; sourceTree = "<group>"; };
-		C6EB924B1C33D58D008767C3 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		C6EB924C1C33D58D008767C3 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,7 +224,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
-				C6BB91181C1AB3DD00B795C0 /* 201512 */,
+				C61793EB1C5AF97B0010504A /* 201601 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
 				8E41E23A1ABAB2DC0008984F /* AppDelegate.m */,
@@ -317,52 +293,36 @@
 			path = WWSideslipViewController;
 			sourceTree = "<group>";
 		};
-		C62228FE1C23A016000DC00B /* html */ = {
+		C61793EB1C5AF97B0010504A /* 201601 */ = {
 			isa = PBXGroup;
 			children = (
-				C62228FF1C23A70D000DC00B /* smart.jpg */,
+				C61793EC1C5AF97B0010504A /* Push */,
 			);
-			path = html;
+			path = 201601;
 			sourceTree = "<group>";
 		};
-		C6BB91181C1AB3DD00B795C0 /* 201512 */ = {
+		C61793EC1C5AF97B0010504A /* Push */ = {
 			isa = PBXGroup;
 			children = (
-				C6EB92451C33B1AA008767C3 /* DefineTabBarVC */,
-				C6BB91191C1AB3DD00B795C0 /* HTML5 */,
+				C61793ED1C5AF9990010504A /* PushMainViewController.h */,
+				C61793EE1C5AF9990010504A /* PushMainViewController.m */,
+				C61793F01C5AF9A80010504A /* Push.storyboard */,
+				C61793F21C5AFA0E0010504A /* VCs */,
 			);
-			path = 201512;
+			path = Push;
 			sourceTree = "<group>";
 		};
-		C6BB91191C1AB3DD00B795C0 /* HTML5 */ = {
+		C61793F21C5AFA0E0010504A /* VCs */ = {
 			isa = PBXGroup;
 			children = (
-				C62228FE1C23A016000DC00B /* html */,
-				C6BB911A1C1AB40F00B795C0 /* HTML5ViewController.h */,
-				C6BB911B1C1AB40F00B795C0 /* HTML5ViewController.m */,
-				C6BB911D1C1AB41E00B795C0 /* HTML5.storyboard */,
-				C6BB911F1C1AB53400B795C0 /* native.js */,
-				C6BB91211C1AC0EB00B795C0 /* Test1.js */,
-				C68CF43A1C2100F000DDF6A4 /* Test2.js */,
-				C68CF43C1C210BD400DDF6A4 /* Test3.js */,
-				C68CF43E1C2115CF00DDF6A4 /* Test4.js */,
-				C68CF4401C2131A900DDF6A4 /* Test5.js */,
-				C68CF4421C21348300DDF6A4 /* Test6.js */,
-				C68CF4441C213B4B00DDF6A4 /* Test7.js */,
-				C62228FB1C239F77000DC00B /* Test8.js */,
+				C61793F31C5AFA270010504A /* PushFirstViewController.h */,
+				C61793F41C5AFA270010504A /* PushFirstViewController.m */,
+				C61793F51C5AFA270010504A /* PushFirstViewController.xib */,
+				C61793F81C5AFA510010504A /* PushSecondViewController.h */,
+				C61793F91C5AFA510010504A /* PushSecondViewController.m */,
+				C61793FA1C5AFA510010504A /* PushSecondViewController.xib */,
 			);
-			path = HTML5;
-			sourceTree = "<group>";
-		};
-		C6C1DD1D1C34C1EF006F273C /* DefineTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				C6C1DD1E1C34C200006F273C /* DefineButton.h */,
-				C6C1DD1F1C34C200006F273C /* DefineButton.m */,
-				C6C1DD211C34C26B006F273C /* DefineTabBar.h */,
-				C6C1DD221C34C26B006F273C /* DefineTabBar.m */,
-			);
-			path = DefineTabBar;
+			path = VCs;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -376,19 +336,6 @@
 				C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		C6EB92451C33B1AA008767C3 /* DefineTabBarVC */ = {
-			isa = PBXGroup;
-			children = (
-				C6C1DD1D1C34C1EF006F273C /* DefineTabBar */,
-				C6EB92461C33B1D1008767C3 /* DefineTabBarViewController.h */,
-				C6EB92471C33B1D1008767C3 /* DefineTabBarViewController.m */,
-				C6EB92491C33B1DE008767C3 /* DefineTabBarVC.storyboard */,
-				C6EB924B1C33D58D008767C3 /* FirstViewController.h */,
-				C6EB924C1C33D58D008767C3 /* FirstViewController.m */,
-			);
-			path = DefineTabBarVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,21 +428,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C68CF43D1C210BD400DDF6A4 /* Test3.js in Resources */,
+				C61793FC1C5AFA510010504A /* PushSecondViewController.xib in Resources */,
+				C61793F71C5AFA270010504A /* PushFirstViewController.xib in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
-				C68CF4451C213B4B00DDF6A4 /* Test7.js in Resources */,
-				C6BB911E1C1AB41E00B795C0 /* HTML5.storyboard in Resources */,
-				C6BB91221C1AC0EB00B795C0 /* Test1.js in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
+				C61793F11C5AF9A80010504A /* Push.storyboard in Resources */,
 				C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */,
-				C6EB924A1C33B1DE008767C3 /* DefineTabBarVC.storyboard in Resources */,
-				C68CF4411C2131A900DDF6A4 /* Test5.js in Resources */,
-				C68CF43F1C2115CF00DDF6A4 /* Test4.js in Resources */,
-				C68CF43B1C2100F000DDF6A4 /* Test2.js in Resources */,
-				C68CF4431C21348300DDF6A4 /* Test6.js in Resources */,
-				C62228FC1C239F77000DC00B /* Test8.js in Resources */,
-				C6BB91201C1AB53400B795C0 /* native.js in Resources */,
-				C62229001C23A70D000DC00B /* smart.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,18 +484,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C1DD231C34C26B006F273C /* DefineTabBar.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
-				C6BB911C1C1AB40F00B795C0 /* HTML5ViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
+				C61793EF1C5AF9990010504A /* PushMainViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
-				C6EB92481C33B1D1008767C3 /* DefineTabBarViewController.m in Sources */,
-				C6EB924D1C33D58D008767C3 /* FirstViewController.m in Sources */,
+				C61793FB1C5AFA510010504A /* PushSecondViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
-				C6C1DD201C34C200006F273C /* DefineButton.m in Sources */,
+				C61793F61C5AFA270010504A /* PushFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
