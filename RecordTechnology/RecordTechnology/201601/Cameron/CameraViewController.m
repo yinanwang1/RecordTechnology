@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) UIImagePickerController *imagePickerViewController;
 @property (nonatomic, strong) CameraDefinedViewController *definedVC;
+@property (weak, nonatomic) IBOutlet UIImageView *cameraImageView;
 
 @end
 
@@ -80,6 +81,18 @@
         image = info[UIImagePickerControllerOriginalImage];
     }
     
+    // 根据设置的范围进行图片的裁剪
+    
+    CGFloat widthOfOriginImage = image.size.width;
+    CGFloat heightOfOriginImage = image.size.height;
+    
+    CGFloat xOfImage = widthOfOriginImage / 4.0f;
+    CGFloat yOfImage = heightOfOriginImage / 4.0f;
+    CGFloat wOfImage = widthOfOriginImage / 2.0f;
+    CGFloat hOfImage = heightOfOriginImage / 2.0f;
+    
+    self.cameraImageView.image = [self clipImageView:image forRect:CGRectMake(xOfImage, yOfImage, wOfImage, hOfImage)];
+    
     [self.imagePickerViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -94,6 +107,31 @@
 - (void)didSelectCancelBtn
 {
     [self.imagePickerViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+
+#pragma mark - Clip Image View
+/**
+ *  裁剪图片
+ *
+ *  @param originImage 原始图片
+ *  @param rect        需要裁剪的frame
+ *
+ *  @return 返回裁剪后的图片
+ */
+- (UIImage *)clipImageView:(UIImage *)originImage forRect:(CGRect)rect
+{
+    CGImageRef subImageRef = CGImageCreateWithImageInRect(originImage.CGImage, rect);
+    CGRect smallRounds = CGRectMake(0, 0, CGImageGetWidth(subImageRef), CGImageGetHeight(subImageRef));
+    
+    UIGraphicsBeginImageContext(smallRounds.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextDrawImage(context, smallRounds, subImageRef);
+    UIImage *smallImage = [UIImage imageWithCGImage:subImageRef];
+    UIGraphicsEndImageContext();
+    
+    return smallImage;
 }
 
 @end
