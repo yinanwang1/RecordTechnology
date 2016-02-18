@@ -16,19 +16,8 @@
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
-		C61793EF1C5AF9990010504A /* PushMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61793EE1C5AF9990010504A /* PushMainViewController.m */; };
-		C61793F11C5AF9A80010504A /* Push.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61793F01C5AF9A80010504A /* Push.storyboard */; };
-		C61793F61C5AFA270010504A /* PushFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61793F41C5AFA270010504A /* PushFirstViewController.m */; };
-		C61793F71C5AFA270010504A /* PushFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C61793F51C5AFA270010504A /* PushFirstViewController.xib */; };
-		C61793FB1C5AFA510010504A /* PushSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61793F91C5AFA510010504A /* PushSecondViewController.m */; };
-		C61793FC1C5AFA510010504A /* PushSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C61793FA1C5AFA510010504A /* PushSecondViewController.xib */; };
-		C617940F1C5B3BA70010504A /* PushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C617940E1C5B3BA70010504A /* PushAnimator.m */; };
-		C61794121C5B409A0010504A /* PushDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C61794111C5B409A0010504A /* PushDismissAnimator.m */; };
-		C61794161C5B4AC70010504A /* PushThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61794141C5B4AC70010504A /* PushThirdViewController.m */; };
-		C617941D1C5B84630010504A /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C617941C1C5B84630010504A /* CameraViewController.m */; };
-		C617941F1C5B846E0010504A /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C617941E1C5B846E0010504A /* Camera.storyboard */; };
-		C61794231C5B85010010504A /* CameraDefinedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61794211C5B85010010504A /* CameraDefinedViewController.m */; };
-		C61794241C5B85010010504A /* CameraDefinedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C61794221C5B85010010504A /* CameraDefinedViewController.xib */; };
+		C6444F671C755582002BF22F /* Header.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6444F661C755582002BF22F /* Header.storyboard */; };
+		C6444F6A1C755595002BF22F /* HeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6444F691C755595002BF22F /* HeaderViewController.m */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C1DD241C34C5FB006F273C /* Images.xcassets */; };
@@ -97,27 +86,9 @@
 		8EF6A08F1B315C7600694EDE /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
-		C61793ED1C5AF9990010504A /* PushMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushMainViewController.h; sourceTree = "<group>"; };
-		C61793EE1C5AF9990010504A /* PushMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushMainViewController.m; sourceTree = "<group>"; };
-		C61793F01C5AF9A80010504A /* Push.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Push.storyboard; sourceTree = "<group>"; };
-		C61793F31C5AFA270010504A /* PushFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushFirstViewController.h; sourceTree = "<group>"; };
-		C61793F41C5AFA270010504A /* PushFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushFirstViewController.m; sourceTree = "<group>"; };
-		C61793F51C5AFA270010504A /* PushFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushFirstViewController.xib; sourceTree = "<group>"; };
-		C61793F81C5AFA510010504A /* PushSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushSecondViewController.h; sourceTree = "<group>"; };
-		C61793F91C5AFA510010504A /* PushSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushSecondViewController.m; sourceTree = "<group>"; };
-		C61793FA1C5AFA510010504A /* PushSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushSecondViewController.xib; sourceTree = "<group>"; };
-		C617940D1C5B3BA70010504A /* PushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAnimator.h; sourceTree = "<group>"; };
-		C617940E1C5B3BA70010504A /* PushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAnimator.m; sourceTree = "<group>"; };
-		C61794101C5B409A0010504A /* PushDismissAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushDismissAnimator.h; sourceTree = "<group>"; };
-		C61794111C5B409A0010504A /* PushDismissAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushDismissAnimator.m; sourceTree = "<group>"; };
-		C61794131C5B4AC70010504A /* PushThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushThirdViewController.h; sourceTree = "<group>"; };
-		C61794141C5B4AC70010504A /* PushThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushThirdViewController.m; sourceTree = "<group>"; };
-		C617941B1C5B84630010504A /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
-		C617941C1C5B84630010504A /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
-		C617941E1C5B846E0010504A /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
-		C61794201C5B85010010504A /* CameraDefinedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraDefinedViewController.h; sourceTree = "<group>"; };
-		C61794211C5B85010010504A /* CameraDefinedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraDefinedViewController.m; sourceTree = "<group>"; };
-		C61794221C5B85010010504A /* CameraDefinedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraDefinedViewController.xib; sourceTree = "<group>"; };
+		C6444F661C755582002BF22F /* Header.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Header.storyboard; sourceTree = "<group>"; };
+		C6444F681C755595002BF22F /* HeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderViewController.h; sourceTree = "<group>"; };
+		C6444F691C755595002BF22F /* HeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewController.m; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -243,7 +214,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
-				C61793EB1C5AF97B0010504A /* 201601 */,
+				C6444F641C75556D002BF22F /* 201602 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
 				8E41E23A1ABAB2DC0008984F /* AppDelegate.m */,
@@ -312,65 +283,22 @@
 			path = WWSideslipViewController;
 			sourceTree = "<group>";
 		};
-		C61793EB1C5AF97B0010504A /* 201601 */ = {
+		C6444F641C75556D002BF22F /* 201602 */ = {
 			isa = PBXGroup;
 			children = (
-				C61794181C5B7B6A0010504A /* Cameron */,
-				C61793EC1C5AF97B0010504A /* Push */,
+				C6444F651C75556D002BF22F /* Header */,
 			);
-			path = 201601;
+			path = 201602;
 			sourceTree = "<group>";
 		};
-		C61793EC1C5AF97B0010504A /* Push */ = {
+		C6444F651C75556D002BF22F /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				C61793ED1C5AF9990010504A /* PushMainViewController.h */,
-				C61793EE1C5AF9990010504A /* PushMainViewController.m */,
-				C61793F01C5AF9A80010504A /* Push.storyboard */,
-				C61793F21C5AFA0E0010504A /* VCs */,
+				C6444F661C755582002BF22F /* Header.storyboard */,
+				C6444F681C755595002BF22F /* HeaderViewController.h */,
+				C6444F691C755595002BF22F /* HeaderViewController.m */,
 			);
-			path = Push;
-			sourceTree = "<group>";
-		};
-		C61793F21C5AFA0E0010504A /* VCs */ = {
-			isa = PBXGroup;
-			children = (
-				C61793F31C5AFA270010504A /* PushFirstViewController.h */,
-				C61793F41C5AFA270010504A /* PushFirstViewController.m */,
-				C61793F51C5AFA270010504A /* PushFirstViewController.xib */,
-				C61793F81C5AFA510010504A /* PushSecondViewController.h */,
-				C61793F91C5AFA510010504A /* PushSecondViewController.m */,
-				C61793FA1C5AFA510010504A /* PushSecondViewController.xib */,
-				C61794131C5B4AC70010504A /* PushThirdViewController.h */,
-				C61794141C5B4AC70010504A /* PushThirdViewController.m */,
-				C617940C1C5B3B510010504A /* Animate */,
-			);
-			path = VCs;
-			sourceTree = "<group>";
-		};
-		C617940C1C5B3B510010504A /* Animate */ = {
-			isa = PBXGroup;
-			children = (
-				C617940D1C5B3BA70010504A /* PushAnimator.h */,
-				C617940E1C5B3BA70010504A /* PushAnimator.m */,
-				C61794101C5B409A0010504A /* PushDismissAnimator.h */,
-				C61794111C5B409A0010504A /* PushDismissAnimator.m */,
-			);
-			name = Animate;
-			path = ../Animate;
-			sourceTree = "<group>";
-		};
-		C61794181C5B7B6A0010504A /* Cameron */ = {
-			isa = PBXGroup;
-			children = (
-				C617941B1C5B84630010504A /* CameraViewController.h */,
-				C617941C1C5B84630010504A /* CameraViewController.m */,
-				C61794201C5B85010010504A /* CameraDefinedViewController.h */,
-				C61794211C5B85010010504A /* CameraDefinedViewController.m */,
-				C61794221C5B85010010504A /* CameraDefinedViewController.xib */,
-				C617941E1C5B846E0010504A /* Camera.storyboard */,
-			);
-			path = Cameron;
+			path = Header;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -476,13 +404,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C61794241C5B85010010504A /* CameraDefinedViewController.xib in Resources */,
-				C61793FC1C5AFA510010504A /* PushSecondViewController.xib in Resources */,
-				C61793F71C5AFA270010504A /* PushFirstViewController.xib in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
+				C6444F671C755582002BF22F /* Header.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
-				C61793F11C5AF9A80010504A /* Push.storyboard in Resources */,
-				C617941F1C5B846E0010504A /* Camera.storyboard in Resources */,
 				C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,21 +458,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C617941D1C5B84630010504A /* CameraViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
+				C6444F6A1C755595002BF22F /* HeaderViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
-				C61793EF1C5AF9990010504A /* PushMainViewController.m in Sources */,
-				C617940F1C5B3BA70010504A /* PushAnimator.m in Sources */,
-				C61794231C5B85010010504A /* CameraDefinedViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
-				C61793FB1C5AFA510010504A /* PushSecondViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
-				C61794161C5B4AC70010504A /* PushThirdViewController.m in Sources */,
-				C61793F61C5AFA270010504A /* PushFirstViewController.m in Sources */,
-				C61794121C5B409A0010504A /* PushDismissAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
