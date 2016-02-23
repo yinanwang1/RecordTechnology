@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UQn-xi-OIf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="vmx-zr-f73">
+            <objects>
+                <navigationController id="UQn-xi-OIf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2tf-1y-16p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="orB-ac-stI" kind="relationship" relationship="rootViewController" id="bu1-wf-J9t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbt-ig-2ZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507" y="515"/>
+        </scene>
+        <!--网络-->
+        <scene sceneID="wfJ-Xl-R7v">
+            <objects>
+                <viewController id="orB-ac-stI" customClass="NetworkViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hH0-g3-TVD"/>
+                        <viewControllerLayoutGuide type="bottom" id="7dz-UY-D5H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dN0-JX-7uG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="怎么没有效果呢！！！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjj-ms-BVC">
+                                <rect key="frame" x="215" y="115" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fjj-ms-BVC" firstAttribute="centerX" secondItem="dN0-JX-7uG" secondAttribute="centerX" id="NIX-Hk-jWd"/>
+                            <constraint firstItem="fjj-ms-BVC" firstAttribute="top" secondItem="hH0-g3-TVD" secondAttribute="bottom" constant="51" id="zdr-YM-Tng"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="网络" id="tWV-t2-dLG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="giz-46-tJi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="514"/>
+        </scene>
+    </scenes>
+</document>

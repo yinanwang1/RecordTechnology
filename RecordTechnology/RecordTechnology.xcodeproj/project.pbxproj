@@ -18,6 +18,8 @@
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C6444F671C755582002BF22F /* Header.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6444F661C755582002BF22F /* Header.storyboard */; };
 		C6444F6A1C755595002BF22F /* HeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6444F691C755595002BF22F /* HeaderViewController.m */; };
+		C64F4DD71C7BFACA004DB597 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64F4DD61C7BFACA004DB597 /* Network.storyboard */; };
+		C64F4DDA1C7BFAD9004DB597 /* NetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C64F4DD91C7BFAD9004DB597 /* NetworkViewController.m */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C1DD241C34C5FB006F273C /* Images.xcassets */; };
@@ -89,6 +91,9 @@
 		C6444F661C755582002BF22F /* Header.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Header.storyboard; sourceTree = "<group>"; };
 		C6444F681C755595002BF22F /* HeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderViewController.h; sourceTree = "<group>"; };
 		C6444F691C755595002BF22F /* HeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewController.m; sourceTree = "<group>"; };
+		C64F4DD61C7BFACA004DB597 /* Network.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
+		C64F4DD81C7BFAD9004DB597 /* NetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkViewController.h; sourceTree = "<group>"; };
+		C64F4DD91C7BFAD9004DB597 /* NetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkViewController.m; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -286,6 +291,7 @@
 		C6444F641C75556D002BF22F /* 201602 */ = {
 			isa = PBXGroup;
 			children = (
+				C64F4DD51C7BFABD004DB597 /* Network */,
 				C6444F651C75556D002BF22F /* Header */,
 			);
 			path = 201602;
@@ -299,6 +305,16 @@
 				C6444F691C755595002BF22F /* HeaderViewController.m */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		C64F4DD51C7BFABD004DB597 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C64F4DD61C7BFACA004DB597 /* Network.storyboard */,
+				C64F4DD81C7BFAD9004DB597 /* NetworkViewController.h */,
+				C64F4DD91C7BFAD9004DB597 /* NetworkViewController.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -404,6 +420,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64F4DD71C7BFACA004DB597 /* Network.storyboard in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				C6444F671C755582002BF22F /* Header.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
@@ -462,6 +479,7 @@
 				C6444F6A1C755595002BF22F /* HeaderViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
+				C64F4DDA1C7BFAD9004DB597 /* NetworkViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
