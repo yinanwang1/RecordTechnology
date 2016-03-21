@@ -17,6 +17,7 @@ pod 'CocoaLumberjack', '~>2.0.1'
 pod 'XTSafeCollection', '~> 1.0.3'
 pod 'pop', '~> 1.0.8'
 pod 'FMDB', '~>2.5'
+pod 'JSPatch', '~>0.2'
 
 end
 
