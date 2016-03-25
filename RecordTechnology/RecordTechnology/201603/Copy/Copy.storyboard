@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kMD-YR-bZE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Copy View Controller-->
+        <scene sceneID="Q5L-9N-aid">
+            <objects>
+                <viewController id="kMD-YR-bZE" customClass="CopyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V6d-v6-jc9"/>
+                        <viewControllerLayoutGuide type="bottom" id="5gh-38-NiI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xRR-3L-hmI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lVO-zL-Fx4">
+                                <rect key="frame" x="92" y="40" width="416" height="355"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="416" id="1B7-bK-ooL"/>
+                                    <constraint firstAttribute="height" constant="355" id="a06-24-eJP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美丽的世界" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Niv-2A-uWc">
+                                <rect key="frame" x="258" y="11" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Niv-2A-uWc" firstAttribute="centerX" secondItem="xRR-3L-hmI" secondAttribute="centerX" id="6Ir-4x-kyP"/>
+                            <constraint firstItem="lVO-zL-Fx4" firstAttribute="centerX" secondItem="xRR-3L-hmI" secondAttribute="centerX" id="Hla-kF-Ykv"/>
+                            <constraint firstItem="Niv-2A-uWc" firstAttribute="top" secondItem="xRR-3L-hmI" secondAttribute="topMargin" constant="11" id="Hmi-ML-M98"/>
+                            <constraint firstItem="lVO-zL-Fx4" firstAttribute="top" secondItem="V6d-v6-jc9" secondAttribute="bottom" constant="20" id="O85-OX-gfb"/>
+                            <constraint firstItem="lVO-zL-Fx4" firstAttribute="top" secondItem="Niv-2A-uWc" secondAttribute="bottom" constant="8" id="tdU-rH-oru"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="lVO-zL-Fx4" id="lVe-Mk-0Ll"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRk-9h-bLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368" y="473"/>
+        </scene>
+    </scenes>
+</document>

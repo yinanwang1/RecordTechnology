@@ -20,11 +20,16 @@
 		C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */; };
 		C616DA921C9FE17E00D719F7 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = C616DA911C9FE17E00D719F7 /* demo.js */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
+		C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C624DF851CA5516300AD2615 /* QuickLook.framework */; };
 		C6444F671C755582002BF22F /* Header.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6444F661C755582002BF22F /* Header.storyboard */; };
 		C6444F6A1C755595002BF22F /* HeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6444F691C755595002BF22F /* HeaderViewController.m */; };
 		C64F4DD71C7BFACA004DB597 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64F4DD61C7BFACA004DB597 /* Network.storyboard */; };
 		C64F4DDA1C7BFAD9004DB597 /* NetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C64F4DD91C7BFAD9004DB597 /* NetworkViewController.m */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
+		C68FFB0D1CA3907D00716DBC /* Copy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB0C1CA3907D00716DBC /* Copy.storyboard */; };
+		C68FFB101CA3908800716DBC /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FFB0F1CA3908800716DBC /* CopyViewController.m */; };
+		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
+		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C1DD241C34C5FB006F273C /* Images.xcassets */; };
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
@@ -97,6 +102,7 @@
 		C616DA911C9FE17E00D719F7 /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
+		C624DF851CA5516300AD2615 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		C6444F661C755582002BF22F /* Header.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Header.storyboard; sourceTree = "<group>"; };
 		C6444F681C755595002BF22F /* HeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderViewController.h; sourceTree = "<group>"; };
 		C6444F691C755595002BF22F /* HeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewController.m; sourceTree = "<group>"; };
@@ -104,6 +110,11 @@
 		C64F4DD81C7BFAD9004DB597 /* NetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkViewController.h; sourceTree = "<group>"; };
 		C64F4DD91C7BFAD9004DB597 /* NetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkViewController.m; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C68FFB0C1CA3907D00716DBC /* Copy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Copy.storyboard; sourceTree = "<group>"; };
+		C68FFB0E1CA3908800716DBC /* CopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
+		C68FFB0F1CA3908800716DBC /* CopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
+		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
+		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6C1DD241C34C5FB006F273C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -120,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */,
 				C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */,
 				C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */,
 				C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */,
@@ -142,6 +154,7 @@
 		383D529F0224A99151B3C236 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C624DF851CA5516300AD2615 /* QuickLook.framework */,
 				C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */,
 				C6749B841B59DF100069DF0D /* AddressBook.framework */,
 				8E1BE4311B3BED4800CAF4BA /* libobjc.A.dylib */,
@@ -248,6 +261,8 @@
 		8E41E2351ABAB2DC0008984F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C68FFB111CA397D100716DBC /* 40.png */,
+				C68FFB131CA398E500716DBC /* 58.png */,
 				8E8069C61ACC13E400CBDECC /* RecordTechnology.entitlements */,
 				8E6175CC1ABBC18E0091B68D /* RecordTechnology-Prefix.pch */,
 				8E41E2361ABAB2DC0008984F /* Info.plist */,
@@ -284,6 +299,7 @@
 		C616DA881C9FC86600D719F7 /* 201603 */ = {
 			isa = PBXGroup;
 			children = (
+				C68FFB0B1CA3906F00716DBC /* Copy */,
 				C616DA891C9FC86600D719F7 /* JSPatch */,
 			);
 			path = 201603;
@@ -346,6 +362,16 @@
 				C64F4DD91C7BFAD9004DB597 /* NetworkViewController.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		C68FFB0B1CA3906F00716DBC /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				C68FFB0C1CA3907D00716DBC /* Copy.storyboard */,
+				C68FFB0E1CA3908800716DBC /* CopyViewController.h */,
+				C68FFB0F1CA3908800716DBC /* CopyViewController.m */,
+			);
+			path = Copy;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -452,13 +478,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68FFB141CA398E500716DBC /* 58.png in Resources */,
 				C64F4DD71C7BFACA004DB597 /* Network.storyboard in Resources */,
+				C68FFB0D1CA3907D00716DBC /* Copy.storyboard in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				C616DA8E1C9FCF5000D719F7 /* JSPatch.storyboard in Resources */,
 				C6444F671C755582002BF22F /* Header.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */,
 				C616DA921C9FE17E00D719F7 /* demo.js in Resources */,
+				C68FFB121CA397D100716DBC /* 40.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +557,7 @@
 				C6444F6A1C755595002BF22F /* HeaderViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
+				C68FFB101CA3908800716DBC /* CopyViewController.m in Sources */,
 				C64F4DDA1C7BFAD9004DB597 /* NetworkViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C616DA8C1C9FCF4000D719F7 /* JSPatchViewController.m in Sources */,
