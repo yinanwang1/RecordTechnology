@@ -10,7 +10,7 @@
 
 //#import "YouFireApplication.h"
 //#import "AFNetworkingNewest.h"
-#import "CopyViewController.h"
+//#import "CopyViewController.h"
 
 @interface AppDelegate ()
 
@@ -33,9 +33,9 @@
             openURL:(NSURL *)url
             options:(NSDictionary<NSString *,id> *)options
 {
-    CopyViewController *VC = (CopyViewController *)app.keyWindow.rootViewController;
-    
-    [VC displayDoc:url];
+//    CopyViewController *VC = (CopyViewController *)app.keyWindow.rootViewController;
+//    
+//    [VC displayDoc:url];
     
     return YES;
 }

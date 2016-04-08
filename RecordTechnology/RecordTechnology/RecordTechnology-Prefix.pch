@@ -26,6 +26,8 @@
 // POP
 #import <POP/POP.h>
 
+#import "Mantle.h"
+
 // Extension
 #import "UIColorExtensions.h"
 #import "NSDate+Extension.h"

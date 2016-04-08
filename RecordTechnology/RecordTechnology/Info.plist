@@ -39,15 +39,15 @@
 			</array>
 		</dict>
 		<dict>
-			<key>CFBundleTypeName</key>
-			<string>com.microsoft.word.doc</string>
-			<key>LSHandlerRank</key>
-			<string>Owner</string>
 			<key>CFBundleTypeIconFiles</key>
 			<array>
 				<string>40</string>
 				<string>58</string>
 			</array>
+			<key>CFBundleTypeName</key>
+			<string>com.microsoft.word.doc</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>com.microsoft.word.doc</string>
@@ -99,7 +99,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Copy</string>
+	<string>Mantle</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
