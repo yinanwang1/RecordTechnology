@@ -21,6 +21,8 @@
 		C62DE47F1CE8BC63005F1789 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62DE47D1CE8BC63005F1789 /* AnimationViewController.m */; };
 		C62DE4821CE8BC77005F1789 /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62DE4811CE8BC77005F1789 /* Animation.storyboard */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
+		C68C21C51CEC83C7008C7F85 /* TwoScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68C21C41CEC83C7008C7F85 /* TwoScrollView.storyboard */; };
+		C68C21C81CEC83DF008C7F85 /* TwoScrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68C21C71CEC83DF008C7F85 /* TwoScrollViewViewController.m */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
@@ -98,6 +100,9 @@
 		C62DE47D1CE8BC63005F1789 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		C62DE4811CE8BC77005F1789 /* Animation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C68C21C41CEC83C7008C7F85 /* TwoScrollView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TwoScrollView.storyboard; sourceTree = "<group>"; };
+		C68C21C61CEC83DF008C7F85 /* TwoScrollViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoScrollViewViewController.h; sourceTree = "<group>"; };
+		C68C21C71CEC83DF008C7F85 /* TwoScrollViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoScrollViewViewController.m; sourceTree = "<group>"; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -306,6 +311,7 @@
 		C62DE47A1CE8BC3E005F1789 /* 201605 */ = {
 			isa = PBXGroup;
 			children = (
+				C68C21C31CEC83A7008C7F85 /* TwoScrollView */,
 				C62DE47B1CE8BC3E005F1789 /* Animation */,
 			);
 			path = 201605;
@@ -319,6 +325,16 @@
 				C62DE4811CE8BC77005F1789 /* Animation.storyboard */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		C68C21C31CEC83A7008C7F85 /* TwoScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				C68C21C61CEC83DF008C7F85 /* TwoScrollViewViewController.h */,
+				C68C21C71CEC83DF008C7F85 /* TwoScrollViewViewController.m */,
+				C68C21C41CEC83C7008C7F85 /* TwoScrollView.storyboard */,
+			);
+			path = TwoScrollView;
 			sourceTree = "<group>";
 		};
 		C6C6262A1CB7A50B004E8E2C /* 201604 */ = {
@@ -446,6 +462,7 @@
 				C68FFB141CA398E500716DBC /* 58.png in Resources */,
 				C6C626301CB7A52E004E8E2C /* Mantle.storyboard in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
+				C68C21C51CEC83C7008C7F85 /* TwoScrollView.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C62DE4821CE8BC77005F1789 /* Animation.storyboard in Resources */,
 				C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */,
@@ -524,6 +541,7 @@
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
+				C68C21C81CEC83DF008C7F85 /* TwoScrollViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
