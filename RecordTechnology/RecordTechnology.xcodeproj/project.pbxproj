@@ -18,6 +18,8 @@
 		C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C624DF851CA5516300AD2615 /* QuickLook.framework */; };
+		C62DE47F1CE8BC63005F1789 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62DE47D1CE8BC63005F1789 /* AnimationViewController.m */; };
+		C62DE4821CE8BC77005F1789 /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62DE4811CE8BC77005F1789 /* Animation.storyboard */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
@@ -92,6 +94,9 @@
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
 		C624DF851CA5516300AD2615 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		C62DE47C1CE8BC63005F1789 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		C62DE47D1CE8BC63005F1789 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		C62DE4811CE8BC77005F1789 /* Animation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
@@ -226,6 +231,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				C62DE47A1CE8BC3E005F1789 /* 201605 */,
 				C6C6262A1CB7A50B004E8E2C /* 201604 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
@@ -295,6 +301,24 @@
 				C61771E51ABC6BF30097991C /* WWSideslipViewController.m */,
 			);
 			path = WWSideslipViewController;
+			sourceTree = "<group>";
+		};
+		C62DE47A1CE8BC3E005F1789 /* 201605 */ = {
+			isa = PBXGroup;
+			children = (
+				C62DE47B1CE8BC3E005F1789 /* Animation */,
+			);
+			path = 201605;
+			sourceTree = "<group>";
+		};
+		C62DE47B1CE8BC3E005F1789 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C62DE47C1CE8BC63005F1789 /* AnimationViewController.h */,
+				C62DE47D1CE8BC63005F1789 /* AnimationViewController.m */,
+				C62DE4811CE8BC77005F1789 /* Animation.storyboard */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		C6C6262A1CB7A50B004E8E2C /* 201604 */ = {
@@ -423,6 +447,7 @@
 				C6C626301CB7A52E004E8E2C /* Mantle.storyboard in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
+				C62DE4821CE8BC77005F1789 /* Animation.storyboard in Resources */,
 				C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
 			);
@@ -490,6 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C62DE47F1CE8BC63005F1789 /* AnimationViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6C6262E1CB7A51F004E8E2C /* MantleViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
