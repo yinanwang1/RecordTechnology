@@ -68,6 +68,12 @@
                              [self.scrollView setContentOffset:CGPointMake(0, 100)];
                          }];
     }
+    else {
+        [UIView animateWithDuration:0.5
+                         animations:^{
+                             [self.scrollView setContentOffset:CGPointMake(0, 0)];
+                         }];
+    }
 }
 
 @end
