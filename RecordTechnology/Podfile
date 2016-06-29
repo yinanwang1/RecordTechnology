@@ -19,6 +19,7 @@ pod 'pop', '~> 1.0.8'
 pod 'FMDB', '~>2.5'
 pod 'JSPatch', '~>0.2'
 pod 'Mantle', '~> 2.0.6'
+pod 'ConvertDateAndStringEachOther'
 
 end
 
