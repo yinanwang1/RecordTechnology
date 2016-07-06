@@ -20,6 +20,9 @@
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C624DF851CA5516300AD2615 /* QuickLook.framework */; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
+		C68444DD1D2CFDCA0017FBF9 /* MLeaksFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68444DC1D2CFDCA0017FBF9 /* MLeaksFinderViewController.m */; };
+		C68444DF1D2CFDD50017FBF9 /* MLeaksFinder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68444DE1D2CFDD50017FBF9 /* MLeaksFinder.storyboard */; };
+		C68444E21D2CFE5C0017FBF9 /* MLeaksFinder1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68444E11D2CFE5C0017FBF9 /* MLeaksFinder1ViewController.m */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
@@ -94,6 +97,11 @@
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
 		C624DF851CA5516300AD2615 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C68444DB1D2CFDCA0017FBF9 /* MLeaksFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeaksFinderViewController.h; sourceTree = "<group>"; };
+		C68444DC1D2CFDCA0017FBF9 /* MLeaksFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLeaksFinderViewController.m; sourceTree = "<group>"; };
+		C68444DE1D2CFDD50017FBF9 /* MLeaksFinder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MLeaksFinder.storyboard; sourceTree = "<group>"; };
+		C68444E01D2CFE5C0017FBF9 /* MLeaksFinder1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeaksFinder1ViewController.h; sourceTree = "<group>"; };
+		C68444E11D2CFE5C0017FBF9 /* MLeaksFinder1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLeaksFinder1ViewController.m; sourceTree = "<group>"; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -293,9 +301,22 @@
 			path = WWSideslipViewController;
 			sourceTree = "<group>";
 		};
+		C68444DA1D2CFDBD0017FBF9 /* MLeaksFinder */ = {
+			isa = PBXGroup;
+			children = (
+				C68444DB1D2CFDCA0017FBF9 /* MLeaksFinderViewController.h */,
+				C68444DC1D2CFDCA0017FBF9 /* MLeaksFinderViewController.m */,
+				C68444DE1D2CFDD50017FBF9 /* MLeaksFinder.storyboard */,
+				C68444E01D2CFE5C0017FBF9 /* MLeaksFinder1ViewController.h */,
+				C68444E11D2CFE5C0017FBF9 /* MLeaksFinder1ViewController.m */,
+			);
+			path = MLeaksFinder;
+			sourceTree = "<group>";
+		};
 		C6CA6E9A1D2A73F50058C6FC /* 201607 */ = {
 			isa = PBXGroup;
 			children = (
+				C68444DA1D2CFDBD0017FBF9 /* MLeaksFinder */,
 				C6CA6E9B1D2A740D0058C6FC /* ResizableImage */,
 			);
 			path = 201607;
@@ -434,6 +455,7 @@
 				C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */,
 				C6CA6E9D1D2A74260058C6FC /* ResizableImage.storyboard in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
+				C68444DF1D2CFDD50017FBF9 /* MLeaksFinder.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,12 +568,14 @@
 			files = (
 				C6CA6E9F1D2A74400058C6FC /* ResizableImageViewController.swift in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
+				C68444DD1D2CFDCA0017FBF9 /* MLeaksFinderViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
+				C68444E21D2CFE5C0017FBF9 /* MLeaksFinder1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
