@@ -8,10 +8,14 @@
 
 #import "MyTabBarView.h"
 
+#import "HomeViewController.h"
+
 
 @interface MyTabBarView ()
 
 @property (nonatomic, weak) UIButton *selectedBtn;
+
+@property (nonatomic, strong) NSString *name;
 
 @end
 

@@ -35,6 +35,9 @@
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
+		C6F3B6001D38D42400A79A5F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F3B5FE1D38D42400A79A5F /* HomeViewController.m */; };
+		C6F3B6011D38D42400A79A5F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6F3B5FF1D38D42400A79A5F /* HomeViewController.xib */; };
+		C6F3B6071D38DE0700A79A5F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F3B6061D38DE0700A79A5F /* BaseViewController.m */; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +126,11 @@
 		C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorExtensions.m; sourceTree = "<group>"; };
 		C6E5A9891BDE0650004CD998 /* UIViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExtensions.h; sourceTree = "<group>"; };
 		C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExtensions.m; sourceTree = "<group>"; };
+		C6F3B5FD1D38D42400A79A5F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C6F3B5FE1D38D42400A79A5F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C6F3B5FF1D38D42400A79A5F /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C6F3B6051D38DE0700A79A5F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
+		C6F3B6061D38DE0700A79A5F /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
 		E144C3CE3612D5EEAA10C61E /* libPods-RecordTechnologyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnologyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D728750DE2DC5A9722D56 /* Pods-RecordTechnologyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnologyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3D6E6F413FA11148A374E5C /* Pods-RecordTechnology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnology.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnology/Pods-RecordTechnology.release.xcconfig"; sourceTree = "<group>"; };
@@ -317,6 +325,11 @@
 				C63FE1EA1D35100300E3319C /* MyTabBarViewController.m */,
 				C63FE1EC1D3510EE00E3319C /* MyTabBarView.h */,
 				C63FE1ED1D3510EE00E3319C /* MyTabBarView.m */,
+				C6F3B6051D38DE0700A79A5F /* BaseViewController.h */,
+				C6F3B6061D38DE0700A79A5F /* BaseViewController.m */,
+				C6F3B5FD1D38D42400A79A5F /* HomeViewController.h */,
+				C6F3B5FE1D38D42400A79A5F /* HomeViewController.m */,
+				C6F3B5FF1D38D42400A79A5F /* HomeViewController.xib */,
 			);
 			path = MyTabBar;
 			sourceTree = "<group>";
@@ -428,7 +441,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "InSigma HengTian Softwar Ltd.";
 				TargetAttributes = {
 					8E41E2311ABAB2DC0008984F = {
@@ -474,6 +487,7 @@
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */,
+				C6F3B6011D38D42400A79A5F /* HomeViewController.xib in Resources */,
 				C63FE1E81D350FBD00E3319C /* MyTabBar.storyboard in Resources */,
 				C6CA6E9D1D2A74260058C6FC /* ResizableImage.storyboard in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
@@ -589,9 +603,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C63FE1EB1D35100300E3319C /* MyTabBarViewController.m in Sources */,
+				C6F3B6001D38D42400A79A5F /* HomeViewController.m in Sources */,
 				C6CA6E9F1D2A74400058C6FC /* ResizableImageViewController.swift in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C68444DD1D2CFDCA0017FBF9 /* MLeaksFinderViewController.m in Sources */,
+				C6F3B6071D38DE0700A79A5F /* BaseViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
@@ -669,6 +685,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -791,6 +808,7 @@
 				);
 				INFOPLIST_FILE = RecordTechnologyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hengtiansoft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecordTechnology.app/RecordTechnology";
 			};
@@ -807,6 +825,7 @@
 				);
 				INFOPLIST_FILE = RecordTechnologyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hengtiansoft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecordTechnology.app/RecordTechnology";
 			};
