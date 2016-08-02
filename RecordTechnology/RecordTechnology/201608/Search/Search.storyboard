@@ -22,7 +22,7 @@
             </objects>
             <point key="canvasLocation" x="478" y="400"/>
         </scene>
-        <!--Search View Controller-->
+        <!--主页-->
         <scene sceneID="x1A-5s-ftK">
             <objects>
                 <viewController id="rBT-ID-vd1" customClass="SearchViewController" customModule="RecordTechnology" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsL-dG-p8t">
-                                <rect key="frame" x="278" y="319" width="44" height="30"/>
+                                <rect key="frame" x="278" y="349" width="44" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7yT-Rl-kWa"/>
                                     <constraint firstAttribute="width" constant="44" id="gA6-Ks-Utl"/>
@@ -45,12 +45,13 @@
                                     <segue destination="2so-5w-tPu" kind="show" identifier="webViewController" id="gdM-h3-SA0"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="test" translatesAutoresizingMaskIntoConstraints="NO" id="4wa-XW-aRy">
-                                <rect key="frame" x="20" y="72" width="560" height="204"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wa-XW-aRy">
+                                <rect key="frame" x="20" y="102" width="560" height="204"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="204" id="gdh-vr-8NX"/>
                                 </constraints>
+                                <string key="text">http://stu.baidu.com/n/pc_search?rn=10&amp;appid=0&amp;tag=1&amp;isMobile=0&amp;queryImageUrl=http%3A%2F%2Fimages.enet.com.cn%2F2008%2F1225%2F96%2F1995683.jpg&amp;querySign=&amp;fromProduct=&amp;productBackUrl=&amp;fm=&amp;uptype=plug_in</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -64,7 +65,9 @@
                             <constraint firstItem="RsL-dG-p8t" firstAttribute="centerX" secondItem="qIw-ey-g5W" secondAttribute="centerX" id="yeh-D1-DzW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3PN-fI-fhm"/>
+                    <navigationItem key="navigationItem" title="主页" prompt="输入URL" id="3PN-fI-fhm">
+                        <barButtonItem key="backBarButtonItem" title="中国" id="kYL-gg-e9i"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="URLTextView" destination="4wa-XW-aRy" id="cRS-JS-DMk"/>
                     </connections>
@@ -73,7 +76,7 @@
             </objects>
             <point key="canvasLocation" x="1219" y="400"/>
         </scene>
-        <!--Webview View Controller-->
+        <!--结果-->
         <scene sceneID="05d-jY-oUw">
             <objects>
                 <viewController id="2so-5w-tPu" customClass="WebviewViewController" customModule="RecordTechnology" customModuleProvider="target" sceneMemberID="viewController">
@@ -86,6 +89,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="结果" prompt="网页显示" id="LRt-z9-v0b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rzm-ED-3Fr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

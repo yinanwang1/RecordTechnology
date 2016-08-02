@@ -42,7 +42,7 @@ class WebviewViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
             make.edges.mas_equalTo()
         }
         
-        self.wekWebView.loadRequest(NSURLRequest.init(URL: NSURL.init(string: "http://www.baidu.com")!))
+        self.wekWebView.loadRequest(NSURLRequest.init(URL: NSURL.init(string: self.linkURLStr as String)!))
     }
     
     

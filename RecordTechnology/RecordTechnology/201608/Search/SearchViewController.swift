@@ -13,15 +13,11 @@ class SearchViewController: UIViewController {
     // MARK: - Property
     @IBOutlet weak var URLTextView: UITextView!
     
-    var webviewController: WebviewViewController!
-    
     
     // MARK: - Lifes Cycle Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        webviewController.linkURLStr
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +33,10 @@ class SearchViewController: UIViewController {
     {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
+        if segue.identifier == "webViewController" {
+            let webVC:WebviewViewController = segue.destinationViewController as! WebviewViewController;
+            webVC.linkURLStr = URLTextView.text
+        }
     }
     
     // MARK: - Action Methods
