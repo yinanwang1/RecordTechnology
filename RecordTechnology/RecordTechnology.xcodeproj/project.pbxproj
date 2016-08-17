@@ -31,6 +31,9 @@
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
+		C6FA614B1D63FBF400C8DDE2 /* LuaViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA614A1D63FBF400C8DDE2 /* LuaViewViewController.m */; };
+		C6FA614D1D63FC0400C8DDE2 /* LuaView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FA614C1D63FC0400C8DDE2 /* LuaView.storyboard */; };
+		C6FA614F1D6422D300C8DDE2 /* HelloWorld.lua in Resources */ = {isa = PBXBuildFile; fileRef = C6FA614E1D6422D300C8DDE2 /* HelloWorld.lua */; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +115,10 @@
 		C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorExtensions.m; sourceTree = "<group>"; };
 		C6E5A9891BDE0650004CD998 /* UIViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExtensions.h; sourceTree = "<group>"; };
 		C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExtensions.m; sourceTree = "<group>"; };
+		C6FA61491D63FBF400C8DDE2 /* LuaViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaViewViewController.h; sourceTree = "<group>"; };
+		C6FA614A1D63FBF400C8DDE2 /* LuaViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaViewViewController.m; sourceTree = "<group>"; };
+		C6FA614C1D63FC0400C8DDE2 /* LuaView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LuaView.storyboard; sourceTree = "<group>"; };
+		C6FA614E1D6422D300C8DDE2 /* HelloWorld.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HelloWorld.lua; sourceTree = "<group>"; };
 		E144C3CE3612D5EEAA10C61E /* libPods-RecordTechnologyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnologyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D728750DE2DC5A9722D56 /* Pods-RecordTechnologyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnologyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3D6E6F413FA11148A374E5C /* Pods-RecordTechnology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnology.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnology/Pods-RecordTechnology.release.xcconfig"; sourceTree = "<group>"; };
@@ -304,6 +311,7 @@
 		C67480E51D4F1CD4008C2AFF /* 201608 */ = {
 			isa = PBXGroup;
 			children = (
+				C6FA61481D63FBE100C8DDE2 /* LuaView */,
 				C67480E61D4F1CD4008C2AFF /* Search */,
 			);
 			path = 201608;
@@ -330,6 +338,17 @@
 				C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C6FA61481D63FBE100C8DDE2 /* LuaView */ = {
+			isa = PBXGroup;
+			children = (
+				C6FA61491D63FBF400C8DDE2 /* LuaViewViewController.h */,
+				C6FA614A1D63FBF400C8DDE2 /* LuaViewViewController.m */,
+				C6FA614C1D63FC0400C8DDE2 /* LuaView.storyboard */,
+				C6FA614E1D6422D300C8DDE2 /* HelloWorld.lua */,
+			);
+			path = LuaView;
 			sourceTree = "<group>";
 		};
 		EC80E78A35F814DD30C26249 /* Pods */ = {
@@ -439,8 +458,10 @@
 			files = (
 				C68FFB141CA398E500716DBC /* 58.png in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
+				C6FA614F1D6422D300C8DDE2 /* HelloWorld.lua in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */,
+				C6FA614D1D63FC0400C8DDE2 /* LuaView.storyboard in Resources */,
 				C67480EA1D4F1D16008C2AFF /* Search.storyboard in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
 			);
@@ -555,6 +576,7 @@
 			files = (
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C67480EE1D4F1F00008C2AFF /* WebviewViewController.swift in Sources */,
+				C6FA614B1D63FBF400C8DDE2 /* LuaViewViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C67480EC1D4F1DB2008C2AFF /* SearchViewController.swift in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,

@@ -37,6 +37,7 @@ PODS:
   - JSPatch (0.2):
     - JSPatch/Core (= 0.2)
   - JSPatch/Core (0.2)
+  - LuaViewSDK (2.1.0.6)
   - MagicalRecord (2.3.0)
   - Mantle (2.0.6):
     - Mantle/extobjc (= 2.0.6)
@@ -58,6 +59,7 @@ DEPENDENCIES:
   - ConvertDateAndStringEachOther
   - FMDB (~> 2.5)
   - JSPatch (~> 0.2)
+  - LuaViewSDK (from `https://github.com/alibaba/LuaViewSDK.git`)
   - MagicalRecord (~> 2.2)
   - Mantle (~> 2.0.6)
   - Masonry (~> 0.6.1)
@@ -69,12 +71,22 @@ DEPENDENCIES:
   - SDWebImage (~> 3.7.2)
   - XTSafeCollection (~> 1.0.3)
 
+EXTERNAL SOURCES:
+  LuaViewSDK:
+    :git: https://github.com/alibaba/LuaViewSDK.git
+
+CHECKOUT OPTIONS:
+  LuaViewSDK:
+    :commit: 87bce7205b8e44dd03361678c878aece3d8ff30f
+    :git: https://github.com/alibaba/LuaViewSDK.git
+
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
   ConvertDateAndStringEachOther: 955c5f93d0fb1a563e173dc518aecd1973a98c80
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   JSPatch: 23dcceeec8f8357644f8ef70eb002ef2dbd830de
+  LuaViewSDK: 710548f6128763c85efb0103b8ecc3d48a026786
   MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
   Mantle: 299966b00759634931699f69cb6a30b9239b944d
   Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
@@ -86,6 +98,6 @@ SPEC CHECKSUMS:
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   XTSafeCollection: 2f774fcbd56bc0d341bed9d4b6c3f22c753caa81
 
-PODFILE CHECKSUM: 79ab44d871ac6028cad5d1901a762e199dd5048a
+PODFILE CHECKSUM: eae24b1ac59a58369f1032bbd3ca0ca808d62a68
 
 COCOAPODS: 1.0.0
