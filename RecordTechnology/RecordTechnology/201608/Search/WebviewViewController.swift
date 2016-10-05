@@ -34,20 +34,20 @@ class WebviewViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     
     func initialWebView() -> Void {
         self.wekWebView = WKWebView.init()
-        self.wekWebView.UIDelegate = self
+        self.wekWebView.uiDelegate = self
         self.wekWebView.navigationDelegate = self
         self.view.addSubview(self.wekWebView)
         
-        self.wekWebView.mas_remakeConstraints { (make:MASConstraintMaker!) -> Void in
-            make.edges.mas_equalTo()
-        }
+//        self.wekWebView.mas_remakeConstraints { (make:MASConstraintMaker!) -> Void in
+//            make.edges.equalTo(self.view);
+//        }
         
-        self.wekWebView.loadRequest(NSURLRequest.init(URL: NSURL.init(string: self.linkURLStr as String)!))
+        self.wekWebView.load(URLRequest.init(url: URL.init(string: self.linkURLStr as String)!))
     }
     
     
     // MARK: - WKUIDelegate
-    func webView(webView: WKWebView, createWebViewWithConfiguration configuration: WKWebViewConfiguration, forNavigationAction navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView?
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView?
     {
         print(wekWebView)
         print(configuration)
@@ -59,7 +59,7 @@ class WebviewViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     }
     
     // MARK: - WKNavigationDelegate
-    func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         print("navigation \(navigation)")
     }
     

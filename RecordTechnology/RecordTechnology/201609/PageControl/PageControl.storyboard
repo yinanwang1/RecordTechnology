@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VjQ-5n-VLT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--命中注定-->
+        <scene sceneID="UMD-eu-BTu">
+            <objects>
+                <viewController id="SOw-Ep-qyF" customClass="PageControlViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OSQ-Oc-9S7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Obi-2J-kXp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I24-5O-z39">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4NX-Fr-0VA" customClass="CustomPageControl">
+                                <color key="backgroundColor" red="0.26857461734693877" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3LF-CM-CKk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4NX-Fr-0VA" firstAttribute="top" secondItem="OSQ-Oc-9S7" secondAttribute="bottom" constant="136" id="5kO-00-KYL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4NX-Fr-0VA" secondAttribute="trailing" id="cjL-yn-4gE"/>
+                            <constraint firstItem="4NX-Fr-0VA" firstAttribute="leading" secondItem="I24-5O-z39" secondAttribute="leadingMargin" id="zfV-yV-bje"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="命中注定" prompt="一剑封喉" id="6Dr-J4-SAs"/>
+                    <connections>
+                        <outlet property="customPageControl" destination="4NX-Fr-0VA" id="uUa-y7-FvS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sy8-dO-MJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664.79999999999995" y="127.28635682158921"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pY5-GX-3XR">
+            <objects>
+                <navigationController id="VjQ-5n-VLT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CrZ-bs-vG9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SOw-Ep-qyF" kind="relationship" relationship="rootViewController" id="VOD-xG-O6c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqD-VV-kvx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-124" y="129"/>
+        </scene>
+    </scenes>
+</document>
