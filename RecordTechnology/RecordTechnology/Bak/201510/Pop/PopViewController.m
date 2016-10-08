@@ -11,6 +11,7 @@
 @interface PopViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UIView *redView;
 
 
 @end
@@ -39,12 +40,31 @@
 */
 - (IBAction)onClickPlayBtn:(id)sender
 {
-    POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
+    static BOOL changed = NO;
     
-    scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(0.5, 0.5)];
-    scaleAnimation.springBounciness = 10.0f;
+    POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerBackgroundColor];
     
-    [self.button.layer pop_addAnimation:scaleAnimation forKey:@"scaleAnim"];
+    if (changed) {
+        scaleAnimation.toValue = [UIColor redColor];
+        scaleAnimation.springBounciness = 10.0f;
+        scaleAnimation.springSpeed = 20;
+        
+        changed = NO;
+    } else {
+        scaleAnimation.toValue = [UIColor yellowColor];
+        scaleAnimation.springBounciness = 10.0f;
+        scaleAnimation.springSpeed = 20;
+        
+        changed = YES;
+    }
+    
+    
+//    [self.button.layer pop_addAnimation:scaleAnimation forKey:@"scaleAnim"];
+    
+    [self.redView.layer pop_addAnimation:scaleAnimation forKey:@"scaleAnim"];
+    
+    
+    
 }
 
 @end

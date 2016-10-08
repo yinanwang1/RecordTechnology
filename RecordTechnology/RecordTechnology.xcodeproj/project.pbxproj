@@ -24,6 +24,10 @@
 		C67480EE1D4F1F00008C2AFF /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67480ED1D4F1F00008C2AFF /* WebviewViewController.swift */; };
 		C67480F01D4F2098008C2AFF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67480EF1D4F2098008C2AFF /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
+		C6794F8F1DA789DC0026933A /* DateExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6794F8B1DA789DC0026933A /* DateExercise.swift */; };
+		C6794F901DA789DC0026933A /* OptionalExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6794F8C1DA789DC0026933A /* OptionalExercise.swift */; };
+		C6794F911DA789DC0026933A /* Swift3_0.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6794F8D1DA789DC0026933A /* Swift3_0.storyboard */; };
+		C6794F921DA789DC0026933A /* Swift3_0ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6794F8E1DA789DC0026933A /* Swift3_0ViewController.swift */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
 		C6A3D77E1D96262100E07F2A /* PageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A3D77D1D96262100E07F2A /* PageControlViewController.m */; };
@@ -107,6 +111,10 @@
 		C67480EF1D4F2098008C2AFF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C67480F31D4F2F58008C2AFF /* RecordTechnology-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecordTechnology-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C6794F8B1DA789DC0026933A /* DateExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExercise.swift; sourceTree = "<group>"; };
+		C6794F8C1DA789DC0026933A /* OptionalExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalExercise.swift; sourceTree = "<group>"; };
+		C6794F8D1DA789DC0026933A /* Swift3_0.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Swift3_0.storyboard; sourceTree = "<group>"; };
+		C6794F8E1DA789DC0026933A /* Swift3_0ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift3_0ViewController.swift; sourceTree = "<group>"; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
 		C6A3D77C1D96262100E07F2A /* PageControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageControlViewController.h; sourceTree = "<group>"; };
@@ -336,9 +344,21 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		C6794F8A1DA789DC0026933A /* Swift3.0(中文注释) */ = {
+			isa = PBXGroup;
+			children = (
+				C6794F8B1DA789DC0026933A /* DateExercise.swift */,
+				C6794F8C1DA789DC0026933A /* OptionalExercise.swift */,
+				C6794F8D1DA789DC0026933A /* Swift3_0.storyboard */,
+				C6794F8E1DA789DC0026933A /* Swift3_0ViewController.swift */,
+			);
+			path = "Swift3.0(中文注释)";
+			sourceTree = "<group>";
+		};
 		C6A3D77A1D9625D400E07F2A /* 201609 */ = {
 			isa = PBXGroup;
 			children = (
+				C6794F8A1DA789DC0026933A /* Swift3.0(中文注释) */,
 				C6A3D77B1D9625D400E07F2A /* PageControl */,
 			);
 			path = 201609;
@@ -493,6 +513,7 @@
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */,
 				C6FA614D1D63FC0400C8DDE2 /* LuaView.storyboard in Resources */,
+				C6794F911DA789DC0026933A /* Swift3_0.storyboard in Resources */,
 				C67480EA1D4F1D16008C2AFF /* Search.storyboard in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
 			);
@@ -610,8 +631,11 @@
 				C6FA614B1D63FBF400C8DDE2 /* LuaViewViewController.m in Sources */,
 				C6A3D77E1D96262100E07F2A /* PageControlViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
+				C6794F901DA789DC0026933A /* OptionalExercise.swift in Sources */,
 				C67480EC1D4F1DB2008C2AFF /* SearchViewController.swift in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
+				C6794F921DA789DC0026933A /* Swift3_0ViewController.swift in Sources */,
+				C6794F8F1DA789DC0026933A /* DateExercise.swift in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,

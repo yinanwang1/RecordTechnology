@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Yst-qx-wYy">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6Ry-GK-bdz">
+            <objects>
+                <navigationController id="Yst-qx-wYy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z4W-nB-Dys">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="i6j-pv-YFU" kind="relationship" relationship="rootViewController" id="ECl-ZB-DxL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAD-oA-OTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-962" y="141"/>
+        </scene>
+        <!--Swift30 View Controller-->
+        <scene sceneID="cYG-V8-zJs">
+            <objects>
+                <viewController id="i6j-pv-YFU" customClass="Swift3_0ViewController" customModule="RecordTechnology" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wjG-AK-eHB"/>
+                        <viewControllerLayoutGuide type="bottom" id="v6o-PK-dOJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hll-RK-jr0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are the best" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTQ-oY-HU9">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LTQ-oY-HU9" firstAttribute="top" secondItem="wjG-AK-eHB" secondAttribute="bottom" constant="17" id="BvK-gA-B5u"/>
+                            <constraint firstItem="LTQ-oY-HU9" firstAttribute="centerX" secondItem="hll-RK-jr0" secondAttribute="centerX" id="LJa-t8-GGI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4JD-fn-eKO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BjV-Xm-dPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-297" y="141"/>
+        </scene>
+    </scenes>
+</document>
