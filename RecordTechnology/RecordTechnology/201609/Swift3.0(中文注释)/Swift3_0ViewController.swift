@@ -27,11 +27,11 @@ class Swift3_0ViewController: UIViewController, Swift3_0ViewControllerDelegate {
         
         
         
-        let possibleNumber = "123wang"
-        let convertedNumber = Int(possibleNumber)
-        
-        print("convertedNumber is \(convertedNumber)")
-        
+        let greeting = "Guten Tag!"
+        print(greeting[greeting.startIndex])
+        print(greeting[greeting.index(before: greeting.endIndex)])
+        print(greeting[greeting.index(after: greeting.startIndex)])
+        print(greeting[greeting.index(greeting.startIndex, offsetBy: 7)])
         
     }
     

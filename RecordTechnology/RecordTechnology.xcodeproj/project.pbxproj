@@ -19,9 +19,18 @@
 		C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C624DF851CA5516300AD2615 /* QuickLook.framework */; };
-		C67480EA1D4F1D16008C2AFF /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67480E91D4F1D16008C2AFF /* Search.storyboard */; };
-		C67480EC1D4F1DB2008C2AFF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67480EB1D4F1DB2008C2AFF /* SearchViewController.swift */; };
-		C67480EE1D4F1F00008C2AFF /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67480ED1D4F1F00008C2AFF /* WebviewViewController.swift */; };
+		C6369E921DA8CB1D008FFC34 /* TLSpringFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6369E911DA8CB1D008FFC34 /* TLSpringFlowLayout.swift */; };
+		C6369E9E1DA8E7E6008FFC34 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6369E951DA8E7E6008FFC34 /* BaseViewController.m */; };
+		C6369E9F1DA8E7E6008FFC34 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6369E971DA8E7E6008FFC34 /* HomeViewController.m */; };
+		C6369EA01DA8E7E6008FFC34 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6369E981DA8E7E6008FFC34 /* HomeViewController.xib */; };
+		C6369EA11DA8E7E6008FFC34 /* MyTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6369E991DA8E7E6008FFC34 /* MyTabBar.storyboard */; };
+		C6369EA21DA8E7E6008FFC34 /* MyTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6369E9B1DA8E7E6008FFC34 /* MyTabBarView.m */; };
+		C6369EA31DA8E7E6008FFC34 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6369E9D1DA8E7E6008FFC34 /* MyTabBarViewController.m */; };
+		C6369EA91DA8EF5E008FFC34 /* order.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6369EA81DA8EF5E008FFC34 /* order.gif */; };
+		C6369EAF1DA8F175008FFC34 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C6369EAC1DA8F175008FFC34 /* FLAnimatedImage.m */; };
+		C6369EB01DA8F175008FFC34 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6369EAE1DA8F175008FFC34 /* FLAnimatedImageView.m */; };
+		C6369EB31DA8FB48008FFC34 /* HXSTabBarItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6369EB21DA8FB48008FFC34 /* HXSTabBarItemView.m */; };
+		C6369EB51DA8FB53008FFC34 /* HXSTabBarItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6369EB41DA8FB53008FFC34 /* HXSTabBarItemView.xib */; };
 		C67480F01D4F2098008C2AFF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67480EF1D4F2098008C2AFF /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
 		C6794F8F1DA789DC0026933A /* DateExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6794F8B1DA789DC0026933A /* DateExercise.swift */; };
@@ -38,9 +47,6 @@
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
-		C6FA614B1D63FBF400C8DDE2 /* LuaViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA614A1D63FBF400C8DDE2 /* LuaViewViewController.m */; };
-		C6FA614D1D63FC0400C8DDE2 /* LuaView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FA614C1D63FC0400C8DDE2 /* LuaView.storyboard */; };
-		C6FA614F1D6422D300C8DDE2 /* HelloWorld.lua in Resources */ = {isa = PBXBuildFile; fileRef = C6FA614E1D6422D300C8DDE2 /* HelloWorld.lua */; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,9 +111,25 @@
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
 		C624DF851CA5516300AD2615 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
-		C67480E91D4F1D16008C2AFF /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
-		C67480EB1D4F1DB2008C2AFF /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		C67480ED1D4F1F00008C2AFF /* WebviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
+		C6369E911DA8CB1D008FFC34 /* TLSpringFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLSpringFlowLayout.swift; sourceTree = "<group>"; };
+		C6369E941DA8E7E6008FFC34 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C6369E951DA8E7E6008FFC34 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		C6369E961DA8E7E6008FFC34 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C6369E971DA8E7E6008FFC34 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C6369E981DA8E7E6008FFC34 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C6369E991DA8E7E6008FFC34 /* MyTabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyTabBar.storyboard; sourceTree = "<group>"; };
+		C6369E9A1DA8E7E6008FFC34 /* MyTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarView.h; sourceTree = "<group>"; };
+		C6369E9B1DA8E7E6008FFC34 /* MyTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarView.m; sourceTree = "<group>"; };
+		C6369E9C1DA8E7E6008FFC34 /* MyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarViewController.h; sourceTree = "<group>"; };
+		C6369E9D1DA8E7E6008FFC34 /* MyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarViewController.m; sourceTree = "<group>"; };
+		C6369EA81DA8EF5E008FFC34 /* order.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = order.gif; sourceTree = "<group>"; };
+		C6369EAB1DA8F175008FFC34 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
+		C6369EAC1DA8F175008FFC34 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
+		C6369EAD1DA8F175008FFC34 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
+		C6369EAE1DA8F175008FFC34 /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
+		C6369EB11DA8FB48008FFC34 /* HXSTabBarItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXSTabBarItemView.h; sourceTree = "<group>"; };
+		C6369EB21DA8FB48008FFC34 /* HXSTabBarItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXSTabBarItemView.m; sourceTree = "<group>"; };
+		C6369EB41DA8FB53008FFC34 /* HXSTabBarItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXSTabBarItemView.xib; sourceTree = "<group>"; };
 		C67480EF1D4F2098008C2AFF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C67480F31D4F2F58008C2AFF /* RecordTechnology-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecordTechnology-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -131,10 +153,6 @@
 		C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorExtensions.m; sourceTree = "<group>"; };
 		C6E5A9891BDE0650004CD998 /* UIViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExtensions.h; sourceTree = "<group>"; };
 		C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExtensions.m; sourceTree = "<group>"; };
-		C6FA61491D63FBF400C8DDE2 /* LuaViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaViewViewController.h; sourceTree = "<group>"; };
-		C6FA614A1D63FBF400C8DDE2 /* LuaViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaViewViewController.m; sourceTree = "<group>"; };
-		C6FA614C1D63FC0400C8DDE2 /* LuaView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LuaView.storyboard; sourceTree = "<group>"; };
-		C6FA614E1D6422D300C8DDE2 /* HelloWorld.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HelloWorld.lua; sourceTree = "<group>"; };
 		E144C3CE3612D5EEAA10C61E /* libPods-RecordTechnologyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnologyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D728750DE2DC5A9722D56 /* Pods-RecordTechnologyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnologyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3D6E6F413FA11148A374E5C /* Pods-RecordTechnology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnology.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnology/Pods-RecordTechnology.release.xcconfig"; sourceTree = "<group>"; };
@@ -252,8 +270,9 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				C6369E931DA8E7E6008FFC34 /* MyTabBar */,
+				C6369E8F1DA8C877008FFC34 /* 201610 */,
 				C6A3D77A1D9625D400E07F2A /* 201609 */,
-				C67480E51D4F1CD4008C2AFF /* 201608 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
 				8E41E23A1ABAB2DC0008984F /* AppDelegate.m */,
@@ -262,6 +281,7 @@
 				8E41E23F1ABAB2DC0008984F /* Main.storyboard */,
 				8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */,
 				C6C1DD241C34C5FB006F273C /* Images.xcassets */,
+				C6369EA71DA8EF5E008FFC34 /* Resource */,
 				8E41E2351ABAB2DC0008984F /* Supporting Files */,
 			);
 			path = RecordTechnology;
@@ -309,6 +329,7 @@
 		C61771E21ABC6BF30097991C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C6369EAA1DA8F175008FFC34 /* FLAnimatedImage */,
 				C6E5A9841BDE0650004CD998 /* Extension */,
 				8EF6A08E1B315C6A00694EDE /* Macro */,
 				C61771E31ABC6BF30097991C /* WWSideslipViewController */,
@@ -325,23 +346,60 @@
 			path = WWSideslipViewController;
 			sourceTree = "<group>";
 		};
-		C67480E51D4F1CD4008C2AFF /* 201608 */ = {
+		C6369E8F1DA8C877008FFC34 /* 201610 */ = {
 			isa = PBXGroup;
 			children = (
-				C6FA61481D63FBE100C8DDE2 /* LuaView */,
-				C67480E61D4F1CD4008C2AFF /* Search */,
+				C6369E901DA8C877008FFC34 /* Spring */,
 			);
-			path = 201608;
+			path = 201610;
 			sourceTree = "<group>";
 		};
-		C67480E61D4F1CD4008C2AFF /* Search */ = {
+		C6369E901DA8C877008FFC34 /* Spring */ = {
 			isa = PBXGroup;
 			children = (
-				C67480EB1D4F1DB2008C2AFF /* SearchViewController.swift */,
-				C67480E91D4F1D16008C2AFF /* Search.storyboard */,
-				C67480ED1D4F1F00008C2AFF /* WebviewViewController.swift */,
+				C6369E911DA8CB1D008FFC34 /* TLSpringFlowLayout.swift */,
 			);
-			path = Search;
+			path = Spring;
+			sourceTree = "<group>";
+		};
+		C6369E931DA8E7E6008FFC34 /* MyTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C6369E941DA8E7E6008FFC34 /* BaseViewController.h */,
+				C6369E951DA8E7E6008FFC34 /* BaseViewController.m */,
+				C6369E961DA8E7E6008FFC34 /* HomeViewController.h */,
+				C6369E971DA8E7E6008FFC34 /* HomeViewController.m */,
+				C6369E981DA8E7E6008FFC34 /* HomeViewController.xib */,
+				C6369E991DA8E7E6008FFC34 /* MyTabBar.storyboard */,
+				C6369E9A1DA8E7E6008FFC34 /* MyTabBarView.h */,
+				C6369E9B1DA8E7E6008FFC34 /* MyTabBarView.m */,
+				C6369EB11DA8FB48008FFC34 /* HXSTabBarItemView.h */,
+				C6369EB21DA8FB48008FFC34 /* HXSTabBarItemView.m */,
+				C6369EB41DA8FB53008FFC34 /* HXSTabBarItemView.xib */,
+				C6369E9C1DA8E7E6008FFC34 /* MyTabBarViewController.h */,
+				C6369E9D1DA8E7E6008FFC34 /* MyTabBarViewController.m */,
+			);
+			name = MyTabBar;
+			path = 201607/MyTabBar;
+			sourceTree = "<group>";
+		};
+		C6369EA71DA8EF5E008FFC34 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C6369EA81DA8EF5E008FFC34 /* order.gif */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C6369EAA1DA8F175008FFC34 /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				C6369EAB1DA8F175008FFC34 /* FLAnimatedImage.h */,
+				C6369EAC1DA8F175008FFC34 /* FLAnimatedImage.m */,
+				C6369EAD1DA8F175008FFC34 /* FLAnimatedImageView.h */,
+				C6369EAE1DA8F175008FFC34 /* FLAnimatedImageView.m */,
+			);
+			path = FLAnimatedImage;
 			sourceTree = "<group>";
 		};
 		C6794F8A1DA789DC0026933A /* Swift3.0(中文注释) */ = {
@@ -387,17 +445,6 @@
 				C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		C6FA61481D63FBE100C8DDE2 /* LuaView */ = {
-			isa = PBXGroup;
-			children = (
-				C6FA61491D63FBF400C8DDE2 /* LuaViewViewController.h */,
-				C6FA614A1D63FBF400C8DDE2 /* LuaViewViewController.m */,
-				C6FA614C1D63FC0400C8DDE2 /* LuaView.storyboard */,
-				C6FA614E1D6422D300C8DDE2 /* HelloWorld.lua */,
-			);
-			path = LuaView;
 			sourceTree = "<group>";
 		};
 		EC80E78A35F814DD30C26249 /* Pods */ = {
@@ -509,13 +556,14 @@
 				C68FFB141CA398E500716DBC /* 58.png in Resources */,
 				C6A3D7801D96262E00E07F2A /* PageControl.storyboard in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
-				C6FA614F1D6422D300C8DDE2 /* HelloWorld.lua in Resources */,
+				C6369EA91DA8EF5E008FFC34 /* order.gif in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
+				C6369EB51DA8FB53008FFC34 /* HXSTabBarItemView.xib in Resources */,
 				C6C1DD251C34C5FB006F273C /* Images.xcassets in Resources */,
-				C6FA614D1D63FC0400C8DDE2 /* LuaView.storyboard in Resources */,
 				C6794F911DA789DC0026933A /* Swift3_0.storyboard in Resources */,
-				C67480EA1D4F1D16008C2AFF /* Search.storyboard in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
+				C6369EA11DA8E7E6008FFC34 /* MyTabBar.storyboard in Resources */,
+				C6369EA01DA8E7E6008FFC34 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,19 +674,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6369EB01DA8F175008FFC34 /* FLAnimatedImageView.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
-				C67480EE1D4F1F00008C2AFF /* WebviewViewController.swift in Sources */,
-				C6FA614B1D63FBF400C8DDE2 /* LuaViewViewController.m in Sources */,
 				C6A3D77E1D96262100E07F2A /* PageControlViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6794F901DA789DC0026933A /* OptionalExercise.swift in Sources */,
-				C67480EC1D4F1DB2008C2AFF /* SearchViewController.swift in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
+				C6369E9E1DA8E7E6008FFC34 /* BaseViewController.m in Sources */,
+				C6369EA21DA8E7E6008FFC34 /* MyTabBarView.m in Sources */,
 				C6794F921DA789DC0026933A /* Swift3_0ViewController.swift in Sources */,
+				C6369EAF1DA8F175008FFC34 /* FLAnimatedImage.m in Sources */,
 				C6794F8F1DA789DC0026933A /* DateExercise.swift in Sources */,
+				C6369EA31DA8E7E6008FFC34 /* MyTabBarViewController.m in Sources */,
+				C6369E9F1DA8E7E6008FFC34 /* HomeViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
+				C6369EB31DA8FB48008FFC34 /* HXSTabBarItemView.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
+				C6369E921DA8CB1D008FFC34 /* TLSpringFlowLayout.swift in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 				C6A3D7831D9627E000E07F2A /* CustomPageControl.m in Sources */,
 			);
