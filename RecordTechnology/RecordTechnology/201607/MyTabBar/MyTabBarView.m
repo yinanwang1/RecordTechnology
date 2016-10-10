@@ -11,38 +11,44 @@
 #import "HomeViewController.h"
 #import "FLAnimatedImage.h"
 #import "FLAnimatedImageView.h"
-#import "HXSTabBarItemView.h"
 
 #define TAG_BASIC 1000
 
 @interface MyTabBarView ()
 
-@property (nonatomic, weak) HXSTabBarItemView *selectedItemView;
+@property (nonatomic, weak) UIButton *selectedBtn;
 
 @property (nonatomic, strong) NSMutableArray *barItemMArr;
+@property (nonatomic, strong) NSMutableArray *gifDataMArr;
+
 @property (nonatomic, strong) FLAnimatedImageView *imageView;
 
 @end
 
 @implementation MyTabBarView
 
-- (void)addButtonWithImage:(UIImage *)image selectdImage:(UIImage *)selectedImage
+- (void)addButtonWithImage:(UIImage *)image selectdImage:(UIImage *)selectedImage gif:(NSData *)gifData
 {
-    HXSTabBarItemView *itemView = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([HXSTabBarItemView class]) owner:nil options:nil].firstObject;
+    // Gif
+    [self.gifDataMArr addObject:gifData];
     
-    [itemView.button setImage:image forState:UIControlStateNormal];
-    [itemView.button setImage:selectedImage forState:UIControlStateSelected];
     
-    [itemView.button addTarget:self
+    // Buttons
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [button setImage:image forState:UIControlStateNormal];
+    [button setImage:selectedImage forState:UIControlStateSelected];
+    
+    [button addTarget:self
             action:@selector(onClickBtn:)
   forControlEvents:UIControlEventTouchUpInside];
     
-    [self.barItemMArr addObject:itemView];
+    [self.barItemMArr addObject:button];
     
-    [self addSubview:itemView];
+    [self addSubview:button];
     
     if (1 == [self.subviews count]) {
-        [self onClickBtn:itemView.button];
+        [self onClickBtn:button];
     }
 }
 
@@ -52,16 +58,16 @@
     
     NSInteger count = [self.barItemMArr count];
     for (int i = 0; i < count; i++) {
-        HXSTabBarItemView *view = self.barItemMArr[i];
+        UIButton *button = self.barItemMArr[i];
         
-        view.button.tag = i + TAG_BASIC;
+        button.tag = i + TAG_BASIC;
         
         CGFloat x = i * self.bounds.size.width / count;
         CGFloat y = 0;
         CGFloat width = self.bounds.size.width / count;
         CGFloat height = self.bounds.size.height;
         
-        view.frame = CGRectMake(x, y, width, height);
+        button.frame = CGRectMake(x, y, width, height);
     }
 }
 
@@ -70,20 +76,23 @@
 
 - (void)onClickBtn:(UIButton *)btn
 {
-    if (self.selectedItemView.button.tag != btn.tag) {
+    if (self.imageView.isAnimating) {
+        return;
+    }
+    
+    if (self.selectedBtn.tag != btn.tag) {
         [self showGifAtBtn:btn];
     }
     
-    self.selectedItemView.selected = NO;
+    self.selectedBtn.selected = NO;
     
-    HXSTabBarItemView *itemView = (HXSTabBarItemView *)btn.superview;
-    itemView.selected = YES;
+    btn.selected = YES;
     
-    self.selectedItemView = itemView;
+    self.selectedBtn = btn;
     
     if ([self.delegate respondsToSelector:@selector(tabBar:selectedFrom:to:)]) {
         [self.delegate tabBar:self
-                 selectedFrom:(self.selectedItemView.button.tag - TAG_BASIC)
+                 selectedFrom:(self.selectedBtn.tag - TAG_BASIC)
                            to:(btn.tag - TAG_BASIC)];
     }
     
@@ -92,19 +101,16 @@
 
 - (void)showGifAtBtn:(UIButton *)btn
 {
-    if (self.imageView.isAnimating) {
-        return;
-    }
-    
     if (0.00 >= btn.center.x) {
         return;
     }
     
-    NSString* gifPath    = [[NSBundle mainBundle] pathForResource:@"order"
-                                                           ofType:@"gif"];
-    
-    NSData *data         = [NSData dataWithContentsOfFile:gifPath];
+    NSData *data         = [self.gifDataMArr objectAtIndex:btn.tag - TAG_BASIC];
     FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:data];
+    
+    if (nil == image) {
+        return;
+    }
     
     FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
     imageView.animatedImage = image;
@@ -113,8 +119,10 @@
     imageView.userInteractionEnabled = NO;
     
     [self addSubview:imageView];
+    [btn setHidden:YES];
     
     imageView.animationRepeatCount = 1;
+//    imageView.animationDuration = 1/60.0;
     [imageView startAnimating];
     
     self.imageView = imageView;
@@ -128,6 +136,8 @@
 {
     [self.imageView stopAnimating];
     [self.imageView removeFromSuperview];
+    
+    [self.selectedBtn setHidden:NO];
 }
 
 
@@ -140,6 +150,15 @@
     }
     
     return _barItemMArr;
+}
+
+- (NSMutableArray *)gifDataMArr
+{
+    if (nil == _gifDataMArr) {
+        _gifDataMArr = [[NSMutableArray alloc] initWithCapacity:5];
+    }
+    
+    return _gifDataMArr;
 }
 
 @end

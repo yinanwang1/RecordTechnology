@@ -20,6 +20,6 @@
 
 @property (nonatomic, weak) id<MyTabBarViewDelegate> delegate;
 
-- (void)addButtonWithImage:(UIImage *)image selectdImage:(UIImage *)selectedImage;
+- (void)addButtonWithImage:(UIImage *)image selectdImage:(UIImage *)selectedImage gif:(NSData *)gifData;
 
 @end

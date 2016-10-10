@@ -32,11 +32,15 @@
         
         NSString *imageName = [NSString stringWithFormat:@"tabbar%d_normal", i + 1];
         NSString *imageNameSel = [NSString stringWithFormat:@"tabbar%d_selected", i + 1];
+        NSString *gifPathStr = [NSString stringWithFormat:@"gif%d", i + 1];
         
         UIImage *image = [UIImage imageNamed:imageName];
         UIImage *imageSel = [UIImage imageNamed:imageNameSel];
+        NSString *gifPath    = [[NSBundle mainBundle] pathForResource:gifPathStr
+                                                               ofType:@"gif"];
+        NSData *data         = [NSData dataWithContentsOfFile:gifPath];
         
-        [tabBarView addButtonWithImage:image selectdImage:imageSel];
+        [tabBarView addButtonWithImage:image selectdImage:imageSel gif:data];
     }
     
 }

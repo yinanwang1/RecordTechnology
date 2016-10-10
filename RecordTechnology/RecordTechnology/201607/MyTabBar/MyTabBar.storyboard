@@ -6,25 +6,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="YDH-HO-6cq">
-            <objects>
-                <viewController id="0en-94-qFe" customClass="MyTabBarViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RCl-Rn-rxT"/>
-                        <viewControllerLayoutGuide type="bottom" id="Pz6-fq-7g8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ktc-hn-9dR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="zTa-Mh-j1z"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5vJ-p0-lBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1030" y="518"/>
-        </scene>
         <!--Item-->
         <scene sceneID="cNZ-pr-x2j">
             <objects>
@@ -36,13 +17,13 @@
                     <view key="view" contentMode="scaleToFill" id="hhA-v0-zgq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.31855867346938777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="BIs-ku-gCj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y94-wG-bgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="1072"/>
+            <point key="canvasLocation" x="1002" y="520"/>
         </scene>
         <!--Item-->
         <scene sceneID="g9k-Gt-Fbd">
@@ -55,7 +36,7 @@
                     <view key="view" contentMode="scaleToFill" id="Gh8-RD-gqU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.26857461729999998" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="FKe-gb-hp2"/>
                 </viewController>
@@ -74,7 +55,7 @@
                     <view key="view" contentMode="scaleToFill" id="PON-sA-OCC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.27450980390000002" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="jFU-lu-cfp"/>
                 </viewController>
@@ -93,7 +74,7 @@
                     <view key="view" contentMode="scaleToFill" id="y0i-GA-k4W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.3294117647" green="0.67843137249999996" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="qUb-e5-eDA"/>
                 </viewController>
@@ -112,7 +93,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="OJZ-87-N2l" kind="relationship" relationship="viewControllers" id="NuC-9e-qEf"/>
-                        <segue destination="0en-94-qFe" kind="relationship" relationship="viewControllers" id="Khu-iw-bxk"/>
                         <segue destination="iS9-QT-s1o" kind="relationship" relationship="viewControllers" id="3MK-s9-1ea"/>
                         <segue destination="0if-uY-RRn" kind="relationship" relationship="viewControllers" id="YP0-7C-PjK"/>
                         <segue destination="oel-WA-szU" kind="relationship" relationship="viewControllers" id="bWR-is-uJa"/>
