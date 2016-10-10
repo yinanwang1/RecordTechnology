@@ -80,15 +80,16 @@
         return;
     }
     
-    if (self.selectedBtn.tag != btn.tag) {
-        [self showGifAtBtn:btn];
-    }
+    BOOL differentBtn = self.selectedBtn.tag != btn.tag;
     
     self.selectedBtn.selected = NO;
-    
-    btn.selected = YES;
-    
     self.selectedBtn = btn;
+    
+    if (differentBtn) {
+        [self showGifAtBtn:btn];
+    } else {
+        [self disappearGif];
+    }
     
     if ([self.delegate respondsToSelector:@selector(tabBar:selectedFrom:to:)]) {
         [self.delegate tabBar:self
@@ -119,15 +120,14 @@
     imageView.userInteractionEnabled = NO;
     
     [self addSubview:imageView];
-    [btn setHidden:YES];
     
     imageView.animationRepeatCount = 1;
-//    imageView.animationDuration = 1/60.0;
     [imageView startAnimating];
     
     self.imageView = imageView;
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((image.frameCount / 30) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    CGFloat minDelayPerImage = 0.02;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(image.frameCount * minDelayPerImage * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self disappearGif];
     });
 }
@@ -137,7 +137,7 @@
     [self.imageView stopAnimating];
     [self.imageView removeFromSuperview];
     
-    [self.selectedBtn setHidden:NO];
+    [self.selectedBtn setSelected:YES];
 }
 
 
