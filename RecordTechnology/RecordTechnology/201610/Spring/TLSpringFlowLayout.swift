@@ -8,16 +8,16 @@
 
 import UIKit
 
-let kScrollResistanceFactorDefault = 900.0;
+let kScrollResistanceFactorDefault:Float = 900.0;
 
 class TLSpringFlowLayout: UICollectionViewFlowLayout
 {
-    public var scrollResistanceFactor:Double = 0.0;
+    public var scrollResistanceFactor:Float = 0.0;
     public var dynamicAnimator:UIDynamicAnimator?;
     
     fileprivate var visibleIndexPathsSet:Set<IndexPath> = [];
     fileprivate var visibleHeaderAndFooterSet:Set<IndexPath> = [];
-    fileprivate var latestDelta:Double = 0.0;
+    fileprivate var latestDelta:Float = 0.0;
     fileprivate var interfaceOrientation:UIInterfaceOrientation = UIInterfaceOrientation.unknown;
     
     
@@ -30,7 +30,9 @@ class TLSpringFlowLayout: UICollectionViewFlowLayout
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        
+        setup()
     }
     
     // MARK: - Override Methods
@@ -40,7 +42,198 @@ class TLSpringFlowLayout: UICollectionViewFlowLayout
         
         if interfaceOrientation != UIApplication.shared.statusBarOrientation {
             dynamicAnimator?.removeAllBehaviors()
-//            visibleIndexPathsSet.
+            visibleIndexPathsSet = []
+        }
+        
+        interfaceOrientation = UIApplication.shared.statusBarOrientation
+        
+        let rect = CGRect.init(origin: (self.collectionView?.bounds.origin)!, size: (self.collectionView?.frame.size)!)
+        let visibleRect = rect.insetBy(dx: -100, dy: -100)
+        
+        let itemsInVisibleRectArray = super.layoutAttributesForElements(in: visibleRect)
+        
+        var itemsIndexPathsInVisibleRectSet:Set<NSIndexPath> = []
+        for item in itemsInVisibleRectArray! {
+            itemsIndexPathsInVisibleRectSet.insert(item.indexPath as NSIndexPath)
+        }
+        
+        var noLongerVisibleBehaviours:[UIAttachmentBehavior] = []
+        for behaviour in (self.dynamicAnimator?.behaviors)! {
+            let item = (behaviour as! UIAttachmentBehavior).items.first as! UICollectionViewLayoutAttributes
+            
+            if (itemsIndexPathsInVisibleRectSet.contains(item.indexPath as NSIndexPath) == false) {
+                noLongerVisibleBehaviours.append((behaviour as! UIAttachmentBehavior))
+            }
+        }
+        
+        
+        for obj in noLongerVisibleBehaviours {
+            dynamicAnimator?.removeBehavior(obj)
+            let behavior = obj 
+            let item = behavior.items.first as! UICollectionViewLayoutAttributes
+            visibleIndexPathsSet.remove(item.indexPath)
+            visibleHeaderAndFooterSet.remove(item.indexPath)
+        }
+        
+        let newlyVisibleItems = itemsInVisibleRectArray?.filter({ (item:UICollectionViewLayoutAttributes) -> Bool in
+            return (item.representedElementCategory == UICollectionElementCategory.cell)
+                ? (visibleIndexPathsSet.contains(item.indexPath))
+                : (visibleHeaderAndFooterSet.contains(item.indexPath) == false)
+        })
+        
+        let touchLocation = collectionView?.panGestureRecognizer.location(in: collectionView)
+        
+        for item in newlyVisibleItems! {
+            var center = item.center
+            let springBehaviour = UIAttachmentBehavior.init(item: item, attachedToAnchor: center)
+            
+            springBehaviour.length = 1.0
+            springBehaviour.damping = 0.8
+            springBehaviour.frequency = 1.0
+            
+            if !__CGPointEqualToPoint(CGPoint.zero, touchLocation!) {
+                if scrollDirection == UICollectionViewScrollDirection.vertical {
+                    let distanceFromTouch = fabsf(Float(touchLocation!.y) - Float(springBehaviour.anchorPoint.y))
+                    
+                    var scrollResistance:Float = 0.00
+                    if 0.00 < scrollResistanceFactor {
+                        scrollResistance = distanceFromTouch / scrollResistanceFactor
+                    } else {
+                        scrollResistance = distanceFromTouch / kScrollResistanceFactorDefault
+                    }
+                    
+                    if 0 > latestDelta {
+                        center.y += CGFloat(max(latestDelta, latestDelta * scrollResistance))
+                    } else {
+                        center.y += CGFloat(min(latestDelta, latestDelta * scrollResistance))
+                    }
+                    
+                    item.center = center
+                } else {
+                    let distanceFromTouch = fabsf(Float(touchLocation!.x) - Float(springBehaviour.anchorPoint.x))
+                    
+                    var scrollResistance:Float = 0.00
+                    if 0.00 < scrollResistanceFactor {
+                        scrollResistance = distanceFromTouch / scrollResistanceFactor
+                    } else {
+                        scrollResistance = distanceFromTouch / kScrollResistanceFactorDefault
+                    }
+                    
+                    if 0 > latestDelta {
+                        center.x += CGFloat(max(latestDelta, latestDelta * scrollResistance))
+                    } else {
+                        center.x += CGFloat(min(latestDelta, latestDelta * scrollResistance))
+                    }
+                    
+                    item.center = center
+                }
+            }
+            
+            self.dynamicAnimator?.addBehavior(springBehaviour)
+            
+            if item.representedElementCategory == UICollectionElementCategory.cell {
+                self.visibleIndexPathsSet.insert(item.indexPath)
+            } else {
+                self.visibleHeaderAndFooterSet.insert(item.indexPath)
+            }
+        }
+        
+    }
+    
+    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        return self.dynamicAnimator?.items(in: rect) as! [UICollectionViewLayoutAttributes]?
+    }
+    
+    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        let dynamicLayoutAttributes = self.dynamicAnimator?.layoutAttributesForCell(at: indexPath)
+        
+        return (nil != dynamicAnimator) ? (dynamicLayoutAttributes) : (super.layoutAttributesForItem(at: indexPath));
+    }
+    
+    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        var scrollView = self.collectionView
+        var delta:CGFloat = 0.0
+        if UICollectionViewScrollDirection.vertical == self.scrollDirection {
+            delta = newBounds.origin.y - (scrollView?.bounds.origin.y)!;
+        } else {
+            delta = newBounds.origin.x - (scrollView?.bounds.origin.x)!;
+        }
+        
+        self.latestDelta = Float(delta)
+        
+        let touchLocation = self.collectionView?.panGestureRecognizer.location(in: self.collectionView)
+        
+        for springBehaviour in (self.dynamicAnimator?.behaviors)! {
+            if UICollectionViewScrollDirection.vertical == self.scrollDirection {
+                let distanceFromTouch = fabsf(Float(touchLocation!.y) - Float((springBehaviour as! UIAttachmentBehavior).anchorPoint.y))
+                
+                var scrollResistance:Float = 0.0
+                if 0.0 < self.scrollResistanceFactor {
+                    scrollResistance = distanceFromTouch / self.scrollResistanceFactor
+                } else {
+                    scrollResistance = distanceFromTouch / kScrollResistanceFactorDefault
+                }
+                
+                let item:UICollectionViewLayoutAttributes = (springBehaviour as! UIAttachmentBehavior).items.first as! UICollectionViewLayoutAttributes
+                var center = item.center
+                if 0 > delta {
+                    center.y += max(delta, CGFloat(Float(delta) * scrollResistance))
+                } else {
+                    center.y += min(delta, CGFloat(Float(delta) * scrollResistance))
+                }
+                
+                item.center = center
+                
+                self.dynamicAnimator?.updateItem(usingCurrentState: item)
+                
+            } else {
+                let distanceFromTouch = fabsf(Float(touchLocation!.x) - Float((springBehaviour as! UIAttachmentBehavior).anchorPoint.x))
+                
+                var scrollResistance:Float = 0.0
+                if 0.0 < self.scrollResistanceFactor {
+                    scrollResistance = distanceFromTouch / self.scrollResistanceFactor
+                } else {
+                    scrollResistance = distanceFromTouch / kScrollResistanceFactorDefault
+                }
+                
+                let item:UICollectionViewLayoutAttributes = (springBehaviour as! UIAttachmentBehavior).items.first as! UICollectionViewLayoutAttributes
+                var center = item.center
+                if 0 > delta {
+                    center.x += max(delta, CGFloat(Float(delta) * scrollResistance))
+                } else {
+                    center.x += min(delta, CGFloat(Float(delta) * scrollResistance))
+                }
+                
+                item.center = center
+                
+                self.dynamicAnimator?.updateItem(usingCurrentState: item)
+            }
+        }
+        
+        
+        return false
+    }
+    
+    
+    override func prepare(forCollectionViewUpdates updateItems: [UICollectionViewUpdateItem]) {
+        super.prepare(forCollectionViewUpdates: updateItems)
+        
+        for updateItem in updateItems {
+            if UICollectionUpdateAction.insert == updateItem.updateAction {
+                if ((self.dynamicAnimator?.layoutAttributesForCell(at: updateItem.indexPathAfterUpdate!)) != nil) {
+                    return;
+                }
+                
+                let attributes = UICollectionViewLayoutAttributes.init(forCellWith: updateItem.indexPathAfterUpdate!)
+                
+                let springBehaviour = UIAttachmentBehavior.init(item: attributes, attachedToAnchor: attributes.center)
+                
+                springBehaviour.length = 1.0
+                springBehaviour.damping = 0.8
+                springBehaviour.frequency = 1.0
+                
+                self.dynamicAnimator?.addBehavior(springBehaviour)
+            }
         }
     }
     
