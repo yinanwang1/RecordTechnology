@@ -40,12 +40,12 @@ class TLSpringFlowLayout: UICollectionViewFlowLayout
     override func prepare() {
         super.prepare()
         
-        if interfaceOrientation != UIApplication.shared.statusBarOrientation {
-            dynamicAnimator?.removeAllBehaviors()
-            visibleIndexPathsSet = []
+        if self.interfaceOrientation != UIApplication.shared.statusBarOrientation {
+            self.dynamicAnimator?.removeAllBehaviors()
+            self.visibleIndexPathsSet = []
         }
         
-        interfaceOrientation = UIApplication.shared.statusBarOrientation
+        self.interfaceOrientation = UIApplication.shared.statusBarOrientation
         
         let rect = CGRect.init(origin: (self.collectionView?.bounds.origin)!, size: (self.collectionView?.frame.size)!)
         let visibleRect = rect.insetBy(dx: -100, dy: -100)
@@ -68,22 +68,33 @@ class TLSpringFlowLayout: UICollectionViewFlowLayout
         
         
         for obj in noLongerVisibleBehaviours {
-            dynamicAnimator?.removeBehavior(obj)
+            self.dynamicAnimator?.removeBehavior(obj)
             let behavior = obj 
             let item = behavior.items.first as! UICollectionViewLayoutAttributes
-            visibleIndexPathsSet.remove(item.indexPath)
-            visibleHeaderAndFooterSet.remove(item.indexPath)
+            self.visibleIndexPathsSet.remove(item.indexPath)
+            self.visibleHeaderAndFooterSet.remove(item.indexPath)
         }
         
-        let newlyVisibleItems = itemsInVisibleRectArray?.filter({ (item:UICollectionViewLayoutAttributes) -> Bool in
-            return (item.representedElementCategory == UICollectionElementCategory.cell)
-                ? (visibleIndexPathsSet.contains(item.indexPath))
-                : (visibleHeaderAndFooterSet.contains(item.indexPath) == false)
-        })
+        var newlyVisibleItems:[UICollectionViewLayoutAttributes] = []
+        for item in itemsInVisibleRectArray! {
+            
+            var result = false
+            
+            
+            if item.representedElementCategory == UICollectionElementCategory.cell {
+                result = self.visibleIndexPathsSet.contains(item.indexPath)
+            } else {
+                result = (false == self.visibleHeaderAndFooterSet.contains(item.indexPath))
+            }
+            
+            if !result {
+                newlyVisibleItems.append(item)
+            }
+        }
         
         let touchLocation = collectionView?.panGestureRecognizer.location(in: collectionView)
         
-        for item in newlyVisibleItems! {
+        for item in newlyVisibleItems {
             var center = item.center
             let springBehaviour = UIAttachmentBehavior.init(item: item, attachedToAnchor: center)
             
@@ -147,11 +158,11 @@ class TLSpringFlowLayout: UICollectionViewFlowLayout
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         let dynamicLayoutAttributes = self.dynamicAnimator?.layoutAttributesForCell(at: indexPath)
         
-        return (nil != dynamicAnimator) ? (dynamicLayoutAttributes) : (super.layoutAttributesForItem(at: indexPath));
+        return (nil != self.dynamicAnimator) ? (dynamicLayoutAttributes) : (super.layoutAttributesForItem(at: indexPath));
     }
     
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
-        var scrollView = self.collectionView
+        let scrollView = self.collectionView
         var delta:CGFloat = 0.0
         if UICollectionViewScrollDirection.vertical == self.scrollDirection {
             delta = newBounds.origin.y - (scrollView?.bounds.origin.y)!;
@@ -240,7 +251,7 @@ class TLSpringFlowLayout: UICollectionViewFlowLayout
     
     // MARK: - Initial Methods
     func setup() {
-        dynamicAnimator = UIDynamicAnimator.init(collectionViewLayout: self)
+        self.dynamicAnimator = UIDynamicAnimator.init(collectionViewLayout: self)
     }
     
     
