@@ -37,6 +37,8 @@
 		C6794F921DA789DC0026933A /* Swift3_0ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6794F8E1DA789DC0026933A /* Swift3_0ViewController.swift */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
+		C691D8EA1DB7888900798E77 /* PropertyExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C691D8E91DB7888900798E77 /* PropertyExercise.swift */; };
+		C6A09CB51DBB42520071951C /* Inheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A09CB41DBB42520071951C /* Inheritance.swift */; };
 		C6A3D77E1D96262100E07F2A /* PageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A3D77D1D96262100E07F2A /* PageControlViewController.m */; };
 		C6A3D7801D96262E00E07F2A /* PageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A3D77F1D96262E00E07F2A /* PageControl.storyboard */; };
 		C6A3D7831D9627E000E07F2A /* CustomPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A3D7821D9627E000E07F2A /* CustomPageControl.m */; };
@@ -129,6 +131,8 @@
 		C6794F8E1DA789DC0026933A /* Swift3_0ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift3_0ViewController.swift; sourceTree = "<group>"; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		C691D8E91DB7888900798E77 /* PropertyExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyExercise.swift; sourceTree = "<group>"; };
+		C6A09CB41DBB42520071951C /* Inheritance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inheritance.swift; sourceTree = "<group>"; };
 		C6A3D77C1D96262100E07F2A /* PageControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageControlViewController.h; sourceTree = "<group>"; };
 		C6A3D77D1D96262100E07F2A /* PageControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageControlViewController.m; sourceTree = "<group>"; };
 		C6A3D77F1D96262E00E07F2A /* PageControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageControl.storyboard; sourceTree = "<group>"; };
@@ -381,6 +385,8 @@
 				C6794F8C1DA789DC0026933A /* OptionalExercise.swift */,
 				C6794F8D1DA789DC0026933A /* Swift3_0.storyboard */,
 				C6794F8E1DA789DC0026933A /* Swift3_0ViewController.swift */,
+				C691D8E91DB7888900798E77 /* PropertyExercise.swift */,
+				C6A09CB41DBB42520071951C /* Inheritance.swift */,
 			);
 			path = "Swift3.0(中文注释)";
 			sourceTree = "<group>";
@@ -648,6 +654,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C66BA4951DB4E0D70099059E /* TLViewController.swift in Sources */,
+				C691D8EA1DB7888900798E77 /* PropertyExercise.swift in Sources */,
+				C6A09CB51DBB42520071951C /* Inheritance.swift in Sources */,
 				C6369EB01DA8F175008FFC34 /* FLAnimatedImageView.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6A3D77E1D96262100E07F2A /* PageControlViewController.m in Sources */,
