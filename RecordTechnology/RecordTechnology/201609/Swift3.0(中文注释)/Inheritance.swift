@@ -19,7 +19,7 @@ class Inheritance: NSObject {
     func bicycleTest() {
         let bicycle = Bicycle()
         bicycle.hasBasket = true
-        bicycle.currentSpeed = 15.0
+//        bicycle.currentSpeed = 15.0
         
         print("Bicycle is \(bicycle.description)")
     }
@@ -47,12 +47,20 @@ class Inheritance: NSObject {
         
         print("Car: \(car.description)")
     }
+    
+    func automaticCarTest() {
+        let automatic = AutomaticCar()
+        
+        automatic.currentSpeed = 35.0
+        
+        print("Automaticcar: \(automatic.description)")
+    }
 }
 
 class Vehicle {
     var currentSpeed = 0.0
     var description: String {
-        return "traveling at \(currentSpeed) miles per hour"
+        return "traveling at \(currentSpeed) miles per hour "
     }
     
     func makeNoise() {
@@ -62,6 +70,12 @@ class Vehicle {
 
 class Bicycle: Vehicle {
     var hasBasket = false
+    
+    override init() {
+        super.init()
+        
+        currentSpeed = 3.0
+    }
     
 }
 
@@ -80,6 +94,14 @@ class Car: Vehicle {
     
     override var description: String {
         return super.description + "in gear \(gear)"
+    }
+}
+
+class AutomaticCar: Car {
+    override var currentSpeed: Double {
+        didSet {
+            gear = Int(currentSpeed / 10.0) + 1
+        }
     }
 }
 

@@ -21,36 +21,9 @@ class Swift3_0ViewController: UIViewController, Swift3_0ViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        testDate()
+//        Init().animalTest()
         
-//        testOptional()
-        
-//        let greeting = "Guten Tag!"
-//        print(greeting[greeting.startIndex])
-//        print(greeting[greeting.index(before: greeting.endIndex)])
-//        print(greeting[greeting.index(after: greeting.startIndex)])
-//        print(greeting[greeting.index(greeting.startIndex, offsetBy: 7)])
-
-        
-//        PropertyExercise().structTest();
-        
-//        PropertyExercise().stepTest()
-        
-//        PropertyExercise.mutatingTest()
-        
-//        PropertyExercise.subscriptTest()
-        
-//        PropertyExercise.matrixTest()
-        
-//        Inheritance().vehicleTest()
-        
-//        Inheritance().bicycleTest()
-        
-//        Inheritance().tandemTest()
-        
-//        Inheritance().trainTest()
-        
-        Inheritance().carTest()
+        Init().temperatureUnit()
     }
     
     

@@ -27,6 +27,7 @@
 		C6502A551DAB31300019079C /* gif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A511DAB31300019079C /* gif2.gif */; };
 		C6502A561DAB31300019079C /* gif3.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A521DAB31300019079C /* gif3.gif */; };
 		C6502A571DAB31300019079C /* gif4.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A531DAB31300019079C /* gif4.gif */; };
+		C66AE7BD1DBDA8C000CFEE37 /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66AE7BC1DBDA8C000CFEE37 /* Init.swift */; };
 		C66BA4931DB4DF7E0099059E /* TLSpringFlowLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66BA4921DB4DF7E0099059E /* TLSpringFlowLayout.storyboard */; };
 		C66BA4951DB4E0D70099059E /* TLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66BA4941DB4E0D70099059E /* TLViewController.swift */; };
 		C67480F01D4F2098008C2AFF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67480EF1D4F2098008C2AFF /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -120,6 +121,7 @@
 		C6502A511DAB31300019079C /* gif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif2.gif; sourceTree = "<group>"; };
 		C6502A521DAB31300019079C /* gif3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif3.gif; sourceTree = "<group>"; };
 		C6502A531DAB31300019079C /* gif4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif4.gif; sourceTree = "<group>"; };
+		C66AE7BC1DBDA8C000CFEE37 /* Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Init.swift; sourceTree = "<group>"; };
 		C66BA4921DB4DF7E0099059E /* TLSpringFlowLayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TLSpringFlowLayout.storyboard; sourceTree = "<group>"; };
 		C66BA4941DB4E0D70099059E /* TLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLViewController.swift; sourceTree = "<group>"; };
 		C67480EF1D4F2098008C2AFF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -387,6 +389,7 @@
 				C6794F8E1DA789DC0026933A /* Swift3_0ViewController.swift */,
 				C691D8E91DB7888900798E77 /* PropertyExercise.swift */,
 				C6A09CB41DBB42520071951C /* Inheritance.swift */,
+				C66AE7BC1DBDA8C000CFEE37 /* Init.swift */,
 			);
 			path = "Swift3.0(中文注释)";
 			sourceTree = "<group>";
@@ -661,6 +664,7 @@
 				C6A3D77E1D96262100E07F2A /* PageControlViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C6794F901DA789DC0026933A /* OptionalExercise.swift in Sources */,
+				C66AE7BD1DBDA8C000CFEE37 /* Init.swift in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C6794F921DA789DC0026933A /* Swift3_0ViewController.swift in Sources */,
 				C6369EAF1DA8F175008FFC34 /* FLAnimatedImage.m in Sources */,
