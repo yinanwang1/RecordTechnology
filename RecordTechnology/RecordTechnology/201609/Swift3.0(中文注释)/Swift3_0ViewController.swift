@@ -15,21 +15,56 @@ protocol Swift3_0ViewControllerDelegate {
 class Swift3_0ViewController: UIViewController, Swift3_0ViewControllerDelegate {
     
     fileprivate var name = "private";
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
 //        Init().animalTest()
         
-        Init().temperatureUnit()
+//        Init().temperatureUnit()
+        
+//        Deinit.BankTest()
+        
+//        Deinit().persionTest()
+        
+//        testDeinit()
+        
+//        testCreditCard()
+        
+//        Deinit().testCountry()
+        
+        Deinit().testHTML()
     }
     
     
     deinit {
         
     }
+    
+    var john1: Customer?
+    
+    func testCreditCard() {
+        john1 = Customer(name: "John Appleseed")
+        
+        john1!.card = CreditCard(number: 1234_5678_9012_3456, customer: john1!)
+        
+        john1 = nil
+    }
+    
+    var john: Person?
+    var unit4A: Apartment?
+    
+    func testDeinit() {
+        john = Person(name: "John Appleseed")
+        unit4A = Apartment(unit: "4A")
+        
+        john!.apertment = unit4A
+        unit4A!.tenant = john
+        
+        john = nil
+        unit4A = nil
+    }
+    
     
     func testName() {
         print("name is \(name)");

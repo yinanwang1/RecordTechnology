@@ -18,6 +18,7 @@
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
 		C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
+		C619E5781DBEF2D7000F91A4 /* Deinit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C619E5771DBEF2D7000F91A4 /* Deinit.swift */; };
 		C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C624DF851CA5516300AD2615 /* QuickLook.framework */; };
 		C6369E921DA8CB1D008FFC34 /* TLSpringFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6369E911DA8CB1D008FFC34 /* TLSpringFlowLayout.swift */; };
 		C6369EAF1DA8F175008FFC34 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C6369EAC1DA8F175008FFC34 /* FLAnimatedImage.m */; };
@@ -110,6 +111,7 @@
 		C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
+		C619E5771DBEF2D7000F91A4 /* Deinit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deinit.swift; sourceTree = "<group>"; };
 		C624DF851CA5516300AD2615 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		C6369E911DA8CB1D008FFC34 /* TLSpringFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLSpringFlowLayout.swift; sourceTree = "<group>"; };
 		C6369EAB1DA8F175008FFC34 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
@@ -390,6 +392,7 @@
 				C691D8E91DB7888900798E77 /* PropertyExercise.swift */,
 				C6A09CB41DBB42520071951C /* Inheritance.swift */,
 				C66AE7BC1DBDA8C000CFEE37 /* Init.swift */,
+				C619E5771DBEF2D7000F91A4 /* Deinit.swift */,
 			);
 			path = "Swift3.0(中文注释)";
 			sourceTree = "<group>";
@@ -660,6 +663,7 @@
 				C691D8EA1DB7888900798E77 /* PropertyExercise.swift in Sources */,
 				C6A09CB51DBB42520071951C /* Inheritance.swift in Sources */,
 				C6369EB01DA8F175008FFC34 /* FLAnimatedImageView.m in Sources */,
+				C619E5781DBEF2D7000F91A4 /* Deinit.swift in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6A3D77E1D96262100E07F2A /* PageControlViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
