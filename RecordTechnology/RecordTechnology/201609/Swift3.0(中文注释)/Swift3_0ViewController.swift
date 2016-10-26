@@ -33,7 +33,21 @@ class Swift3_0ViewController: UIViewController, Swift3_0ViewControllerDelegate {
         
 //        Deinit().testCountry()
         
-        Deinit().testHTML()
+//        Deinit().testHTML()
+        
+//        Optional().testPerson()
+        
+//        Optional().testPerson1()
+        
+//        Optional().testTest()
+        
+//        Optional().testError()
+        
+//        TypeCasting().testMediaItem()
+        
+//        TypeCasting().testAnyObject()
+        
+        TypeCasting().testAny()
     }
     
     
@@ -41,29 +55,29 @@ class Swift3_0ViewController: UIViewController, Swift3_0ViewControllerDelegate {
         
     }
     
-    var john1: Customer?
-    
-    func testCreditCard() {
-        john1 = Customer(name: "John Appleseed")
-        
-        john1!.card = CreditCard(number: 1234_5678_9012_3456, customer: john1!)
-        
-        john1 = nil
-    }
-    
-    var john: Person?
-    var unit4A: Apartment?
-    
-    func testDeinit() {
-        john = Person(name: "John Appleseed")
-        unit4A = Apartment(unit: "4A")
-        
-        john!.apertment = unit4A
-        unit4A!.tenant = john
-        
-        john = nil
-        unit4A = nil
-    }
+//    var john1: Customer?
+//    
+//    func testCreditCard() {
+//        john1 = Customer(name: "John Appleseed")
+//        
+//        john1!.card = CreditCard(number: 1234_5678_9012_3456, customer: john1!)
+//        
+//        john1 = nil
+//    }
+//    
+//    var john: Person?
+//    var unit4A: Apartment?
+//    
+//    func testDeinit() {
+//        john = Person(name: "John Appleseed")
+//        unit4A = Apartment(unit: "4A")
+//        
+//        john!.apertment = unit4A
+//        unit4A!.tenant = john
+//        
+//        john = nil
+//        unit4A = nil
+//    }
     
     
     func testName() {

@@ -1,6 +1,6 @@
 {
   "name": "LuaViewSDK",
-  "version": "2.1.0.6",
+  "version": "2.1.1.2",
   "summary": "LuaView SDK",
   "description": "A longer description of LuaViewSDK.podspec in Markdown format.\n* LuaView",
   "homepage": "http://gitlab.alibaba-inc.com/luaview/LuaViewSDK",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "git@gitlab.alibaba-inc.com:luaview/LuaViewSDK.git",
-    "tag": "2.1.0.6"
+    "tag": "2.1.1.2"
   },
   "source_files": [
     "LuaViewSDK/Classes",

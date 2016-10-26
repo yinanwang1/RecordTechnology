@@ -1,12 +1,17 @@
 ##XTSafeCollection
 
+[![CI Status](https://travis-ci.org/wuwen1030/XTSafeCollection.svg?branch=master)](https://travis-ci.org/wuwen1030/XTSafeCollection)
+[![Version](https://img.shields.io/cocoapods/v/XTSafeCollection.svg?style=flat)](http://cocoapods.org/pods/XTSafeCollection)
+[![License](https://img.shields.io/cocoapods/l/XTSafeCollection.svg?style=flat)](http://cocoapods.org/pods/XTSafeCollection)
+[![Platform](https://img.shields.io/cocoapods/p/XTSafeCollection.svg?style=flat)](http://cocoapods.org/pods/XTSafeCollection)
+
 ###背景
 `NSArray``NSMutableArray``NSDictionary``NSMutableDictionary`是我们的在`iOS`开发中非常常用的类。当然，在享受这些类的便利的同时，它们也给我们带来一些困扰。粗心我们可能会调用`addObject`传入一个`nil`, 也有可能是会`objectAtIndex`传入一个越界的index。尤其是在数据基本依赖于服务端返回的的情况，这种crash大幅增加。最近项目上经常出现`NSDictionary`的`setObject:forKey:`的`nil object`的崩溃。
 ###解决方案
 ####函数包装
 我们希望能够用一个统一的方法解决粗心的程序员可能传入的`nil object`。我们最先想到的想法是对这些函数进行一个包装，比如`objectAtIndex`，我们写一个如下的函数
 
-```Objective-C
+```objc
 - (id)safeObjectAtIndex:(NSUInteger)index
 {	
 	if (index >= self.count)
@@ -23,7 +28,7 @@
 ###使用
 直接把`XTSafeCollection.h``XTSafeCollection.m`拖入工程，`NSArray``NSMutableArray``NSDictionary``NSMutableDictionary`这些类的API以前是怎么调用的，还怎么写，完全不用修改。Demo里，我全部以传统的会引起crash的方式调用代码，以下是我的Demo的代码和输出
 
-```
+```objc
 NSArray *array = @[@"a", @"b"];
 NSMutableArray *mutableArray = [@[@"aa", @"bb"] mutableCopy];
     
@@ -65,7 +70,7 @@ mutableDictionary[@"1"] = nil;
 
 * 1.0.0
 
-```
+```objc
 NSArray:
 - (id)objectAtIndex:(NSUInteger)index;
 
@@ -81,7 +86,7 @@ NSMutableDictionary:
 
 * 1.0.2
 
-```
+```objc
 NSArray:
 + (instancetype)arrayWithObjects:(const id [])objects count:(NSUInteger)cnt; ( @[] )
 
@@ -91,14 +96,14 @@ NSDictionary:
 ```
 
 ###安装
-`pod XTSafeCollection`
+`pod "XTSafeCollection"`
 
 ###TODO
 兼容更多的crash情况
 
 ###Known Issues
 替换`NSMuatbelArray`的`objectAtIndex:`引起键盘展示状态态切换后台的崩溃，抛出
-```
+```objc
 *** -[UIKeyboardLayoutStar release]: message sent to deallocated instance 0x7f883beac9c0
 ```
 在这里
