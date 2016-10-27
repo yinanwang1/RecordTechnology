@@ -47,7 +47,15 @@ class Swift3_0ViewController: UIViewController, Swift3_0ViewControllerDelegate {
         
 //        TypeCasting().testAnyObject()
         
-        TypeCasting().testAny()
+//        TypeCasting().testAny()
+        
+//        NeskedType().testBlackjack()
+        
+//        NeskedType().testDouble()
+        
+//        NeskedType().testInt()
+        
+        NeskedType().testPrintInt()
     }
     
     

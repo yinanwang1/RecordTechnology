@@ -45,6 +45,7 @@
 		C6A3D77E1D96262100E07F2A /* PageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A3D77D1D96262100E07F2A /* PageControlViewController.m */; };
 		C6A3D7801D96262E00E07F2A /* PageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A3D77F1D96262E00E07F2A /* PageControl.storyboard */; };
 		C6A3D7831D9627E000E07F2A /* CustomPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A3D7821D9627E000E07F2A /* CustomPageControl.m */; };
+		C6B01ABC1DC1920000F47B29 /* NeskedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B01ABB1DC1920000F47B29 /* NeskedType.swift */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
@@ -144,6 +145,7 @@
 		C6A3D77F1D96262E00E07F2A /* PageControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageControl.storyboard; sourceTree = "<group>"; };
 		C6A3D7811D9627E000E07F2A /* CustomPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPageControl.h; sourceTree = "<group>"; };
 		C6A3D7821D9627E000E07F2A /* CustomPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPageControl.m; sourceTree = "<group>"; };
+		C6B01ABB1DC1920000F47B29 /* NeskedType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeskedType.swift; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6E5A9851BDE0650004CD998 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				C66AE7BC1DBDA8C000CFEE37 /* Init.swift */,
 				C619E57B1DBF54F7000F91A4 /* Optional.swift */,
 				C69A73211DC0573700223A29 /* TypeCasting.swift */,
+				C6B01ABB1DC1920000F47B29 /* NeskedType.swift */,
 			);
 			path = "Swift3.0(中文注释)";
 			sourceTree = "<group>";
@@ -675,6 +678,7 @@
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C6794F921DA789DC0026933A /* Swift3_0ViewController.swift in Sources */,
 				C6369EAF1DA8F175008FFC34 /* FLAnimatedImage.m in Sources */,
+				C6B01ABC1DC1920000F47B29 /* NeskedType.swift in Sources */,
 				C6794F8F1DA789DC0026933A /* DateExercise.swift in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
