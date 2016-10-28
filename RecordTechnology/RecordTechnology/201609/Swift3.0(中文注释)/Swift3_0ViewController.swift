@@ -19,43 +19,13 @@ class Swift3_0ViewController: UIViewController, Swift3_0ViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        Init().animalTest()
+//        NeskedType().testPrintInt()
         
-//        Init().temperatureUnit()
+//        Protocal().testPerson()
         
-//        Deinit.BankTest()
+//        Protocal().testRandom()
         
-//        Deinit().persionTest()
-        
-//        testDeinit()
-        
-//        testCreditCard()
-        
-//        Deinit().testCountry()
-        
-//        Deinit().testHTML()
-        
-//        Optional().testPerson()
-        
-//        Optional().testPerson1()
-        
-//        Optional().testTest()
-        
-//        Optional().testError()
-        
-//        TypeCasting().testMediaItem()
-        
-//        TypeCasting().testAnyObject()
-        
-//        TypeCasting().testAny()
-        
-//        NeskedType().testBlackjack()
-        
-//        NeskedType().testDouble()
-        
-//        NeskedType().testInt()
-        
-        NeskedType().testPrintInt()
+        Protocal().testOnOffSwitch()
     }
     
     
