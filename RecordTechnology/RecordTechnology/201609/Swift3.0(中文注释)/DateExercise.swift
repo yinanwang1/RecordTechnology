@@ -41,7 +41,7 @@ class DateExercise: NSObject {
         
         let calculatedDate = calendar.date(byAdding: newDateComponents, to: currentDate)
         
-        print(calculatedDate)
+        print(calculatedDate!)
     }
     
     func exercise3() {
@@ -56,7 +56,7 @@ class DateExercise: NSObject {
         var calculatedDate = calendar.date(byAdding: Calendar.Component.month, value: monthsToAdd, to: currentDate)
         calculatedDate = calendar.date(byAdding: Calendar.Component.day, value: daysToAdd, to: calculatedDate!)
         
-        print(calculatedDate)
+        print(calculatedDate!)
     }
     
     func exercise2() {
@@ -80,7 +80,7 @@ class DateExercise: NSObject {
         componts.timeZone = TimeZone(abbreviation: "CET")
         
         let dateFormComponents = calendar.date(from: componts)
-        print(dateFormComponents)
+        print(dateFormComponents!)
         
     }
     
@@ -119,7 +119,7 @@ class DateExercise: NSObject {
         
         let dateString = "2016-12-02 18:15:59"
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        print(dateFormatter.date(from: dateString))
+        print(dateFormatter.date(from: dateString)!)
     }
     
     class func exerciseClassFunc() {

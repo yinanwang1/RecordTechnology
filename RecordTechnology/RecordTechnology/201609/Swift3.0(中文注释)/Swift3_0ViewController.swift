@@ -25,7 +25,11 @@ class Swift3_0ViewController: UIViewController, Swift3_0ViewControllerDelegate {
         
 //        Protocal().testRandom()
         
-        Protocal().testOnOffSwitch()
+//        Protocal().testOnOffSwitch()
+        
+//        Protocal().testFindStringIndex()
+        
+        Protocal().testTrackingString()
     }
     
     

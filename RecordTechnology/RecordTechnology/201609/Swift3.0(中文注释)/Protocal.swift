@@ -36,6 +36,67 @@ class Protocal {
         print("lightSwitch is \(lightSwitch)")
     }
     
+    func swapTwoValues<T>( a: inout T, _ b: inout T) {
+        let temporaryA = a
+        a = b
+        b = temporaryA
+    }
+    
+    func findStringIndex<T: Equatable>(array:[T], _ valueToFind: T) -> Int? {
+        for (index, value) in array.enumerated() {
+            if value == valueToFind {
+                return index
+            }
+        }
+        
+        return nil
+    }
+    
+    
+    func testFindStringIndex() {
+        let strings = ["cat", "dog", "llama", "parakeet", "terrapin"]
+        if let foundIndex = findStringIndex(array: strings, "llamqa") {
+            print("The index of llama is \(foundIndex)")
+        } else {
+            print("No, I can't find it!")
+        }
+        
+        let doubleIndex = findStringIndex(array: [3.131415, 0.1, 0.23], 9.3)
+        
+        print("doubleIndex is \(doubleIndex)")
+        
+        let stringIndex = findStringIndex(array: ["Mike", "Malcolm", "Andrea"], "Andrea")
+        
+        print("stringIndex is \(stringIndex)")
+    }
+    
+    fileprivate func someFunction() -> (InternalClass, PrivateClass) {
+        let test1 = InternalClass()
+        let test2 = PrivateClass()
+        
+        print("Test")
+        
+        return (test1, test2)
+    }
+    
+    func testTrackingString() {
+        var stringToEdit = TrackingString()
+        stringToEdit.value = "This string will be tracked"
+        stringToEdit.value += " This edit will increment numberOfEdits."
+        stringToEdit.value += " So will this one"
+        stringToEdit.value += " END"
+        
+        print("The number of edits is \(stringToEdit.numberOfEdits)")
+    }
+    
+}
+
+internal class InternalClass {
+    
+}
+
+private class PrivateClass {
+    
 }
 
 protocol FullyNamed {
@@ -91,6 +152,47 @@ enum OnOffSwitch: Togglabel {
         
         case .On:
             self = .Off
+        }
+    }
+}
+
+protocol Container {
+    associatedtype ItemType
+    mutating func append(item: ItemType)
+    var count: Int { get }
+    subscript(i: Int) -> ItemType { get }
+}
+
+struct IntStack: Container {
+    var items = [Int]()
+    mutating func push(item: Int) {
+        items.append(item)
+    }
+    
+    mutating func pop() -> Int {
+        return items.removeLast()
+    }
+    
+    typealias ItemType = Int
+    
+    mutating func append(item: Int) {
+        self.push(item: item)
+    }
+    
+    var count: Int {
+        return items.count
+    }
+    
+    subscript(i: Int) -> Int {
+        return items[i]
+    }
+}
+
+struct TrackingString {
+    private(set) var numberOfEdits = 0
+    var value: String = "" {
+        didSet {
+            numberOfEdits += 1
         }
     }
 }
