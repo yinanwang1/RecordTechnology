@@ -29,7 +29,9 @@ class Swift3_0ViewController: UIViewController, Swift3_0ViewControllerDelegate {
         
 //        Protocal().testFindStringIndex()
         
-        Protocal().testTrackingString()
+//        Protocal().testTrackingString()
+        
+        Protocal().testVector()
     }
     
     

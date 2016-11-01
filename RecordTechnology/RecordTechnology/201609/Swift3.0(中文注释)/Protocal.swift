@@ -89,6 +89,26 @@ class Protocal {
         print("The number of edits is \(stringToEdit.numberOfEdits)")
     }
     
+    func testVector() {
+        let vector = Vector2D(x: 3.0, y: 1.0)
+        let anotherVector = Vector2D(x: 2.0, y: 4.0)
+        
+        let combinedVector = vector + anotherVector
+        
+        print("combinedVector is \(combinedVector)")
+        
+        
+        let positive = Vector2D(x: 3.0, y: 4.0)
+        let negative = -positive
+        
+        print("negative is \(negative)")
+        
+        let alsoPositive = -negative
+        
+        print("alsoPositive is \(alsoPositive)")
+        
+    }
+    
 }
 
 internal class InternalClass {
@@ -194,6 +214,20 @@ struct TrackingString {
         didSet {
             numberOfEdits += 1
         }
+    }
+}
+
+struct Vector2D {
+    var x = 0.0, y = 0.0
+}
+
+extension Vector2D {
+    static func + (left1: Vector2D, right1: Vector2D) -> Vector2D {
+        return Vector2D(x: left1.x + right1.x, y: left1.y + right1.y)
+    }
+    
+    static prefix func - (vector: Vector2D) -> Vector2D {
+        return Vector2D(x: -vector.x, y: -vector.y)
     }
 }
 
