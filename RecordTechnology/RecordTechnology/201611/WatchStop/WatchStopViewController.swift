@@ -12,12 +12,14 @@ class WatchStopViewController: UIViewController, CAAnimationDelegate {
 
     @IBOutlet weak var arrowImageView: UIImageView!
     
+    let period = 1.0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let anchor = CGPoint.init(x: 0.0, y: 0.5)
-//        self.arrowImageView.layer.anchorPoint = anchor
+        let anchor = CGPoint.init(x: 1.0, y: 0.5)
+        self.arrowImageView.layer.anchorPoint = anchor
     }
     
 
@@ -25,22 +27,34 @@ class WatchStopViewController: UIViewController, CAAnimationDelegate {
     
     @IBAction func onClickRotateBtn(_ sender: Any) {
         
-//        self.arrowImageView.transform = CGAffineTransform.identity
-//        
-//        UIView.animate(withDuration: 1.0, animations: {
-//            self.arrowImageView.transform = CGAffineTransform.init(rotationAngle: CGFloat(M_PI))
-//        }, completion: nil)
+        Timer.scheduledTimer(timeInterval: self.period, target: self, selector: #selector(WatchStopViewController.calcPeriodAndRotate), userInfo: nil, repeats: true)
         
-        let animation = CABasicAnimation.init(keyPath: "transform")
-        animation.delegate = self
-        animation.toValue = NSValue.init(caTransform3D: CATransform3DMakeRotation(CGFloat(M_PI), 0, 0, 1.0))
-        animation.duration = 2
-        animation.isCumulative = true
-        animation.repeatCount = Float(INT_MAX)
-        animation.autoreverses = true
-        
-        self.arrowImageView.layer.add(animation, forKey: "animation")
     }
     
+    func calcPeriodAndRotate() {
+        let angle = arc4random() % 315
+        var dot = CGFloat(angle) / 100.0
+        
+        if CGFloat(M_PI) < dot {
+            dot = 3.14
+        }
+        
+        print("dot is \(dot)")
+        self.beginRotate(angle: dot)
+    }
+    
+    func beginRotate(angle: CGFloat) {
+        let animation = CABasicAnimation.init(keyPath: "transform")
+        animation.delegate = self
+        let toValue = NSValue.init(caTransform3D: CATransform3DMakeRotation(angle, 0, 0, 1.0))
+        animation.toValue = toValue
+        animation.duration = self.period
+        animation.isRemovedOnCompletion = false
+        animation.fillMode = kCAFillModeForwards
+        animation.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseInEaseOut)
+        
+        let keyAnimation:String = "animation \(angle)"
+        self.arrowImageView.layer.add(animation, forKey: keyAnimation)
+    }
 
 }
