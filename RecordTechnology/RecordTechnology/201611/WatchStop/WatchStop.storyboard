@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Vbu-Nz-yFk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Watch Stop View Controller-->
+        <scene sceneID="86J-gf-RH6">
+            <objects>
+                <viewController id="Vbu-Nz-yFk" customClass="WatchStopViewController" customModule="RecordTechnology" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gYr-0b-a89"/>
+                        <viewControllerLayoutGuide type="bottom" id="2u2-3S-kfi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GNx-dl-2ed">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="dv6-yo-FOG">
+                                <rect key="frame" x="187.5" y="115" width="140" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="5zk-5N-11w"/>
+                                    <constraint firstAttribute="height" constant="25" id="mlc-uU-d4S"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWs-Ie-KXh">
+                                <rect key="frame" x="164" y="208" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WW4-E8-dKV"/>
+                                    <constraint firstAttribute="width" constant="46" id="qhO-c9-Xvk"/>
+                                </constraints>
+                                <state key="normal" title="转动"/>
+                                <connections>
+                                    <action selector="onClickRotateBtn:" destination="Vbu-Nz-yFk" eventType="touchUpInside" id="sIv-1S-83F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dv6-yo-FOG" firstAttribute="centerX" secondItem="GNx-dl-2ed" secondAttribute="centerX" constant="70" id="4CD-ux-Z1I"/>
+                            <constraint firstItem="YWs-Ie-KXh" firstAttribute="top" secondItem="dv6-yo-FOG" secondAttribute="bottom" constant="68" id="jDg-fQ-6IC"/>
+                            <constraint firstItem="dv6-yo-FOG" firstAttribute="top" secondItem="gYr-0b-a89" secondAttribute="bottom" constant="95" id="ttw-yd-Xam"/>
+                            <constraint firstItem="YWs-Ie-KXh" firstAttribute="centerX" secondItem="GNx-dl-2ed" secondAttribute="centerX" id="y8k-fH-jHb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arrowImageView" destination="dv6-yo-FOG" id="oyW-ds-dfN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WIy-3A-Giy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="51"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow" width="142" height="23"/>
+    </resources>
+</document>
