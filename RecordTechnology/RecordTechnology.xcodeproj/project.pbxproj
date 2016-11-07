@@ -435,6 +435,7 @@
 				TargetAttributes = {
 					8E41E2311ABAB2DC0008984F = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 2L5Z45N6U9;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -750,15 +751,16 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2L5Z45N6U9;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.arthurWang.TestCoreData;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huanxiao.qiji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f20473a4-d780-4c21-968f-22408184f3d8";
+				PROVISIONING_PROFILE_SPECIFIER = qiji_dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/RecordTechnology-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -782,7 +784,7 @@
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.arthurWang.TestCoreData;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huanxiao.qiji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/RecordTechnology-Bridging-Header.h";
