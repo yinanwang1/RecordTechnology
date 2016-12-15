@@ -11,6 +11,7 @@
 //#import "YouFireApplication.h"
 //#import "AFNetworkingNewest.h"
 //#import "CopyViewController.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
 
 @interface AppDelegate ()
 
@@ -25,6 +26,7 @@
 
     [self initDemoStatus];
     
+    [[AMapServices sharedServices] setApiKey:@"f0cf86820bbe1e52cd9c33a852076174"];
     
     return YES;
 }

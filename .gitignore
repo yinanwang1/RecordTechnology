@@ -1,14 +1,21 @@
-
 RecordTechnology/RecordTechnology.xcodeproj/xcuserdata/*
 RecordTechnology/RecordTechnology.xcodeproj/project.xcworkspace/xcuserdata/*
+RecordTechnology/RecordTechnology.xcodeproj/project.xcworkspace/xcshareddata/*
 RecordTechnology/RecordTechnology.xcworkspace/xcuserdata/*
+RecordTechnology/RecordTechnology.xcworkspace/xcshareddata/*
 RecordTechnology/Pods/Pods.xcodeproj/xcuserdata/*
+RecordTechnology/build/*
+RecordTechnology/Pods/Pods.xcodeproj/xcuserdata/*
+RecordTechnology/Pods/*
+RecordTechnology/Podfile.lock
 
-*.DS_Store*
 bin
 obj
 packages
 *.suo
 *.user
-*.xcuserstate
-UserInterfaceState.xcuserstate
+*.DS_Store*
+contents.xcworkspacedata
+
+
+

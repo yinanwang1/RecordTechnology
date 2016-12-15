@@ -21,6 +21,9 @@ pod 'JSPatch', '~>0.2'
 pod 'Mantle', '~> 2.0.6'
 pod 'ConvertDateAndStringEachOther'
 pod 'LuaViewSDK', :git=>'https://github.com/alibaba/LuaViewSDK.git'
+pod 'AMapLocation', '=2.1.0'
+pod 'AMap3DMap', '=4.2.0'
+pod 'AMapSearch', '=4.2.0'
 
 end
 

@@ -16,6 +16,8 @@
 		8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E23F1ABAB2DC0008984F /* Main.storyboard */; };
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
+		C606DA991E029D03009EC462 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606DA981E029D03009EC462 /* MapViewController.swift */; };
+		C606DA9B1E029D0E009EC462 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C606DA9A1E029D0E009EC462 /* Map.storyboard */; };
 		C60D038D1DCC6AB400570DB2 /* WatchStop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60D038C1DCC6AB400570DB2 /* WatchStop.storyboard */; };
 		C60D038F1DCC6B0300570DB2 /* WatchStopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60D038E1DCC6B0300570DB2 /* WatchStopViewController.swift */; };
 		C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */; };
@@ -96,6 +98,8 @@
 		8EF6A08F1B315C7600694EDE /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		B00155C2DD0E18595163938C /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D862BD766BDF0FF78C6C54 /* Pods-RecordTechnologyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnologyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C606DA981E029D03009EC462 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C606DA9A1E029D0E009EC462 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		C60D038C1DCC6AB400570DB2 /* WatchStop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WatchStop.storyboard; sourceTree = "<group>"; };
 		C60D038E1DCC6B0300570DB2 /* WatchStopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchStopViewController.swift; sourceTree = "<group>"; };
 		C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -241,6 +245,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				C606DA961E029CF8009EC462 /* 201612 */,
 				C60D03871DCC6A9800570DB2 /* 201611 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
@@ -292,6 +297,23 @@
 				8EF6A08F1B315C7600694EDE /* UtilsMacro.h */,
 			);
 			path = Macro;
+			sourceTree = "<group>";
+		};
+		C606DA961E029CF8009EC462 /* 201612 */ = {
+			isa = PBXGroup;
+			children = (
+				C606DA971E029CF8009EC462 /* Map */,
+			);
+			path = 201612;
+			sourceTree = "<group>";
+		};
+		C606DA971E029CF8009EC462 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C606DA981E029D03009EC462 /* MapViewController.swift */,
+				C606DA9A1E029D0E009EC462 /* Map.storyboard */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		C60D03871DCC6A9800570DB2 /* 201611 */ = {
@@ -481,6 +503,7 @@
 				C6502A4F1DAB300B0019079C /* Images.xcassets in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				C60D038D1DCC6AB400570DB2 /* WatchStop.storyboard in Resources */,
+				C606DA9B1E029D0E009EC462 /* Map.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
 				C6502A541DAB31300019079C /* gif1.gif in Resources */,
@@ -594,6 +617,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C606DA991E029D03009EC462 /* MapViewController.swift in Sources */,
 				C60D038F1DCC6B0300570DB2 /* WatchStopViewController.swift in Sources */,
 				C6369EB01DA8F175008FFC34 /* FLAnimatedImageView.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
@@ -777,8 +801,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 2L5Z45N6U9;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
@@ -786,7 +810,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huanxiao.qiji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e5b48512-2921-417a-b434-74c89e45f616";
+				PROVISIONING_PROFILE_SPECIFIER = qiji_release;
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/RecordTechnology-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
