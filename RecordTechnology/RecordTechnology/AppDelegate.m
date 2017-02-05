@@ -28,6 +28,12 @@
     
     [[AMapServices sharedServices] setApiKey:@"f0cf86820bbe1e52cd9c33a852076174"];
     
+    UIApplicationShortcutItem *shortcutItem = [launchOptions valueForKey:UIApplicationLaunchOptionsShortcutItemKey];
+    if (shortcutItem) {
+        NSLog(@"shortcutItem.type is %@", shortcutItem.type);
+    }
+    
+    
     return YES;
 }
 
@@ -63,6 +69,14 @@
     return YES;
 }
 
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
+{
+    NSLog(@"shortcutItem.type is %@", shortcutItem.type);
+    
+    if (completionHandler) {
+        completionHandler(YES);
+    }
+}
 
 
 #pragma mark - init Demo status
