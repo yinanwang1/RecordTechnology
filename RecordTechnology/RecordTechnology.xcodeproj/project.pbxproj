@@ -16,10 +16,6 @@
 		8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E23F1ABAB2DC0008984F /* Main.storyboard */; };
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
-		C606DA991E029D03009EC462 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606DA981E029D03009EC462 /* MapViewController.swift */; };
-		C606DA9B1E029D0E009EC462 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C606DA9A1E029D0E009EC462 /* Map.storyboard */; };
-		C60D038D1DCC6AB400570DB2 /* WatchStop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60D038C1DCC6AB400570DB2 /* WatchStop.storyboard */; };
-		C60D038F1DCC6B0300570DB2 /* WatchStopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60D038E1DCC6B0300570DB2 /* WatchStopViewController.swift */; };
 		C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C624DF851CA5516300AD2615 /* QuickLook.framework */; };
@@ -35,6 +31,10 @@
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
+		C6BF526F1E46C70D00801A9D /* BlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BF526E1E46C70D00801A9D /* BlueToothViewController.m */; };
+		C6BF52711E46C71700801A9D /* BlueTooth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BF52701E46C71700801A9D /* BlueTooth.storyboard */; };
+		C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */; };
+		C6BF52761E470B3000801A9D /* PeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BF52751E470B3000801A9D /* PeripheralViewController.m */; };
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
@@ -98,10 +98,6 @@
 		8EF6A08F1B315C7600694EDE /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		B00155C2DD0E18595163938C /* libPods-RecordTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D862BD766BDF0FF78C6C54 /* Pods-RecordTechnologyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnologyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C606DA981E029D03009EC462 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		C606DA9A1E029D0E009EC462 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
-		C60D038C1DCC6AB400570DB2 /* WatchStop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WatchStop.storyboard; sourceTree = "<group>"; };
-		C60D038E1DCC6B0300570DB2 /* WatchStopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchStopViewController.swift; sourceTree = "<group>"; };
 		C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
@@ -122,6 +118,12 @@
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C6BF526D1E46C70D00801A9D /* BlueToothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueToothViewController.h; sourceTree = "<group>"; };
+		C6BF526E1E46C70D00801A9D /* BlueToothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueToothViewController.m; sourceTree = "<group>"; };
+		C6BF52701E46C71700801A9D /* BlueTooth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BlueTooth.storyboard; sourceTree = "<group>"; };
+		C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C6BF52741E470B3000801A9D /* PeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralViewController.h; sourceTree = "<group>"; };
+		C6BF52751E470B3000801A9D /* PeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralViewController.m; sourceTree = "<group>"; };
 		C6E5A9851BDE0650004CD998 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		C6E5A9871BDE0650004CD998 /* UIColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorExtensions.h; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */,
 				C67480F01D4F2098008C2AFF /* WebKit.framework in Frameworks */,
 				C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */,
 				C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */,
@@ -163,6 +166,7 @@
 		383D529F0224A99151B3C236 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */,
 				C67480EF1D4F2098008C2AFF /* WebKit.framework */,
 				C624DF851CA5516300AD2615 /* QuickLook.framework */,
 				C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */,
@@ -245,8 +249,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
-				C606DA961E029CF8009EC462 /* 201612 */,
-				C60D03871DCC6A9800570DB2 /* 201611 */,
+				C6BF526B1E46C69A00801A9D /* 201702 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
 				8E41E23A1ABAB2DC0008984F /* AppDelegate.m */,
@@ -299,40 +302,6 @@
 			path = Macro;
 			sourceTree = "<group>";
 		};
-		C606DA961E029CF8009EC462 /* 201612 */ = {
-			isa = PBXGroup;
-			children = (
-				C606DA971E029CF8009EC462 /* Map */,
-			);
-			path = 201612;
-			sourceTree = "<group>";
-		};
-		C606DA971E029CF8009EC462 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				C606DA981E029D03009EC462 /* MapViewController.swift */,
-				C606DA9A1E029D0E009EC462 /* Map.storyboard */,
-			);
-			path = Map;
-			sourceTree = "<group>";
-		};
-		C60D03871DCC6A9800570DB2 /* 201611 */ = {
-			isa = PBXGroup;
-			children = (
-				C60D03881DCC6A9800570DB2 /* WatchStop */,
-			);
-			path = 201611;
-			sourceTree = "<group>";
-		};
-		C60D03881DCC6A9800570DB2 /* WatchStop */ = {
-			isa = PBXGroup;
-			children = (
-				C60D038E1DCC6B0300570DB2 /* WatchStopViewController.swift */,
-				C60D038C1DCC6AB400570DB2 /* WatchStop.storyboard */,
-			);
-			path = WatchStop;
-			sourceTree = "<group>";
-		};
 		C61771E21ABC6BF30097991C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +343,26 @@
 				C6369EAE1DA8F175008FFC34 /* FLAnimatedImageView.m */,
 			);
 			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		C6BF526B1E46C69A00801A9D /* 201702 */ = {
+			isa = PBXGroup;
+			children = (
+				C6BF526C1E46C69A00801A9D /* BlueTooth */,
+			);
+			path = 201702;
+			sourceTree = "<group>";
+		};
+		C6BF526C1E46C69A00801A9D /* BlueTooth */ = {
+			isa = PBXGroup;
+			children = (
+				C6BF526D1E46C70D00801A9D /* BlueToothViewController.h */,
+				C6BF526E1E46C70D00801A9D /* BlueToothViewController.m */,
+				C6BF52741E470B3000801A9D /* PeripheralViewController.h */,
+				C6BF52751E470B3000801A9D /* PeripheralViewController.m */,
+				C6BF52701E46C71700801A9D /* BlueTooth.storyboard */,
+			);
+			path = BlueTooth;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -502,11 +491,10 @@
 				C6502A551DAB31300019079C /* gif2.gif in Resources */,
 				C6502A4F1DAB300B0019079C /* Images.xcassets in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
-				C60D038D1DCC6AB400570DB2 /* WatchStop.storyboard in Resources */,
-				C606DA9B1E029D0E009EC462 /* Map.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
 				C6502A541DAB31300019079C /* gif1.gif in Resources */,
+				C6BF52711E46C71700801A9D /* BlueTooth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,8 +605,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C606DA991E029D03009EC462 /* MapViewController.swift in Sources */,
-				C60D038F1DCC6B0300570DB2 /* WatchStopViewController.swift in Sources */,
 				C6369EB01DA8F175008FFC34 /* FLAnimatedImageView.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
@@ -627,7 +613,9 @@
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
+				C6BF52761E470B3000801A9D /* PeripheralViewController.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
+				C6BF526F1E46C70D00801A9D /* BlueToothViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,7 +810,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8D862BD766BDF0FF78C6C54 /* Pods-RecordTechnologyTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -844,7 +831,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE0D728750DE2DC5A9722D56 /* Pods-RecordTechnologyTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
