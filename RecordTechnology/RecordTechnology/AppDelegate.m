@@ -26,12 +26,13 @@
 
     [self initDemoStatus];
     
-    [[AMapServices sharedServices] setApiKey:@"f0cf86820bbe1e52cd9c33a852076174"];
-    
-    UIApplicationShortcutItem *shortcutItem = [launchOptions valueForKey:UIApplicationLaunchOptionsShortcutItemKey];
-    if (shortcutItem) {
-        NSLog(@"shortcutItem.type is %@", shortcutItem.type);
-    }
+    // DEMO: AMAP
+//    [[AMapServices sharedServices] setApiKey:@"f0cf86820bbe1e52cd9c33a852076174"];
+//    
+//    UIApplicationShortcutItem *shortcutItem = [launchOptions valueForKey:UIApplicationLaunchOptionsShortcutItemKey];
+//    if (shortcutItem) {
+//        NSLog(@"shortcutItem.type is %@", shortcutItem.type);
+//    }
     
     
     return YES;
