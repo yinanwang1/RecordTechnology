@@ -28,6 +28,9 @@ static NSString * const kTableViewCell = @"tableViewCell";
 /* 附近蓝牙 */
 @property (nonatomic, strong) NSMutableArray *bleViewPerArr;
 
+/* 特征值 */
+@property (nonatomic, strong) CBCharacteristic *characteristic;
+
 
 @end
 
@@ -135,11 +138,24 @@ static NSString * const kTableViewCell = @"tableViewCell";
           advertisementData,
           RSSI);
     
+    
     if (![self.bleViewPerArr containsObject:peripheral]) {
         [self.bleViewPerArr addObject:peripheral];
     }
     
     [self.myTableView reloadData];
+    
+//    if ([peripheral.name containsString:@"QEE_BIKE"]) {
+//        self.peripheral = peripheral;
+//        [self.cMgr connectPeripheral:self.peripheral options:nil];
+//        
+//        if (![self.bleViewPerArr containsObject:peripheral]) {
+//            [self.bleViewPerArr addObject:peripheral];
+//        }
+//        
+//        [self.myTableView reloadData];
+//    }
+    
 }
 
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral
@@ -181,7 +197,12 @@ static NSString * const kTableViewCell = @"tableViewCell";
         for (CBCharacteristic *characteristic in service.characteristics) {
             NSLog(@"char = %@", characteristic);
             if ([characteristic.UUID isEqual:characteristicUUID]) {
+                
+                self.characteristic = characteristic;
+                
+                NSLog(@"before didDiscoverCharacteristicsForServicecharacteristic is %@", characteristic);
                 [peripheral setNotifyValue:YES forCharacteristic:characteristic];
+                NSLog(@"after didDiscoverCharacteristicsForServicecharacteristic is %@", characteristic);
             }
         }
     }
@@ -214,7 +235,6 @@ static NSString * const kTableViewCell = @"tableViewCell";
         {
             [peripheral discoverCharacteristics:@[characteristicUUID] forService:service];
         }
-        
     }
 }
 
@@ -222,23 +242,25 @@ static NSString * const kTableViewCell = @"tableViewCell";
 {
     NSLog(@"收到特征更新通知。。。");
     
-    CBUUID *characteristicUUID = [CBUUID UUIDWithString:kCharacteristicUUID];
-    if ([characteristic.UUID isEqual:characteristicUUID])
-    {
-        if (characteristic.isNotifying) {
-            if (characteristic.properties == CBCharacteristicPropertyNotify) {
-                NSLog(@"已订阅");
-                
-                return;
-            } else if (characteristic.properties == CBCharacteristicPropertyRead) {
-                [peripheral readValueForCharacteristic:characteristic];
-            }
-        } else {
-            NSLog(@"停止已停止");
-            
-            [self.cMgr cancelPeripheralConnection:peripheral];
-        }
-    }
+    NSLog(@"didUpdateNotificationStateForCharacteristic characteristic is %@", characteristic);
+    
+//    CBUUID *characteristicUUID = [CBUUID UUIDWithString:kCharacteristicUUID];
+//    if ([characteristic.UUID isEqual:characteristicUUID])
+//    {
+//        if (characteristic.isNotifying) {
+//            if (characteristic.properties == CBCharacteristicPropertyNotify) {
+//                NSLog(@"已订阅");
+//                
+//                return;
+//            } else if (characteristic.properties == CBCharacteristicPropertyRead) {
+//                [peripheral readValueForCharacteristic:characteristic];
+//            }
+//        } else {
+//            NSLog(@"停止已停止");
+//            
+//            [self.cMgr cancelPeripheralConnection:peripheral];
+//        }
+//    }
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
@@ -292,6 +314,9 @@ static NSString * const kTableViewCell = @"tableViewCell";
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    [self.cMgr stopScan];
+    
+    
     CBPeripheral *peripheral = (CBPeripheral *)self.bleViewPerArr[indexPath.row];
     self.peripheral = peripheral;
     self.peripheral.delegate = self;
@@ -309,6 +334,16 @@ static NSString * const kTableViewCell = @"tableViewCell";
     
     [self.cMgr scanForPeripheralsWithServices:nil
                                       options:@{CBCentralManagerScanOptionAllowDuplicatesKey:@YES}];
+}
+
+- (IBAction)sendMessage:(id)sender
+{
+    NSString *valueStr = [NSString stringWithFormat:@"1369"];
+    NSData *value = [valueStr dataUsingEncoding:NSUTF8StringEncoding];
+    
+    [self.peripheral writeValue:value
+              forCharacteristic:self.characteristic
+                           type:CBCharacteristicWriteWithResponse];
 }
 
 

@@ -31,6 +31,9 @@
 		C6502A571DAB31300019079C /* gif4.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A531DAB31300019079C /* gif4.gif */; };
 		C67480F01D4F2098008C2AFF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67480EF1D4F2098008C2AFF /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
+		C68FE5601EF0DDBB002F67DC /* BlueTooth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68FE55B1EF0DDBB002F67DC /* BlueTooth.storyboard */; };
+		C68FE5611EF0DDBB002F67DC /* BlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FE55D1EF0DDBB002F67DC /* BlueToothViewController.m */; };
+		C68FE5621EF0DDBB002F67DC /* PeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FE55F1EF0DDBB002F67DC /* PeripheralViewController.m */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
@@ -119,6 +122,13 @@
 		C67480EF1D4F2098008C2AFF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C67480F31D4F2F58008C2AFF /* RecordTechnology-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecordTechnology-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C68FE55B1EF0DDBB002F67DC /* BlueTooth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BlueTooth.storyboard; sourceTree = "<group>"; };
+		C68FE55C1EF0DDBB002F67DC /* BlueToothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueToothViewController.h; sourceTree = "<group>"; };
+		C68FE55D1EF0DDBB002F67DC /* BlueToothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueToothViewController.m; sourceTree = "<group>"; };
+		C68FE55E1EF0DDBB002F67DC /* PeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralViewController.h; sourceTree = "<group>"; };
+		C68FE55F1EF0DDBB002F67DC /* PeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralViewController.m; sourceTree = "<group>"; };
+		C68FE5631EF0E74C002F67DC /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		C68FE5651EF0E753002F67DC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -166,6 +176,8 @@
 		383D529F0224A99151B3C236 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C68FE5651EF0E753002F67DC /* GameKit.framework */,
+				C68FE5631EF0E74C002F67DC /* MultipeerConnectivity.framework */,
 				C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */,
 				C67480EF1D4F2098008C2AFF /* WebKit.framework */,
 				C624DF851CA5516300AD2615 /* QuickLook.framework */,
@@ -249,6 +261,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				C68FE55A1EF0DDBB002F67DC /* BlueTooth */,
 				C60E02E71EC94C2800092857 /* 201705 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
@@ -363,6 +376,19 @@
 				C6369EAE1DA8F175008FFC34 /* FLAnimatedImageView.m */,
 			);
 			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		C68FE55A1EF0DDBB002F67DC /* BlueTooth */ = {
+			isa = PBXGroup;
+			children = (
+				C68FE55B1EF0DDBB002F67DC /* BlueTooth.storyboard */,
+				C68FE55C1EF0DDBB002F67DC /* BlueToothViewController.h */,
+				C68FE55D1EF0DDBB002F67DC /* BlueToothViewController.m */,
+				C68FE55E1EF0DDBB002F67DC /* PeripheralViewController.h */,
+				C68FE55F1EF0DDBB002F67DC /* PeripheralViewController.m */,
+			);
+			name = BlueTooth;
+			path = 201702/BlueTooth;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -486,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C68FFB141CA398E500716DBC /* 58.png in Resources */,
+				C68FE5601EF0DDBB002F67DC /* BlueTooth.storyboard in Resources */,
 				C6502A571DAB31300019079C /* gif4.gif in Resources */,
 				C6502A561DAB31300019079C /* gif3.gif in Resources */,
 				C6502A551DAB31300019079C /* gif2.gif in Resources */,
@@ -607,6 +634,7 @@
 			files = (
 				C6369EB01DA8F175008FFC34 /* FLAnimatedImageView.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
+				C68FE5621EF0DDBB002F67DC /* PeripheralViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C60E02F21EC94CC500092857 /* BlueViewController.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
@@ -614,6 +642,7 @@
 				C6369EAF1DA8F175008FFC34 /* FLAnimatedImage.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
+				C68FE5611EF0DDBB002F67DC /* BlueToothViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 			);

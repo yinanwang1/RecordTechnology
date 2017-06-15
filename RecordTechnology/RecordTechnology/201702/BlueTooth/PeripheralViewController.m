@@ -12,7 +12,8 @@
 
 #define kPeripheralName @"Kenshin Cui's Device" // 外围设备的名称
 #define kServicesUUID @"C4FB2349-72FE-4CA2-94D6-1F3CB16331EE"  // 服务的UUID
-#define kCharacteristicUUID @"6A3E4B28-522D-4B3B-82A9-D5E2004534FC" // 特征的UUID
+#define kCharacteristicUUID @"6A3E4B28-522D-4B3B-82A9-D5E2004534FC" // 特征的UUID 读
+#define kCharacteristicWRITEUUID @"6A3E4B28-522D-4B3B-82A9-D5E2004534CC" // 特征的UUID 写
 
 
 @interface PeripheralViewController () <CBPeripheralManagerDelegate>
@@ -104,9 +105,67 @@
     NSLog(@"didUnsubscribeFromCharacteristic");
 }
 
+- (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveReadRequest:(CBATTRequest *)request;
+{
+    NSLog(@"didReceiveReadRequest");
+    
+    NSLog(@"request is %@.", request);
+    
+    if (request.offset > request.characteristic.value.length) {
+        [self.peripheralManager respondToRequest:request
+                                   withResult:CBATTErrorInvalidOffset];
+        return;
+    }
+    
+    if ([[request.characteristic.UUID UUIDString] isEqual:kCharacteristicUUID]) {
+//        NSLog(@"respondToRequest value is %@", [[NSString alloc] initWithData:request.characteristic.value
+//                                                                     encoding:NSUTF8StringEncoding]);
+//        
+//        request.value = [request.characteristic.value subdataWithRange:NSMakeRange(request.offset,
+//                                                      request.characteristic.value.length - request.offset)];
+        
+        NSString *valueStr = [NSString stringWithFormat:@"%@ -- %@", kPeripheralName, [NSDate date]];
+        NSData *value = [valueStr dataUsingEncoding:NSUTF8StringEncoding];
+        
+        request.value = value;
+        
+        
+        [self.peripheralManager respondToRequest:request withResult:CBATTErrorSuccess];
+    }
+    
+}
+
 - (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray<CBATTRequest *> *)requests
 {
     NSLog(@"didReceiveWriteRequests");
+    
+    for (CBATTRequest *request in requests) {
+        NSLog(@"request is %@.", request);
+        
+        if (request.offset > request.characteristic.value.length) {
+            [self.peripheralManager respondToRequest:request
+                                          withResult:CBATTErrorInvalidOffset];
+            break;
+        }
+        
+        if ([[request.characteristic.UUID UUIDString] isEqual:kCharacteristicUUID]) {
+//            NSLog(@"respondToRequest value is %@", [[NSString alloc] initWithData:request.characteristic.value
+//                                                                         encoding:NSUTF8StringEncoding]);
+//            
+//            request.value = [request.characteristic.value subdataWithRange:NSMakeRange(request.offset,
+//                                                                                       request.characteristic.value.length - request.offset)];
+            
+            NSString *valueStr = [NSString stringWithFormat:@"654321"];
+            NSData *value = [valueStr dataUsingEncoding:NSUTF8StringEncoding];
+            
+            request.value = value;
+            
+            [self.peripheralManager respondToRequest:request withResult:CBATTErrorSuccess];
+            
+            [self.peripheralManager updateValue:value forCharacteristic:self.characteristicM onSubscribedCentrals:nil];
+        }
+    }
+
 }
 
 - (void)peripheralManager:(CBPeripheralManager *)peripheral willRestoreState:(NSDictionary<NSString *,id> *)dict
@@ -129,6 +188,12 @@
     [self updateCharacteristicValue];
 }
 
+- (IBAction)sendMessage:(id)sender
+{
+    
+}
+
+
 
 #pragma mark - Setup Peripheral
 
@@ -150,15 +215,26 @@
 // 创建特征，服务并添加服务到外围设备
 - (void)setupSrvice
 {
+//    NSString *valueStr = [NSString stringWithFormat:@"Beautiful Women"];
+//    NSData *value = [valueStr dataUsingEncoding:NSUTF8StringEncoding];
     CBUUID *characteristicUUID = [CBUUID UUIDWithString:kCharacteristicUUID];
     CBMutableCharacteristic *characteristicM = [[CBMutableCharacteristic alloc] initWithType:characteristicUUID
-                                                                                  properties:CBCharacteristicPropertyNotify
+                                                                                  properties:CBCharacteristicPropertyNotify | CBCharacteristicPropertyWrite
                                                                                        value:nil
-                                                                                 permissions:CBAttributePermissionsReadable];
+                                                                                 permissions:CBAttributePermissionsWriteable];
     self.characteristicM = characteristicM;
+    
+    
+//    CBUUID *characteristicUUID2 = [CBUUID UUIDWithString:kCharacteristicWRITEUUID];
+//    CBMutableCharacteristic *characteristicM2 = [[CBMutableCharacteristic alloc] initWithType:characteristicUUID2
+//                                                                                  properties: CBCharacteristicPropertyWrite
+//                                                                                       value:nil
+//                                                                                 permissions:CBAttributePermissionsWriteable];
+    
     
     CBUUID *serviceUUID = [CBUUID UUIDWithString:kServicesUUID];
     CBMutableService *serviceM = [[CBMutableService alloc] initWithType:serviceUUID primary:YES];
+    
     [serviceM setCharacteristics:@[characteristicM]];
     
     [self.peripheralManager addService:serviceM];
