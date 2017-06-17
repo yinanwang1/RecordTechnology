@@ -38,6 +38,8 @@
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */; };
+		C6C9CDBE1EF56ABC00FA4BA8 /* HXQBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C9CDBC1EF56ABC00FA4BA8 /* HXQBleManager.m */; };
+		C6C9CDC11EF56DC600FA4BA8 /* QeeBikeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C9CDC01EF56DC600FA4BA8 /* QeeBikeTestViewController.m */; };
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
@@ -134,6 +136,11 @@
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C6C9CDBB1EF56ABC00FA4BA8 /* HXQBleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXQBleManager.h; sourceTree = "<group>"; };
+		C6C9CDBC1EF56ABC00FA4BA8 /* HXQBleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXQBleManager.m; sourceTree = "<group>"; };
+		C6C9CDBD1EF56ABC00FA4BA8 /* HXQBleType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXQBleType.h; sourceTree = "<group>"; };
+		C6C9CDBF1EF56DC600FA4BA8 /* QeeBikeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QeeBikeTestViewController.h; sourceTree = "<group>"; };
+		C6C9CDC01EF56DC600FA4BA8 /* QeeBikeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QeeBikeTestViewController.m; sourceTree = "<group>"; };
 		C6E5A9851BDE0650004CD998 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		C6E5A9871BDE0650004CD998 /* UIColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorExtensions.h; sourceTree = "<group>"; };
@@ -381,14 +388,27 @@
 		C68FE55A1EF0DDBB002F67DC /* BlueTooth */ = {
 			isa = PBXGroup;
 			children = (
+				C6C9CDBA1EF56ABC00FA4BA8 /* BleManager */,
 				C68FE55B1EF0DDBB002F67DC /* BlueTooth.storyboard */,
 				C68FE55C1EF0DDBB002F67DC /* BlueToothViewController.h */,
 				C68FE55D1EF0DDBB002F67DC /* BlueToothViewController.m */,
 				C68FE55E1EF0DDBB002F67DC /* PeripheralViewController.h */,
 				C68FE55F1EF0DDBB002F67DC /* PeripheralViewController.m */,
+				C6C9CDBF1EF56DC600FA4BA8 /* QeeBikeTestViewController.h */,
+				C6C9CDC01EF56DC600FA4BA8 /* QeeBikeTestViewController.m */,
 			);
 			name = BlueTooth;
 			path = 201702/BlueTooth;
+			sourceTree = "<group>";
+		};
+		C6C9CDBA1EF56ABC00FA4BA8 /* BleManager */ = {
+			isa = PBXGroup;
+			children = (
+				C6C9CDBB1EF56ABC00FA4BA8 /* HXQBleManager.h */,
+				C6C9CDBC1EF56ABC00FA4BA8 /* HXQBleManager.m */,
+				C6C9CDBD1EF56ABC00FA4BA8 /* HXQBleType.h */,
+			);
+			path = BleManager;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -422,13 +442,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E41E2551ABAB2DC0008984F /* Build configuration list for PBXNativeTarget "RecordTechnology" */;
 			buildPhases = (
-				99FEE42A4268A4BF1E294230 /* 📦 Check Pods Manifest.lock */,
+				99FEE42A4268A4BF1E294230 /* [CP] Check Pods Manifest.lock */,
 				8E41E22E1ABAB2DC0008984F /* Sources */,
 				8E41E22F1ABAB2DC0008984F /* Frameworks */,
 				8E41E2301ABAB2DC0008984F /* Resources */,
 				8E0E6B7A1ACBBDDD00759F64 /* Embed App Extensions */,
-				DA122EB25AEDBACAAD18C0AE /* 📦 Embed Pods Frameworks */,
-				9AFF70B8588F76391AA80CC1 /* 📦 Copy Pods Resources */,
+				DA122EB25AEDBACAAD18C0AE /* [CP] Embed Pods Frameworks */,
+				9AFF70B8588F76391AA80CC1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -443,12 +463,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E41E2581ABAB2DC0008984F /* Build configuration list for PBXNativeTarget "RecordTechnologyTests" */;
 			buildPhases = (
-				C4E90AC0DD1AD2D8CEE69AFD /* 📦 Check Pods Manifest.lock */,
+				C4E90AC0DD1AD2D8CEE69AFD /* [CP] Check Pods Manifest.lock */,
 				8E41E2471ABAB2DC0008984F /* Sources */,
 				8E41E2481ABAB2DC0008984F /* Frameworks */,
 				8E41E2491ABAB2DC0008984F /* Resources */,
-				1FBF0BFD1964E18D07634F6E /* 📦 Embed Pods Frameworks */,
-				A0408F67272A8F249651C289 /* 📦 Copy Pods Resources */,
+				1FBF0BFD1964E18D07634F6E /* [CP] Embed Pods Frameworks */,
+				A0408F67272A8F249651C289 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -472,7 +492,7 @@
 				TargetAttributes = {
 					8E41E2311ABAB2DC0008984F = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 2LYTD2VW3G;
+						DevelopmentTeam = 2L5Z45N6U9;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -535,14 +555,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1FBF0BFD1964E18D07634F6E /* 📦 Embed Pods Frameworks */ = {
+		1FBF0BFD1964E18D07634F6E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,29 +570,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		99FEE42A4268A4BF1E294230 /* 📦 Check Pods Manifest.lock */ = {
+		99FEE42A4268A4BF1E294230 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9AFF70B8588F76391AA80CC1 /* 📦 Copy Pods Resources */ = {
+		9AFF70B8588F76391AA80CC1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,14 +600,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecordTechnology/Pods-RecordTechnology-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0408F67272A8F249651C289 /* 📦 Copy Pods Resources */ = {
+		A0408F67272A8F249651C289 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,29 +615,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C4E90AC0DD1AD2D8CEE69AFD /* 📦 Check Pods Manifest.lock */ = {
+		C4E90AC0DD1AD2D8CEE69AFD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DA122EB25AEDBACAAD18C0AE /* 📦 Embed Pods Frameworks */ = {
+		DA122EB25AEDBACAAD18C0AE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,6 +656,7 @@
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C68FE5621EF0DDBB002F67DC /* PeripheralViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
+				C6C9CDC11EF56DC600FA4BA8 /* QeeBikeTestViewController.m in Sources */,
 				C60E02F21EC94CC500092857 /* BlueViewController.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C60E02EF1EC94CBB00092857 /* RedViewController.m in Sources */,
@@ -645,6 +666,7 @@
 				C68FE5611EF0DDBB002F67DC /* BlueToothViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
+				C6C9CDBE1EF56ABC00FA4BA8 /* HXQBleManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,16 +814,16 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2LYTD2VW3G;
+				DEVELOPMENT_TEAM = 2L5Z45N6U9;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qeebike.customer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huanxiao.dormapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "00ac28df-ce6f-40cd-93f8-ddd4882cb185";
-				PROVISIONING_PROFILE_SPECIFIER = qeebike_dev;
+				PROVISIONING_PROFILE = "b468e0ad-f280-43e7-80ec-f0a718143af1";
+				PROVISIONING_PROFILE_SPECIFIER = dorm_app_dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/RecordTechnology-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -819,16 +841,16 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2LYTD2VW3G;
+				DEVELOPMENT_TEAM = 2L5Z45N6U9;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qeebike.customer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huanxiao.dormapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "00ac28df-ce6f-40cd-93f8-ddd4882cb185";
-				PROVISIONING_PROFILE_SPECIFIER = qeebike_dev;
+				PROVISIONING_PROFILE = "b468e0ad-f280-43e7-80ec-f0a718143af1";
+				PROVISIONING_PROFILE_SPECIFIER = dorm_app_dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/RecordTechnology-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

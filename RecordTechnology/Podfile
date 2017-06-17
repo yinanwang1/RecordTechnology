@@ -24,6 +24,7 @@ pod 'LuaViewSDK', :git=>'https://github.com/alibaba/LuaViewSDK.git'
 pod 'AMapLocation', '=2.1.0'
 pod 'AMap3DMap', '=4.2.0'
 pod 'AMapSearch', '=4.2.0'
+pod 'BabyBluetooth', '= 0.7.0'
 
 end
 
