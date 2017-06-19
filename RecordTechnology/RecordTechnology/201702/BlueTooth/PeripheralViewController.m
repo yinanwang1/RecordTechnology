@@ -10,10 +10,10 @@
 
 #import <CoreBluetooth/CoreBluetooth.h>
 
-#define kPeripheralName @"Kenshin Cui's Device" // 外围设备的名称
-#define kServicesUUID @"C4FB2349-72FE-4CA2-94D6-1F3CB16331EE"  // 服务的UUID
-#define kCharacteristicUUID @"6A3E4B28-522D-4B3B-82A9-D5E2004534FC" // 特征的UUID 读
-#define kCharacteristicWRITEUUID @"6A3E4B28-522D-4B3B-82A9-D5E2004534CC" // 特征的UUID 写
+#define kPeripheralName @"qeebike_123456" // 外围设备的名称
+#define kServicesUUID @"00001802-0000-1000-8000-00805f9b34fb"  // 服务的UUID
+#define kCharacteristicUUID @"00002ABC-0000-1000-8000-00805f9b34fb" // 特征的UUID 读
+#define kCharacteristicWRITEUUID @"00002A06-0000-1000-8000-00805f9b34fb" // 特征的UUID 写
 
 
 @interface PeripheralViewController () <CBPeripheralManagerDelegate>
@@ -219,23 +219,23 @@
 //    NSData *value = [valueStr dataUsingEncoding:NSUTF8StringEncoding];
     CBUUID *characteristicUUID = [CBUUID UUIDWithString:kCharacteristicUUID];
     CBMutableCharacteristic *characteristicM = [[CBMutableCharacteristic alloc] initWithType:characteristicUUID
-                                                                                  properties:CBCharacteristicPropertyNotify | CBCharacteristicPropertyWrite
+                                                                                  properties:CBCharacteristicPropertyNotify | CBCharacteristicPropertyRead
                                                                                        value:nil
-                                                                                 permissions:CBAttributePermissionsWriteable];
+                                                                                 permissions:CBAttributePermissionsReadable];
     self.characteristicM = characteristicM;
     
     
-//    CBUUID *characteristicUUID2 = [CBUUID UUIDWithString:kCharacteristicWRITEUUID];
-//    CBMutableCharacteristic *characteristicM2 = [[CBMutableCharacteristic alloc] initWithType:characteristicUUID2
-//                                                                                  properties: CBCharacteristicPropertyWrite
-//                                                                                       value:nil
-//                                                                                 permissions:CBAttributePermissionsWriteable];
+    CBUUID *characteristicUUID2 = [CBUUID UUIDWithString:kCharacteristicWRITEUUID];
+    CBMutableCharacteristic *characteristicM2 = [[CBMutableCharacteristic alloc] initWithType:characteristicUUID2
+                                                                                  properties: CBCharacteristicPropertyWrite
+                                                                                       value:nil
+                                                                                 permissions:CBAttributePermissionsWriteable];
     
     
     CBUUID *serviceUUID = [CBUUID UUIDWithString:kServicesUUID];
     CBMutableService *serviceM = [[CBMutableService alloc] initWithType:serviceUUID primary:YES];
     
-    [serviceM setCharacteristics:@[characteristicM]];
+    [serviceM setCharacteristics:@[characteristicM, characteristicM2]];
     
     [self.peripheralManager addService:serviceM];
 }

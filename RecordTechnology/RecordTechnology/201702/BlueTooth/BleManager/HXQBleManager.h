@@ -17,6 +17,8 @@
 
 - (void)connectSuccess:(BOOL)success;
 
+- (void)writeLog:(NSString *)log;
+
 @end
 
 

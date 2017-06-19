@@ -65,6 +65,8 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     {
         if (self.hasConnected) {
             // 已经连接不再进行连接
+            [self.delegate writeLog:@"已经连接不再进行连接"];
+            
             return;
         }
         if (nil !=  self.peripheral) {
@@ -90,6 +92,8 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     // 开始扫描蓝牙设备
     self.babyBluetooth.scanForPeripherals().begin();
     
+    [self.delegate writeLog:@"开始扫描蓝牙设备"];
+    
 }
 
 /**
@@ -107,13 +111,13 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     if (self.hasConnected
         && (nil != self.peripheral)
         && (nil != self.writeCharacteristic)) {
-        [self.peripheral writeValue:operationData forCharacteristic:self.writeCharacteristic type:CBCharacteristicWriteWithResponse];
+        [self.peripheral writeValue:operationData forCharacteristic:self.writeCharacteristic type:CBCharacteristicWriteWithoutResponse];
     } else {
         if (nil !=  self.peripheral) {
             self.babyBluetooth.having(self.peripheral).and.channel(self.bikeNoStr).then.connectToPeripherals().begin();
             
             if (nil != self.writeCharacteristic) {
-                [self.peripheral writeValue:operationData forCharacteristic:self.writeCharacteristic type:CBCharacteristicWriteWithResponse];
+                [self.peripheral writeValue:operationData forCharacteristic:self.writeCharacteristic type:CBCharacteristicWriteWithoutResponse];
             } else {
                 [self.operationDataMArr addObject:operationData];
             }
@@ -134,6 +138,16 @@ static NSTimeInterval const kTimeOut                = 50.0f;
 
 - (void)close
 {
+    self.hasConnected = NO;
+    self.bikeNoStr = nil;
+    self.delegate  = nil;
+    
+    self.peripheral         = nil;
+    self.service            = nil;
+    self.writeCharacteristic     = nil;
+    self.readCharacteristic     = nil;
+    [self.operationDataMArr removeAllObjects];
+    
     [self.babyBluetooth cancelAllPeripheralsConnection];
     [self.babyBluetooth cancelScan];
 }
@@ -156,10 +170,14 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     [self.babyBluetooth setBlockOnDiscoverToPeripherals:^(CBCentralManager *central, CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI) {
         DLog(@"搜索到了设备:%@",peripheral.name);
         
+        [weakSelf.delegate writeLog:[NSString stringWithFormat:@"搜索到了设备:%@",peripheral.name]];
+        
         NSString *bikeBleName = [NSString stringWithFormat:@"%@%@", kBleNamePrefix, weakSelf.bikeNoStr];
         
         if ([peripheral.name isEqualToString:bikeBleName]) {
             weakSelf.peripheral = peripheral;
+            
+            [weakSelf.delegate writeLog:@"开始连接蓝牙"];
             
             // 开始连接蓝牙
             weakSelf.babyBluetooth.having(weakSelf.peripheral).and.channel(weakSelf.bikeNoStr).then.connectToPeripherals().discoverServices().begin();
@@ -179,6 +197,8 @@ static NSTimeInterval const kTimeOut                = 50.0f;
         for (CBService *s in peripheral.services) {
             if ([s.UUID isEqual:uuid]) {
                 weakSelf.service = s;
+                
+                [weakSelf.delegate writeLog:@"发现service， 开始发现characteristic。"];
                 
                 [peripheral discoverCharacteristics:@[writeCharacteristicsUuid, readCharacteristicsUuid] forService:s];
             }
@@ -200,15 +220,19 @@ static NSTimeInterval const kTimeOut                = 50.0f;
                 
                 // 如果有未发送的指令进行发送
                 for (NSData *data in weakSelf.operationDataMArr) {
-                    [weakSelf.peripheral writeValue:data forCharacteristic:c type:CBCharacteristicWriteWithResponse];
+                    [weakSelf.peripheral writeValue:data forCharacteristic:c type:CBCharacteristicWriteWithoutResponse];
                 }
                 
                 [weakSelf.operationDataMArr removeAllObjects];
             } else if ([c.UUID isEqual:readCharacteristicsUuid]) {
+                weakSelf.readCharacteristic = c;
+                
                 [weakSelf.babyBluetooth notify:weakSelf.peripheral
                                 characteristic:c
                                          block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
                                              DLog(@"notify value is %@.", characteristics.value);
+                                             
+                                             [weakSelf.delegate writeLog:@"监听到读UUID"];
                                              
                                              CBUUID *uuid = [CBUUID UUIDWithString:kCharacteristicReadUUID];
                                              
@@ -224,6 +248,8 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     [self.babyBluetooth setBlockOnDidUpdateNotificationStateForCharacteristicAtChannel:self.bikeNoStr block:^(CBCharacteristic *characteristic, NSError *error) {
         DLog(@"characteristic name:%@ value is:%@",characteristic.UUID, characteristic.value);
         
+        [weakSelf.delegate writeLog:@"监听到读UUID的值更新"];
+        
         CBUUID *uuid = [CBUUID UUIDWithString:kCharacteristicReadUUID];
         
         if ([characteristic.UUID isEqual:uuid]) {
@@ -235,24 +261,13 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     [self.babyBluetooth setBlockOnReadValueForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
         DLog(@"characteristic name:%@ value is:%@",characteristics.UUID,characteristics.value);
         
+        [weakSelf.delegate writeLog:@"读取到读UUID的值"];
+        
         CBUUID *uuid = [CBUUID UUIDWithString:kCharacteristicReadUUID];
         
         if ([characteristics.UUID isEqual:uuid]) {
             [weakSelf resposeData:characteristics.value];
         }
-    }];
-    
-    //设置发现characteristics的descriptors的委托
-    [self.babyBluetooth setBlockOnDiscoverDescriptorsForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error) {
-        DLog(@"===characteristic name:%@",characteristic.service.UUID);
-        for (CBDescriptor *d in characteristic.descriptors) {
-            DLog(@"CBDescriptor name is :%@",d.UUID);
-        }
-    }];
-    
-    //设置读取Descriptor的委托
-    [self.babyBluetooth setBlockOnReadValueForDescriptors:^(CBPeripheral *peripheral, CBDescriptor *descriptor, NSError *error) {
-        DLog(@"Descriptor name:%@ value is:%@",descriptor.characteristic.UUID, descriptor.value);
     }];
     
     
@@ -270,10 +285,14 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     
     [self.babyBluetooth setBlockOnCancelAllPeripheralsConnectionBlock:^(CBCentralManager *centralManager) {
         DLog(@"setBlockOnCancelAllPeripheralsConnectionBlock");
+        
+        [weakSelf.delegate writeLog:@"取消所有的外围设备的连接"];
     }];
     
     [self.babyBluetooth setBlockOnCancelScanBlock:^(CBCentralManager *centralManager) {
         DLog(@"setBlockOnCancelScanBlock");
+        
+        [weakSelf.delegate writeLog:@"取消外围设备的扫描"];
     }];
     
     //示例:
@@ -281,8 +300,6 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     NSDictionary *scanForPeripheralsWithOptions = @{CBCentralManagerScanOptionAllowDuplicatesKey:@YES};
     //连接设备->
     [self.babyBluetooth setBabyOptionsWithScanForPeripheralsWithOptions:scanForPeripheralsWithOptions connectPeripheralWithOptions:nil scanForPeripheralsWithServices:nil discoverWithServices:nil discoverWithCharacteristics:nil];
-    
-    BabyRhythm *rhythm = [[BabyRhythm alloc] init];
     
     
     //设置设备连接成功的委托,同一个baby对象，使用不同的channel切换委托回调
@@ -328,37 +345,18 @@ static NSTimeInterval const kTimeOut                = 50.0f;
         }
     }];
     
-    //读取rssi的委托
-    [self.babyBluetooth setBlockOnDidReadRSSI:^(NSNumber *RSSI, NSError *error) {
-        DLog(@"setBlockOnDidReadRSSI:RSSI:%@",RSSI);
-    }];
-    
-    
-    //设置beats break委托
-    [rhythm setBlockOnBeatsBreak:^(BabyRhythm *bry) {
-        DLog(@"setBlockOnBeatsBreak call");
-    }];
-    
-    //设置beats over委托
-    [rhythm setBlockOnBeatsOver:^(BabyRhythm *bry) {
-        DLog(@"setBlockOnBeatsOver call");
-    }];
-    
-    NSDictionary *connectOptions = @{CBConnectPeripheralOptionNotifyOnConnectionKey:@YES,
-                                     CBConnectPeripheralOptionNotifyOnDisconnectionKey:@YES,
-                                     CBConnectPeripheralOptionNotifyOnNotificationKey:@YES};
-    
-    [self.babyBluetooth setBabyOptionsAtChannel:self.bikeNoStr scanForPeripheralsWithOptions:scanForPeripheralsWithOptions connectPeripheralWithOptions:connectOptions scanForPeripheralsWithServices:nil discoverWithServices:nil discoverWithCharacteristics:nil];
-    
-    
     //设置写数据成功的block
     [self.babyBluetooth setBlockOnDidWriteValueForCharacteristicAtChannel:self.bikeNoStr block:^(CBCharacteristic *characteristic, NSError *error) {
         DLog(@"setBlockOnDidWriteValueForCharacteristicAtChannel characteristic:%@ and new value:%@",characteristic.UUID, characteristic.value);
+        
+        [weakSelf.delegate writeLog:[NSString stringWithFormat:@"setBlockOnDidWriteValueForCharacteristicAtChannel characteristic:%@ and new value:%@",characteristic.UUID, characteristic.value]];
     }];
     
     //设置通知状态改变的block
     [self.babyBluetooth setBlockOnDidUpdateNotificationStateForCharacteristicAtChannel:self.bikeNoStr block:^(CBCharacteristic *characteristic, NSError *error) {
         DLog(@"uid:%@,isNotifying:%@",characteristic.UUID,characteristic.isNotifying?@"on":@"off");
+        
+        [weakSelf.delegate writeLog:[NSString stringWithFormat:@"uid:%@,isNotifying:%@",characteristic.UUID,characteristic.isNotifying?@"on":@"off"]];
     }];
 }
 
@@ -369,6 +367,7 @@ static NSTimeInterval const kTimeOut                = 50.0f;
 {
     NSString *typeStr = [NSString stringWithFormat:@"%zd", type];
     NSString *dataStr = [NSString stringWithFormat:@"%@,%@,%@", key, typeStr, content];
+    
     NSData *data = [dataStr dataUsingEncoding:NSUTF8StringEncoding];
     
     return data;
@@ -376,10 +375,6 @@ static NSTimeInterval const kTimeOut                = 50.0f;
 
 - (void)resposeData:(NSData *)data
 {
-    if (![self.delegate respondsToSelector:@selector(responseWithType:content:)]) {
-        return;
-    }
-    
     if (0 >= [data length]) {
         [self responseDelegateWithType:kBleResponseTypeError content:@"数据为空"];
         

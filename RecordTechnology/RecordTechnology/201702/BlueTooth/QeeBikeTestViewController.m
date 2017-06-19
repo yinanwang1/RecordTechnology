@@ -33,6 +33,28 @@
     // Do any additional setup after loading the view.
     
     [HXQBleManager sharedManager];
+    
+    UIButton *clear = [UIButton buttonWithType:UIButtonTypeCustom];
+    [clear setFrame:CGRectMake(0, 0, 44, 44)];
+    [clear setTitle:@"清空" forState:UIControlStateNormal];
+    [clear addTarget:self action:@selector(clearAll) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:clear];
+    
+}
+
+- (void)clearAll
+{
+    [[HXQBleManager sharedManager] close];
+    
+    self.bikeNoTextField.text = nil;
+    self.keyTextField.text = nil;
+    self.typeTextField.text = nil;
+    self.contentTextField.text = nil;
+    self.requestTextView.text = nil;
+    self.responseTextView.text = nil;
+    
+    [self.sendBtn setTitle:@"连接" forState:UIControlStateNormal];
 }
 
 - (void)responseWithType:(BleResponseType)type content:(NSString *)content
@@ -53,6 +75,11 @@
         
         [self connect:nil];
     }
+}
+
+- (void)writeLog:(NSString *)log
+{
+    self.requestTextView.text = [NSString stringWithFormat:@"%@\n%@", self.requestTextView.text, log];
 }
 
 - (void)didReceiveMemoryWarning {
