@@ -15,10 +15,6 @@
 @required
 - (void)responseWithType:(BleResponseType)type content:(NSString *)content;
 
-- (void)connectSuccess:(BOOL)success;
-
-- (void)writeLog:(NSString *)log;
-
 @end
 
 

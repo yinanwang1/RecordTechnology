@@ -38,8 +38,13 @@
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */; };
-		C6C9CDBE1EF56ABC00FA4BA8 /* HXQBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C9CDBC1EF56ABC00FA4BA8 /* HXQBleManager.m */; };
-		C6C9CDC11EF56DC600FA4BA8 /* QeeBikeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C9CDC01EF56DC600FA4BA8 /* QeeBikeTestViewController.m */; };
+		C6CA9B041EFBCAB7009F0CF8 /* QeeBikeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CA9B021EFBCAB7009F0CF8 /* QeeBikeTestViewController.m */; };
+		C6CA9B0C1EFBCB78009F0CF8 /* AESCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CA9B081EFBCB78009F0CF8 /* AESCipher.m */; };
+		C6CA9B0D1EFBCB78009F0CF8 /* HXQBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CA9B0A1EFBCB78009F0CF8 /* HXQBleManager.m */; };
+		C6CA9B241EFBEFB7009F0CF8 /* HXQErrorRemindView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CA9B1D1EFBEFB7009F0CF8 /* HXQErrorRemindView.m */; };
+		C6CA9B251EFBEFB7009F0CF8 /* HXQIndicatorProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CA9B201EFBEFB7009F0CF8 /* HXQIndicatorProgressView.m */; };
+		C6CA9B261EFBEFB7009F0CF8 /* HXQIndicatorProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6CA9B211EFBEFB7009F0CF8 /* HXQIndicatorProgressView.xib */; };
+		C6CA9B271EFBEFB7009F0CF8 /* MBProgressHUD+HXS.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CA9B231EFBEFB7009F0CF8 /* MBProgressHUD+HXS.m */; };
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
@@ -136,11 +141,20 @@
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		C6C9CDBB1EF56ABC00FA4BA8 /* HXQBleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXQBleManager.h; sourceTree = "<group>"; };
-		C6C9CDBC1EF56ABC00FA4BA8 /* HXQBleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXQBleManager.m; sourceTree = "<group>"; };
-		C6C9CDBD1EF56ABC00FA4BA8 /* HXQBleType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXQBleType.h; sourceTree = "<group>"; };
-		C6C9CDBF1EF56DC600FA4BA8 /* QeeBikeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QeeBikeTestViewController.h; sourceTree = "<group>"; };
-		C6C9CDC01EF56DC600FA4BA8 /* QeeBikeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QeeBikeTestViewController.m; sourceTree = "<group>"; };
+		C6CA9B011EFBCAB7009F0CF8 /* QeeBikeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QeeBikeTestViewController.h; sourceTree = "<group>"; };
+		C6CA9B021EFBCAB7009F0CF8 /* QeeBikeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QeeBikeTestViewController.m; sourceTree = "<group>"; };
+		C6CA9B071EFBCB78009F0CF8 /* AESCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCipher.h; sourceTree = "<group>"; };
+		C6CA9B081EFBCB78009F0CF8 /* AESCipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCipher.m; sourceTree = "<group>"; };
+		C6CA9B091EFBCB78009F0CF8 /* HXQBleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXQBleManager.h; sourceTree = "<group>"; };
+		C6CA9B0A1EFBCB78009F0CF8 /* HXQBleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXQBleManager.m; sourceTree = "<group>"; };
+		C6CA9B0B1EFBCB78009F0CF8 /* HXQBleType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXQBleType.h; sourceTree = "<group>"; };
+		C6CA9B1C1EFBEFB7009F0CF8 /* HXQErrorRemindView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXQErrorRemindView.h; sourceTree = "<group>"; };
+		C6CA9B1D1EFBEFB7009F0CF8 /* HXQErrorRemindView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXQErrorRemindView.m; sourceTree = "<group>"; };
+		C6CA9B1F1EFBEFB7009F0CF8 /* HXQIndicatorProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXQIndicatorProgressView.h; sourceTree = "<group>"; };
+		C6CA9B201EFBEFB7009F0CF8 /* HXQIndicatorProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXQIndicatorProgressView.m; sourceTree = "<group>"; };
+		C6CA9B211EFBEFB7009F0CF8 /* HXQIndicatorProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXQIndicatorProgressView.xib; sourceTree = "<group>"; };
+		C6CA9B221EFBEFB7009F0CF8 /* MBProgressHUD+HXS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HXS.h"; sourceTree = "<group>"; };
+		C6CA9B231EFBEFB7009F0CF8 /* MBProgressHUD+HXS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HXS.m"; sourceTree = "<group>"; };
 		C6E5A9851BDE0650004CD998 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		C6E5A9871BDE0650004CD998 /* UIColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorExtensions.h; sourceTree = "<group>"; };
@@ -345,6 +359,7 @@
 		C61771E21ABC6BF30097991C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C6CA9B1B1EFBEFB7009F0CF8 /* HXSProgress */,
 				C6369EAA1DA8F175008FFC34 /* FLAnimatedImage */,
 				C6E5A9841BDE0650004CD998 /* Extension */,
 				8EF6A08E1B315C6A00694EDE /* Macro */,
@@ -388,27 +403,67 @@
 		C68FE55A1EF0DDBB002F67DC /* BlueTooth */ = {
 			isa = PBXGroup;
 			children = (
-				C6C9CDBA1EF56ABC00FA4BA8 /* BleManager */,
+				C6CA9AFC1EFBCAB7009F0CF8 /* Demo */,
 				C68FE55B1EF0DDBB002F67DC /* BlueTooth.storyboard */,
 				C68FE55C1EF0DDBB002F67DC /* BlueToothViewController.h */,
 				C68FE55D1EF0DDBB002F67DC /* BlueToothViewController.m */,
 				C68FE55E1EF0DDBB002F67DC /* PeripheralViewController.h */,
 				C68FE55F1EF0DDBB002F67DC /* PeripheralViewController.m */,
-				C6C9CDBF1EF56DC600FA4BA8 /* QeeBikeTestViewController.h */,
-				C6C9CDC01EF56DC600FA4BA8 /* QeeBikeTestViewController.m */,
 			);
 			name = BlueTooth;
 			path = 201702/BlueTooth;
 			sourceTree = "<group>";
 		};
-		C6C9CDBA1EF56ABC00FA4BA8 /* BleManager */ = {
+		C6CA9AFC1EFBCAB7009F0CF8 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				C6C9CDBB1EF56ABC00FA4BA8 /* HXQBleManager.h */,
-				C6C9CDBC1EF56ABC00FA4BA8 /* HXQBleManager.m */,
-				C6C9CDBD1EF56ABC00FA4BA8 /* HXQBleType.h */,
+				C6CA9B051EFBCB78009F0CF8 /* BleManager */,
+				C6CA9B011EFBCAB7009F0CF8 /* QeeBikeTestViewController.h */,
+				C6CA9B021EFBCAB7009F0CF8 /* QeeBikeTestViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		C6CA9B051EFBCB78009F0CF8 /* BleManager */ = {
+			isa = PBXGroup;
+			children = (
+				C6CA9B061EFBCB78009F0CF8 /* AESCipher */,
+				C6CA9B091EFBCB78009F0CF8 /* HXQBleManager.h */,
+				C6CA9B0A1EFBCB78009F0CF8 /* HXQBleManager.m */,
+				C6CA9B0B1EFBCB78009F0CF8 /* HXQBleType.h */,
 			);
 			path = BleManager;
+			sourceTree = "<group>";
+		};
+		C6CA9B061EFBCB78009F0CF8 /* AESCipher */ = {
+			isa = PBXGroup;
+			children = (
+				C6CA9B071EFBCB78009F0CF8 /* AESCipher.h */,
+				C6CA9B081EFBCB78009F0CF8 /* AESCipher.m */,
+			);
+			path = AESCipher;
+			sourceTree = "<group>";
+		};
+		C6CA9B1B1EFBEFB7009F0CF8 /* HXSProgress */ = {
+			isa = PBXGroup;
+			children = (
+				C6CA9B1C1EFBEFB7009F0CF8 /* HXQErrorRemindView.h */,
+				C6CA9B1D1EFBEFB7009F0CF8 /* HXQErrorRemindView.m */,
+				C6CA9B1E1EFBEFB7009F0CF8 /* Indicator */,
+				C6CA9B221EFBEFB7009F0CF8 /* MBProgressHUD+HXS.h */,
+				C6CA9B231EFBEFB7009F0CF8 /* MBProgressHUD+HXS.m */,
+			);
+			path = HXSProgress;
+			sourceTree = "<group>";
+		};
+		C6CA9B1E1EFBEFB7009F0CF8 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				C6CA9B1F1EFBEFB7009F0CF8 /* HXQIndicatorProgressView.h */,
+				C6CA9B201EFBEFB7009F0CF8 /* HXQIndicatorProgressView.m */,
+				C6CA9B211EFBEFB7009F0CF8 /* HXQIndicatorProgressView.xib */,
+			);
+			path = Indicator;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -538,6 +593,7 @@
 				C6502A551DAB31300019079C /* gif2.gif in Resources */,
 				C6502A4F1DAB300B0019079C /* Images.xcassets in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
+				C6CA9B261EFBEFB7009F0CF8 /* HXQIndicatorProgressView.xib in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
 				C60E02EA1EC94C7F00092857 /* Unwind.storyboard in Resources */,
@@ -652,21 +708,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CA9B241EFBEFB7009F0CF8 /* HXQErrorRemindView.m in Sources */,
 				C6369EB01DA8F175008FFC34 /* FLAnimatedImageView.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C68FE5621EF0DDBB002F67DC /* PeripheralViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
-				C6C9CDC11EF56DC600FA4BA8 /* QeeBikeTestViewController.m in Sources */,
+				C6CA9B041EFBCAB7009F0CF8 /* QeeBikeTestViewController.m in Sources */,
 				C60E02F21EC94CC500092857 /* BlueViewController.m in Sources */,
+				C6CA9B271EFBEFB7009F0CF8 /* MBProgressHUD+HXS.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C60E02EF1EC94CBB00092857 /* RedViewController.m in Sources */,
 				C6369EAF1DA8F175008FFC34 /* FLAnimatedImage.m in Sources */,
+				C6CA9B0D1EFBCB78009F0CF8 /* HXQBleManager.m in Sources */,
+				C6CA9B0C1EFBCB78009F0CF8 /* AESCipher.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
 				C68FE5611EF0DDBB002F67DC /* BlueToothViewController.m in Sources */,
+				C6CA9B251EFBEFB7009F0CF8 /* HXQIndicatorProgressView.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
-				C6C9CDBE1EF56ABC00FA4BA8 /* HXQBleManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

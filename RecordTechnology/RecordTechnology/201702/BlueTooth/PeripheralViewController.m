@@ -117,7 +117,7 @@
         return;
     }
     
-    if ([[request.characteristic.UUID UUIDString] isEqual:kCharacteristicUUID]) {
+    if ([[[request.characteristic.UUID UUIDString] lowercaseString] isEqual:[kCharacteristicUUID lowercaseString]]) {
 //        NSLog(@"respondToRequest value is %@", [[NSString alloc] initWithData:request.characteristic.value
 //                                                                     encoding:NSUTF8StringEncoding]);
 //        
@@ -148,7 +148,7 @@
             break;
         }
         
-        if ([[request.characteristic.UUID UUIDString] isEqual:kCharacteristicUUID]) {
+        if ([[[request.characteristic.UUID UUIDString] lowercaseString] isEqual:[kCharacteristicWRITEUUID lowercaseString]]) {
 //            NSLog(@"respondToRequest value is %@", [[NSString alloc] initWithData:request.characteristic.value
 //                                                                         encoding:NSUTF8StringEncoding]);
 //            
@@ -222,14 +222,15 @@
                                                                                   properties:CBCharacteristicPropertyNotify | CBCharacteristicPropertyRead
                                                                                        value:nil
                                                                                  permissions:CBAttributePermissionsReadable];
-    self.characteristicM = characteristicM;
     
     
     CBUUID *characteristicUUID2 = [CBUUID UUIDWithString:kCharacteristicWRITEUUID];
     CBMutableCharacteristic *characteristicM2 = [[CBMutableCharacteristic alloc] initWithType:characteristicUUID2
-                                                                                  properties: CBCharacteristicPropertyWrite
+                                                                                  properties: CBCharacteristicPropertyWriteWithoutResponse | CBCharacteristicWriteWithResponse
                                                                                        value:nil
                                                                                  permissions:CBAttributePermissionsWriteable];
+    
+    self.characteristicM = characteristicM2;
     
     
     CBUUID *serviceUUID = [CBUUID UUIDWithString:kServicesUUID];

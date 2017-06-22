@@ -9,13 +9,14 @@
 #import "HXQBleManager.h"
 
 #import "BabyBluetooth.h"
+#import "AESCipher.h"
 
 
 static NSString * const kBleNamePrefix              = @"qeebike_";
 static NSString * const kServiceUUID                = @"00001802-0000-1000-8000-00805f9b34fb";
 static NSString * const kCharacteristicWriteUUID    = @"00002A06-0000-1000-8000-00805f9b34fb";
 static NSString * const kCharacteristicReadUUID     = @"00002ABC-0000-1000-8000-00805f9b34fb";
-static NSTimeInterval const kTimeOut                = 50.0f;
+static NSTimeInterval const kTimeOut                = 10.0f;
 
 
 @interface HXQBleManager ()
@@ -65,8 +66,6 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     {
         if (self.hasConnected) {
             // 已经连接不再进行连接
-            [self.delegate writeLog:@"已经连接不再进行连接"];
-            
             return;
         }
         if (nil !=  self.peripheral) {
@@ -91,9 +90,6 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     
     // 开始扫描蓝牙设备
     self.babyBluetooth.scanForPeripherals().begin();
-    
-    [self.delegate writeLog:@"开始扫描蓝牙设备"];
-    
 }
 
 /**
@@ -170,14 +166,10 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     [self.babyBluetooth setBlockOnDiscoverToPeripherals:^(CBCentralManager *central, CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI) {
         DLog(@"搜索到了设备:%@",peripheral.name);
         
-        [weakSelf.delegate writeLog:[NSString stringWithFormat:@"搜索到了设备:%@",peripheral.name]];
-        
         NSString *bikeBleName = [NSString stringWithFormat:@"%@%@", kBleNamePrefix, weakSelf.bikeNoStr];
         
         if ([peripheral.name isEqualToString:bikeBleName]) {
             weakSelf.peripheral = peripheral;
-            
-            [weakSelf.delegate writeLog:@"开始连接蓝牙"];
             
             // 开始连接蓝牙
             weakSelf.babyBluetooth.having(weakSelf.peripheral).and.channel(weakSelf.bikeNoStr).then.connectToPeripherals().discoverServices().begin();
@@ -197,8 +189,6 @@ static NSTimeInterval const kTimeOut                = 50.0f;
         for (CBService *s in peripheral.services) {
             if ([s.UUID isEqual:uuid]) {
                 weakSelf.service = s;
-                
-                [weakSelf.delegate writeLog:@"发现service， 开始发现characteristic。"];
                 
                 [peripheral discoverCharacteristics:@[writeCharacteristicsUuid, readCharacteristicsUuid] forService:s];
             }
@@ -232,8 +222,6 @@ static NSTimeInterval const kTimeOut                = 50.0f;
                                          block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
                                              DLog(@"notify value is %@.", characteristics.value);
                                              
-                                             [weakSelf.delegate writeLog:@"监听到读UUID"];
-                                             
                                              CBUUID *uuid = [CBUUID UUIDWithString:kCharacteristicReadUUID];
                                              
                                              if ([characteristics.UUID isEqual:uuid]) {
@@ -248,8 +236,6 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     [self.babyBluetooth setBlockOnDidUpdateNotificationStateForCharacteristicAtChannel:self.bikeNoStr block:^(CBCharacteristic *characteristic, NSError *error) {
         DLog(@"characteristic name:%@ value is:%@",characteristic.UUID, characteristic.value);
         
-        [weakSelf.delegate writeLog:@"监听到读UUID的值更新"];
-        
         CBUUID *uuid = [CBUUID UUIDWithString:kCharacteristicReadUUID];
         
         if ([characteristic.UUID isEqual:uuid]) {
@@ -260,8 +246,6 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     //设置读取characteristics的委托
     [self.babyBluetooth setBlockOnReadValueForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
         DLog(@"characteristic name:%@ value is:%@",characteristics.UUID,characteristics.value);
-        
-        [weakSelf.delegate writeLog:@"读取到读UUID的值"];
         
         CBUUID *uuid = [CBUUID UUIDWithString:kCharacteristicReadUUID];
         
@@ -285,14 +269,10 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     
     [self.babyBluetooth setBlockOnCancelAllPeripheralsConnectionBlock:^(CBCentralManager *centralManager) {
         DLog(@"setBlockOnCancelAllPeripheralsConnectionBlock");
-        
-        [weakSelf.delegate writeLog:@"取消所有的外围设备的连接"];
     }];
     
     [self.babyBluetooth setBlockOnCancelScanBlock:^(CBCentralManager *centralManager) {
         DLog(@"setBlockOnCancelScanBlock");
-        
-        [weakSelf.delegate writeLog:@"取消外围设备的扫描"];
     }];
     
     //示例:
@@ -306,12 +286,6 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     [self.babyBluetooth setBlockOnConnectedAtChannel:self.bikeNoStr block:^(CBCentralManager *central, CBPeripheral *peripheral) {
         DLog(@"%@", [NSString stringWithFormat:@"设备：%@--连接成功",peripheral.name]);
         
-        if (nil != self.delegate
-            && [self.delegate respondsToSelector:@selector(connectSuccess:)])
-        {
-            [weakSelf.delegate connectSuccess:YES];
-        }
-        
         weakSelf.hasConnected = YES;
     }];
     
@@ -319,12 +293,6 @@ static NSTimeInterval const kTimeOut                = 50.0f;
     [self.babyBluetooth setBlockOnFailToConnectAtChannel:self.bikeNoStr block:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
         DLog(@"设备：%@--连接失败",peripheral.name);
         DLog(@"%@", [NSString stringWithFormat:@"设备：%@--连接失败",peripheral.name]);
-        
-        if (nil != self.delegate
-            && [self.delegate respondsToSelector:@selector(connectSuccess:)])
-        {
-            [weakSelf.delegate connectSuccess:NO];
-        }
         
         weakSelf.hasConnected = NO;
         [weakSelf responseDelegateWithType:kBleResponseTypeError content:@"连接失败"];
@@ -337,26 +305,16 @@ static NSTimeInterval const kTimeOut                = 50.0f;
         
         weakSelf.hasConnected = NO;
         [weakSelf responseDelegateWithType:kBleResponseTypeError content:@"断开失败"];
-        
-        if (nil != self.delegate
-            && [self.delegate respondsToSelector:@selector(connectSuccess:)])
-        {
-            [weakSelf.delegate connectSuccess:NO];
-        }
     }];
     
     //设置写数据成功的block
     [self.babyBluetooth setBlockOnDidWriteValueForCharacteristicAtChannel:self.bikeNoStr block:^(CBCharacteristic *characteristic, NSError *error) {
         DLog(@"setBlockOnDidWriteValueForCharacteristicAtChannel characteristic:%@ and new value:%@",characteristic.UUID, characteristic.value);
-        
-        [weakSelf.delegate writeLog:[NSString stringWithFormat:@"setBlockOnDidWriteValueForCharacteristicAtChannel characteristic:%@ and new value:%@",characteristic.UUID, characteristic.value]];
     }];
     
     //设置通知状态改变的block
     [self.babyBluetooth setBlockOnDidUpdateNotificationStateForCharacteristicAtChannel:self.bikeNoStr block:^(CBCharacteristic *characteristic, NSError *error) {
         DLog(@"uid:%@,isNotifying:%@",characteristic.UUID,characteristic.isNotifying?@"on":@"off");
-        
-        [weakSelf.delegate writeLog:[NSString stringWithFormat:@"uid:%@,isNotifying:%@",characteristic.UUID,characteristic.isNotifying?@"on":@"off"]];
     }];
 }
 
@@ -365,8 +323,14 @@ static NSTimeInterval const kTimeOut                = 50.0f;
 
 - (NSData *)generateDataWithKey:(NSString *)key type:(BleRequestType)type content:(NSString *)content
 {
+    NSString *keyAES = @"vPXo76sGwXg9uqIR";
+    
+    NSString *decryptedStr = aesDecryptString(key, keyAES);
+    
+    DLog(@"decryptedStr is %@", decryptedStr);
+    
     NSString *typeStr = [NSString stringWithFormat:@"%zd", type];
-    NSString *dataStr = [NSString stringWithFormat:@"%@,%@,%@", key, typeStr, content];
+    NSString *dataStr = [NSString stringWithFormat:@"%@,%@,%@", decryptedStr, typeStr, content];
     
     NSData *data = [dataStr dataUsingEncoding:NSUTF8StringEncoding];
     

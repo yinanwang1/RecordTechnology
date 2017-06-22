@@ -26,6 +26,8 @@
 // POP
 #import <POP/POP.h>
 
+#import "MBProgressHUD+HXS.h"
+
 #import "Mantle.h"
 
 // Extension
