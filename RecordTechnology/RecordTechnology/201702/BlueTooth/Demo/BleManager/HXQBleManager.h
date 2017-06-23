@@ -15,6 +15,9 @@
 @required
 - (void)responseWithType:(BleResponseType)type content:(NSString *)content;
 
+@optional
+- (void)connectSuccess:(BOOL)success;
+
 @end
 
 

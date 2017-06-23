@@ -134,6 +134,8 @@ static NSTimeInterval const kTimeOut                = 10.0f;
 
 - (void)close
 {
+    [self.delegate connectSuccess:NO];
+    
     self.hasConnected = NO;
     self.bikeNoStr = nil;
     self.delegate  = nil;
@@ -287,6 +289,8 @@ static NSTimeInterval const kTimeOut                = 10.0f;
         DLog(@"%@", [NSString stringWithFormat:@"设备：%@--连接成功",peripheral.name]);
         
         weakSelf.hasConnected = YES;
+        
+        [weakSelf.delegate connectSuccess:YES];
     }];
     
     //设置设备连接失败的委托
@@ -295,6 +299,7 @@ static NSTimeInterval const kTimeOut                = 10.0f;
         DLog(@"%@", [NSString stringWithFormat:@"设备：%@--连接失败",peripheral.name]);
         
         weakSelf.hasConnected = NO;
+        [weakSelf.delegate connectSuccess:NO];
         [weakSelf responseDelegateWithType:kBleResponseTypeError content:@"连接失败"];
     }];
     
@@ -304,6 +309,8 @@ static NSTimeInterval const kTimeOut                = 10.0f;
         DLog(@"%@", [NSString stringWithFormat:@"设备：%@--断开失败",peripheral.name]);
         
         weakSelf.hasConnected = NO;
+        [weakSelf.delegate connectSuccess:NO];
+        
         [weakSelf responseDelegateWithType:kBleResponseTypeError content:@"断开失败"];
     }];
     
@@ -376,7 +383,10 @@ static NSTimeInterval const kTimeOut                = 10.0f;
 
 - (void)sendMessageToBleTimeOut
 {
-    [self responseDelegateWithType:kBleResponseTypeError content:@"请求超时"];
+    self.peripheral         = nil;
+    self.hasConnected       = NO;
+    
+    [self responseDelegateWithType:kBleResponseTypeError content:@"1"];
 }
 
 

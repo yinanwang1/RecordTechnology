@@ -252,6 +252,7 @@
                         <outlet property="bleTableView" destination="YpV-SK-U3g" id="sVg-gq-3EC"/>
                         <outlet property="keyTextField" destination="v56-uj-Dii" id="nyA-mq-eyY"/>
                         <outlet property="sendBtn" destination="9qi-fs-Wfn" id="jTJ-Zo-cOM"/>
+                        <outlet property="statusLabel" destination="5L1-tC-JnR" id="wkq-yO-Ir2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2s8-cF-FOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
