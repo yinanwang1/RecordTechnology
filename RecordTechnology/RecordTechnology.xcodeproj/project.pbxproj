@@ -909,7 +909,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huanxiao.dormapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b95bb666-da98-4850-9bd1-9b3e6fb73a08";
+				PROVISIONING_PROFILE = "2010869f-ee8e-44ac-b45d-0aa65db29f86";
 				PROVISIONING_PROFILE_SPECIFIER = dorm_app_test;
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/RecordTechnology-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
