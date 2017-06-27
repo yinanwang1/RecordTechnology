@@ -14,25 +14,34 @@ typedef NS_ENUM(NSInteger, BleRequestType) {
     kBleRequestTypeUnlock           = 4,    // 解锁       0-成功   1-失败
     kBleRequestTypePowerOn          = 5,    // 通电       1-电动 2-混动 3-人力
     kBleRequestTypePowerOff         = 6,    // 断电       0-成功   1-失败
+    kBleRequestTypeFind             = 7,    // 寻车       0-成功   1-失败
     kBleRequestTypeOpenPowerLock    = 10,   // 电池锁打开    0-成功   1-失败
     kBleRequestTypeClosePowerLock   = 11,   // 电池锁关闭    0-成功   1-失败
     kBleRequestTypeClearMileage     = 13,   // 里程清零     0-成功   1-失败
     kBleRequestTypeLight            = 14,   // 灯光控制     0-关灯   1-开灯
     kBleRequestTypeUSB              = 16,   // USB控制     0-关闭usb充电   1-打开usb充电
+    kBleRequestTypeLaunch           = 20,   // 解锁、通电、里程清零，启动用车
+    kbleRequestTypeLaunchWithoutClearMileage = 21, // 解锁、通电  1-电动 2-混动 3-人力 4-强助力 5-中助力 6-弱助力
+    
 };
 
 typedef NS_ENUM(NSInteger, BleResponseType) {
     kBleResponseTypeError             = 0,   // 连接失败，断开连接或超时等异常，content中返回错误信息
+    kBleResponseTypeAvailable         = 1,   // 蓝牙可用
     
     kBleResponseTypeLock             = 103, // 关锁           0-成功   1-失败
     kBleResponseTypeUnlock           = 104, // 解锁           0-成功   1-失败
     kBleResponseTypePowerOn          = 105, // 通电           0-成功   1-失败
     kBleResponseTypePowerOff         = 106, // 断电           0-成功   1-失败
+    kBleResponseTypeFind             = 107, // 寻车           0-成功   1-失败
     kBleResponseTypeOpenPowerLock    = 110, // 电池锁打开      0-成功   1-失败
     kBleResponseTypeClosePowerLock   = 111, // 电池锁关闭      0-成功   1-失败
     kBleResponseTypeClearMileage     = 113, // 里程清零        0-成功   1-失败
     kBleResponseTypeLight            = 114, // 灯光控制        0-成功   1-失败
     kBleResponseTypeUSB              = 116, // USB控制        0-成功   1-失败
+    kBleResponseTypeLand             = 120,    // 解锁、通电、里程清零反馈  0-成功   1-失败
+    kBleResponseTypeLaunchWithoutClearMileage = 121, // 解锁、通电       0-成功   1-失败
+    
 };
 
 

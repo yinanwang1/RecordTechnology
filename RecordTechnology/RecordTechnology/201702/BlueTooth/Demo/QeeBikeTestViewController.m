@@ -28,6 +28,8 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
     kBleCellFuctionUSBOff,
     kBleCellFuctionBatteryUnlock,
     kBleCellFuctionBatteryLock,
+    kBleCellFuctionFind,
+    kBleCellFuctionStartTravel,
 };
 
 
@@ -65,6 +67,13 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
     
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+}
+
 - (void)initialTableView
 {
     self.bleTableView.tableFooterView = [[UIView alloc] init];
@@ -83,6 +92,9 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
     [self.sendBtn setTitle:@"连  接" forState:UIControlStateNormal];
     self.statusLabel.text = @"清空数据成功";
 }
+
+
+#pragma mark - HXQBleManagerDelegate
 
 - (void)responseWithType:(BleResponseType)type content:(NSString *)content
 {
@@ -153,6 +165,18 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
         }
             break;
             
+        case kBleResponseTypeFind:
+        {
+            responseType = @"寻车 ";
+        }
+            break;
+            
+        case kBleResponseTypeLand:
+        {
+            responseType = @"解锁、通电、里程清零 ";
+        }
+            break;
+            
         default:
             break;
     }
@@ -185,10 +209,6 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (IBAction)connect:(id)sender
 {
@@ -373,6 +393,18 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
         }
             break;
             
+        case kBleCellFuctionFind:
+        {
+            requestType = kBleRequestTypeFind;
+            content = @"0";
+        }
+            
+        case kBleCellFuctionStartTravel:
+        {
+            requestType = kBleRequestTypeLaunch;
+            content = @"0";
+        }
+            
         default:
             break;
     }
@@ -381,6 +413,8 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
     NSString *keyEncode = aesEncryptString(self.keyTextField.text, keyAES);
     
     [self send:keyEncode type:requestType content:content];
+    
+    [MBProgressHUD showInView:self.view status:@"等待单车返回"];
 }
 
 
@@ -421,7 +455,9 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
                        [NSString stringWithFormat:@"%zd", kBleCellFuctionUSBOn]:@"USB控制，打开USB充电",
                        [NSString stringWithFormat:@"%zd", kBleCellFuctionUSBOff]:@"USB控制，关闭USB充电",
                        [NSString stringWithFormat:@"%zd", kBleCellFuctionBatteryUnlock]:@"电池锁打开",
-                       [NSString stringWithFormat:@"%zd", kBleCellFuctionBatteryLock]:@"电池锁关闭",};
+                       [NSString stringWithFormat:@"%zd", kBleCellFuctionBatteryLock]:@"电池锁关闭",
+                        [NSString stringWithFormat:@"%zd", kBleCellFuctionFind]:@"寻车",
+                        [NSString stringWithFormat:@"%zd", kBleCellFuctionStartTravel]:@"解锁、通电、里程清零",};
     }
     
     return _dataSource;
