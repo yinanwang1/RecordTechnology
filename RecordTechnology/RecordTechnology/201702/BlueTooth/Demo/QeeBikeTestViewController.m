@@ -30,6 +30,7 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
     kBleCellFuctionBatteryLock,
     kBleCellFuctionFind,
     kBleCellFuctionStartTravel,
+    kBlecellFuctionStartTraelWithClearMileage,
 };
 
 
@@ -174,6 +175,12 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
         case kBleResponseTypeLand:
         {
             responseType = @"解锁、通电、里程清零 ";
+        }
+            break;
+            
+        case kBleResponseTypeLaunchWithoutClearMileage:
+        {
+            responseType = @"解锁、通电 ";
         }
             break;
             
@@ -398,12 +405,21 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
             requestType = kBleRequestTypeFind;
             content = @"0";
         }
+            break;
             
         case kBleCellFuctionStartTravel:
         {
             requestType = kBleRequestTypeLaunch;
             content = @"0";
         }
+            break;
+            
+        case kBlecellFuctionStartTraelWithClearMileage:
+        {
+            requestType = kbleRequestTypeLaunchWithoutClearMileage;
+            content = @"0";
+        }
+            break;
             
         default:
             break;
@@ -457,7 +473,8 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
                        [NSString stringWithFormat:@"%zd", kBleCellFuctionBatteryUnlock]:@"电池锁打开",
                        [NSString stringWithFormat:@"%zd", kBleCellFuctionBatteryLock]:@"电池锁关闭",
                         [NSString stringWithFormat:@"%zd", kBleCellFuctionFind]:@"寻车",
-                        [NSString stringWithFormat:@"%zd", kBleCellFuctionStartTravel]:@"解锁、通电、里程清零",};
+                        [NSString stringWithFormat:@"%zd", kBleCellFuctionStartTravel]:@"解锁、通电、里程清零",
+                        [NSString stringWithFormat:@"%zd", kBlecellFuctionStartTraelWithClearMileage]:@"解锁、通电"};
     }
     
     return _dataSource;
