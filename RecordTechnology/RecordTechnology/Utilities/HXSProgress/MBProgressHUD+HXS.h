@@ -35,10 +35,4 @@
  */
 + (instancetype)showInView:(UIView *)view status:(NSString *)text;
 
-/*
- * 顶部显示单车的动画，下边显示text
- */
-+ (instancetype)showLoading:(UIView *)view
-                     status:(NSString *)text;
-
 @end
