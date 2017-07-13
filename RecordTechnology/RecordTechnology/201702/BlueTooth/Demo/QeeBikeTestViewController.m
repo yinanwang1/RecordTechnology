@@ -425,7 +425,7 @@ typedef NS_ENUM(NSInteger, BleCellFuction){
             break;
     }
     
-    NSString *keyAES = @"vPXo76sGwXg9uqIR";
+    NSString *keyAES = @"123456";
     NSString *keyEncode = aesEncryptString(self.keyTextField.text, keyAES);
     
     [self send:keyEncode type:requestType content:content];

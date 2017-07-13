@@ -330,7 +330,7 @@ static NSTimeInterval const kTimeOut                = 10.0f;
 
 - (NSData *)generateDataWithKey:(NSString *)key type:(BleRequestType)type content:(NSString *)content
 {
-    NSString *keyAES = @"vPXo76sGwXg9uqIR";
+    NSString *keyAES = @"123456";
     
     NSString *decryptedStr = aesDecryptString(key, keyAES);
     
