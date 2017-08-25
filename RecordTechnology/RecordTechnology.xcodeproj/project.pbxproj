@@ -24,6 +24,9 @@
 		C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C624DF851CA5516300AD2615 /* QuickLook.framework */; };
+		C63ABF1B1F4FCBC10057A2FD /* SafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63ABF1A1F4FCBC10057A2FD /* SafariViewController.m */; };
+		C63ABF1D1F4FCBCC0057A2FD /* Safari.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63ABF1C1F4FCBCC0057A2FD /* Safari.storyboard */; };
+		C63ABF1F1F4FCC200057A2FD /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63ABF1E1F4FCC200057A2FD /* SafariServices.framework */; };
 		C6502A4F1DAB300B0019079C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6502A4E1DAB300B0019079C /* Images.xcassets */; };
 		C6502A541DAB31300019079C /* gif1.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A501DAB31300019079C /* gif1.gif */; };
 		C6502A551DAB31300019079C /* gif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A511DAB31300019079C /* gif2.gif */; };
@@ -114,6 +117,10 @@
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
 		C624DF851CA5516300AD2615 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		C63ABF191F4FCBC10057A2FD /* SafariViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafariViewController.h; sourceTree = "<group>"; };
+		C63ABF1A1F4FCBC10057A2FD /* SafariViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafariViewController.m; sourceTree = "<group>"; };
+		C63ABF1C1F4FCBCC0057A2FD /* Safari.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Safari.storyboard; sourceTree = "<group>"; };
+		C63ABF1E1F4FCC200057A2FD /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		C6502A4E1DAB300B0019079C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C6502A501DAB31300019079C /* gif1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif1.gif; sourceTree = "<group>"; };
 		C6502A511DAB31300019079C /* gif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif2.gif; sourceTree = "<group>"; };
@@ -152,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C63ABF1F1F4FCC200057A2FD /* SafariServices.framework in Frameworks */,
 				C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */,
 				C67480F01D4F2098008C2AFF /* WebKit.framework in Frameworks */,
 				C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */,
@@ -178,6 +186,7 @@
 		383D529F0224A99151B3C236 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C63ABF1E1F4FCC200057A2FD /* SafariServices.framework */,
 				C68FE5651EF0E753002F67DC /* GameKit.framework */,
 				C68FE5631EF0E74C002F67DC /* MultipeerConnectivity.framework */,
 				C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */,
@@ -320,6 +329,7 @@
 		C60697551F4BD40800EEDA47 /* 201708 */ = {
 			isa = PBXGroup;
 			children = (
+				C63ABF181F4FCBB00057A2FD /* Safari */,
 				C60697561F4BD40800EEDA47 /* Gif */,
 			);
 			path = 201708;
@@ -385,6 +395,16 @@
 				C6502A4E1DAB300B0019079C /* Images.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		C63ABF181F4FCBB00057A2FD /* Safari */ = {
+			isa = PBXGroup;
+			children = (
+				C63ABF191F4FCBC10057A2FD /* SafariViewController.h */,
+				C63ABF1A1F4FCBC10057A2FD /* SafariViewController.m */,
+				C63ABF1C1F4FCBCC0057A2FD /* Safari.storyboard */,
+			);
+			path = Safari;
 			sourceTree = "<group>";
 		};
 		C6CA9B1B1EFBEFB7009F0CF8 /* HXSProgress */ = {
@@ -532,6 +552,7 @@
 				C68FFB141CA398E500716DBC /* 58.png in Resources */,
 				C6502A571DAB31300019079C /* gif4.gif in Resources */,
 				C6502A561DAB31300019079C /* gif3.gif in Resources */,
+				C63ABF1D1F4FCBCC0057A2FD /* Safari.storyboard in Resources */,
 				C60697581F4BD45000EEDA47 /* Gif.storyboard in Resources */,
 				C6502A551DAB31300019079C /* gif2.gif in Resources */,
 				C6502A4F1DAB300B0019079C /* Images.xcassets in Resources */,
@@ -659,6 +680,7 @@
 				C6CA9B271EFBEFB7009F0CF8 /* MBProgressHUD+HXS.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
 				C60E02EF1EC94CBB00092857 /* RedViewController.m in Sources */,
+				C63ABF1B1F4FCBC10057A2FD /* SafariViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
 				C6CA9B251EFBEFB7009F0CF8 /* HXQIndicatorProgressView.m in Sources */,
@@ -816,7 +838,7 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huanxiao.dormapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -838,18 +860,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 2L5Z45N6U9;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huanxiao.dormapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2010869f-ee8e-44ac-b45d-0aa65db29f86";
-				PROVISIONING_PROFILE_SPECIFIER = dorm_app_test;
+				PROVISIONING_PROFILE = "1a8b72c1-5317-44aa-b17d-091b6c9f3fb6";
+				PROVISIONING_PROFILE_SPECIFIER = dorm_app_dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/RecordTechnology-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
