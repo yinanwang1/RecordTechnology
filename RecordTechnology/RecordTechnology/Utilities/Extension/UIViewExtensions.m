@@ -125,22 +125,22 @@ static char UIViewPropertyListKey;
     return [self subviewOfClassType: classType searchRecursively: NO];
 }
 
-- (UIView*) superviewOfClassType: (Class) classType
-{
-    UIView* view = self.superview;
-    
-    while (view != nil)
-    {
-        if ([view isKindOfClass: classType])
-        {
-            return view;
-        }
-        
-        view = view.superview;
-    }
-    
-    return nil;
-}
+//- (UIView*) superviewOfClassType: (Class) classType
+//{
+//    UIView* view = self.superview;
+//    
+//    while (view != nil)
+//    {
+//        if ([view isKindOfClass: classType])
+//        {
+//            return view;
+//        }
+//        
+//        view = view.superview;
+//    }
+//    
+//    return nil;
+//}
 
 - (UIView*) superviewWithTag: (NSInteger) tag
 {

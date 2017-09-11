@@ -96,7 +96,7 @@ UIKIT_STATIC_INLINE BOOL CGPointIsValid(CGPoint point)
 - (UIView*) subviewOfClassType: (Class) classType searchRecursively: (BOOL) searchRecursively;
 
 /** Searches the view's superviews for a UIView of a specified class. */
-- (UIView*) superviewOfClassType: (Class) classType;
+//- (UIView*) superviewOfClassType: (Class) classType;
 
 /** Returns the superview whose tag matches the specified value. */
 - (UIView*) superviewWithTag: (NSInteger) tag;
