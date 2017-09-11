@@ -11,7 +11,7 @@
 //#import "YouFireApplication.h"
 //#import "AFNetworkingNewest.h"
 //#import "CopyViewController.h"
-#import <AMapFoundationKit/AMapFoundationKit.h>
+//#import <AMapFoundationKit/AMapFoundationKit.h>
 
 @interface AppDelegate ()
 
