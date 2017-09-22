@@ -26,16 +26,13 @@
 		C6502A551DAB31300019079C /* gif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A511DAB31300019079C /* gif2.gif */; };
 		C6502A561DAB31300019079C /* gif3.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A521DAB31300019079C /* gif3.gif */; };
 		C6502A571DAB31300019079C /* gif4.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A531DAB31300019079C /* gif4.gif */; };
-		C656514E1F5FBFED001EE1E1 /* SubClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C656514D1F5FBFED001EE1E1 /* SubClassViewController.m */; };
-		C66AA9391F58FD570033031A /* Runtime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66AA9381F58FD570033031A /* Runtime.storyboard */; };
-		C66AA93C1F58FD680033031A /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66AA93B1F58FD680033031A /* RuntimeViewController.m */; };
-		C66AA93F1F58FDB30033031A /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = C66AA93E1F58FDB30033031A /* UIImage+Image.m */; };
-		C66AA9421F5906600033031A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C66AA9411F5906600033031A /* Person.m */; };
-		C66AA9451F5907AD0033031A /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = C66AA9441F5907AD0033031A /* NSObject+Property.m */; };
 		C67480F01D4F2098008C2AFF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67480EF1D4F2098008C2AFF /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
+		C68AECFE1F7106DC00191B93 /* Runloop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68AECFD1F7106DC00191B93 /* Runloop.storyboard */; };
+		C68AED011F7106EA00191B93 /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68AED001F7106EA00191B93 /* RunloopViewController.m */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
+		C6B1EF1F1F752A0500238415 /* RunloopOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B1EF1E1F752A0500238415 /* RunloopOtherViewController.m */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */; };
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
@@ -115,24 +112,18 @@
 		C6502A511DAB31300019079C /* gif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif2.gif; sourceTree = "<group>"; };
 		C6502A521DAB31300019079C /* gif3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif3.gif; sourceTree = "<group>"; };
 		C6502A531DAB31300019079C /* gif4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif4.gif; sourceTree = "<group>"; };
-		C656514C1F5FBFED001EE1E1 /* SubClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubClassViewController.h; sourceTree = "<group>"; };
-		C656514D1F5FBFED001EE1E1 /* SubClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubClassViewController.m; sourceTree = "<group>"; };
-		C66AA9381F58FD570033031A /* Runtime.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Runtime.storyboard; sourceTree = "<group>"; };
-		C66AA93A1F58FD680033031A /* RuntimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
-		C66AA93B1F58FD680033031A /* RuntimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
-		C66AA93D1F58FDB30033031A /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
-		C66AA93E1F58FDB30033031A /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
-		C66AA9401F5906600033031A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		C66AA9411F5906600033031A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		C66AA9431F5907AD0033031A /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
-		C66AA9441F5907AD0033031A /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		C67480EF1D4F2098008C2AFF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C67480F31D4F2F58008C2AFF /* RecordTechnology-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecordTechnology-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C68AECFD1F7106DC00191B93 /* Runloop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Runloop.storyboard; sourceTree = "<group>"; };
+		C68AECFF1F7106EA00191B93 /* RunloopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunloopViewController.h; sourceTree = "<group>"; };
+		C68AED001F7106EA00191B93 /* RunloopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
 		C68FE5631EF0E74C002F67DC /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		C68FE5651EF0E753002F67DC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		C6B1EF1D1F752A0500238415 /* RunloopOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopOtherViewController.h; sourceTree = "<group>"; };
+		C6B1EF1E1F752A0500238415 /* RunloopOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopOtherViewController.m; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -362,28 +353,22 @@
 		C66AA9361F58FD450033031A /* 201709 */ = {
 			isa = PBXGroup;
 			children = (
+				C68AECFC1F7106D200191B93 /* Runloop */,
 				C649FEEE1F66925D00A12455 /* IQKeyboardManager */,
-				C66AA9371F58FD450033031A /* Runtime */,
 			);
 			path = 201709;
 			sourceTree = "<group>";
 		};
-		C66AA9371F58FD450033031A /* Runtime */ = {
+		C68AECFC1F7106D200191B93 /* Runloop */ = {
 			isa = PBXGroup;
 			children = (
-				C66AA9381F58FD570033031A /* Runtime.storyboard */,
-				C66AA93A1F58FD680033031A /* RuntimeViewController.h */,
-				C66AA93B1F58FD680033031A /* RuntimeViewController.m */,
-				C66AA93D1F58FDB30033031A /* UIImage+Image.h */,
-				C66AA93E1F58FDB30033031A /* UIImage+Image.m */,
-				C66AA9401F5906600033031A /* Person.h */,
-				C66AA9411F5906600033031A /* Person.m */,
-				C66AA9431F5907AD0033031A /* NSObject+Property.h */,
-				C66AA9441F5907AD0033031A /* NSObject+Property.m */,
-				C656514C1F5FBFED001EE1E1 /* SubClassViewController.h */,
-				C656514D1F5FBFED001EE1E1 /* SubClassViewController.m */,
+				C68AECFD1F7106DC00191B93 /* Runloop.storyboard */,
+				C68AECFF1F7106EA00191B93 /* RunloopViewController.h */,
+				C68AED001F7106EA00191B93 /* RunloopViewController.m */,
+				C6B1EF1D1F752A0500238415 /* RunloopOtherViewController.h */,
+				C6B1EF1E1F752A0500238415 /* RunloopOtherViewController.m */,
 			);
-			path = Runtime;
+			path = Runloop;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -509,7 +494,7 @@
 				C68FFB141CA398E500716DBC /* 58.png in Resources */,
 				C6502A571DAB31300019079C /* gif4.gif in Resources */,
 				C6502A561DAB31300019079C /* gif3.gif in Resources */,
-				C66AA9391F58FD570033031A /* Runtime.storyboard in Resources */,
+				C68AECFE1F7106DC00191B93 /* Runloop.storyboard in Resources */,
 				C6502A551DAB31300019079C /* gif2.gif in Resources */,
 				C649FEF01F6692E900A12455 /* Keyboard.storyboard in Resources */,
 				C6502A4F1DAB300B0019079C /* Images.xcassets in Resources */,
@@ -629,15 +614,12 @@
 			files = (
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C649FEF31F6692F700A12455 /* KeyboardViewController.m in Sources */,
-				C656514E1F5FBFED001EE1E1 /* SubClassViewController.m in Sources */,
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
-				C66AA9451F5907AD0033031A /* NSObject+Property.m in Sources */,
-				C66AA9421F5906600033031A /* Person.m in Sources */,
+				C68AED011F7106EA00191B93 /* RunloopViewController.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
-				C66AA93C1F58FD680033031A /* RuntimeViewController.m in Sources */,
-				C66AA93F1F58FDB30033031A /* UIImage+Image.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
+				C6B1EF1F1F752A0500238415 /* RunloopOtherViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 			);
@@ -792,7 +774,7 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huanxiao.dormapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -820,7 +802,7 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huanxiao.dormapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
