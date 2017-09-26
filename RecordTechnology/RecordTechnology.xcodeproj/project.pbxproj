@@ -32,9 +32,12 @@
 		C68AED011F7106EA00191B93 /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68AED001F7106EA00191B93 /* RunloopViewController.m */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
+		C6AAEC8E1F790B6900113121 /* YYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AAEC8D1F790B6900113121 /* YYTestViewController.m */; };
+		C6AAEC901F790B7A00113121 /* YYTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AAEC8F1F790B7A00113121 /* YYTest.storyboard */; };
 		C6B1EF1F1F752A0500238415 /* RunloopOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B1EF1E1F752A0500238415 /* RunloopOtherViewController.m */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */; };
+		C6D25B721F7A0086006CC951 /* YYCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D25B711F7A0086006CC951 /* YYCopy.m */; };
 		C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */; };
 		C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A9881BDE0650004CD998 /* UIColorExtensions.m */; };
 		C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A98A1BDE0650004CD998 /* UIViewExtensions.m */; };
@@ -122,11 +125,16 @@
 		C68FE5651EF0E753002F67DC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		C6AAEC8C1F790B6900113121 /* YYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTestViewController.h; sourceTree = "<group>"; };
+		C6AAEC8D1F790B6900113121 /* YYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTestViewController.m; sourceTree = "<group>"; };
+		C6AAEC8F1F790B7A00113121 /* YYTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YYTest.storyboard; sourceTree = "<group>"; };
 		C6B1EF1D1F752A0500238415 /* RunloopOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopOtherViewController.h; sourceTree = "<group>"; };
 		C6B1EF1E1F752A0500238415 /* RunloopOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopOtherViewController.m; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C6D25B701F7A0086006CC951 /* YYCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCopy.h; sourceTree = "<group>"; };
+		C6D25B711F7A0086006CC951 /* YYCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCopy.m; sourceTree = "<group>"; };
 		C6E5A9851BDE0650004CD998 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		C6E5A9861BDE0650004CD998 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		C6E5A9871BDE0650004CD998 /* UIColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorExtensions.h; sourceTree = "<group>"; };
@@ -256,6 +264,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				C6AAEC881F78A72800113121 /* 201710 */,
 				C66AA9361F58FD450033031A /* 201709 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
@@ -353,6 +362,7 @@
 		C66AA9361F58FD450033031A /* 201709 */ = {
 			isa = PBXGroup;
 			children = (
+				C6AAEC8A1F790B1700113121 /* YY */,
 				C68AECFC1F7106D200191B93 /* Runloop */,
 				C649FEEE1F66925D00A12455 /* IQKeyboardManager */,
 			);
@@ -369,6 +379,25 @@
 				C6B1EF1E1F752A0500238415 /* RunloopOtherViewController.m */,
 			);
 			path = Runloop;
+			sourceTree = "<group>";
+		};
+		C6AAEC881F78A72800113121 /* 201710 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 201710;
+			sourceTree = "<group>";
+		};
+		C6AAEC8A1F790B1700113121 /* YY */ = {
+			isa = PBXGroup;
+			children = (
+				C6AAEC8C1F790B6900113121 /* YYTestViewController.h */,
+				C6AAEC8D1F790B6900113121 /* YYTestViewController.m */,
+				C6AAEC8F1F790B7A00113121 /* YYTest.storyboard */,
+				C6D25B701F7A0086006CC951 /* YYCopy.h */,
+				C6D25B711F7A0086006CC951 /* YYCopy.m */,
+			);
+			path = YY;
 			sourceTree = "<group>";
 		};
 		C6E5A9841BDE0650004CD998 /* Extension */ = {
@@ -501,6 +530,7 @@
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
+				C6AAEC901F790B7A00113121 /* YYTest.storyboard in Resources */,
 				C6502A541DAB31300019079C /* gif1.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,8 +647,10 @@
 				C6E5A98D1BDE0650004CD998 /* UIViewExtensions.m in Sources */,
 				C68AED011F7106EA00191B93 /* RunloopViewController.m in Sources */,
 				C6E5A98B1BDE0650004CD998 /* NSDate+Extension.m in Sources */,
+				C6AAEC8E1F790B6900113121 /* YYTestViewController.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6E5A98C1BDE0650004CD998 /* UIColorExtensions.m in Sources */,
+				C6D25B721F7A0086006CC951 /* YYCopy.m in Sources */,
 				C6B1EF1F1F752A0500238415 /* RunloopOtherViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
