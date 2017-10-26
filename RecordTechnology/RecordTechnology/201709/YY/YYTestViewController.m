@@ -9,6 +9,9 @@
 #import "YYTestViewController.h"
 
 #import "YYCopy.h"
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+
+#import <YYKit/YYKit.h>
 
 typedef void (^tst)(NSString *test, NSString *tst2);
 
@@ -34,8 +37,106 @@ typedef void (^tst)(NSString *test, NSString *tst2);
 //    [self savePassword];
 //
 //    [self readPassword];
+//
+//    [self dispatch];
+//
+//    [self testString];
+//
+//    [self testStringAndC];
+//
+//    [self testScanner];
+//
+//    [self testDecimalNumer];
+//
+//    [self testUTF32Char];
+//
+//    [self testStringEncoding];
 
-    [self dispatch];
+    [self testStringTrim];
+}
+
+- (void)testStringTrim
+{
+    NSString *str = @"   slfjsf sdf  f\nsldjf   ";
+
+    NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    NSString *result = [str stringByTrimmingCharactersInSet:set];
+
+    NSLog(@"result is %@.", result);
+
+}
+
+- (void)testStringEncoding
+{
+//    NSStringEncoding
+
+    NSString *str = @"中文";
+    NSData *data = [str dataUsingEncoding:NSJapaneseEUCStringEncoding];
+
+    NSString *test = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+
+
+    NSLog(@"WOW is %@.", test);
+}
+
+- (void)testUTF32Char
+{
+    NSLog(@"stringWithUTF32Char is %@.", [NSString stringWithUTF32Char:49]);
+    UTF32Char tst[10] = {50, 52, 50, 50, 52, 50, 50, 52, 50, 78};
+    NSLog(@"stringWithUTF32Char is %@.", [NSString stringWithUTF32Chars:tst length:10]);
+
+}
+
+- (void)testDecimalNumer
+{
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    formatter.numberStyle = NSNumberFormatterDecimalStyle;
+    NSString *newAmount = [formatter stringFromNumber:[NSNumber numberWithFloat:123]];
+
+    NSLog(@"newAmount is %@.", newAmount);
+
+    NSDecimalNumber *rest = [NSDecimalNumber decimalNumberWithString:@"2.12"];
+    NSLog(@"rest is %f", [rest floatValue]);
+    NSLog(@"rest is %f", [rest doubleValue]);
+    NSDecimalNumber *point = [NSDecimalNumber decimalNumberWithString:@"1.33"];
+    NSDecimalNumber *result = [rest decimalNumberBySubtracting:point];
+    NSLog(@"result is %@.", result);
+
+    NSDecimalNumber *power = [result decimalNumberByRaisingToPower:2];
+    NSLog(@"power is %@.", power);
+
+    for (int i = 0; i < 1000; i++)
+    {
+        NSString *str = [NSString stringWithUUID];
+
+        NSLog(@"str is %@.", str);
+    }
+}
+
+- (void)testScanner
+{
+    NSScanner *scanner = [NSScanner scannerWithString:@"0xfe"];
+    unsigned int result = 0;
+    if ([scanner scanHexInt:&result]) {
+        NSLog(@"result is %d.", result);
+    }
+
+}
+
+- (void)testStringAndC
+{
+    NSMutableString *result = [NSMutableString string];
+    unichar c = '2';
+    CFStringAppendCharacters((CFMutableStringRef)result, &c, 1);
+
+    NSLog(@"result is %@.", result);
+}
+
+- (void)testString
+{
+    NSString *htmlString = @"http://www.baidu.com/ts???:t/👴🏻👮🏽sdfk/cohja";
+
+    NSLog(@"[htmlString stringByURLEncode] is %@", [htmlString stringByURLEncode]);
 }
 
 
@@ -115,6 +216,35 @@ typedef void (^tst)(NSString *test, NSString *tst2);
 
     NSLog(@"结果");
 }
+
+- (void)network
+{
+    NSArray *typeStrings2G = @[CTRadioAccessTechnologyEdge,
+                               CTRadioAccessTechnologyGPRS,
+                               CTRadioAccessTechnologyCDMA1x];
+
+    NSArray *typeStrings3G = @[CTRadioAccessTechnologyHSDPA,
+                               CTRadioAccessTechnologyWCDMA,
+                               CTRadioAccessTechnologyHSUPA,
+                               CTRadioAccessTechnologyCDMAEVDORev0,
+                               CTRadioAccessTechnologyCDMAEVDORevA,
+                               CTRadioAccessTechnologyCDMAEVDORevB,
+                               CTRadioAccessTechnologyeHRPD];
+
+    NSArray *typeStrings4G = @[CTRadioAccessTechnologyLTE];
+    CTTelephonyNetworkInfo *teleInfo= [[CTTelephonyNetworkInfo alloc] init];
+    NSString *accessString = teleInfo.currentRadioAccessTechnology;
+    if ([typeStrings4G containsObject:accessString]) {
+        NSLog(@"4G网络");
+    } else if ([typeStrings3G containsObject:accessString]) {
+        NSLog(@"3G网络");
+    } else if ([typeStrings2G containsObject:accessString]) {
+        NSLog(@"2G网络");
+    } else {
+        NSLog(@"未知网络");
+    }
+}
+
 
 
 
