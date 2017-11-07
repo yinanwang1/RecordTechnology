@@ -51,8 +51,184 @@ typedef void (^tst)(NSString *test, NSString *tst2);
 //    [self testUTF32Char];
 //
 //    [self testStringEncoding];
+//
+//    [self testStringTrim];
+//
+//    [self testPath];
+//
+//    [self testPath2];
+//
+//    [self testPredicate];
+//
+//    [self testRegular];
+//
+//    [self testExpression];
+//
+//    [self testHex];
+//
+//    [self testBase64];
+//
+//    [self testPropertyList];
+//
+//    [self testRandom];
 
-    [self testStringTrim];
+    [self testOrdinal];
+}
+
+- (void)testOrdinal
+{
+    NSDate *date = [[NSDate alloc] initWithTimeIntervalSinceNow:24 * 3600];
+    NSInteger weekdayOrdinal = [date weekdayOrdinal];
+
+    NSLog(@"weekday is %zd.", [date weekday]);
+    NSLog(@"weekdayOrdinal is %zd.", weekdayOrdinal);
+    NSLog(@"yearForWeekOfYear is %zd.", [date yearForWeekOfYear]);
+}
+
+- (void)testRandom
+{
+    for (int i = 0; i < 100; i++) {
+        uint32_t random = arc4random_uniform((uint32_t)100);
+
+        NSLog(@"random is %d.", random);
+    }
+}
+
+- (void)testPropertyList
+{
+    NSDictionary *dic = @{@"test1":@"wang", @"test2":@"yinan"};
+
+    NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"test.txt"];
+    [dic writeToFile:path atomically:YES];
+
+
+    NSData *data = [NSData dataWithContentsOfFile:path];
+
+
+    NSDictionary *outDic = [NSPropertyListSerialization propertyListWithData:data options:NSPropertyListImmutable format:NULL error:nil];
+
+    NSLog(@"outDic is %@.", outDic);
+
+}
+
+- (void)testBase64
+{
+    NSString *str = @"1";
+
+    NSString *base64Str = [str base64EncodedString];
+
+    NSLog(@"base64Str is %@.", base64Str);
+}
+
+- (void)testHex
+{
+    NSString *str = @"123456";
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+
+    NSLog(@"data is %@.", data);
+
+    const unsigned char *bytes = data.bytes;
+    for (int i = 0; i < data.length; i++, bytes++) {
+        NSLog(@"hex is %02X ", *bytes);
+    }
+}
+
+- (void)testExpression
+{
+    NSString *regex = @"\\-\\d*\\.";
+    NSString *str = @"-123123.-1231a12.";
+    NSError *error;
+    NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:regex options:NSRegularExpressionCaseInsensitive error:&error];
+
+    NSArray *matches = [regular matchesInString:str options:0 range:NSMakeRange(0, str.length)];
+
+    for (NSTextCheckingResult *match in matches) {
+        NSRange range = [match range];
+        NSString *mStr = [str substringWithRange:range];
+
+        NSLog(@"result is %@", mStr);
+    }
+}
+
+- (void)testRegular
+{
+    NSString *url = @"12342@12.1131123@q.q.com";
+    NSError *error;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[^@]*\\." options:0 error:&error];
+    if (!error) {
+        NSTextCheckingResult *match = [regex firstMatchInString:url options:0 range:NSMakeRange(0, [url length])];
+        if (match) {
+            NSString *result = [url substringWithRange:match.range];
+
+            NSLog(@"result is %@", result);
+        }
+    } else {
+        NSLog(@"error is %@", error);
+    }
+}
+
+- (void)testPredicate
+{
+    NSString *regex = @"^[a-z0-9A-Z]*$";
+
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+
+    NSString *str = @"hello100&";
+
+    if ([predicate evaluateWithObject:str]) {
+        NSLog(@"Match");
+    } else {
+        NSLog(@"Not Match");
+    }
+}
+
+- (void)testPath2
+{
+    NSString *str = @"home/test/app/download@3.5x.png";
+
+    NSLog(@"path scale is %f", str.pathScale);
+}
+
+- (void)testPath
+{
+    NSString *path = [NSString pathWithComponents:@[@"home", @"tmp", @"picture"]];
+
+    NSLog(@"path is %@.", path);
+
+    NSArray *pathArr = [@"home/tmp/picture" pathComponents];
+
+    NSLog(@"pathArr is %@", pathArr);
+
+    NSLog(@"home/tmp/picture is %d", path.isAbsolutePath);
+    NSLog(@"/home/tmp/picture is %d", @"/home/tmp/picture".isAbsolutePath);
+
+    NSLog(@"%@", path.lastPathComponent);
+
+    NSLog(@"%@", path.stringByDeletingLastPathComponent);
+
+    NSLog(@"%@", [path stringByAppendingPathComponent:@"my"]);
+
+    NSLog(@"%@",@"home/tmp/picture.png".pathExtension);
+    NSLog(@"%@",@"home/tmp/picture.png".stringByDeletingPathExtension);
+
+    NSLog(@"%@", [path stringByAppendingPathExtension:@"jpg"]);
+
+    NSLog(@"NSHomeDirectory  %@", NSHomeDirectory());
+    NSLog(@"NSUserName  %@", NSUserName());
+    NSLog(@"NSFullUserName  %@", NSFullUserName());
+    NSLog(@"NSHomeDirectoryForUser  %@", NSHomeDirectoryForUser(@"wang"));
+    NSLog(@"NSTemporaryDirectory  %@", NSTemporaryDirectory());
+    NSLog(@"NSOpenStepRootDirectory  %@", NSOpenStepRootDirectory());
+
+
+    NSString *wholePath = [NSString stringWithFormat:@"%@/test/picture", NSHomeDirectory()];
+    NSLog(@"%@", wholePath.stringByAbbreviatingWithTildeInPath);
+    NSString *tildePath = @"~sfsdf/app/download".stringByAbbreviatingWithTildeInPath;
+    NSLog(@"tildePath is %@", tildePath.stringByExpandingTildeInPath);
+
+    NSLog(@"stringByStandardizingPath is %@.", @"../private".stringByStandardizingPath);
+
+    NSLog(@"stringByResolvingSymlinksInPath is %@.", tildePath.stringByResolvingSymlinksInPath);
 }
 
 - (void)testStringTrim
