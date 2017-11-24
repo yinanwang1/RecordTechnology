@@ -10,6 +10,20 @@
 
 #import <YYKit/YYKit.h>
 
+@protocol YYTestViewControllerDelegate;
+
+@protocol YYTestViewControllerSubDelegate <YYTestViewControllerDelegate>
+
+- (void)YYTestViewControllerSubDelegate:(NSString *)tst;
+
+@end
+
+@protocol YYTestViewControllerDelegate <NSObject>
+
+- (void)YYTestViewController:(NSString *)test;
+
+@end
+
 @interface YYTestViewController : UIViewController
 
 @end

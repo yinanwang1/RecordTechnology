@@ -9,6 +9,9 @@
 #ifndef RecordTechnology_RecordTechnology_pch
 #define RecordTechnology_RecordTechnology_pch
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 // side menu
 //#import "MFSideMenu.h"
 
@@ -29,11 +32,6 @@
 //#import "MBProgressHUD+HXS.h"
 
 //#import "Mantle.h"
-
-// Extension
-#import "UIColorExtensions.h"
-#import "NSDate+Extension.h"
-#import "UIViewExtensions.h"
 
 #ifdef DEBUG
 #define DLog(fmt,...) NSLog(fmt, ##__VA_ARGS__);

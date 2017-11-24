@@ -11,19 +11,42 @@
 #import "YYCopy.h"
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 
+#import "BezierPathView.h"
+
 #import <YYKit/YYKit.h>
+#import "RecordTechnology-Swift.h"
 
 typedef void (^tst)(NSString *test, NSString *tst2);
 
-@interface YYTestViewController ()
+@interface YYTestViewController () <YYTestViewControllerSubDelegate>
 
 @property (nonatomic, strong) YYReachability *reachability;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+
 
 @property (nonatomic, copy) void (^block)(NSString *tst);
 
 @end
 
 @implementation YYTestViewController
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+//    [self.navigationController setNavigationBarHidden:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+
+//    [self.navigationController setNavigationBarHidden:NO];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -71,8 +94,89 @@ typedef void (^tst)(NSString *test, NSString *tst2);
 //    [self testPropertyList];
 //
 //    [self testRandom];
+//
+//    [self testOrdinal];
+//
+//    [self testImage];
+//
+//    [self testTextField];
+//
+//    [self testDevice];
+//
+//    [self testApplication];
+//
+//    [self testBezierPath];
+//
+//    [self testLayer];
 
-    [self testOrdinal];
+    [self testDic];
+}
+
+- (void)testDic
+{
+    NSDictionary *dic = @{@"tst":@"1231", @"sdfsdf":@"12323"};
+
+//    if (5 < maximumNumberOfLoginAttemptes) {
+//        NSLog(@"maximumNumberOfLoginAttemptes is %@", maximumNumberOfLoginAttemptes);
+//    }
+}
+
+- (void)testLayer
+{
+    [self.imageView.layer setLayerShadow:[UIColor redColor]
+                                  offset:CGSizeMake(10, 10)
+                                  radius:3.0f];
+}
+
+- (void)testBezierPath
+{
+//    BezierPathView *view = [[BezierPathView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 100)];
+//
+//    [view setCenter:self.view.center];
+//
+//    [self.view addSubview:view];
+
+}
+
+- (void)testApplication
+{
+    UIApplication *app = [UIApplication sharedApplication];
+
+    NSLog(@"documentsURL is %@.", [app documentsURL]);
+    NSLog(@"documentsPath is %@.", [app documentsPath]);
+    NSLog(@"appBundleName is %@.", [app appBundleName]);
+    NSLog(@"appBundleID is %@.", [app appBundleID]);
+}
+
+- (void)testDevice
+{
+    int64_t memory = [[UIDevice currentDevice] memoryTotal];
+    int64_t memoryUsed = [[UIDevice currentDevice] memoryUsed];
+
+    NSLog(@"memory is %lld", memory);
+    NSLog(@"memoryUsed is %lld", memoryUsed);
+}
+
+- (void)testTextField
+{
+    [self.textField becomeFirstResponder];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.textField setSelectedRange:NSMakeRange(2, 3)];
+    });
+}
+
+- (void)testImage
+{
+    UIImage *image = [UIImage imageNamed:@"Animation1"];
+
+    [self.imageView setImage:image];
+
+    image = [image imageByBlurDark];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.imageView setImage:image];
+    });
 }
 
 - (void)testOrdinal
@@ -419,6 +523,21 @@ typedef void (^tst)(NSString *test, NSString *tst2);
     } else {
         NSLog(@"未知网络");
     }
+}
+
+
+
+- (void)YYTestViewController:(NSString *)test {
+    NSLog(@"YYTestViewController is %@.", test);
+}
+
+- (void)YYTestViewControllerSubDelegate:(NSString *)tst
+{
+    NSLog(@"YYTestViewControllerSubDelegate is %@.", tst);
+
+    YYTestSwiftViewController *vc = [[YYTestSwiftViewController alloc] init];
+
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

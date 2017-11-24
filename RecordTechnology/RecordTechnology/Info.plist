@@ -117,13 +117,13 @@
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>第一个按钮</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>com.huanxiao.qiji.one</string>
+			<string>com.Arthur Wangqiji.one</string>
 		</dict>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>YYTest</string>
+	<string>SwiftLearning</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

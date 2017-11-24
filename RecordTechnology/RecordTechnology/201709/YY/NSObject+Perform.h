@@ -1,13 +1,14 @@
+////
+////  NSObject+Perform.h
+////  RecordTechnology
+////
+////  Created by ArthurWang on 2017/10/12.
+////  Copyright © 2017年 MonkeyKing. All rights reserved.
+////
 //
-//  NSObject+Perform.h
-//  RecordTechnology
+//#import <Foundation/Foundation.h>
 //
-//  Created by ArthurWang on 2017/10/12.
-//  Copyright © 2017年 MonkeyKing. All rights reserved.
+//@interface NSObject (Perform)
 //
+//@end
 
-#import <Foundation/Foundation.h>
-
-@interface NSObject (Perform)
-
-@end
