@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-305" y="193"/>
         </scene>
-        <!--View Controller-->
+        <!--Swift Learning-->
         <scene sceneID="uz6-hA-xIh">
             <objects>
-                <viewController id="rcM-Ek-GGN" sceneMemberID="viewController">
+                <viewController id="rcM-Ek-GGN" customClass="SwiftLearning" customModule="RecordTechnology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jkt-Rk-Qga">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

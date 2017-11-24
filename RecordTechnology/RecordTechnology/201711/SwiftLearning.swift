@@ -10,5 +10,9 @@ import Foundation
 import UIKit
 
 class SwiftLearning: UIViewController {
-
+    override func viewDidLoad() {
+        print("HXAppConfig.shared.appBuild is \(String(describing: HXAppConfig.shared.appBuild))");
+        print("HXAppConfig.shared.appVersion is \(HXAppConfig.shared.appVersion)");
+        print("appName is \(HXAppConfig.shared.appName)");
+    }
 }
