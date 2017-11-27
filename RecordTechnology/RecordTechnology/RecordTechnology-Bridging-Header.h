@@ -8,3 +8,4 @@
 
 //#import "YYTestViewController.h"
 @import SAMKeychain;
+#import "NSString+Addition.h"

@@ -33,6 +33,7 @@
 		C679AA9E1FC4444F00F25CF6 /* Swift-Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679AA9D1FC4444F00F25CF6 /* Swift-Prefix.swift */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
+		C6B1C7531FCBEB340021AC3F /* HXSDirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1C7521FCBEB340021AC3F /* HXSDirectoryManager.swift */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */; };
 		C6C1EE411FC6F0E70000EF28 /* SwiftLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE401FC6F0E70000EF28 /* SwiftLearning.swift */; };
@@ -61,7 +62,6 @@
 		C6C1EE9D1FC6F1AC0000EF28 /* NSURL+QueryDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE761FC6F1AC0000EF28 /* NSURL+QueryDictionary.m */; };
 		C6C1EE9E1FC6F1AC0000EF28 /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE791FC6F1AC0000EF28 /* NSDictionary+Utils.m */; };
 		C6C1EE9F1FC6F1AC0000EF28 /* HXSLocationSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE7A1FC6F1AC0000EF28 /* HXSLocationSearchBar.m */; };
-		C6C1EEA01FC6F1AC0000EF28 /* HXSDirectoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE7B1FC6F1AC0000EF28 /* HXSDirectoryManager.m */; };
 		C6C1EEA21FC6F1AC0000EF28 /* HXURLShortenService.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE7D1FC6F1AC0000EF28 /* HXURLShortenService.m */; };
 		C6C1EEA31FC6F1AC0000EF28 /* HXStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE7E1FC6F1AC0000EF28 /* HXStringUtil.m */; };
 		C6C1EEA41FC6F1AC0000EF28 /* HXUserPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE7F1FC6F1AC0000EF28 /* HXUserPreferences.m */; };
@@ -148,6 +148,7 @@
 		C68FE5651EF0E753002F67DC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		C6B1C7521FCBEB340021AC3F /* HXSDirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HXSDirectoryManager.swift; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -185,7 +186,6 @@
 		C6C1EE631FC6F1AC0000EF28 /* NSString+Verification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verification.m"; sourceTree = "<group>"; };
 		C6C1EE641FC6F1AC0000EF28 /* UINavigationBar+AlphaTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+AlphaTransition.h"; sourceTree = "<group>"; };
 		C6C1EE651FC6F1AC0000EF28 /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
-		C6C1EE681FC6F1AC0000EF28 /* HXSDirectoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXSDirectoryManager.h; sourceTree = "<group>"; };
 		C6C1EE691FC6F1AC0000EF28 /* HXSLocationSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXSLocationSearchBar.h; sourceTree = "<group>"; };
 		C6C1EE6A1FC6F1AC0000EF28 /* NSDictionary+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utils.h"; sourceTree = "<group>"; };
 		C6C1EE6C1FC6F1AC0000EF28 /* HXSLocalHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXSLocalHelper.m; sourceTree = "<group>"; };
@@ -201,7 +201,6 @@
 		C6C1EE771FC6F1AC0000EF28 /* HXSLocalHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXSLocalHelper.h; sourceTree = "<group>"; };
 		C6C1EE791FC6F1AC0000EF28 /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
 		C6C1EE7A1FC6F1AC0000EF28 /* HXSLocationSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXSLocationSearchBar.m; sourceTree = "<group>"; };
-		C6C1EE7B1FC6F1AC0000EF28 /* HXSDirectoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXSDirectoryManager.m; sourceTree = "<group>"; };
 		C6C1EE7D1FC6F1AC0000EF28 /* HXURLShortenService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXURLShortenService.m; sourceTree = "<group>"; };
 		C6C1EE7E1FC6F1AC0000EF28 /* HXStringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXStringUtil.m; sourceTree = "<group>"; };
 		C6C1EE7F1FC6F1AC0000EF28 /* HXUserPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXUserPreferences.m; sourceTree = "<group>"; };
@@ -484,7 +483,7 @@
 				C6C1EE701FC6F1AC0000EF28 /* HXAppDeviceHelper.swift */,
 				C651A53F1FC7E8FB0023E89C /* HXPlistReader.swift */,
 				C651A5411FC812510023E89C /* HXFileHelper.swift */,
-				C6C1EE681FC6F1AC0000EF28 /* HXSDirectoryManager.h */,
+				C6B1C7521FCBEB340021AC3F /* HXSDirectoryManager.swift */,
 				C6C1EE691FC6F1AC0000EF28 /* HXSLocationSearchBar.h */,
 				C6C1EE6A1FC6F1AC0000EF28 /* NSDictionary+Utils.h */,
 				C6C1EE6C1FC6F1AC0000EF28 /* HXSLocalHelper.m */,
@@ -499,7 +498,6 @@
 				C6C1EE771FC6F1AC0000EF28 /* HXSLocalHelper.h */,
 				C6C1EE791FC6F1AC0000EF28 /* NSDictionary+Utils.m */,
 				C6C1EE7A1FC6F1AC0000EF28 /* HXSLocationSearchBar.m */,
-				C6C1EE7B1FC6F1AC0000EF28 /* HXSDirectoryManager.m */,
 				C6C1EE7D1FC6F1AC0000EF28 /* HXURLShortenService.m */,
 				C6C1EE7E1FC6F1AC0000EF28 /* HXStringUtil.m */,
 				C6C1EE7F1FC6F1AC0000EF28 /* HXUserPreferences.m */,
@@ -746,7 +744,7 @@
 				C6C1EEA41FC6F1AC0000EF28 /* HXUserPreferences.m in Sources */,
 				C6C1EE921FC6F1AC0000EF28 /* UIWindow+Extension.m in Sources */,
 				C6C1EE891FC6F1AC0000EF28 /* UIView+Utilities.m in Sources */,
-				C6C1EEA01FC6F1AC0000EF28 /* HXSDirectoryManager.m in Sources */,
+				C6B1C7531FCBEB340021AC3F /* HXSDirectoryManager.swift in Sources */,
 				C6C1EE991FC6F1AC0000EF28 /* HXAppDeviceHelper.swift in Sources */,
 				C6C1EE9F1FC6F1AC0000EF28 /* HXSLocationSearchBar.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
