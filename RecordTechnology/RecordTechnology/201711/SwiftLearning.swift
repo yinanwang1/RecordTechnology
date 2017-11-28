@@ -11,8 +11,12 @@ import UIKit
 
 class SwiftLearning: UIViewController {
     override func viewDidLoad() {
-        print("HXAppConfig.shared.appBuild is \(String(describing: HXAppConfig.shared.appBuild))");
-        print("HXAppConfig.shared.appVersion is \(HXAppConfig.shared.appVersion)");
-        print("appName is \(HXAppConfig.shared.appName)");
+//        print("HXAppConfig.shared.appBuild is \(String(describing: HXAppConfig.shared.appBuild))");
+//        print("HXAppConfig.shared.appVersion is \(String(describing: HXAppConfig.shared.appVersion))");
+//        print("appName is \(String(describing: HXAppConfig.shared.appName))");
+//
+//        print("isChinese \(HXSLocalHelper.isLocaleChinese())")
+//        print("isChinese2 \(HXSLocalHelper.isLocaleChinese())")
+        print("currentAppLanguage is \(HXSLocalHelper.currentAppLanguage())")
     }
 }
