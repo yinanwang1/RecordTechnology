@@ -81,8 +81,6 @@ class HXStringUtil {
         return self.heightForText(text: text, havingWidth: widthValue, font: font, attributes: nil);
     }
 
-
-
 }
 
 
