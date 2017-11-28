@@ -33,6 +33,8 @@
 		C679AA9E1FC4444F00F25CF6 /* Swift-Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679AA9D1FC4444F00F25CF6 /* Swift-Prefix.swift */; };
 		C6860BC01FCCFA2B005A719F /* NSDictionaryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6860BBF1FCCFA2B005A719F /* NSDictionaryUtils.swift */; };
 		C6860BC21FCCFFD3005A719F /* HXLocalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6860BC11FCCFFD3005A719F /* HXLocalHelper.swift */; };
+		C6860BC51FCD099B005A719F /* Base64Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C6860BC41FCD099B005A719F /* Base64Encoding.m */; };
+		C6860BC71FCD0A2B005A719F /* HXImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6860BC61FCD0A2B005A719F /* HXImageUtil.swift */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
 		C6B1C7531FCBEB340021AC3F /* HXSDirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1C7521FCBEB340021AC3F /* HXSDirectoryManager.swift */; };
@@ -56,10 +58,7 @@
 		C6C1EE951FC6F1AC0000EF28 /* NSString+Verification.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE631FC6F1AC0000EF28 /* NSString+Verification.m */; };
 		C6C1EE961FC6F1AC0000EF28 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE651FC6F1AC0000EF28 /* NSString+Addition.m */; };
 		C6C1EE991FC6F1AC0000EF28 /* HXAppDeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE701FC6F1AC0000EF28 /* HXAppDeviceHelper.swift */; };
-		C6C1EE9A1FC6F1AC0000EF28 /* Base64Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE711FC6F1AC0000EF28 /* Base64Encoding.m */; };
-		C6C1EE9B1FC6F1AC0000EF28 /* HXImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE731FC6F1AC0000EF28 /* HXImageUtil.m */; };
 		C6C1EE9C1FC6F1AC0000EF28 /* NSDataAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE751FC6F1AC0000EF28 /* NSDataAdditional.m */; };
-		C6C1EE9D1FC6F1AC0000EF28 /* NSURL+QueryDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE761FC6F1AC0000EF28 /* NSURL+QueryDictionary.m */; };
 		C6C1EE9F1FC6F1AC0000EF28 /* HXSLocationSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE7A1FC6F1AC0000EF28 /* HXSLocationSearchBar.m */; };
 		C6C1EEA21FC6F1AC0000EF28 /* HXURLShortenService.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE7D1FC6F1AC0000EF28 /* HXURLShortenService.m */; };
 		C6C1EEA31FC6F1AC0000EF28 /* HXStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE7E1FC6F1AC0000EF28 /* HXStringUtil.m */; };
@@ -145,6 +144,9 @@
 		C679AA9D1FC4444F00F25CF6 /* Swift-Prefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift-Prefix.swift"; sourceTree = "<group>"; };
 		C6860BBF1FCCFA2B005A719F /* NSDictionaryUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDictionaryUtils.swift; sourceTree = "<group>"; };
 		C6860BC11FCCFFD3005A719F /* HXLocalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HXLocalHelper.swift; sourceTree = "<group>"; };
+		C6860BC31FCD099B005A719F /* Base64Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Encoding.h; sourceTree = "<group>"; };
+		C6860BC41FCD099B005A719F /* Base64Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Encoding.m; sourceTree = "<group>"; };
+		C6860BC61FCD0A2B005A719F /* HXImageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HXImageUtil.swift; sourceTree = "<group>"; };
 		C68FE5631EF0E74C002F67DC /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		C68FE5651EF0E753002F67DC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
@@ -186,22 +188,16 @@
 		C6C1EE641FC6F1AC0000EF28 /* UINavigationBar+AlphaTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+AlphaTransition.h"; sourceTree = "<group>"; };
 		C6C1EE651FC6F1AC0000EF28 /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
 		C6C1EE691FC6F1AC0000EF28 /* HXSLocationSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXSLocationSearchBar.h; sourceTree = "<group>"; };
-		C6C1EE6D1FC6F1AC0000EF28 /* NSURL+QueryDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+QueryDictionary.h"; sourceTree = "<group>"; };
 		C6C1EE6E1FC6F1AC0000EF28 /* HXStringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXStringUtil.h; sourceTree = "<group>"; };
 		C6C1EE6F1FC6F1AC0000EF28 /* HXURLShortenService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXURLShortenService.h; sourceTree = "<group>"; };
 		C6C1EE701FC6F1AC0000EF28 /* HXAppDeviceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXAppDeviceHelper.swift; sourceTree = "<group>"; };
-		C6C1EE711FC6F1AC0000EF28 /* Base64Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Encoding.m; sourceTree = "<group>"; };
 		C6C1EE721FC6F1AC0000EF28 /* HXUserPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXUserPreferences.h; sourceTree = "<group>"; };
-		C6C1EE731FC6F1AC0000EF28 /* HXImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXImageUtil.m; sourceTree = "<group>"; };
 		C6C1EE751FC6F1AC0000EF28 /* NSDataAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditional.m; sourceTree = "<group>"; };
-		C6C1EE761FC6F1AC0000EF28 /* NSURL+QueryDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+QueryDictionary.m"; sourceTree = "<group>"; };
 		C6C1EE7A1FC6F1AC0000EF28 /* HXSLocationSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXSLocationSearchBar.m; sourceTree = "<group>"; };
 		C6C1EE7D1FC6F1AC0000EF28 /* HXURLShortenService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXURLShortenService.m; sourceTree = "<group>"; };
 		C6C1EE7E1FC6F1AC0000EF28 /* HXStringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXStringUtil.m; sourceTree = "<group>"; };
 		C6C1EE7F1FC6F1AC0000EF28 /* HXUserPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXUserPreferences.m; sourceTree = "<group>"; };
-		C6C1EE801FC6F1AC0000EF28 /* Base64Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Encoding.h; sourceTree = "<group>"; };
 		C6C1EE811FC6F1AC0000EF28 /* NSDataAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditional.h; sourceTree = "<group>"; };
-		C6C1EE831FC6F1AC0000EF28 /* HXImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXImageUtil.h; sourceTree = "<group>"; };
 		C6C1EEA71FC6F3E60000EF28 /* HXMacrosUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXMacrosUtils.h; sourceTree = "<group>"; };
 		E144C3CE3612D5EEAA10C61E /* libPods-RecordTechnologyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnologyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D728750DE2DC5A9722D56 /* Pods-RecordTechnologyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnologyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -473,28 +469,25 @@
 		C6C1EE661FC6F1AC0000EF28 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C6860BC31FCD099B005A719F /* Base64Encoding.h */,
+				C6860BC41FCD099B005A719F /* Base64Encoding.m */,
 				C651A53D1FC7BEEF0023E89C /* HXAppConfig.swift */,
 				C6C1EE701FC6F1AC0000EF28 /* HXAppDeviceHelper.swift */,
 				C651A53F1FC7E8FB0023E89C /* HXPlistReader.swift */,
 				C651A5411FC812510023E89C /* HXFileHelper.swift */,
 				C6B1C7521FCBEB340021AC3F /* HXSDirectoryManager.swift */,
-				C6C1EE691FC6F1AC0000EF28 /* HXSLocationSearchBar.h */,
 				C6860BC11FCCFFD3005A719F /* HXLocalHelper.swift */,
-				C6C1EE6D1FC6F1AC0000EF28 /* NSURL+QueryDictionary.h */,
+				C6860BC61FCD0A2B005A719F /* HXImageUtil.swift */,
+				C6C1EE691FC6F1AC0000EF28 /* HXSLocationSearchBar.h */,
 				C6C1EE6E1FC6F1AC0000EF28 /* HXStringUtil.h */,
 				C6C1EE6F1FC6F1AC0000EF28 /* HXURLShortenService.h */,
-				C6C1EE711FC6F1AC0000EF28 /* Base64Encoding.m */,
 				C6C1EE721FC6F1AC0000EF28 /* HXUserPreferences.h */,
-				C6C1EE731FC6F1AC0000EF28 /* HXImageUtil.m */,
 				C6C1EE751FC6F1AC0000EF28 /* NSDataAdditional.m */,
-				C6C1EE761FC6F1AC0000EF28 /* NSURL+QueryDictionary.m */,
 				C6C1EE7A1FC6F1AC0000EF28 /* HXSLocationSearchBar.m */,
 				C6C1EE7D1FC6F1AC0000EF28 /* HXURLShortenService.m */,
 				C6C1EE7E1FC6F1AC0000EF28 /* HXStringUtil.m */,
 				C6C1EE7F1FC6F1AC0000EF28 /* HXUserPreferences.m */,
-				C6C1EE801FC6F1AC0000EF28 /* Base64Encoding.h */,
 				C6C1EE811FC6F1AC0000EF28 /* NSDataAdditional.h */,
-				C6C1EE831FC6F1AC0000EF28 /* HXImageUtil.h */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -732,6 +725,7 @@
 				C6C1EE9C1FC6F1AC0000EF28 /* NSDataAdditional.m in Sources */,
 				C6C1EE941FC6F1AC0000EF28 /* UIView+Extension.m in Sources */,
 				C6C1EE8E1FC6F1AC0000EF28 /* UIViewController+Extensions.m in Sources */,
+				C6860BC51FCD099B005A719F /* Base64Encoding.m in Sources */,
 				C651A5401FC7E8FB0023E89C /* HXPlistReader.swift in Sources */,
 				C6C1EEA41FC6F1AC0000EF28 /* HXUserPreferences.m in Sources */,
 				C6C1EE921FC6F1AC0000EF28 /* UIWindow+Extension.m in Sources */,
@@ -748,11 +742,10 @@
 				C6C1EE8C1FC6F1AC0000EF28 /* UIImage+Extension.m in Sources */,
 				C6C1EE911FC6F1AC0000EF28 /* NSTimer+Addition.m in Sources */,
 				C6C1EE8D1FC6F1AC0000EF28 /* UINavigationBar+AlphaTransition.m in Sources */,
-				C6C1EE9B1FC6F1AC0000EF28 /* HXImageUtil.m in Sources */,
 				C651A5421FC812510023E89C /* HXFileHelper.swift in Sources */,
 				C6C1EE8B1FC6F1AC0000EF28 /* Color+Image.m in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
-				C6C1EE9D1FC6F1AC0000EF28 /* NSURL+QueryDictionary.m in Sources */,
+				C6860BC71FCD0A2B005A719F /* HXImageUtil.swift in Sources */,
 				C6860BC01FCCFA2B005A719F /* NSDictionaryUtils.swift in Sources */,
 				C6C1EE871FC6F1AC0000EF28 /* UIImageView+HXSImageViewRoundCorner.m in Sources */,
 				C6C1EE411FC6F0E70000EF28 /* SwiftLearning.swift in Sources */,
@@ -761,7 +754,6 @@
 				C6C1EE961FC6F1AC0000EF28 /* NSString+Addition.m in Sources */,
 				C6C1EE901FC6F1AC0000EF28 /* NSDate+Extension.m in Sources */,
 				C6C1EE8A1FC6F1AC0000EF28 /* UINavigationController+Extension.m in Sources */,
-				C6C1EE9A1FC6F1AC0000EF28 /* Base64Encoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
