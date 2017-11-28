@@ -40,10 +40,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9j0-s2-zlU">
+                                <rect key="frame" x="162.5" y="175" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Ud-zS-AhD"/>
+                                    <constraint firstAttribute="width" constant="50" id="9Mx-zq-zVJ"/>
+                                </constraints>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <action selector="onClickPushBtn:" destination="rcM-Ek-GGN" eventType="touchUpInside" id="laI-il-kdl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lzP-MW-ykY" firstAttribute="top" secondItem="DcN-2Q-xgJ" secondAttribute="top" constant="50" id="T8W-jL-h1e"/>
+                            <constraint firstItem="9j0-s2-zlU" firstAttribute="centerX" secondItem="Jkt-Rk-Qga" secondAttribute="centerX" id="VRV-uh-305"/>
+                            <constraint firstItem="9j0-s2-zlU" firstAttribute="top" secondItem="lzP-MW-ykY" secondAttribute="bottom" constant="40" id="nY4-p8-bam"/>
                             <constraint firstItem="lzP-MW-ykY" firstAttribute="centerX" secondItem="Jkt-Rk-Qga" secondAttribute="centerX" id="zJd-G6-XVW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DcN-2Q-xgJ"/>

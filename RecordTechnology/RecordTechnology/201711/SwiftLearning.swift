@@ -19,4 +19,13 @@ class SwiftLearning: UIViewController {
 //        print("isChinese2 \(HXSLocalHelper.isLocaleChinese())")
         print("currentAppLanguage is \(HXSLocalHelper.currentAppLanguage())")
     }
+
+
+    @IBAction func onClickPushBtn(_ sender: Any) {
+        let vc:SwiftViewController = SwiftViewController.controllerFromXib() as! SwiftViewController;
+
+        self.navigationController?.pushViewController(vc, animated: true);
+    }
+
+
 }
