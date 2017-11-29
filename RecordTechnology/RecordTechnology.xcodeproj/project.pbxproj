@@ -41,12 +41,12 @@
 		C6860BD31FCD4DDB005A719F /* SwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6860BD11FCD4DDB005A719F /* SwiftViewController.xib */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
+		C6A0FE4D1FCE4D3D00DB1C68 /* UIImageViewRoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A0FE4C1FCE4D3D00DB1C68 /* UIImageViewRoundCorner.swift */; };
 		C6B1C7531FCBEB340021AC3F /* HXSDirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1C7521FCBEB340021AC3F /* HXSDirectoryManager.swift */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */; };
 		C6C1EE411FC6F0E70000EF28 /* SwiftLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE401FC6F0E70000EF28 /* SwiftLearning.swift */; };
 		C6C1EE431FC6F1140000EF28 /* SwiftLearning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C1EE421FC6F1140000EF28 /* SwiftLearning.storyboard */; };
-		C6C1EE871FC6F1AC0000EF28 /* UIImageView+HXSImageViewRoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE481FC6F1AC0000EF28 /* UIImageView+HXSImageViewRoundCorner.m */; };
 		C6C1EE881FC6F1AC0000EF28 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE491FC6F1AC0000EF28 /* UIColor+Extensions.m */; };
 		C6C1EE891FC6F1AC0000EF28 /* UIView+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE4D1FC6F1AC0000EF28 /* UIView+Utilities.m */; };
 		C6C1EE8A1FC6F1AC0000EF28 /* UINavigationController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE4E1FC6F1AC0000EF28 /* UINavigationController+Extension.m */; };
@@ -154,13 +154,13 @@
 		C68FE5651EF0E753002F67DC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		C6A0FE4C1FCE4D3D00DB1C68 /* UIImageViewRoundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewRoundCorner.swift; sourceTree = "<group>"; };
 		C6B1C7521FCBEB340021AC3F /* HXSDirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HXSDirectoryManager.swift; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		C6C1EE401FC6F0E70000EF28 /* SwiftLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearning.swift; sourceTree = "<group>"; };
 		C6C1EE421FC6F1140000EF28 /* SwiftLearning.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwiftLearning.storyboard; sourceTree = "<group>"; };
-		C6C1EE481FC6F1AC0000EF28 /* UIImageView+HXSImageViewRoundCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HXSImageViewRoundCorner.m"; sourceTree = "<group>"; };
 		C6C1EE491FC6F1AC0000EF28 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
 		C6C1EE4A1FC6F1AC0000EF28 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
 		C6C1EE4B1FC6F1AC0000EF28 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
@@ -174,7 +174,6 @@
 		C6C1EE531FC6F1AC0000EF28 /* NSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
 		C6C1EE541FC6F1AC0000EF28 /* UINavigationBar+AlphaTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+AlphaTransition.m"; sourceTree = "<group>"; };
 		C6C1EE551FC6F1AC0000EF28 /* NSString+Verification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verification.h"; sourceTree = "<group>"; };
-		C6C1EE561FC6F1AC0000EF28 /* UIImageView+HXSImageViewRoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HXSImageViewRoundCorner.h"; sourceTree = "<group>"; };
 		C6C1EE591FC6F1AC0000EF28 /* UINavigationController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Extension.h"; sourceTree = "<group>"; };
 		C6C1EE5A1FC6F1AC0000EF28 /* UIView+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utilities.h"; sourceTree = "<group>"; };
 		C6C1EE5B1FC6F1AC0000EF28 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
@@ -428,7 +427,7 @@
 			children = (
 				C6860BBF1FCCFA2B005A719F /* NSDictionaryUtils.swift */,
 				C6860BCA1FCD3F8C005A719F /* UIViewControllerExtensions.swift */,
-				C6C1EE481FC6F1AC0000EF28 /* UIImageView+HXSImageViewRoundCorner.m */,
+				C6A0FE4C1FCE4D3D00DB1C68 /* UIImageViewRoundCorner.swift */,
 				C6C1EE491FC6F1AC0000EF28 /* UIColor+Extensions.m */,
 				C6C1EE4A1FC6F1AC0000EF28 /* UIWindow+Extension.h */,
 				C6C1EE4B1FC6F1AC0000EF28 /* NSTimer+Addition.h */,
@@ -442,7 +441,6 @@
 				C6C1EE531FC6F1AC0000EF28 /* NSString+Addition.h */,
 				C6C1EE541FC6F1AC0000EF28 /* UINavigationBar+AlphaTransition.m */,
 				C6C1EE551FC6F1AC0000EF28 /* NSString+Verification.h */,
-				C6C1EE561FC6F1AC0000EF28 /* UIImageView+HXSImageViewRoundCorner.h */,
 				C6C1EE591FC6F1AC0000EF28 /* UINavigationController+Extension.h */,
 				C6C1EE5A1FC6F1AC0000EF28 /* UIView+Utilities.h */,
 				C6C1EE5B1FC6F1AC0000EF28 /* NSDate+Extension.m */,
@@ -712,6 +710,7 @@
 				C651A53E1FC7BEEF0023E89C /* HXAppConfig.swift in Sources */,
 				C6C1EE9C1FC6F1AC0000EF28 /* NSDataAdditional.m in Sources */,
 				C6C1EE941FC6F1AC0000EF28 /* UIView+Extension.m in Sources */,
+				C6A0FE4D1FCE4D3D00DB1C68 /* UIImageViewRoundCorner.swift in Sources */,
 				C6860BC51FCD099B005A719F /* Base64Encoding.m in Sources */,
 				C651A5401FC7E8FB0023E89C /* HXPlistReader.swift in Sources */,
 				C6C1EE921FC6F1AC0000EF28 /* UIWindow+Extension.m in Sources */,
@@ -733,7 +732,6 @@
 				C6860BC71FCD0A2B005A719F /* HXImageUtil.swift in Sources */,
 				C6860BD21FCD4DDB005A719F /* SwiftViewController.swift in Sources */,
 				C6860BC01FCCFA2B005A719F /* NSDictionaryUtils.swift in Sources */,
-				C6C1EE871FC6F1AC0000EF28 /* UIImageView+HXSImageViewRoundCorner.m in Sources */,
 				C6C1EE411FC6F0E70000EF28 /* SwiftLearning.swift in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
