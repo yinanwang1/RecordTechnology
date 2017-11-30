@@ -19,6 +19,7 @@
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C624DF851CA5516300AD2615 /* QuickLook.framework */; };
 		C628A8571F90BC9900E74CEA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C628A8561F90BC9900E74CEA /* CoreTelephony.framework */; };
+		C62DF8791FD02F8100DFF101 /* NSTimerAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62DF8781FD02F8100DFF101 /* NSTimerAddition.swift */; };
 		C63ABF1F1F4FCC200057A2FD /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63ABF1E1F4FCC200057A2FD /* SafariServices.framework */; };
 		C6502A4F1DAB300B0019079C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6502A4E1DAB300B0019079C /* Images.xcassets */; };
 		C6502A541DAB31300019079C /* gif1.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A501DAB31300019079C /* gif1.gif */; };
@@ -55,7 +56,6 @@
 		C6C1EE8C1FC6F1AC0000EF28 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE511FC6F1AC0000EF28 /* UIImage+Extension.m */; };
 		C6C1EE8D1FC6F1AC0000EF28 /* UINavigationBar+AlphaTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE541FC6F1AC0000EF28 /* UINavigationBar+AlphaTransition.m */; };
 		C6C1EE901FC6F1AC0000EF28 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE5B1FC6F1AC0000EF28 /* NSDate+Extension.m */; };
-		C6C1EE911FC6F1AC0000EF28 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE5C1FC6F1AC0000EF28 /* NSTimer+Addition.m */; };
 		C6C1EE931FC6F1AC0000EF28 /* NSData+HXSPrintDataMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE5F1FC6F1AC0000EF28 /* NSData+HXSPrintDataMD5.m */; };
 		C6C1EE941FC6F1AC0000EF28 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE621FC6F1AC0000EF28 /* UIView+Extension.m */; };
 		C6C1EE951FC6F1AC0000EF28 /* NSString+Verification.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE631FC6F1AC0000EF28 /* NSString+Verification.m */; };
@@ -128,6 +128,7 @@
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
 		C624DF851CA5516300AD2615 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		C628A8561F90BC9900E74CEA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C62DF8781FD02F8100DFF101 /* NSTimerAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTimerAddition.swift; sourceTree = "<group>"; };
 		C63ABF1E1F4FCC200057A2FD /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		C6502A4E1DAB300B0019079C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C6502A501DAB31300019079C /* gif1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif1.gif; sourceTree = "<group>"; };
@@ -163,7 +164,6 @@
 		C6C1EE401FC6F0E70000EF28 /* SwiftLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearning.swift; sourceTree = "<group>"; };
 		C6C1EE421FC6F1140000EF28 /* SwiftLearning.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwiftLearning.storyboard; sourceTree = "<group>"; };
 		C6C1EE491FC6F1AC0000EF28 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
-		C6C1EE4B1FC6F1AC0000EF28 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
 		C6C1EE4C1FC6F1AC0000EF28 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		C6C1EE4D1FC6F1AC0000EF28 /* UIView+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utilities.m"; sourceTree = "<group>"; };
 		C6C1EE4E1FC6F1AC0000EF28 /* UINavigationController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Extension.m"; sourceTree = "<group>"; };
@@ -177,7 +177,6 @@
 		C6C1EE591FC6F1AC0000EF28 /* UINavigationController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Extension.h"; sourceTree = "<group>"; };
 		C6C1EE5A1FC6F1AC0000EF28 /* UIView+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utilities.h"; sourceTree = "<group>"; };
 		C6C1EE5B1FC6F1AC0000EF28 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
-		C6C1EE5C1FC6F1AC0000EF28 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
 		C6C1EE5E1FC6F1AC0000EF28 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
 		C6C1EE5F1FC6F1AC0000EF28 /* NSData+HXSPrintDataMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HXSPrintDataMD5.m"; sourceTree = "<group>"; };
 		C6C1EE601FC6F1AC0000EF28 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
@@ -428,8 +427,8 @@
 				C6860BCA1FCD3F8C005A719F /* UIViewControllerExtensions.swift */,
 				C6A0FE4C1FCE4D3D00DB1C68 /* UIImageViewRoundCorner.swift */,
 				C6A0FE4E1FCE4E6B00DB1C68 /* UIWindowExtension.swift */,
+				C62DF8781FD02F8100DFF101 /* NSTimerAddition.swift */,
 				C6C1EE491FC6F1AC0000EF28 /* UIColor+Extensions.m */,
-				C6C1EE4B1FC6F1AC0000EF28 /* NSTimer+Addition.h */,
 				C6C1EE4C1FC6F1AC0000EF28 /* NSDate+Extension.h */,
 				C6C1EE4D1FC6F1AC0000EF28 /* UIView+Utilities.m */,
 				C6C1EE4E1FC6F1AC0000EF28 /* UINavigationController+Extension.m */,
@@ -443,7 +442,6 @@
 				C6C1EE591FC6F1AC0000EF28 /* UINavigationController+Extension.h */,
 				C6C1EE5A1FC6F1AC0000EF28 /* UIView+Utilities.h */,
 				C6C1EE5B1FC6F1AC0000EF28 /* NSDate+Extension.m */,
-				C6C1EE5C1FC6F1AC0000EF28 /* NSTimer+Addition.m */,
 				C6C1EE5E1FC6F1AC0000EF28 /* UIColor+Extensions.h */,
 				C6C1EE5F1FC6F1AC0000EF28 /* NSData+HXSPrintDataMD5.m */,
 				C6C1EE601FC6F1AC0000EF28 /* UIImage+Extension.h */,
@@ -715,12 +713,12 @@
 				C6B1C7531FCBEB340021AC3F /* HXSDirectoryManager.swift in Sources */,
 				C6C1EE991FC6F1AC0000EF28 /* HXAppDeviceHelper.swift in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
+				C62DF8791FD02F8100DFF101 /* NSTimerAddition.swift in Sources */,
 				C6C1EE931FC6F1AC0000EF28 /* NSData+HXSPrintDataMD5.m in Sources */,
 				C6C1EE881FC6F1AC0000EF28 /* UIColor+Extensions.m in Sources */,
 				C679AA9E1FC4444F00F25CF6 /* Swift-Prefix.swift in Sources */,
 				C6C1EE8C1FC6F1AC0000EF28 /* UIImage+Extension.m in Sources */,
 				C6860BCB1FCD3F8C005A719F /* UIViewControllerExtensions.swift in Sources */,
-				C6C1EE911FC6F1AC0000EF28 /* NSTimer+Addition.m in Sources */,
 				C6C1EE8D1FC6F1AC0000EF28 /* UINavigationBar+AlphaTransition.m in Sources */,
 				C651A5421FC812510023E89C /* HXFileHelper.swift in Sources */,
 				C6860BC91FCD3133005A719F /* HXStringUtil.swift in Sources */,
