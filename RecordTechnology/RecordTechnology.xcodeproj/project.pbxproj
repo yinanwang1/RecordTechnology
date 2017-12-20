@@ -62,6 +62,9 @@
 		C6C1EE961FC6F1AC0000EF28 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE651FC6F1AC0000EF28 /* NSString+Addition.m */; };
 		C6C1EE991FC6F1AC0000EF28 /* HXAppDeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE701FC6F1AC0000EF28 /* HXAppDeviceHelper.swift */; };
 		C6C1EE9C1FC6F1AC0000EF28 /* NSDataAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE751FC6F1AC0000EF28 /* NSDataAdditional.m */; };
+		C6E5A56D1FEA82C90007BDF0 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A56C1FEA82C90007BDF0 /* CollectionViewController.m */; };
+		C6E5A56F1FEA82D50007BDF0 /* CollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E5A56E1FEA82D50007BDF0 /* CollectionViewController.storyboard */; };
+		C6E5A5721FEA84A90007BDF0 /* CollectionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A5711FEA84A90007BDF0 /* CollectionObject.m */; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 		F5D0E43BB8C8AD329FE22EAC /* Pods_RecordTechnology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB7F4834FAD955701B751DB /* Pods_RecordTechnology.framework */; };
 /* End PBXBuildFile section */
@@ -189,6 +192,11 @@
 		C6C1EE751FC6F1AC0000EF28 /* NSDataAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditional.m; sourceTree = "<group>"; };
 		C6C1EE811FC6F1AC0000EF28 /* NSDataAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditional.h; sourceTree = "<group>"; };
 		C6C1EEA71FC6F3E60000EF28 /* HXMacrosUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXMacrosUtils.h; sourceTree = "<group>"; };
+		C6E5A56B1FEA82C90007BDF0 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		C6E5A56C1FEA82C90007BDF0 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		C6E5A56E1FEA82D50007BDF0 /* CollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionViewController.storyboard; sourceTree = "<group>"; };
+		C6E5A5701FEA84A90007BDF0 /* CollectionObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionObject.h; sourceTree = "<group>"; };
+		C6E5A5711FEA84A90007BDF0 /* CollectionObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionObject.m; sourceTree = "<group>"; };
 		E144C3CE3612D5EEAA10C61E /* libPods-RecordTechnologyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnologyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D728750DE2DC5A9722D56 /* Pods-RecordTechnologyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnologyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3D6E6F413FA11148A374E5C /* Pods-RecordTechnology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnology.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnology/Pods-RecordTechnology.release.xcconfig"; sourceTree = "<group>"; };
@@ -314,6 +322,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				C6E5A56A1FEA82AC0007BDF0 /* 201712 */,
 				C6C1EE3F1FC6F0D20000EF28 /* 201711 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
@@ -473,6 +482,18 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C6E5A56A1FEA82AC0007BDF0 /* 201712 */ = {
+			isa = PBXGroup;
+			children = (
+				C6E5A56B1FEA82C90007BDF0 /* CollectionViewController.h */,
+				C6E5A56C1FEA82C90007BDF0 /* CollectionViewController.m */,
+				C6E5A56E1FEA82D50007BDF0 /* CollectionViewController.storyboard */,
+				C6E5A5701FEA84A90007BDF0 /* CollectionObject.h */,
+				C6E5A5711FEA84A90007BDF0 /* CollectionObject.m */,
+			);
+			path = 201712;
+			sourceTree = "<group>";
+		};
 		EC80E78A35F814DD30C26249 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,6 +610,7 @@
 				C6502A4F1DAB300B0019079C /* Images.xcassets in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
+				C6E5A56F1FEA82D50007BDF0 /* CollectionViewController.storyboard in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
 				C6502A541DAB31300019079C /* gif1.gif in Resources */,
 			);
@@ -713,8 +735,10 @@
 				C6B1C7531FCBEB340021AC3F /* HXSDirectoryManager.swift in Sources */,
 				C6C1EE991FC6F1AC0000EF28 /* HXAppDeviceHelper.swift in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
+				C6E5A56D1FEA82C90007BDF0 /* CollectionViewController.m in Sources */,
 				C62DF8791FD02F8100DFF101 /* NSTimerAddition.swift in Sources */,
 				C6C1EE931FC6F1AC0000EF28 /* NSData+HXSPrintDataMD5.m in Sources */,
+				C6E5A5721FEA84A90007BDF0 /* CollectionObject.m in Sources */,
 				C6C1EE881FC6F1AC0000EF28 /* UIColor+Extensions.m in Sources */,
 				C679AA9E1FC4444F00F25CF6 /* Swift-Prefix.swift in Sources */,
 				C6C1EE8C1FC6F1AC0000EF28 /* UIImage+Extension.m in Sources */,

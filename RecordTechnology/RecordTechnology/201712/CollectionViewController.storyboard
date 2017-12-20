@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="60e-YQ-mbE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6l3-KB-DJs">
+            <objects>
+                <navigationController id="60e-YQ-mbE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ca3-Iw-dK7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zQ9-mz-JVM" kind="relationship" relationship="rootViewController" id="mT3-N6-BNe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VLA-kK-CaU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-209" y="188"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="fIw-3m-edY">
+            <objects>
+                <viewController id="zQ9-mz-JVM" customClass="CollectionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ust-si-k5U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's You!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65m-LA-AFa">
+                                <rect key="frame" x="157" y="98" width="60.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DS-sQ-AXt">
+                                <rect key="frame" x="137.5" y="149" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Rcs-o2-967"/>
+                                    <constraint firstAttribute="width" constant="100" id="oi4-TD-H3B"/>
+                                </constraints>
+                                <state key="normal" title="点我"/>
+                                <connections>
+                                    <action selector="onClickMeBtn:" destination="zQ9-mz-JVM" eventType="touchUpInside" id="RFS-1b-HAN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDv-Qi-oQc">
+                                <rect key="frame" x="137" y="233" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NTW-8E-FIg"/>
+                                    <constraint firstAttribute="width" constant="100" id="vve-Zj-bLv"/>
+                                </constraints>
+                                <state key="normal" title="显示"/>
+                                <connections>
+                                    <action selector="onClickShowBtn:" destination="zQ9-mz-JVM" eventType="touchUpInside" id="P23-nV-0J7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RDv-Qi-oQc" firstAttribute="top" secondItem="6DS-sQ-AXt" secondAttribute="bottom" constant="34" id="CIC-Wv-T2x"/>
+                            <constraint firstItem="6DS-sQ-AXt" firstAttribute="top" secondItem="65m-LA-AFa" secondAttribute="bottom" constant="30" id="RDK-99-Wjr"/>
+                            <constraint firstItem="RDv-Qi-oQc" firstAttribute="centerX" secondItem="Ust-si-k5U" secondAttribute="centerX" id="bmw-0e-Qen"/>
+                            <constraint firstItem="65m-LA-AFa" firstAttribute="centerX" secondItem="Ust-si-k5U" secondAttribute="centerX" id="eJB-DB-kTw"/>
+                            <constraint firstItem="6DS-sQ-AXt" firstAttribute="centerX" secondItem="Ust-si-k5U" secondAttribute="centerX" id="mNU-pc-aSj"/>
+                            <constraint firstItem="65m-LA-AFa" firstAttribute="top" secondItem="K3S-lk-8KW" secondAttribute="top" constant="34" id="zgd-Jh-PXr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K3S-lk-8KW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qy0-s4-S7w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sql-sh-ebs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="188"/>
+        </scene>
+    </scenes>
+</document>
