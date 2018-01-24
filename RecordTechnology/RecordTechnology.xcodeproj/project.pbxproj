@@ -18,6 +18,10 @@
 		C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C624DF851CA5516300AD2615 /* QuickLook.framework */; };
+		C62547A720175D3A00B414B5 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62547A620175D3A00B414B5 /* LeftViewController.m */; };
+		C62547A920175D4700B414B5 /* LeftStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62547A820175D4700B414B5 /* LeftStoryboard.storyboard */; };
+		C62547AC20175DA900B414B5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62547AB20175DA900B414B5 /* MainViewController.m */; };
+		C62547AF20175E7B00B414B5 /* LeftTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62547AE20175E7B00B414B5 /* LeftTabBarViewController.m */; };
 		C628A8571F90BC9900E74CEA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C628A8561F90BC9900E74CEA /* CoreTelephony.framework */; };
 		C62DF8791FD02F8100DFF101 /* NSTimerAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62DF8781FD02F8100DFF101 /* NSTimerAddition.swift */; };
 		C63ABF1F1F4FCC200057A2FD /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63ABF1E1F4FCC200057A2FD /* SafariServices.framework */; };
@@ -42,6 +46,9 @@
 		C6860BD31FCD4DDB005A719F /* SwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6860BD11FCD4DDB005A719F /* SwiftViewController.xib */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
+		C690149120183674006FB7DD /* HXSBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C690148F20183674006FB7DD /* HXSBaseNavigationController.m */; };
+		C690149420183753006FB7DD /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C690149320183753006FB7DD /* PresentViewController.m */; };
+		C6901497201837D5006FB7DD /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6901496201837D5006FB7DD /* OtherViewController.m */; };
 		C6A0FE4D1FCE4D3D00DB1C68 /* UIImageViewRoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A0FE4C1FCE4D3D00DB1C68 /* UIImageViewRoundCorner.swift */; };
 		C6A0FE4F1FCE4E6B00DB1C68 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A0FE4E1FCE4E6B00DB1C68 /* UIWindowExtension.swift */; };
 		C6B1C7531FCBEB340021AC3F /* HXSDirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1C7521FCBEB340021AC3F /* HXSDirectoryManager.swift */; };
@@ -130,6 +137,13 @@
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
 		C624DF851CA5516300AD2615 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		C62547A520175D3A00B414B5 /* LeftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		C62547A620175D3A00B414B5 /* LeftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		C62547A820175D4700B414B5 /* LeftStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LeftStoryboard.storyboard; sourceTree = "<group>"; };
+		C62547AA20175DA900B414B5 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C62547AB20175DA900B414B5 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C62547AD20175E7B00B414B5 /* LeftTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftTabBarViewController.h; sourceTree = "<group>"; };
+		C62547AE20175E7B00B414B5 /* LeftTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftTabBarViewController.m; sourceTree = "<group>"; };
 		C628A8561F90BC9900E74CEA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		C62DF8781FD02F8100DFF101 /* NSTimerAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTimerAddition.swift; sourceTree = "<group>"; };
 		C63ABF1E1F4FCC200057A2FD /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
@@ -158,6 +172,12 @@
 		C68FE5651EF0E753002F67DC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		C690148F20183674006FB7DD /* HXSBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXSBaseNavigationController.m; sourceTree = "<group>"; };
+		C690149020183674006FB7DD /* HXSBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXSBaseNavigationController.h; sourceTree = "<group>"; };
+		C690149220183753006FB7DD /* PresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		C690149320183753006FB7DD /* PresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
+		C6901495201837D5006FB7DD /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		C6901496201837D5006FB7DD /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		C6A0FE4C1FCE4D3D00DB1C68 /* UIImageViewRoundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewRoundCorner.swift; sourceTree = "<group>"; };
 		C6A0FE4E1FCE4E6B00DB1C68 /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
 		C6B1C7521FCBEB340021AC3F /* HXSDirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HXSDirectoryManager.swift; sourceTree = "<group>"; };
@@ -322,6 +342,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				C62547A420175D1200B414B5 /* 201801 */,
 				C6E5A56A1FEA82AC0007BDF0 /* 201712 */,
 				C6C1EE3F1FC6F0D20000EF28 /* 201711 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
@@ -394,6 +415,26 @@
 				C61771E51ABC6BF30097991C /* WWSideslipViewController.m */,
 			);
 			path = WWSideslipViewController;
+			sourceTree = "<group>";
+		};
+		C62547A420175D1200B414B5 /* 201801 */ = {
+			isa = PBXGroup;
+			children = (
+				C690149020183674006FB7DD /* HXSBaseNavigationController.h */,
+				C690148F20183674006FB7DD /* HXSBaseNavigationController.m */,
+				C62547A520175D3A00B414B5 /* LeftViewController.h */,
+				C62547A620175D3A00B414B5 /* LeftViewController.m */,
+				C62547A820175D4700B414B5 /* LeftStoryboard.storyboard */,
+				C62547AA20175DA900B414B5 /* MainViewController.h */,
+				C62547AB20175DA900B414B5 /* MainViewController.m */,
+				C62547AD20175E7B00B414B5 /* LeftTabBarViewController.h */,
+				C62547AE20175E7B00B414B5 /* LeftTabBarViewController.m */,
+				C690149220183753006FB7DD /* PresentViewController.h */,
+				C690149320183753006FB7DD /* PresentViewController.m */,
+				C6901495201837D5006FB7DD /* OtherViewController.h */,
+				C6901496201837D5006FB7DD /* OtherViewController.m */,
+			);
+			path = 201801;
 			sourceTree = "<group>";
 		};
 		C6369EA71DA8EF5E008FFC34 /* Resource */ = {
@@ -611,6 +652,7 @@
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C6E5A56F1FEA82D50007BDF0 /* CollectionViewController.storyboard in Resources */,
+				C62547A920175D4700B414B5 /* LeftStoryboard.storyboard in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
 				C6502A541DAB31300019079C /* gif1.gif in Resources */,
 			);
@@ -724,14 +766,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6C1EE951FC6F1AC0000EF28 /* NSString+Verification.m in Sources */,
+				C62547AC20175DA900B414B5 /* MainViewController.m in Sources */,
 				C6860BC21FCCFFD3005A719F /* HXLocalHelper.swift in Sources */,
 				C651A53E1FC7BEEF0023E89C /* HXAppConfig.swift in Sources */,
 				C6C1EE9C1FC6F1AC0000EF28 /* NSDataAdditional.m in Sources */,
+				C62547AF20175E7B00B414B5 /* LeftTabBarViewController.m in Sources */,
 				C6C1EE941FC6F1AC0000EF28 /* UIView+Extension.m in Sources */,
 				C6A0FE4D1FCE4D3D00DB1C68 /* UIImageViewRoundCorner.swift in Sources */,
 				C6860BC51FCD099B005A719F /* Base64Encoding.m in Sources */,
 				C651A5401FC7E8FB0023E89C /* HXPlistReader.swift in Sources */,
+				C690149420183753006FB7DD /* PresentViewController.m in Sources */,
 				C6C1EE891FC6F1AC0000EF28 /* UIView+Utilities.m in Sources */,
+				C62547A720175D3A00B414B5 /* LeftViewController.m in Sources */,
 				C6B1C7531FCBEB340021AC3F /* HXSDirectoryManager.swift in Sources */,
 				C6C1EE991FC6F1AC0000EF28 /* HXAppDeviceHelper.swift in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
@@ -751,6 +797,8 @@
 				C6860BC71FCD0A2B005A719F /* HXImageUtil.swift in Sources */,
 				C6860BD21FCD4DDB005A719F /* SwiftViewController.swift in Sources */,
 				C6860BC01FCCFA2B005A719F /* NSDictionaryUtils.swift in Sources */,
+				C690149120183674006FB7DD /* HXSBaseNavigationController.m in Sources */,
+				C6901497201837D5006FB7DD /* OtherViewController.m in Sources */,
 				C6C1EE411FC6F0E70000EF28 /* SwiftLearning.swift in Sources */,
 				C6A0FE4F1FCE4E6B00DB1C68 /* UIWindowExtension.swift in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
