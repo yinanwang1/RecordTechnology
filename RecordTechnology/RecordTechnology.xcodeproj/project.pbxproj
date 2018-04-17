@@ -69,6 +69,8 @@
 		C6C1EE961FC6F1AC0000EF28 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE651FC6F1AC0000EF28 /* NSString+Addition.m */; };
 		C6C1EE991FC6F1AC0000EF28 /* HXAppDeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE701FC6F1AC0000EF28 /* HXAppDeviceHelper.swift */; };
 		C6C1EE9C1FC6F1AC0000EF28 /* NSDataAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE751FC6F1AC0000EF28 /* NSDataAdditional.m */; };
+		C6D9546820843BFA002A7288 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D9546720843BFA002A7288 /* BlockViewController.m */; };
+		C6D9546A20843C09002A7288 /* Block.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D9546920843C09002A7288 /* Block.storyboard */; };
 		C6E5A56D1FEA82C90007BDF0 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A56C1FEA82C90007BDF0 /* CollectionViewController.m */; };
 		C6E5A56F1FEA82D50007BDF0 /* CollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E5A56E1FEA82D50007BDF0 /* CollectionViewController.storyboard */; };
 		C6E5A5721FEA84A90007BDF0 /* CollectionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A5711FEA84A90007BDF0 /* CollectionObject.m */; };
@@ -212,6 +214,9 @@
 		C6C1EE751FC6F1AC0000EF28 /* NSDataAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditional.m; sourceTree = "<group>"; };
 		C6C1EE811FC6F1AC0000EF28 /* NSDataAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditional.h; sourceTree = "<group>"; };
 		C6C1EEA71FC6F3E60000EF28 /* HXMacrosUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXMacrosUtils.h; sourceTree = "<group>"; };
+		C6D9546620843BFA002A7288 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		C6D9546720843BFA002A7288 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		C6D9546920843C09002A7288 /* Block.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Block.storyboard; sourceTree = "<group>"; };
 		C6E5A56B1FEA82C90007BDF0 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		C6E5A56C1FEA82C90007BDF0 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		C6E5A56E1FEA82D50007BDF0 /* CollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionViewController.storyboard; sourceTree = "<group>"; };
@@ -342,6 +347,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				C6D9546420843BCD002A7288 /* 201804 */,
 				C62547A420175D1200B414B5 /* 201801 */,
 				C6E5A56A1FEA82AC0007BDF0 /* 201712 */,
 				C6C1EE3F1FC6F0D20000EF28 /* 201711 */,
@@ -523,6 +529,24 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C6D9546420843BCD002A7288 /* 201804 */ = {
+			isa = PBXGroup;
+			children = (
+				C6D9546520843BDA002A7288 /* block */,
+			);
+			path = 201804;
+			sourceTree = "<group>";
+		};
+		C6D9546520843BDA002A7288 /* block */ = {
+			isa = PBXGroup;
+			children = (
+				C6D9546620843BFA002A7288 /* BlockViewController.h */,
+				C6D9546720843BFA002A7288 /* BlockViewController.m */,
+				C6D9546920843C09002A7288 /* Block.storyboard */,
+			);
+			path = block;
+			sourceTree = "<group>";
+		};
 		C6E5A56A1FEA82AC0007BDF0 /* 201712 */ = {
 			isa = PBXGroup;
 			children = (
@@ -642,6 +666,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D9546A20843C09002A7288 /* Block.storyboard in Resources */,
 				C6C1EE431FC6F1140000EF28 /* SwiftLearning.storyboard in Resources */,
 				C6860BD31FCD4DDB005A719F /* SwiftViewController.xib in Resources */,
 				C68FFB141CA398E500716DBC /* 58.png in Resources */,
@@ -783,6 +808,7 @@
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C6E5A56D1FEA82C90007BDF0 /* CollectionViewController.m in Sources */,
 				C62DF8791FD02F8100DFF101 /* NSTimerAddition.swift in Sources */,
+				C6D9546820843BFA002A7288 /* BlockViewController.m in Sources */,
 				C6C1EE931FC6F1AC0000EF28 /* NSData+HXSPrintDataMD5.m in Sources */,
 				C6E5A5721FEA84A90007BDF0 /* CollectionObject.m in Sources */,
 				C6C1EE881FC6F1AC0000EF28 /* UIColor+Extensions.m in Sources */,
