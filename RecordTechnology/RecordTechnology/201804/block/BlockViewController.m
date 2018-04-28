@@ -8,6 +8,10 @@
 
 #import "BlockViewController.h"
 
+/******************** 快速的定义一个weakSelf 用于block里面  ***************/
+#define WS(weakSelf)  __weak __typeof(self) weakSelf = self
+#define SS(strongSelf) __strong __typeof(weakSelf) strongSelf = weakSelf;
+
 @interface BlockViewController ()
 
 @end
@@ -44,9 +48,9 @@ static int static_global_j = 3;  // 静态全局变量
     static int static_k = 3;   //  静态变量
     int val = 4;               // 自动变量
 
-    __weak typeof(self) weakSelf = self;
+    WS(weakSelf);
     void (^myBlock)(void) = ^{
-        __strong typeof(weakSelf) strongSelf = weakSelf;
+        SS(strongSelf);
         // Do something
     };
 

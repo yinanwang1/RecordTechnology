@@ -30,6 +30,7 @@ pod 'Masonry', '~> 1.0.2'
 pod 'IQKeyboardManager', '= 4.0.13'
 #pod 'YYKit', '~> 1.0.9'
 pod 'SAMKeychain', '= 1.5.3'
+pod 'pop', '= 1.0.10'
 
 end
 

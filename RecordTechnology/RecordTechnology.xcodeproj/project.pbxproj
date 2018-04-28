@@ -15,6 +15,8 @@
 		8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E23F1ABAB2DC0008984F /* Main.storyboard */; };
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
+		C60E244B2090882D00C30235 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C60E244A2090882D00C30235 /* PopViewController.m */; };
+		C60E244D2090883600C30235 /* Pop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60E244C2090883600C30235 /* Pop.storyboard */; };
 		C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C624DF851CA5516300AD2615 /* QuickLook.framework */; };
@@ -54,6 +56,7 @@
 		C6B1C7531FCBEB340021AC3F /* HXSDirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1C7521FCBEB340021AC3F /* HXSDirectoryManager.swift */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */; };
+		C6C1C24D20933D0D0008B692 /* DisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1C24C20933D0D0008B692 /* DisplayLinkViewController.m */; };
 		C6C1EE411FC6F0E70000EF28 /* SwiftLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE401FC6F0E70000EF28 /* SwiftLearning.swift */; };
 		C6C1EE431FC6F1140000EF28 /* SwiftLearning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C1EE421FC6F1140000EF28 /* SwiftLearning.storyboard */; };
 		C6C1EE881FC6F1AC0000EF28 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1EE491FC6F1AC0000EF28 /* UIColor+Extensions.m */; };
@@ -135,6 +138,9 @@
 		8EDF0A4D1ABC22F6004D736C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EF6A08F1B315C7600694EDE /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		B8D862BD766BDF0FF78C6C54 /* Pods-RecordTechnologyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnologyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C60E24492090882D00C30235 /* PopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		C60E244A2090882D00C30235 /* PopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		C60E244C2090883600C30235 /* Pop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pop.storyboard; sourceTree = "<group>"; };
 		C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
@@ -186,6 +192,8 @@
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C6C1C24B20933D0D0008B692 /* DisplayLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayLinkViewController.h; sourceTree = "<group>"; };
+		C6C1C24C20933D0D0008B692 /* DisplayLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayLinkViewController.m; sourceTree = "<group>"; };
 		C6C1EE401FC6F0E70000EF28 /* SwiftLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearning.swift; sourceTree = "<group>"; };
 		C6C1EE421FC6F1140000EF28 /* SwiftLearning.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwiftLearning.storyboard; sourceTree = "<group>"; };
 		C6C1EE491FC6F1AC0000EF28 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
@@ -232,13 +240,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */,
 				C628A8571F90BC9900E74CEA /* CoreTelephony.framework in Frameworks */,
 				C63ABF1F1F4FCC200057A2FD /* SafariServices.framework in Frameworks */,
 				C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */,
 				C67480F01D4F2098008C2AFF /* WebKit.framework in Frameworks */,
 				C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */,
 				C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */,
-				C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */,
 				C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */,
 				8E1BE4321B3BED4800CAF4BA /* libobjc.A.dylib in Frameworks */,
 				C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */,
@@ -405,6 +413,18 @@
 			path = Macro;
 			sourceTree = "<group>";
 		};
+		C60E24482090881000C30235 /* pop */ = {
+			isa = PBXGroup;
+			children = (
+				C60E24492090882D00C30235 /* PopViewController.h */,
+				C60E244A2090882D00C30235 /* PopViewController.m */,
+				C6C1C24B20933D0D0008B692 /* DisplayLinkViewController.h */,
+				C6C1C24C20933D0D0008B692 /* DisplayLinkViewController.m */,
+				C60E244C2090883600C30235 /* Pop.storyboard */,
+			);
+			path = pop;
+			sourceTree = "<group>";
+		};
 		C61771E21ABC6BF30097991C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +552,7 @@
 		C6D9546420843BCD002A7288 /* 201804 */ = {
 			isa = PBXGroup;
 			children = (
+				C60E24482090881000C30235 /* pop */,
 				C6D9546520843BDA002A7288 /* block */,
 			);
 			path = 201804;
@@ -627,7 +648,7 @@
 				TargetAttributes = {
 					8E41E2311ABAB2DC0008984F = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 49SN73G4CK;
+						DevelopmentTeam = 2LYTD2VW3G;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -666,6 +687,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60E244D2090883600C30235 /* Pop.storyboard in Resources */,
 				C6D9546A20843C09002A7288 /* Block.storyboard in Resources */,
 				C6C1EE431FC6F1140000EF28 /* SwiftLearning.storyboard in Resources */,
 				C6860BD31FCD4DDB005A719F /* SwiftViewController.xib in Resources */,
@@ -714,13 +736,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecordTechnology-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9AFF70B8588F76391AA80CC1 /* [CP] Copy Pods Resources */ = {
@@ -759,13 +784,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecordTechnologyTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DA122EB25AEDBACAAD18C0AE /* [CP] Embed Pods Frameworks */ = {
@@ -774,9 +802,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RecordTechnology/Pods-RecordTechnology-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -803,6 +840,7 @@
 				C690149420183753006FB7DD /* PresentViewController.m in Sources */,
 				C6C1EE891FC6F1AC0000EF28 /* UIView+Utilities.m in Sources */,
 				C62547A720175D3A00B414B5 /* LeftViewController.m in Sources */,
+				C6C1C24D20933D0D0008B692 /* DisplayLinkViewController.m in Sources */,
 				C6B1C7531FCBEB340021AC3F /* HXSDirectoryManager.swift in Sources */,
 				C6C1EE991FC6F1AC0000EF28 /* HXAppDeviceHelper.swift in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
@@ -832,6 +870,7 @@
 				C6C1EE961FC6F1AC0000EF28 /* NSString+Addition.m in Sources */,
 				C6C1EE901FC6F1AC0000EF28 /* NSDate+Extension.m in Sources */,
 				C6C1EE8A1FC6F1AC0000EF28 /* UINavigationController+Extension.m in Sources */,
+				C60E244B2090882D00C30235 /* PopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -992,16 +1031,16 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 49SN73G4CK;
+				DEVELOPMENT_TEAM = 2LYTD2VW3G;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qeebike.service;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qeebike.customer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "10e84dfd-b998-429a-a73f-72259094d09d";
-				PROVISIONING_PROFILE_SPECIFIER = service_dev;
+				PROVISIONING_PROFILE = "2f0767b2-65ba-48ac-a76f-fe17b2a73dd0";
+				PROVISIONING_PROFILE_SPECIFIER = qeebike_dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/RecordTechnology-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -1021,16 +1060,16 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 49SN73G4CK;
+				DEVELOPMENT_TEAM = 2LYTD2VW3G;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "RecordTechnology/RecordTechnology-Prefix.pch";
 				INFOPLIST_FILE = RecordTechnology/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qeebike.service;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qeebike.customer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "adf95cda-105b-478f-9d7d-c0737019a987";
-				PROVISIONING_PROFILE_SPECIFIER = service_inhouse;
+				PROVISIONING_PROFILE = "8288d584-63a3-431d-8a7f-16e72de51ff5";
+				PROVISIONING_PROFILE_SPECIFIER = qeebike_adhoc;
 				SWIFT_OBJC_BRIDGING_HEADER = "RecordTechnology/RecordTechnology-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
