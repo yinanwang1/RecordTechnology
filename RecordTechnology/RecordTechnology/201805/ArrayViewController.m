@@ -8,6 +8,8 @@
 
 #import "ArrayViewController.h"
 
+#import "ChildViewController.h"
+
 @interface ArrayViewController ()
 
 @end
@@ -17,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self testAarray];
+//    [self testAarray];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,6 +41,14 @@
 }
 
 
+- (IBAction)onClickPushBtn:(id)sender
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Array" bundle:nil];
+    ChildViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"ChildViewController"];
+
+
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 
