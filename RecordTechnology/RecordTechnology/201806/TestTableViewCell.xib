@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TestTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PCg-5y-E93">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PCg-5y-E93" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ChK-wy-rE0"/>
+                    <constraint firstItem="PCg-5y-E93" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fle-Ez-zfi"/>
+                    <constraint firstAttribute="bottom" secondItem="PCg-5y-E93" secondAttribute="bottom" id="ikK-7d-tHd"/>
+                    <constraint firstAttribute="trailing" secondItem="PCg-5y-E93" secondAttribute="trailing" id="qo6-Zq-as2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="testStackView" destination="PCg-5y-E93" id="cJj-B6-iwk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

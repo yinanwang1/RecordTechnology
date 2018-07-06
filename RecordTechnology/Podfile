@@ -6,7 +6,7 @@ target 'RecordTechnology' do
 platform :ios, '8.0'
 use_frameworks!
 
-#pod 'AFNetworking', '~> 3.1.0'
+pod 'AFNetworking', '~> 3.2.1'
 #pod 'OpenUDID', '~>1.0.0'
 #pod 'MagicalRecord', '~> 2.3.2'
 #pod 'Reachability', '~>3.2'
@@ -28,7 +28,7 @@ pod 'Masonry', '~> 1.0.2'
 #pod 'BabyBluetooth', '~> 0.7.0'
 #pod 'MBProgressHUD', '~> 1.0.0'
 pod 'IQKeyboardManager', '= 4.0.13'
-#pod 'YYKit', '~> 1.0.9'
+pod 'YYKit', '~> 1.0.9'
 pod 'SAMKeychain', '= 1.5.3'
 pod 'pop', '= 1.0.10'
 
