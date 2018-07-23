@@ -15,22 +15,18 @@
 		8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E23F1ABAB2DC0008984F /* Main.storyboard */; };
 		8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E41E2441ABAB2DC0008984F /* LaunchScreen.xib */; };
 		8E41E2521ABAB2DC0008984F /* RecordTechnologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41E2511ABAB2DC0008984F /* RecordTechnologyTests.m */; };
-		C60239C020EB7ACC007592DE /* TestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C60239BE20EB7ACC007592DE /* TestTableViewCell.m */; };
-		C60239C120EB7ACC007592DE /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60239BF20EB7ACC007592DE /* TestTableViewCell.xib */; };
-		C60239C420EB7E91007592DE /* StackViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C60239C320EB7E91007592DE /* StackViewViewController.m */; };
 		C616DA901C9FD05A00D719F7 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */; };
 		C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61771E51ABC6BF30097991C /* WWSideslipViewController.m */; };
 		C624DF861CA5516300AD2615 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C624DF851CA5516300AD2615 /* QuickLook.framework */; };
 		C628A8571F90BC9900E74CEA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C628A8561F90BC9900E74CEA /* CoreTelephony.framework */; };
+		C63392E820EF490B00E81EB5 /* SafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63392E720EF490B00E81EB5 /* SafeViewController.m */; };
+		C63392EA20EF491E00E81EB5 /* Safe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63392E920EF491E00E81EB5 /* Safe.storyboard */; };
 		C63ABF1F1F4FCC200057A2FD /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63ABF1E1F4FCC200057A2FD /* SafariServices.framework */; };
 		C6502A4F1DAB300B0019079C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6502A4E1DAB300B0019079C /* Images.xcassets */; };
 		C6502A541DAB31300019079C /* gif1.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A501DAB31300019079C /* gif1.gif */; };
 		C6502A551DAB31300019079C /* gif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A511DAB31300019079C /* gif2.gif */; };
 		C6502A561DAB31300019079C /* gif3.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A521DAB31300019079C /* gif3.gif */; };
 		C6502A571DAB31300019079C /* gif4.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6502A531DAB31300019079C /* gif4.gif */; };
-		C65110BC20E31DDD00D7F2B1 /* SessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65110BB20E31DDD00D7F2B1 /* SessionViewController.m */; };
-		C65110BE20E31DF200D7F2B1 /* Session.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65110BD20E31DF200D7F2B1 /* Session.storyboard */; };
-		C65110C020E31E7200D7F2B1 /* Session2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65110BF20E31E7200D7F2B1 /* Session2.storyboard */; };
 		C67480F01D4F2098008C2AFF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67480EF1D4F2098008C2AFF /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C6749B851B59DF100069DF0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B841B59DF100069DF0D /* AddressBook.framework */; };
 		C679AA9E1FC4444F00F25CF6 /* Swift-Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679AA9D1FC4444F00F25CF6 /* Swift-Prefix.swift */; };
@@ -99,26 +95,20 @@
 		8EDF0A4D1ABC22F6004D736C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EF6A08F1B315C7600694EDE /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		B8D862BD766BDF0FF78C6C54 /* Pods-RecordTechnologyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnologyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C60239BD20EB7ACC007592DE /* TestTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTableViewCell.h; sourceTree = "<group>"; };
-		C60239BE20EB7ACC007592DE /* TestTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTableViewCell.m; sourceTree = "<group>"; };
-		C60239BF20EB7ACC007592DE /* TestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
-		C60239C220EB7E91007592DE /* StackViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackViewViewController.h; sourceTree = "<group>"; };
-		C60239C320EB7E91007592DE /* StackViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackViewViewController.m; sourceTree = "<group>"; };
 		C616DA8F1C9FD05A00D719F7 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		C61771E41ABC6BF30097991C /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
 		C61771E51ABC6BF30097991C /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
 		C624DF851CA5516300AD2615 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		C628A8561F90BC9900E74CEA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C63392E620EF490B00E81EB5 /* SafeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeViewController.h; sourceTree = "<group>"; };
+		C63392E720EF490B00E81EB5 /* SafeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeViewController.m; sourceTree = "<group>"; };
+		C63392E920EF491E00E81EB5 /* Safe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Safe.storyboard; sourceTree = "<group>"; };
 		C63ABF1E1F4FCC200057A2FD /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		C6502A4E1DAB300B0019079C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C6502A501DAB31300019079C /* gif1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif1.gif; sourceTree = "<group>"; };
 		C6502A511DAB31300019079C /* gif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif2.gif; sourceTree = "<group>"; };
 		C6502A521DAB31300019079C /* gif3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif3.gif; sourceTree = "<group>"; };
 		C6502A531DAB31300019079C /* gif4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif4.gif; sourceTree = "<group>"; };
-		C65110BA20E31DDD00D7F2B1 /* SessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionViewController.h; sourceTree = "<group>"; };
-		C65110BB20E31DDD00D7F2B1 /* SessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionViewController.m; sourceTree = "<group>"; };
-		C65110BD20E31DF200D7F2B1 /* Session.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Session.storyboard; sourceTree = "<group>"; };
-		C65110BF20E31E7200D7F2B1 /* Session2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Session2.storyboard; sourceTree = "<group>"; };
 		C67480EF1D4F2098008C2AFF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C67480F31D4F2F58008C2AFF /* RecordTechnology-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecordTechnology-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6749B841B59DF100069DF0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -257,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				C63392E520EF487B00E81EB5 /* 201807 */,
-				C65110B920E31CDB00D7F2B1 /* 201806 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
 				8E41E23A1ABAB2DC0008984F /* AppDelegate.m */,
@@ -333,6 +322,9 @@
 		C63392E520EF487B00E81EB5 /* 201807 */ = {
 			isa = PBXGroup;
 			children = (
+				C63392E620EF490B00E81EB5 /* SafeViewController.h */,
+				C63392E720EF490B00E81EB5 /* SafeViewController.m */,
+				C63392E920EF491E00E81EB5 /* Safe.storyboard */,
 			);
 			path = 201807;
 			sourceTree = "<group>";
@@ -347,22 +339,6 @@
 				C6502A4E1DAB300B0019079C /* Images.xcassets */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		C65110B920E31CDB00D7F2B1 /* 201806 */ = {
-			isa = PBXGroup;
-			children = (
-				C65110BA20E31DDD00D7F2B1 /* SessionViewController.h */,
-				C65110BB20E31DDD00D7F2B1 /* SessionViewController.m */,
-				C60239BD20EB7ACC007592DE /* TestTableViewCell.h */,
-				C60239BE20EB7ACC007592DE /* TestTableViewCell.m */,
-				C60239BF20EB7ACC007592DE /* TestTableViewCell.xib */,
-				C65110BD20E31DF200D7F2B1 /* Session.storyboard */,
-				C65110BF20E31E7200D7F2B1 /* Session2.storyboard */,
-				C60239C220EB7E91007592DE /* StackViewViewController.h */,
-				C60239C320EB7E91007592DE /* StackViewViewController.m */,
-			);
-			path = 201806;
 			sourceTree = "<group>";
 		};
 		EC80E78A35F814DD30C26249 /* Pods */ = {
@@ -470,15 +446,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C68FFB141CA398E500716DBC /* 58.png in Resources */,
-				C65110BE20E31DF200D7F2B1 /* Session.storyboard in Resources */,
 				C6502A571DAB31300019079C /* gif4.gif in Resources */,
 				C6502A561DAB31300019079C /* gif3.gif in Resources */,
+				C63392EA20EF491E00E81EB5 /* Safe.storyboard in Resources */,
 				C6502A551DAB31300019079C /* gif2.gif in Resources */,
 				C6502A4F1DAB300B0019079C /* Images.xcassets in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
-				C65110C020E31E7200D7F2B1 /* Session2.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
-				C60239C120EB7ACC007592DE /* TestTableViewCell.xib in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
 				C6502A541DAB31300019079C /* gif1.gif in Resources */,
 			);
@@ -563,12 +537,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C60239C020EB7ACC007592DE /* TestTableViewCell.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C679AA9E1FC4444F00F25CF6 /* Swift-Prefix.swift in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
-				C60239C420EB7E91007592DE /* StackViewViewController.m in Sources */,
-				C65110BC20E31DDD00D7F2B1 /* SessionViewController.m in Sources */,
+				C63392E820EF490B00E81EB5 /* SafeViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,
 			);
