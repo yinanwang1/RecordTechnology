@@ -34,6 +34,10 @@
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */; };
+		C6CFC9AF214280610063687F /* AnimatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CFC9AE214280610063687F /* AnimatedViewController.m */; };
+		C6CFC9B12142806D0063687F /* Animated.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFC9B02142806D0063687F /* Animated.storyboard */; };
+		C6CFC9B4214281500063687F /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CFC9B3214281500063687F /* GreenViewController.m */; };
+		C6CFC9B7214281B80063687F /* AnimatedNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CFC9B6214281B80063687F /* AnimatedNavigationViewController.m */; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 		F5D0E43BB8C8AD329FE22EAC /* Pods_RecordTechnology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB7F4834FAD955701B751DB /* Pods_RecordTechnology.framework */; };
 /* End PBXBuildFile section */
@@ -121,6 +125,13 @@
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		C6C1EEA71FC6F3E60000EF28 /* HXMacrosUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXMacrosUtils.h; sourceTree = "<group>"; };
+		C6CFC9AD214280610063687F /* AnimatedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedViewController.h; sourceTree = "<group>"; };
+		C6CFC9AE214280610063687F /* AnimatedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedViewController.m; sourceTree = "<group>"; };
+		C6CFC9B02142806D0063687F /* Animated.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animated.storyboard; sourceTree = "<group>"; };
+		C6CFC9B2214281500063687F /* GreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreenViewController.h; sourceTree = "<group>"; };
+		C6CFC9B3214281500063687F /* GreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
+		C6CFC9B5214281B80063687F /* AnimatedNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedNavigationViewController.h; sourceTree = "<group>"; };
+		C6CFC9B6214281B80063687F /* AnimatedNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedNavigationViewController.m; sourceTree = "<group>"; };
 		E144C3CE3612D5EEAA10C61E /* libPods-RecordTechnologyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnologyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D728750DE2DC5A9722D56 /* Pods-RecordTechnologyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnologyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3D6E6F413FA11148A374E5C /* Pods-RecordTechnology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnology.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnology/Pods-RecordTechnology.release.xcconfig"; sourceTree = "<group>"; };
@@ -246,6 +257,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				C6CFC9AC2142803F0063687F /* 201809 */,
 				C63392E520EF487B00E81EB5 /* 201807 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
 				8E41E2391ABAB2DC0008984F /* AppDelegate.h */,
@@ -339,6 +351,20 @@
 				C6502A4E1DAB300B0019079C /* Images.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		C6CFC9AC2142803F0063687F /* 201809 */ = {
+			isa = PBXGroup;
+			children = (
+				C6CFC9AD214280610063687F /* AnimatedViewController.h */,
+				C6CFC9AE214280610063687F /* AnimatedViewController.m */,
+				C6CFC9B02142806D0063687F /* Animated.storyboard */,
+				C6CFC9B2214281500063687F /* GreenViewController.h */,
+				C6CFC9B3214281500063687F /* GreenViewController.m */,
+				C6CFC9B5214281B80063687F /* AnimatedNavigationViewController.h */,
+				C6CFC9B6214281B80063687F /* AnimatedNavigationViewController.m */,
+			);
+			path = 201809;
 			sourceTree = "<group>";
 		};
 		EC80E78A35F814DD30C26249 /* Pods */ = {
@@ -452,6 +478,7 @@
 				C6502A551DAB31300019079C /* gif2.gif in Resources */,
 				C6502A4F1DAB300B0019079C /* Images.xcassets in Resources */,
 				8E41E2411ABAB2DC0008984F /* Main.storyboard in Resources */,
+				C6CFC9B12142806D0063687F /* Animated.storyboard in Resources */,
 				8E41E2461ABAB2DC0008984F /* LaunchScreen.xib in Resources */,
 				C68FFB121CA397D100716DBC /* 40.png in Resources */,
 				C6502A541DAB31300019079C /* gif1.gif in Resources */,
@@ -537,9 +564,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CFC9B4214281500063687F /* GreenViewController.m in Sources */,
 				8E41E23E1ABAB2DC0008984F /* ViewController.m in Sources */,
 				C679AA9E1FC4444F00F25CF6 /* Swift-Prefix.swift in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
+				C6CFC9AF214280610063687F /* AnimatedViewController.m in Sources */,
+				C6CFC9B7214281B80063687F /* AnimatedNavigationViewController.m in Sources */,
 				C63392E820EF490B00E81EB5 /* SafeViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
 				8E41E2381ABAB2DC0008984F /* main.m in Sources */,

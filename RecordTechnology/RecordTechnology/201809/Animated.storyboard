@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Wu-ng-eAU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animated Navigation View Controller-->
+        <scene sceneID="0gw-bz-mwW">
+            <objects>
+                <navigationController storyboardIdentifier="AnimatedNavigationViewController" id="9Wu-ng-eAU" customClass="AnimatedNavigationViewController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hNK-kS-TqW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="U4K-xz-UQJ" kind="relationship" relationship="rootViewController" id="1pJ-B3-Mgl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xg8-UZ-8QA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="131"/>
+        </scene>
+        <!--Animated View Controller-->
+        <scene sceneID="SPw-N0-hW4">
+            <objects>
+                <viewController storyboardIdentifier="AnimatedViewController" id="U4K-xz-UQJ" customClass="AnimatedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="faH-g4-ygw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYh-xj-gZH">
+                                <rect key="frame" x="137.5" y="95" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2MA-j4-VTY"/>
+                                    <constraint firstAttribute="width" constant="100" id="wFS-9Y-SVD"/>
+                                </constraints>
+                                <state key="normal" title="我要PUSH">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickPushBtn:" destination="U4K-xz-UQJ" eventType="touchUpInside" id="WN1-ah-c4h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1019607843" green="0.60784313729999995" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mYh-xj-gZH" firstAttribute="centerX" secondItem="faH-g4-ygw" secondAttribute="centerX" id="STc-T5-g6F"/>
+                            <constraint firstItem="mYh-xj-gZH" firstAttribute="top" secondItem="lv1-lx-dul" secondAttribute="top" constant="31" id="TsP-Xq-S3H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lv1-lx-dul"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YFR-gp-tPg"/>
+                    <connections>
+                        <segue destination="RgU-6E-KWP" kind="show" identifier="JumpToGreenVC" id="rsQ-JN-cL6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zm8-bG-tba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="131"/>
+        </scene>
+        <!--Green View Controller-->
+        <scene sceneID="bwn-KU-iFQ">
+            <objects>
+                <viewController storyboardIdentifier="GreenViewController" id="RgU-6E-KWP" customClass="GreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qoj-XA-Otj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.1450980392" green="0.60784313729999995" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="aef-r2-ZPw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dW2-wp-JrL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1135" y="131"/>
+        </scene>
+    </scenes>
+</document>
