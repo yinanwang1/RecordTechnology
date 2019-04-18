@@ -38,6 +38,7 @@
 		C6CFC9B12142806D0063687F /* Animated.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFC9B02142806D0063687F /* Animated.storyboard */; };
 		C6CFC9B4214281500063687F /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CFC9B3214281500063687F /* GreenViewController.m */; };
 		C6CFC9B7214281B80063687F /* AnimatedNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CFC9B6214281B80063687F /* AnimatedNavigationViewController.m */; };
+		C6E3AAF42266F95F00B9B468 /* Copy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E3AAF32266F95F00B9B468 /* Copy.storyboard */; };
 		C6FA8B4A1B6F37DE0042A8F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1D18B71ABC1E65009ED4FB /* QuartzCore.framework */; };
 		F5D0E43BB8C8AD329FE22EAC /* Pods_RecordTechnology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB7F4834FAD955701B751DB /* Pods_RecordTechnology.framework */; };
 /* End PBXBuildFile section */
@@ -132,6 +133,7 @@
 		C6CFC9B3214281500063687F /* GreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
 		C6CFC9B5214281B80063687F /* AnimatedNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedNavigationViewController.h; sourceTree = "<group>"; };
 		C6CFC9B6214281B80063687F /* AnimatedNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedNavigationViewController.m; sourceTree = "<group>"; };
+		C6E3AAF32266F95F00B9B468 /* Copy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Copy.storyboard; sourceTree = "<group>"; };
 		E144C3CE3612D5EEAA10C61E /* libPods-RecordTechnologyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordTechnologyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D728750DE2DC5A9722D56 /* Pods-RecordTechnologyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnologyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnologyTests/Pods-RecordTechnologyTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3D6E6F413FA11148A374E5C /* Pods-RecordTechnology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordTechnology.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordTechnology/Pods-RecordTechnology.release.xcconfig"; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 		8E41E2341ABAB2DC0008984F /* RecordTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				C6E3AAF22266F93E00B9B468 /* 201904 */,
 				C6CFC9AC2142803F0063687F /* 201809 */,
 				C63392E520EF487B00E81EB5 /* 201807 */,
 				C61771E21ABC6BF30097991C /* Utilities */,
@@ -367,6 +370,14 @@
 			path = 201809;
 			sourceTree = "<group>";
 		};
+		C6E3AAF22266F93E00B9B468 /* 201904 */ = {
+			isa = PBXGroup;
+			children = (
+				C6E3AAF32266F95F00B9B468 /* Copy.storyboard */,
+			);
+			path = 201904;
+			sourceTree = "<group>";
+		};
 		EC80E78A35F814DD30C26249 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +463,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -472,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C68FFB141CA398E500716DBC /* 58.png in Resources */,
+				C6E3AAF42266F95F00B9B468 /* Copy.storyboard in Resources */,
 				C6502A571DAB31300019079C /* gif4.gif in Resources */,
 				C6502A561DAB31300019079C /* gif3.gif in Resources */,
 				C63392EA20EF491E00E81EB5 /* Safe.storyboard in Resources */,
