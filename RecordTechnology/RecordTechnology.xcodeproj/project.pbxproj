@@ -32,6 +32,8 @@
 		C679AA9E1FC4444F00F25CF6 /* Swift-Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679AA9D1FC4444F00F25CF6 /* Swift-Prefix.swift */; };
 		C68FFB121CA397D100716DBC /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB111CA397D100716DBC /* 40.png */; };
 		C68FFB141CA398E500716DBC /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C68FFB131CA398E500716DBC /* 58.png */; };
+		C6A6564122686B240050B465 /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A6564022686B240050B465 /* CopyViewController.m */; };
+		C6A6564422686B830050B465 /* CYLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A6564322686B830050B465 /* CYLObject.m */; };
 		C6B2FC201AD02DDD007B7EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */; };
 		C6BF52731E46C7B000801A9D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */; };
 		C6CFC9AF214280610063687F /* AnimatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CFC9AE214280610063687F /* AnimatedViewController.m */; };
@@ -122,6 +124,10 @@
 		C68FE5651EF0E753002F67DC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C68FFB111CA397D100716DBC /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = ../40.png; sourceTree = "<group>"; };
 		C68FFB131CA398E500716DBC /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		C6A6563F22686B240050B465 /* CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
+		C6A6564022686B240050B465 /* CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
+		C6A6564222686B830050B465 /* CYLObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLObject.h; sourceTree = "<group>"; };
+		C6A6564322686B830050B465 /* CYLObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLObject.m; sourceTree = "<group>"; };
 		C6B2FC1B1AD02A5B007B7EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6B2FC1D1AD02BB5007B7EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C6BF52721E46C7B000801A9D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -374,6 +380,10 @@
 			isa = PBXGroup;
 			children = (
 				C6E3AAF32266F95F00B9B468 /* Copy.storyboard */,
+				C6A6563F22686B240050B465 /* CopyViewController.h */,
+				C6A6564022686B240050B465 /* CopyViewController.m */,
+				C6A6564222686B830050B465 /* CYLObject.h */,
+				C6A6564322686B830050B465 /* CYLObject.m */,
 			);
 			path = 201904;
 			sourceTree = "<group>";
@@ -582,6 +592,8 @@
 				C679AA9E1FC4444F00F25CF6 /* Swift-Prefix.swift in Sources */,
 				C61771E61ABC6BF30097991C /* WWSideslipViewController.m in Sources */,
 				C6CFC9AF214280610063687F /* AnimatedViewController.m in Sources */,
+				C6A6564122686B240050B465 /* CopyViewController.m in Sources */,
+				C6A6564422686B830050B465 /* CYLObject.m in Sources */,
 				C6CFC9B7214281B80063687F /* AnimatedNavigationViewController.m in Sources */,
 				C63392E820EF490B00E81EB5 /* SafeViewController.m in Sources */,
 				8E41E23B1ABAB2DC0008984F /* AppDelegate.m in Sources */,
